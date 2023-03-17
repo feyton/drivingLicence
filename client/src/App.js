@@ -7,7 +7,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
-import React from "react";
+import React, { useState } from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
@@ -15,8 +15,10 @@ import ExamPage from "./pages/ExamPage";
 import GetQuestions from "./pages/GetQuestions";
 import GetQuizzes from "./pages/GetQuizzes";
 import LandingPage from "./pages/LandingPage";
+import LoginPage from "./pages/LoginPage";
 import NotFound from "./pages/NotFound";
 import QuestionForm from "./pages/QuestionForm";
+import RegisterPage from "./pages/RegisterPage";
 import store from "./redux/store";
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
@@ -61,6 +63,8 @@ const client = new ApolloClient({
   }),
 });
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="bg-bgImage bg-fixed bg-cover">
       <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1080px] mx-auto my-0 flex flex-col">
@@ -68,11 +72,16 @@ function App() {
           <Provider store={store}>
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<LandingPage />} />
+                <Route
+                  path="/"
+                  element={<LandingPage openModal={setIsOpen} />}
+                />
                 <Route path="/quiz" element={<GetQuizzes />} />
                 <Route path="/quiz/:id" element={<ExamPage />} />
                 <Route path="/add" element={<QuestionForm />} />
                 <Route path="/questions" element={<GetQuestions />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </BrowserRouter>

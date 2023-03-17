@@ -2,7 +2,8 @@ import React from "react";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
+  const { setIsOpen } = props;
   return (
     <div className="flex flex-row justify-between px-3 py-1">
       <div className="flex flex-row gap-3">
@@ -15,9 +16,9 @@ function Navbar() {
         <Link to="/questions" className="button-primary">
           Questions
         </Link>
-        <Link to="/login" className="button-primary">
+        <button onClick={() => setIsOpen(true)} className="button-primary">
           Login
-        </Link>
+        </button>
       </div>
       <form action="" className="flex flex-row relative">
         <input

@@ -1,28 +1,34 @@
 import mongoose, { model, Schema } from "mongoose";
 
-const QuizSchema = new Schema({
-  title: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  createdBy: {
-    type: mongoose.Types.ObjectId,
-    ref: "User",
-  },
-  questions: [
-    {
-      type: mongoose.Types.ObjectId,
-      ref: "Question",
+const QuizSchema = new Schema(
+  {
+    title: {
+      type: String,
       required: true,
-      indexedDB: true,
+      unique: true,
     },
-  ],
-});
+    description: {
+      type: String,
+      required: true,
+    },
+    createdBy: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    questions: [
+      {
+        type: mongoose.Types.ObjectId,
+        ref: "Question",
+        required: true,
+        indexedDB: true,
+      },
+    ],
+  },
+  {
+    timestamps: true,
+  }
+);
 
 export const Quiz = model("Quiz", QuizSchema);
 

@@ -7,12 +7,12 @@ import Navbar from "./Navbar";
 
 
 
-function Hero() {
+function Hero(props) {
 
   const { user } = useSelector((state) => state?.auth);
   return (
     <div className="hero">
-      <Navbar />
+      <Navbar {...props} />
       <div className="hero w-full min-h-full flex flex-col justify-center grow items-center ">
         <div className="">
           <div className="flex h-full flex-col items-center justify-start  w-full px-4 py-2">
