@@ -2,7 +2,7 @@ import "dotenv/config";
 import { Request } from "express";
 import * as jwt from "jsonwebtoken";
 
-const SECRET = process.env.JWT_SECRET;
+const SECRET = process.env.ACCESS_TOKEN_SECRET;
 
 export interface AuthTokenPayload {
   userId?: string;

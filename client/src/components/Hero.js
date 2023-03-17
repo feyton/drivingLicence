@@ -1,18 +1,12 @@
-import { gql, useLazyQuery } from "@apollo/client";
 import { Button } from "flowbite-react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
-
-
 
 function Hero(props) {
-
   const { user } = useSelector((state) => state?.auth);
   return (
     <div className="hero">
-      <Navbar {...props} />
       <div className="hero w-full min-h-full flex flex-col justify-center grow items-center ">
         <div className="">
           <div className="flex h-full flex-col items-center justify-start  w-full px-4 py-2">
@@ -30,10 +24,10 @@ function Hero(props) {
             </p>
             {!user?.auth ? (
               <div className="w-full text-center justify-center items-center mt-8">
-                <Link to="quiz">
+                <Link to="quiz" className="justify-center mx-auto">
                   <Button
                     variant="primary"
-                    className="px-4 py-0 font-lexend"
+                    className="px-4 py-0 mx-auto font-lexend"
                     size="lg"
                   >
                     Tangira

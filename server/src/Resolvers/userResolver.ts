@@ -26,7 +26,7 @@ export default {
       const verified = await user.comparePassword(input.password);
       if (!verified) throw new ApolloError("WRONG_CRED", "401");
       const token = jwt.sign(
-        { id: user._id, email: user.email, role: user.role },
+        { userId: user._id, email: user.email, role: user.role },
         SECRET,
         { expiresIn: "40h" }
       );
@@ -34,7 +34,6 @@ export default {
     },
     createUser: async (_: any, args: any, context: any) => {
       const { input } = args;
-
       const userExists: any = await User.findOne({
         email: input.email,
       });

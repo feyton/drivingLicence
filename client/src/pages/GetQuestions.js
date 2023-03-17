@@ -33,7 +33,6 @@ const DELETE_QUESTION = gql`
 `;
 
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import DataTable from "./Questions";
 
 function GetQuestions() {
@@ -111,10 +110,7 @@ function GetQuestions() {
     },
   ];
   return (
-    <div>
-      <Navbar />
-      {questions && <DataTable data={questions} columns={columns} />}
-    </div>
+    <div>{questions && <DataTable data={questions} columns={columns} />}</div>
   );
 }
 

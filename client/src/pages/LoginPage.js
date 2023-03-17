@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import { Button } from "flowbite-react";
 import { useForm } from "react-hook-form";
 import { loginUser } from "../redux/reducers/authReducer.js";
-import { Button } from "flowbite-react";
 const LOGIN_MUTATION = gql`
   mutation LoginUser($input: LoginInput!) {
     loginUser(input: $input) {
@@ -36,16 +36,23 @@ const LoginPage = () => {
   } = useForm();
 
   const onSubmit = async (formData) => {
-    const { data } = await LoginUser({
+    LoginUser({
       variables: {
         input: { ...formData },
       },
+      onCompleted: async (data) => {
+        dispatch(loginUser(data.loginUser));
+        toast.success("Login successful");
+        navigate(from);
+
+        await client.resetStore();
+        return;
+      },
+      onError: (error) => {
+        toast.error("Invalid credentials");
+      },
     });
-    dispatch(loginUser(data.loginUser));
-    navigate(from);
-    toast.success("Login successful");
-    await client.resetStore();
-    return;
+
     // store returned user somehow
   };
 

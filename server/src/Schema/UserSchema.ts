@@ -34,9 +34,9 @@ export default gql`
     phoneNumber: String!
   }
   type Mutation {
-    loginUser(input: LoginInput!): Login
-    changeRole(input: ChangeInput!): User
-    deactivateUser(id: ID!): User
-    createUser(input: SignupInput!): Login
+    loginUser(input: LoginInput!): Login!
+    changeRole(input: ChangeInput!): User!
+    deactivateUser(id: ID!): User!
+    createUser(input: SignupInput!): Login!
   }
 `;

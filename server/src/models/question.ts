@@ -11,7 +11,7 @@ const QuizSchema = new Schema(
       type: String,
       required: true,
     },
-    createdBy: {
+    user: {
       type: mongoose.Types.ObjectId,
       ref: "User",
       required: true,
@@ -91,6 +91,9 @@ const QuestionSchema = new Schema(
       required: true,
       default: "general",
     },
+    user: {
+
+    }
   },
   {
     timestamps: true,

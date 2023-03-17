@@ -1,6 +1,7 @@
 import { mergeResolvers } from "@graphql-tools/merge";
 import { GraphQLScalarType, Kind } from "graphql";
 import QuizResolver from "./quizResolver";
+import userResolver from "./userResolver";
 
 const DateScalar = new GraphQLScalarType({
   name: "Date",
@@ -20,6 +21,6 @@ const DateScalar = new GraphQLScalarType({
   },
 });
 
-const resolvers = mergeResolvers([QuizResolver]);
+const resolvers = mergeResolvers([QuizResolver, userResolver, {Date: DateScalar}]);
 
 export default resolvers;

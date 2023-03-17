@@ -3,7 +3,7 @@ import { Button, TextInput } from "flowbite-react";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { loginUser } from "../redux/reducers/authReducer";
 
@@ -29,6 +29,8 @@ function SignupForm() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const client = useApolloClient();
+  const location = useLocation();
+  const from = location?.state || "/";
 
   const [createUser] = useMutation(SIGN_UP_MUTATION);
   const onSubmit = async (data) => {
@@ -41,6 +43,9 @@ function SignupForm() {
       },
       variables: {
         input: { ...data },
+      },
+      onError: (error) => {
+        toast.error(error.message);
       },
     });
   };

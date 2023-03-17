@@ -1,6 +1,7 @@
 import { gql } from "apollo-server";
 
 export default gql`
+  scalar Date
   type Question {
     id: ID!
     text: String!
@@ -8,12 +9,17 @@ export default gql`
     answer: ID!
     explanation: String!
     approved: Boolean!
+    user: User
+    createdAt: Date
+    updatedAt: Date
   }
   type Quiz {
     title: String
     id: ID!
     description: String
     questions: [Question!]
+    user: User
+    createdAt: Date
   }
   type Score {
     quiz: Quiz!
@@ -61,5 +67,6 @@ export default gql`
     CreateQuiz(input: QuizInput!): Quiz!
     ApproveQuestion(id: ID!): Question
     DeleteQuestion(id: ID!): Question
+    DeleteQuiz(id: ID!): Quiz
   }
 `;

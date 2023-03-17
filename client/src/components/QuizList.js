@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function QuizList({ quizzes }) {
   return (
-    <div className="flex flex-row gap-3 flex-wrap">
+    <div className="flex flex-row gap-3 flex-wrap py-2">
       {quizzes.map((quiz, index) => (
         <Card className="max-w-sm" key={index}>
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

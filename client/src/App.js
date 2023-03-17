@@ -8,9 +8,11 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
 import React, { useState } from "react";
+import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import Navbar from "./components/Navbar";
 import ExamPage from "./pages/ExamPage";
 import GetQuestions from "./pages/GetQuestions";
 import GetQuizzes from "./pages/GetQuizzes";
@@ -26,8 +28,6 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
     graphQLErrors.forEach(({ extensions }) => {
       if (extensions?.code === "UNAUTHENTICATED") {
-        window.localStorage.clear();
-        window.location.pathname = "/login";
         toast.error("You have not been using the website for a while");
         return;
       }
@@ -72,6 +72,7 @@ function App() {
         <ApolloProvider client={client}>
           <Provider store={store}>
             <BrowserRouter>
+              <Navbar />
               <Routes>
                 <Route
                   path="/"
@@ -83,7 +84,7 @@ function App() {
                   path="/add"
                   element={
                     <PrivateRoute>
-                      <QuestionForm />
+                      <QuestionForm />0
                     </PrivateRoute>
                   }
                 />

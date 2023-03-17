@@ -2,9 +2,9 @@ import { useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
 import { Button, TextInput } from "flowbite-react";
 import React from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
+import ReactQuill from "react-quill";
 import { toast } from "react-toastify";
-import Navbar from "../components/Navbar";
 import useTitle from "../utils/useTitle";
 
 const ADD_QUESTION = gql`
@@ -27,6 +27,7 @@ function QuestionForm() {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
     reset,
   } = useForm({ defaultValues: { options: [{}] } });
@@ -48,7 +49,6 @@ function QuestionForm() {
 
   return (
     <div>
-      <Navbar />
       <div className="px-5 mt-5 mx-auto w-full">
         <form className="max-w-md mx-auto" onSubmit={handleSubmit(onSubmit)}>
           <div>
@@ -177,10 +177,24 @@ function QuestionForm() {
           </div>
           <div>
             <label htmlFor="explanation">Explanation:</label>
-            <TextInput
-              className="block"
-              id="explanation"
-              {...register("explanation", { required: true })}
+            <Controller
+              control={control}
+              name="explanation"
+              rules={{
+                validate: (value) =>
+                  value.length >= 10 ||
+                  "Enter at least 10 characters in the description",
+              }}
+              error={errors.explanation}
+              render={({ field: { onChange, onBlur, value } }) => (
+                <ReactQuill
+                  theme="snow"
+                  onChange={(explanation, delta, source, editor) =>
+                    onChange(explanation)
+                  }
+                  value={value || ""}
+                />
+              )}
             />
             {errors.explanation && <span>This field is required</span>}
           </div>
