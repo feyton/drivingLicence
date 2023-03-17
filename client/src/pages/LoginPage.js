@@ -1,11 +1,12 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 import { useForm } from "react-hook-form";
 import { loginUser } from "../redux/reducers/authReducer.js";
+import { Button } from "flowbite-react";
 const LOGIN_MUTATION = gql`
   mutation LoginUser($input: LoginInput!) {
     loginUser(input: $input) {
@@ -34,10 +35,10 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
     const { data } = await LoginUser({
       variables: {
-        input: { ...data },
+        input: { ...formData },
       },
     });
     dispatch(loginUser(data.loginUser));

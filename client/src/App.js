@@ -20,6 +20,7 @@ import NotFound from "./pages/NotFound";
 import QuestionForm from "./pages/QuestionForm";
 import RegisterPage from "./pages/RegisterPage";
 import store from "./redux/store";
+import PrivateRoute from "./utils/PrivateRoute";
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
@@ -78,8 +79,22 @@ function App() {
                 />
                 <Route path="/quiz" element={<GetQuizzes />} />
                 <Route path="/quiz/:id" element={<ExamPage />} />
-                <Route path="/add" element={<QuestionForm />} />
-                <Route path="/questions" element={<GetQuestions />} />
+                <Route
+                  path="/add"
+                  element={
+                    <PrivateRoute>
+                      <QuestionForm />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/questions"
+                  element={
+                    <PrivateRoute>
+                      <GetQuestions />
+                    </PrivateRoute>
+                  }
+                />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
                 <Route path="*" element={<NotFound />} />

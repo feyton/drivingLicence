@@ -1,5 +1,5 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
-import { Button, Input } from "flowbite-react";
+import { Button, TextInput } from "flowbite-react";
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
@@ -46,55 +46,60 @@ function SignupForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <h2 className="text-2xl mb-6 font-bold">Sign Up</h2>
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="bg-white p-10 rounded shadow-md w-full max-w-md"
+      >
+        <h2 className="text-2xl mb-6 font-bold">Sign Up</h2>
 
-      <label className="block mb-2 font-bold">Name</label>
-      <Input
-        type="text"
-        {...register("name", { required: true })}
-        error={errors.name?.message}
-        placeholder="Enter your name"
-        className="mb-4"
-      />
+        <label className="block mb-2 font-bold">Name</label>
+        <TextInput
+          type="text"
+          {...register("name", { required: true })}
+          error={errors.name?.message}
+          placeholder="Enter your name"
+          className="mb-4"
+        />
 
-      <label className="block mb-2 font-bold">Email</label>
-      <Input
-        type="email"
-        {...register("email", { required: true })}
-        error={errors.email?.message}
-        placeholder="Enter your email"
-        className="mb-4"
-      />
+        <label className="block mb-2 font-bold">Email</label>
+        <TextInput
+          type="email"
+          {...register("email", { required: true })}
+          error={errors.email?.message}
+          placeholder="Enter your email"
+          className="mb-4"
+        />
 
-      <label className="block mb-2 font-bold">Password</label>
-      <Input
-        type="password"
-        {...register("password", { required: true })}
-        error={errors.password?.message}
-        placeholder="Enter your password"
-        className="mb-4"
-      />
+        <label className="block mb-2 font-bold">Password</label>
+        <TextInput
+          type="password"
+          {...register("password", { required: true })}
+          error={errors.password?.message}
+          placeholder="Enter your password"
+          className="mb-4"
+        />
 
-      <label className="block mb-2 font-bold">Phone Number</label>
-      <Input
-        type="tel"
-        {...register("phoneNumber", { required: true })}
-        error={errors.phoneNumber?.message}
-        placeholder="Enter your phone number"
-        className="mb-4"
-      />
+        <label className="block mb-2 font-bold">Phone Number</label>
+        <TextInput
+          type="tel"
+          {...register("phoneNumber", { required: true })}
+          error={errors.phoneNumber?.message}
+          placeholder="Enter your phone number"
+          className="mb-4"
+        />
 
-      <Button type="submit" className="mt-6 mb-4">
-        Sign Up
-      </Button>
-      <p className="text-sm">
-        Already have an account?{" "}
-        <Link to="/login" className="text-primary">
-          Login
-        </Link>
-      </p>
-    </form>
+        <Button type="submit" className="mt-6 mb-4">
+          Sign Up
+        </Button>
+        <p className="text-sm">
+          Already have an account?{" "}
+          <Link to="/login" className="text-primary">
+            Login
+          </Link>
+        </p>
+      </form>
+    </div>
   );
 }
 
