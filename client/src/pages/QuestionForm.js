@@ -1,6 +1,6 @@
-import { useMutation } from "@apollo/client";
+import { useApolloClient, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
-import { Button, TextInput } from "flowbite-react";
+import { Button } from "flowbite-react";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
@@ -32,7 +32,7 @@ function QuestionForm() {
     reset,
   } = useForm({ defaultValues: { options: [{}] } });
   const [addQuestion] = useMutation(ADD_QUESTION);
-
+  const client = useApolloClient();
   const onSubmit = (data) => {
     const input = {
       ...data,
@@ -41,6 +41,7 @@ function QuestionForm() {
       .then((result) => {
         toast.success("Question added");
         reset();
+        client.resetStore();
       })
       .catch((error) => {
         toast.error(error?.message);
@@ -49,14 +50,47 @@ function QuestionForm() {
 
   return (
     <div>
-      <div className="px-5 mt-5 mx-auto w-full">
-        <form className="max-w-md mx-auto" onSubmit={handleSubmit(onSubmit)}>
-          <div>
-            <label htmlFor="question">Question:</label>
-            <TextInput
-              className="block"
-              id="title"
-              {...register("text", { required: true })}
+      <div className="px-5 mt-5 mx-auto w-full ">
+        <form
+          className="max-w-xl mx-auto bg-white rounded-md px-6"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <h2 className="font-bold text-3xl text-center mb-2">Add question</h2>
+          <hr />
+          <div className="min-h-fit mb-10">
+            <label htmlFor="question">Ikibazo:</label>
+            <Controller
+              control={control}
+              name="text"
+              rules={{
+                validate: (value) =>
+                  value.length >= 10 ||
+                  "Enter at least 10 characters in the description",
+              }}
+              error={errors.explanation}
+              render={({ field: { onChange, onBlur, value } }) => (
+                <ReactQuill
+                  theme="snow"
+                  onChange={(explanation, delta, source, editor) =>
+                    onChange(explanation)
+                  }
+                  value={value || ""}
+                  modules={{
+                    toolbar: [
+                      ["bold", "italic", "underline"],
+                      [
+                        { list: "ordered" },
+                        { list: "bullet" },
+                        { indent: "-1" },
+                        { indent: "+1" },
+                      ],
+                      ["link", "image"],
+                      ["clean"],
+                    ],
+                  }}
+                  style={{ height: "100px" }}
+                />
+              )}
             />
             {errors.question && <span>This field is required</span>}
           </div>
@@ -175,7 +209,7 @@ function QuestionForm() {
 
             {errors.category && <span>This field is required</span>}
           </div>
-          <div>
+          <div className="mb-14">
             <label htmlFor="explanation">Explanation:</label>
             <Controller
               control={control}
@@ -193,12 +227,13 @@ function QuestionForm() {
                     onChange(explanation)
                   }
                   value={value || ""}
+                  style={{ height: "100px", borderRadius: "10px" }}
                 />
               )}
             />
             {errors.explanation && <span>This field is required</span>}
           </div>
-          <Button className="mt-4" type="submit">
+          <Button className="mt-6" type="submit">
             Submit
           </Button>
         </form>

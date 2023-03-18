@@ -30,6 +30,10 @@ const QuizSchema = new Schema(
   }
 );
 
+QuizSchema.virtual("score").get(function () {
+  return this.questions.length;
+});
+
 export const Quiz = model("Quiz", QuizSchema);
 
 const ScoreSchema = new Schema(
@@ -49,11 +53,19 @@ const ScoreSchema = new Schema(
       type: Number,
       required: true,
     },
+    answers: String,
+    questionsData: String,
   },
   {
     timestamps: true,
   }
 );
+
+ScoreSchema.virtual("questions").get(function () {
+  const score: any = this;
+  return JSON.parse(score?.questionsData);
+});
+
 export const Score = model("Score", ScoreSchema);
 
 const QuestionSchema = new Schema(
@@ -92,8 +104,16 @@ const QuestionSchema = new Schema(
       default: "general",
     },
     user: {
-
-    }
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+      indexedDB: true,
+      required: true,
+    },
+    approvedBy: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+      indexedDB: true,
+    },
   },
   {
     timestamps: true,

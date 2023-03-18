@@ -1,19 +1,45 @@
-import { Button } from "flowbite-react";
+import { Button, Modal } from "flowbite-react";
 import React, { useState } from "react";
 import QuizQuestion from "../components/Question";
 import QuizProgress from "../components/QuizProgress";
+
+import { gql, useMutation } from "@apollo/client";
+import QuizResult from "./QuizResults";
+
+export const SUBMIT_QUIZ_ANSWERS = gql`
+  mutation SubmitQuizAnswers($quizId: ID!, $answers: [QuizAnswerInput]!) {
+    submitQuizAnswers(quizId: $quizId, answers: $answers) {
+      score
+      questions {
+        id
+        text
+        correctAnswer {
+          id
+          text
+        }
+        userAnswer {
+          id
+          text
+        }
+        explanation
+      }
+    }
+  }
+`;
 
 function QuizPage(props) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const { quiz } = props;
-  console.log(quiz)
   const currentQuestion = quiz.questions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === quiz.questions.length - 1;
   const hasNextQuestion = !isLastQuestion;
+  const [submitQuizAnswers, { loading, error, data }] =
+    useMutation(SUBMIT_QUIZ_ANSWERS);
 
   function handleSelectOption(questionId, option) {
     setAnswers({ ...answers, [questionId]: option });
+    console.log(answers);
   }
 
   function handleNextQuestion() {
@@ -26,56 +52,81 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [result, setResults] = useState();
 
-  function handleSubmit() {
-    // Handle submitting answers to server or displaying results
-    console.log(answers);
+  async function handleSubmit() {
+    setIsSubmitting(true);
+    const quizId = quiz.id;
+    const answersArray = Object.entries(answers).map(
+      ([questionId, answer]) => ({
+        questionId,
+        answer: answer.id,
+      })
+    );
+    const res = await submitQuizAnswers({
+      variables: { quizId, answers: answersArray },
+    });
+    setIsSubmitting(false);
+    setResults(res.data.submitQuizAnswers);
   }
 
   return (
-    <div className="mt-10">
-      <h1 className="font-bold font-primary text-xl mb-1">{quiz.title}</h1>
-      <p className="italic font-secondary ">{quiz.description}</p>
-      <hr className="mb-3 " />
-      {currentQuestion && (
-        <QuizQuestion
-          key={currentQuestion.id}
-          question={currentQuestion.text}
-          options={currentQuestion.options}
-          selectedOption={answers[currentQuestion?.id]}
-          onSelectOption={(option) =>
-            handleSelectOption(currentQuestion.id, option)
-          }
-          questionIndex={currentQuestionIndex + 1}
-        />
-      )}
+    <>
+      {!result && (
+        <div className="mt-10 min-w-[600px]">
+          <hr className="mb-3 " />
+          {currentQuestion && (
+            <QuizQuestion
+              key={currentQuestion.id}
+              question={currentQuestion.text}
+              options={currentQuestion.options}
+              selectedOption={answers[currentQuestion?.id]}
+              onSelectOption={(option) =>
+                handleSelectOption(currentQuestion.id, option)
+              }
+              questionIndex={currentQuestionIndex + 1}
+            />
+          )}
 
-      <div className="flex flex-row gap-5">
-        {currentQuestionIndex > 0 && (
-          <Button onClick={handlePreviousQuestion}>Previous</Button>
-        )}
-        {hasNextQuestion && (
-          <Button
-            disabled={!answers[currentQuestion.id]}
-            onClick={handleNextQuestion}
-          >
-            Next
-          </Button>
-        )}
-        {!hasNextQuestion && (
-          <Button
-            disabled={!answers[currentQuestion.id]}
-            onClick={handleSubmit}
-          >
-            Submit
-          </Button>
-        )}
-      </div>
-      <QuizProgress
-        currentQuestionIndex={currentQuestionIndex}
-        totalQuestions={quiz.questions.length}
-      />
-    </div>
+          <div className="flex flex-row gap-5">
+            {currentQuestionIndex > 0 && (
+              <Button onClick={handlePreviousQuestion}>Ikibanza</Button>
+            )}
+            {hasNextQuestion && (
+              <Button
+                disabled={!answers[currentQuestion.id]}
+                onClick={handleNextQuestion}
+              >
+                Igikurikira
+              </Button>
+            )}
+            {!hasNextQuestion && (
+              <Button
+                disabled={!answers[currentQuestion.id]}
+                onClick={handleSubmit}
+              >
+                Ohereza
+              </Button>
+            )}
+          </div>
+          <QuizProgress
+            currentQuestionIndex={
+              answers[currentQuestion.id] ? currentQuestionIndex : -1
+            }
+            totalQuestions={quiz.questions.length}
+          />
+          {isSubmitting && (
+            <Modal isOpen={true}>
+              <div className="text-center">
+                <p className="text-lg font-bold">Sending your answers...</p>
+              </div>
+            </Modal>
+          )}
+        </div>
+      )}
+      {result && <QuizResult {...result} />}
+    </>
   );
 }
 

@@ -9,6 +9,8 @@ export default gql`
     active: Boolean
     role: String
     phoneNumber: String
+    scores: [Score]
+    questions: [Question]
   }
 
   type Login {
@@ -19,6 +21,7 @@ export default gql`
   type Query {
     getUsers: [User]
     getUser(id: ID!): User
+    getProfile: User!
   }
   input LoginInput {
     email: String!

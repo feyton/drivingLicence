@@ -2,6 +2,7 @@ import { gql } from "apollo-server";
 
 export default gql`
   scalar Date
+  scalar DateTime
   type Question {
     id: ID!
     text: String!
@@ -10,7 +11,7 @@ export default gql`
     explanation: String!
     approved: Boolean!
     user: User
-    createdAt: Date
+    approvedBy: User
     updatedAt: Date
   }
   type Quiz {
@@ -20,12 +21,10 @@ export default gql`
     questions: [Question!]
     user: User
     createdAt: Date
-  }
-  type Score {
-    quiz: Quiz!
-    user: User
     score: Int
+    attempts: Int
   }
+
   type User {
     email: String!
     id: ID!
@@ -56,10 +55,43 @@ export default gql`
     getQuestions: [Question]
     getQuizzes: [Quiz]
     getQuiz(id: ID!): Quiz
+    getScore(id: ID!): QuizResult!
   }
   input QuizInput {
     title: String!
     description: String!
+  }
+  type QuizAnswer {
+    questionId: ID!
+    answer: String!
+  }
+
+  input QuizAnswerInput {
+    questionId: ID!
+    answer: String!
+  }
+
+  type Score {
+    id: ID!
+    quiz: Quiz!
+    user: User!
+    score: Int!
+    answers: String
+    questions: QuizQuestionResult
+    createdAt: Date!
+  }
+
+  type QuizResult {
+    score: Int!
+    questions: [QuizQuestionResult!]!
+  }
+
+  type QuizQuestionResult {
+    id: ID!
+    text: String!
+    correctAnswer: Option!
+    userAnswer: Option
+    explanation: String!
   }
 
   type Mutation {
@@ -68,5 +100,7 @@ export default gql`
     ApproveQuestion(id: ID!): Question
     DeleteQuestion(id: ID!): Question
     DeleteQuiz(id: ID!): Quiz
+    submitQuizAnswers(quizId: ID!, answers: [QuizAnswerInput]!): QuizResult!
+    DeleteScore(id: ID): Score
   }
 `;

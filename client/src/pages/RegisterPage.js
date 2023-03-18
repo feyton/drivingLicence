@@ -51,10 +51,10 @@ function SignupForm() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="flex justify-center items-center  bg-gray-100">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-white p-10 rounded shadow-md w-full max-w-md"
+        className="bg-white p-5 rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-2xl mb-6 font-bold">Sign Up</h2>
 
@@ -64,7 +64,7 @@ function SignupForm() {
           {...register("name", { required: true })}
           error={errors.name?.message}
           placeholder="Enter your name"
-          className="mb-4"
+          className="mb-2"
         />
 
         <label className="block mb-2 font-bold">Email</label>
@@ -73,7 +73,7 @@ function SignupForm() {
           {...register("email", { required: true })}
           error={errors.email?.message}
           placeholder="Enter your email"
-          className="mb-4"
+          className="mb-2"
         />
 
         <label className="block mb-2 font-bold">Password</label>
@@ -82,7 +82,7 @@ function SignupForm() {
           {...register("password", { required: true })}
           error={errors.password?.message}
           placeholder="Enter your password"
-          className="mb-4"
+          className="mb-2"
         />
 
         <label className="block mb-2 font-bold">Phone Number</label>
@@ -91,10 +91,10 @@ function SignupForm() {
           {...register("phoneNumber", { required: true })}
           error={errors.phoneNumber?.message}
           placeholder="Enter your phone number"
-          className="mb-4"
+          className="mb-2"
         />
 
-        <Button type="submit" className="mt-6 mb-4">
+        <Button type="submit" className="mt-6 mb-2">
           Sign Up
         </Button>
         <p className="text-sm">

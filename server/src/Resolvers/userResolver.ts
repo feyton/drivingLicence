@@ -2,6 +2,7 @@ import { ApolloError } from "apollo-server-express";
 import "dotenv/config";
 import jwt from "jsonwebtoken";
 import { User } from "../models/user";
+import { authenticated } from "../utils/authenticate";
 
 const SECRET: any = process.env.ACCESS_TOKEN_SECRET;
 interface Context {
@@ -16,6 +17,10 @@ export default {
       const users = await User.find({});
       return users;
     },
+    getProfile: authenticated(async (_: any, args: any, { userId }: any) => {
+      const user = await User.findById(userId);
+      return user;
+    }),
   },
   Mutation: {
     loginUser: async (_: any, args: any, context: any) => {

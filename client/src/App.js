@@ -19,8 +19,10 @@ import GetQuizzes from "./pages/GetQuizzes";
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
 import NotFound from "./pages/NotFound";
+import UserProfile from "./pages/ProfilePage";
 import QuestionForm from "./pages/QuestionForm";
 import RegisterPage from "./pages/RegisterPage";
+import ViewScore from "./pages/ViewScore";
 import store from "./redux/store";
 import PrivateRoute from "./utils/PrivateRoute";
 
@@ -78,8 +80,22 @@ function App() {
                   path="/"
                   element={<LandingPage openModal={setIsOpen} />}
                 />
-                <Route path="/quiz" element={<GetQuizzes />} />
-                <Route path="/quiz/:id" element={<ExamPage />} />
+                <Route
+                  path="/quiz"
+                  element={
+                    <PrivateRoute>
+                      <GetQuizzes />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/quiz/:id"
+                  element={
+                    <PrivateRoute>
+                      <ExamPage />
+                    </PrivateRoute>
+                  }
+                />
                 <Route
                   path="/add"
                   element={
@@ -93,6 +109,22 @@ function App() {
                   element={
                     <PrivateRoute>
                       <GetQuestions />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/profile"
+                  element={
+                    <PrivateRoute>
+                      <UserProfile />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/score/:id"
+                  element={
+                    <PrivateRoute>
+                      <ViewScore />
                     </PrivateRoute>
                   }
                 />

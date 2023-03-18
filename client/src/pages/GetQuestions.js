@@ -1,5 +1,6 @@
 import { useApolloClient, useLazyQuery, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
+import * as DOMPurify from "dompurify";
 import { Badge, Button, Tooltip } from "flowbite-react";
 import { HiCheck, HiTrash } from "react-icons/hi";
 
@@ -65,6 +66,13 @@ function GetQuestions() {
     {
       Header: "Text",
       accessor: "text",
+      Cell: ({ row }) => (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: DOMPurify.sanitize(row.original.text),
+          }}
+        ></div>
+      ),
     },
     {
       Header: "Answer",
@@ -76,9 +84,9 @@ function GetQuestions() {
       Cell: ({ row }) => (
         <>
           {row.original.approved === true ? (
-            <Badge>True</Badge>
+            <Badge color={"success"}>Yego</Badge>
           ) : (
-            <Badge>False</Badge>
+            <Badge color="failure">Oya</Badge>
           )}
         </>
       ),
@@ -90,7 +98,7 @@ function GetQuestions() {
         return (
           <div className="flex flex-row gap-2">
             {row.original.approved === false && (
-              <Tooltip content="Approve">
+              <Tooltip content="Emeza">
                 <Button
                   onClick={() => handleApprove(row.original.id)}
                   size={"xs"}
@@ -99,7 +107,7 @@ function GetQuestions() {
                 </Button>
               </Tooltip>
             )}
-            <Tooltip content="Delete">
+            <Tooltip content="Siba">
               <Button onClick={() => handleDelete(row.original.id)} size={"xs"}>
                 <HiTrash />
               </Button>

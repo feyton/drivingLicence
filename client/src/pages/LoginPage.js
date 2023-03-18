@@ -1,10 +1,10 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import { Button } from "flowbite-react";
+import { Button, Checkbox, Label } from "flowbite-react";
 import { useForm } from "react-hook-form";
 import { loginUser } from "../redux/reducers/authReducer.js";
 const LOGIN_MUTATION = gql`
@@ -43,19 +43,19 @@ const LoginPage = () => {
       onCompleted: async (data) => {
         dispatch(loginUser(data.loginUser));
         toast.success("Login successful");
-        navigate(from);
-
         await client.resetStore();
+        navigate(from);
         return;
       },
       onError: (error) => {
         toast.error("Invalid credentials");
       },
     });
-
-    // store returned user somehow
   };
-
+  const [show, setShow] = useState(false);
+  const handleShow = () => {
+    setShow(!show);
+  };
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <form
@@ -63,6 +63,9 @@ const LoginPage = () => {
         className="bg-white p-10 rounded shadow-md w-full max-w-md"
       >
         <h2 className="text-center text-2xl font-bold mb-6">Log In</h2>
+        <p className="text-red-500 font-bold my-3">
+          {from !== "/" && "Login is required to continue"}
+        </p>
         <div className="mb-4">
           <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
             Email
@@ -89,7 +92,7 @@ const LoginPage = () => {
             Password
           </label>
           <input
-            type="password"
+            type={!show ? "password" : "text"}
             id="password"
             name="password"
             placeholder="Password"
@@ -102,11 +105,16 @@ const LoginPage = () => {
             </span>
           )}
         </div>
+        <div className="flex flex-row gap-3 my-2 items-center">
+          <Checkbox id="show-pass" onChange={() => handleShow()}></Checkbox>
+          <Label htmlFor="show-pass">Show password</Label>
+        </div>
+
         <Button
           type="submit"
           className="w-full bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded"
         >
-          Log In
+          {loading ? "Loading..." : "Log In"}
         </Button>
         <p className="mt-4 text-center">
           Don't have an account?{" "}
