@@ -22,9 +22,9 @@ server.start().then(() => {
   server.applyMiddleware({ app });
 });
 
-app.use(express.static(path.join(path.resolve(), "build")));
+app.use(express.static(path.join(path.resolve(), "server/build")));
 app.get("*", (req, res) => {
-  return res.sendFile(path.join(path.resolve(), "build/index.html"));
+  return res.sendFile(path.join(path.resolve(), "server/build/index.html"));
 });
 
 connect.then(() => {

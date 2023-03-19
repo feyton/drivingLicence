@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import mongoose from "mongoose";
+import mongoose, { model, Schema } from "mongoose";
 mongoose.set("toJSON", {
   virtuals: true,
   versionKey: false,
@@ -8,12 +8,11 @@ mongoose.set("toJSON", {
   },
 });
 
-const userSchema = new mongoose.Schema(
+const userSchema = new Schema(
   {
     name: {
       type: String,
       required: true,
-      unique: true,
     },
     password: {
       type: String,
@@ -35,6 +34,10 @@ const userSchema = new mongoose.Schema(
       default:
         "https://res.cloudinary.com/feyton/image/upload/v1643272521/user_nophzu.png",
     },
+    active: {
+      type: Boolean,
+      default: true,
+    },
   },
   {
     timestamps: true,
@@ -51,4 +54,4 @@ userSchema.methods.comparePassword = async function (userPassword: string) {
   return await bcrypt.compare(userPassword, this.password);
 };
 
-export const User = mongoose.model("User", userSchema);
+export const User = model("User", userSchema);

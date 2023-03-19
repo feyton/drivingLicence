@@ -35,6 +35,7 @@ export default {
         SECRET,
         { expiresIn: "40h" }
       );
+      console.log(user, token);
       return { token, user };
     },
     createUser: async (_: any, args: any, context: any) => {
@@ -45,7 +46,7 @@ export default {
       if (userExists) throw new ApolloError("EMAIL_TAKEN", "400");
       const user = await User.create({ ...input });
       const token = jwt.sign(
-        { id: user._id, email: user.email, role: user.role },
+        { userId: user._id, email: user.email, role: user.role },
         SECRET,
         { expiresIn: "40h" }
       );

@@ -25,14 +25,6 @@ export default gql`
     attempts: Int
   }
 
-  type User {
-    email: String!
-    id: ID!
-    name: String!
-    phoneNumber: String
-    password: String!
-    role: String!
-  }
   type Option {
     id: ID!
     text: String!

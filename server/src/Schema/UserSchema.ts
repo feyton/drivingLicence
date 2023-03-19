@@ -6,7 +6,7 @@ export default gql`
     email: String!
     name: String
     picture: String
-    active: Boolean
+    active: Boolean!
     role: String
     phoneNumber: String
     scores: [Score]
