@@ -6,6 +6,8 @@ git pull --rebase --force
 printf "\n Updating the backend part\n"
 cd ../server
 yarn
-cp ../client/build ../server -r
+yarn run build 
+cd ..
+cp ./client/build ./server -r
 printf "\nUpdate has been completed\n"
 printf "\n=====>>>>>><<<<<<<=====\n"

@@ -4,10 +4,25 @@ import { FaCheck, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function QuizResult({ score, questions }) {
+  const percentScore = ((score / questions.length) * 100).toFixed();
   return (
     <div className="w-full p-6">
-      <div className="font-bold text-2xl mb-4">
-        Your Score: {score} / {questions.length}
+      <div className="font-bold text-2xl mb-4 flex items-center flex-row gap-3">
+        <h1>
+          Amanota: {score} / {questions.length} ➡️{" "}
+          {percentScore >= 60 ? "Watsinze" : "Ntabwo watsinze"}
+        </h1>
+        <div
+          className={`h-12 w-12 flex items-center justify-center rounded-full mb-4 ${
+            percentScore >= 60 ? "bg-green-400" : "bg-red-400"
+          }`}
+        >
+          {percentScore >= 60 ? (
+            <FaCheck className="text-white text-2xl" />
+          ) : (
+            <FaTimes className="text-white text-2xl" />
+          )}
+        </div>
       </div>
       {questions.map((question) => (
         <div
@@ -24,7 +39,7 @@ function QuizResult({ score, questions }) {
               __html: DOMPurify.sanitize(question.text),
             }}
           ></div>
-          <hr className="text-red-500 border border-red-500"/>
+          <hr className="text-red-500 border border-red-500" />
           <div className="flex items-center mb-2 mt-2">
             <div className="font-bold mr-2">Igisubizo cya nyacyo:</div>
             <div>{question.correctAnswer.text}</div>

@@ -4,8 +4,9 @@ import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import { Button, Checkbox, Label } from "flowbite-react";
+import { Button, TextInput } from "flowbite-react";
 import { useForm } from "react-hook-form";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { loginUser } from "../redux/reducers/authReducer.js";
 const LOGIN_MUTATION = gql`
   mutation LoginUser($input: LoginInput!) {
@@ -53,7 +54,7 @@ const LoginPage = () => {
     });
   };
   const [show, setShow] = useState(false);
-  const handleShow = () => {
+  const showPassword = () => {
     setShow(!show);
   };
   return (
@@ -70,19 +71,27 @@ const LoginPage = () => {
           <label htmlFor="email" className="block text-gray-700 font-bold mb-2">
             Email
           </label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Email"
-            {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
-            className="w-full px-4 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring focus:ring-indigo-500 focus:border-indigo-500"
+          <TextInput
+            type="email"
+            {...register("email", {
+              required: "Email is required",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: "Invalid email address",
+              },
+            })}
+            error={errors.email?.message}
+            placeholder="Enter your email"
+            className="mb-2"
+            helperText={
+              errors?.email && (
+                <span className="text-red-500 text-sm">
+                  {errors.email?.message}
+                </span>
+              )
+            }
+            color={errors.email && "failure"}
           />
-          {errors.email && (
-            <span className="text-red-500 text-sm">
-              Please enter a valid email address
-            </span>
-          )}
         </div>
         <div className="mb-6">
           <label
@@ -91,23 +100,32 @@ const LoginPage = () => {
           >
             Password
           </label>
-          <input
-            type={!show ? "password" : "text"}
-            id="password"
-            name="password"
-            placeholder="Password"
-            {...register("password", { required: true })}
-            className="w-full px-4 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring focus:ring-indigo-500 focus:border-indigo-500"
-          />
-          {errors.password && (
-            <span className="text-red-500 text-sm">
-              Please enter a password
-            </span>
-          )}
-        </div>
-        <div className="flex flex-row gap-3 my-2 items-center">
-          <Checkbox id="show-pass" onChange={() => handleShow()}></Checkbox>
-          <Label htmlFor="show-pass">Show password</Label>
+          <div className="relative">
+            <TextInput
+              type={show ? "text" : "password"}
+              {...register("password", {
+                required: "Password is required",
+              })}
+              error={errors.password?.message}
+              placeholder="Enter your password"
+              className="mb-2 pr-8 w-full"
+              helperText={
+                errors?.password && (
+                  <span className="text-red-500 text-sm">
+                    {errors.password?.message}
+                  </span>
+                )
+              }
+              color={errors.password && "failure"}
+            />
+            <button
+              type="button"
+              className="absolute top-1/2 right-3 transform -translate-y-1/2 focus:outline-none"
+              onClick={showPassword}
+            >
+              {show ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
         </div>
 
         <Button

@@ -75,7 +75,6 @@ function QuizPage(props) {
     <>
       {!result && (
         <div className="mt-10 min-w-[600px]">
-          <hr className="mb-3 " />
           {currentQuestion && (
             <QuizQuestion
               key={currentQuestion.id}
@@ -116,14 +115,16 @@ function QuizPage(props) {
             }
             totalQuestions={quiz.questions.length}
           />
-          {isSubmitting && (
-            <Modal isOpen={true}>
-              <div className="text-center">
-                <p className="text-lg font-bold">Sending your answers...</p>
-              </div>
-            </Modal>
-          )}
         </div>
+      )}
+      {isSubmitting && (
+        <Modal isOpen={true}>
+          <Modal.Body>
+            <div className="text-center">
+              <p className="text-lg font-bold">Sending your answers...</p>
+            </div>
+          </Modal.Body>
+        </Modal>
       )}
       {result && <QuizResult {...result} />}
     </>

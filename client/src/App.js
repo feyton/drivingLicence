@@ -7,7 +7,7 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -17,6 +17,7 @@ import ExamPage from "./pages/ExamPage";
 import GetQuestions from "./pages/GetQuestions";
 import GetQuizzes from "./pages/GetQuizzes";
 import LandingPage from "./pages/LandingPage";
+import Loading from "./pages/LoadingPage";
 import LoginPage from "./pages/LoginPage";
 import NotFound from "./pages/NotFound";
 import UserProfile from "./pages/ProfilePage";
@@ -74,64 +75,66 @@ function App() {
         <ApolloProvider client={client}>
           <Provider store={store}>
             <BrowserRouter>
-              <Navbar />
-              <Routes>
-                <Route
-                  path="/"
-                  element={<LandingPage openModal={setIsOpen} />}
-                />
-                <Route
-                  path="/quiz"
-                  element={
-                    <PrivateRoute>
-                      <GetQuizzes />
-                    </PrivateRoute>
-                  }
-                />
-                <Route
-                  path="/quiz/:id"
-                  element={
-                    <PrivateRoute>
-                      <ExamPage />
-                    </PrivateRoute>
-                  }
-                />
-                <Route
-                  path="/add"
-                  element={
-                    <PrivateRoute>
-                      <QuestionForm />0
-                    </PrivateRoute>
-                  }
-                />
-                <Route
-                  path="/questions"
-                  element={
-                    <PrivateRoute>
-                      <GetQuestions />
-                    </PrivateRoute>
-                  }
-                />
-                <Route
-                  path="/profile"
-                  element={
-                    <PrivateRoute>
-                      <UserProfile />
-                    </PrivateRoute>
-                  }
-                />
-                <Route
-                  path="/score/:id"
-                  element={
-                    <PrivateRoute>
-                      <ViewScore />
-                    </PrivateRoute>
-                  }
-                />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+              <Suspense fallback={<Loading />}>
+                <Navbar />
+                <Routes>
+                  <Route
+                    path="/"
+                    element={<LandingPage openModal={setIsOpen} />}
+                  />
+                  <Route
+                    path="/quiz"
+                    element={
+                      <PrivateRoute>
+                        <GetQuizzes />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/quiz/:id"
+                    element={
+                      <PrivateRoute>
+                        <ExamPage />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/add"
+                    element={
+                      <PrivateRoute>
+                        <QuestionForm />0
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/questions"
+                    element={
+                      <PrivateRoute>
+                        <GetQuestions />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/profile"
+                    element={
+                      <PrivateRoute>
+                        <UserProfile />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/score/:id"
+                    element={
+                      <PrivateRoute>
+                        <ViewScore />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route path="/login" element={<LoginPage />} />
+                  <Route path="/register" element={<RegisterPage />} />
+                  <Route path="*" element={<NotFound />} />
+                </Routes>{" "}
+              </Suspense>
             </BrowserRouter>
             <ToastContainer theme="colored" />
           </Provider>

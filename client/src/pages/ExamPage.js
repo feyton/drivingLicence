@@ -32,7 +32,7 @@ function ExamPage() {
   const dispatch = useDispatch();
   const [start, setStart] = useState(false);
   const [quiz, setQuiz] = useState();
-  const [getQuiz] = useLazyQuery(GET_QUIZ);
+  const [getQuiz, { loading }] = useLazyQuery(GET_QUIZ);
 
   useEffect(() => {
     getQuiz({
@@ -66,7 +66,8 @@ function ExamPage() {
                   className="mt-8 px-6 py-3 text-lg font-bold text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors duration-200"
                   onClick={handleStart}
                 >
-                  Tangira ikizamini <BsArrowRight className="inline-block ml-2" />
+                  Tangira ikizamini{" "}
+                  <BsArrowRight className="inline-block ml-2" />
                 </button>
               </div>
             )}
@@ -75,7 +76,31 @@ function ExamPage() {
           </div>
         </>
       ) : (
-        "No quiz selected"
+        <button
+          type="submit"
+          className="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          disabled={loading}
+        >
+          {loading && (
+            <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+                fill="none"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+              />
+            </svg>
+          )}
+          Loading...
+        </button>
       )}
     </div>
   );

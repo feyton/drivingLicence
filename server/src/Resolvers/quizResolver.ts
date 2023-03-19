@@ -71,7 +71,7 @@ const QuizResolver: any = {
     },
     getQuizzes: async (_: any, args: any, context: any) => {
       const quizzes = await Quiz.find({
-        questions: { $size: 1 },
+        "questions.1": { $exists: true },
       }).populate("questions");
       return quizzes;
     },
