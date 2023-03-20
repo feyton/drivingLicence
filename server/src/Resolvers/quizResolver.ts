@@ -69,10 +69,16 @@ const QuizResolver: any = {
       const quiz = await Quiz.findById(args.id).populate("questions");
       return quiz;
     },
+    getQuestion: async (_: any, args: any, context: any) => {
+      const question = await Question.findById(args.id).populate("user");
+      return question;
+    },
     getQuizzes: async (_: any, args: any, context: any) => {
       const quizzes = await Quiz.find({
-        "questions.1": { $exists: true },
-      }).populate("questions");
+        "questions.0": { $exists: true },
+      })
+        .populate("questions")
+        .populate("user");
       return quizzes;
     },
     getScore: authenticated(async (_: any, args: any, context: any) => {
@@ -163,7 +169,7 @@ const QuizResolver: any = {
     attempts: async (parent: any, args: any) => {
       const count = await Score.aggregate([
         {
-          $match: { quizId: new mongoose.Types.ObjectId(parent.quizId) },
+          $match: { quizId: new mongoose.Types.ObjectId(parent._id) },
         },
         {
           $group: {
@@ -189,6 +195,13 @@ const QuizResolver: any = {
 
       return scs;
     }),
+  },
+  Question: {
+    correctAnswer: (parent: any, args: any) => {
+      const ans = parent.answer;
+      const correct = parent.options.find((opt: any) => opt.id === ans);
+      return correct;
+    },
   },
 };
 

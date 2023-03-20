@@ -4,7 +4,7 @@ git reset --hard
 printf "\n\nGetting git content from remote\n"
 git pull --rebase --force
 printf "\n Updating the backend part\n"
-cd ../server
+cd ./server
 yarn
 yarn run build 
 cd ..

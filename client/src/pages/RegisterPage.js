@@ -73,7 +73,7 @@ function SignupForm() {
               message: "Name must be at least 3 characters",
             },
             pattern: {
-              value: /^[A-Za-z]+$/i,
+              value: /^[A-Za-z\s]+$/i,
               message: "Name must contain only letters",
             },
           })}

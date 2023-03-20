@@ -4,11 +4,12 @@ import {
   useLazyQuery,
   useMutation,
 } from "@apollo/client";
-import { Table } from "flowbite-react";
-import React, { useEffect } from "react";
+import { Button, Modal, Table } from "flowbite-react";
+import React, { useEffect, useState } from "react";
 import { FaSpinner } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 const GET_PROFILE = gql`
   query GetProfile {
     getProfile {
@@ -26,6 +27,7 @@ const GET_PROFILE = gql`
           score
         }
         score
+        createdAt
       }
     }
   }
@@ -50,18 +52,23 @@ function UserProfile() {
   }, [authenticated, getProfile]);
   const [deleteScore] = useMutation(DELETE_SCORE);
   const client = useApolloClient();
-
-  const handleDeleteScore = (id) => {
-    if (window.confirm("Are you sure you want to delete this score?")) {
-      deleteScore({ variables: { id } })
-        .then(async () => {
-          // reload the profile to update the scores
+  const [selectedScore, setselectedScore] = useState();
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const handleDelete = () => {
+    if (selectedScore) {
+      deleteScore({
+        variables: { id: selectedScore },
+        onCompleted: async (data) => {
+          toast.success("Score deleted");
           await client.resetStore();
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+        },
+      });
+      setShowDeleteModal(false);
     }
+  };
+  const handleShowDeleteModal = (score) => {
+    setselectedScore(score);
+    setShowDeleteModal(true);
   };
 
   if (loading) {
@@ -77,7 +84,10 @@ function UserProfile() {
     return null;
   }
 
-  const { email, id, name, phoneNumber, picture, scores } = data.getProfile;
+  const { email, name, phoneNumber, picture, scores } = data.getProfile;
+  const scorePercentage = (score, total) => {
+    return ((score / total) * 100).toFixed();
+  };
 
   return (
     <div className="container mx-auto py-8">
@@ -110,25 +120,31 @@ function UserProfile() {
               </Table.Head>
               <Table.Body className="divide-y">
                 {scores.map(({ id, answers, quiz, score }, index) => (
-                  <Table.Row key={id}>
+                  <Table.Row
+                    key={id}
+                    className={
+                      scorePercentage(score, quiz.score) >= 60
+                        ? "bg-green-200 bg-opacity-40"
+                        : "bg-red-200 bg-opacity-40"
+                    }
+                  >
                     <Table.Cell>{index}</Table.Cell>
                     <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                       {quiz.title}
                     </Table.Cell>
                     <Table.Cell>{`${score} / ${quiz.score}`}</Table.Cell>
-                    <Table.Cell>
-                      <button
-                        className="bg-red-500 hover:bg-red-600 text-white font-semibold px-2 py-1 rounded"
-                        onClick={() => handleDeleteScore(id)}
+                    <Table.Cell className="flex flex-row gap-3 justify-center">
+                      <Button
+                        color={"failure"}
+                        size="xs"
+                        onClick={() => handleShowDeleteModal(id)}
                       >
                         Delete
-                      </button>
-                      <Link
-                        to={`/score/${id}`}
-                        className="bg-green-500 ml-2 hover:bg-green-600 text-white font-semibold px-2 py-1 rounded"
-                       
-                      >
-                        View
+                      </Button>
+                      <Link to={`/score/${id}`}>
+                        <Button size={"xs"} color={"success"}>
+                          View
+                        </Button>
                       </Link>
                     </Table.Cell>
                   </Table.Row>
@@ -136,6 +152,24 @@ function UserProfile() {
               </Table.Body>
             </Table>
           </div>
+          <Modal
+            show={showDeleteModal}
+            onClose={() => setShowDeleteModal(false)}
+          >
+            <Modal.Header>Siba ikizamini</Modal.Header>
+            <Modal.Body>Koko se dukomeze dusibe iki kizamini?</Modal.Body>
+            <Modal.Footer>
+              <Button
+                color={"success"}
+                onClick={() => setShowDeleteModal(false)}
+              >
+                Oya
+              </Button>
+              <Button color={"failure"} variant="danger" onClick={handleDelete}>
+                Siba
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </div>
     </div>

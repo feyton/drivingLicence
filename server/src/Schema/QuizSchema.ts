@@ -13,6 +13,8 @@ export default gql`
     user: User
     approvedBy: User
     updatedAt: Date
+    createdAt: Date
+    correctAnswer: Option!
   }
   type Quiz {
     title: String
@@ -48,6 +50,7 @@ export default gql`
     getQuizzes: [Quiz]
     getQuiz(id: ID!): Quiz
     getScore(id: ID!): QuizResult!
+    getQuestion(id:ID!): Question!
   }
   input QuizInput {
     title: String!
@@ -70,7 +73,7 @@ export default gql`
     score: Int!
     answers: String
     questions: QuizQuestionResult
-    createdAt: Date!
+    createdAt: Date
   }
 
   type QuizResult {

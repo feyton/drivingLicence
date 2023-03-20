@@ -1,9 +1,9 @@
-import { createReducer, createAction } from "@reduxjs/toolkit";
+import { createAction, createReducer } from "@reduxjs/toolkit";
 
-export const startTimer = createAction('timer/start')
-export const stopTimer = createAction('timer/stop')
+export const startTimer = createAction("timer/start");
+export const stopTimer = createAction("timer/stop");
 
-const initialState = { running: false };
+const initialState = { running: false, minutes: "20:00" };
 
 export const timerReducer = createReducer(initialState, (builder) => {
   builder
@@ -12,5 +12,6 @@ export const timerReducer = createReducer(initialState, (builder) => {
     })
     .addCase(stopTimer, (state, action) => {
       state.running = false;
+      state.minutes = action.payload;
     });
 });

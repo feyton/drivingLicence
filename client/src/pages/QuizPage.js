@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import QuizQuestion from "../components/Question";
 import QuizProgress from "../components/QuizProgress";
 
-import { gql, useMutation } from "@apollo/client";
+import { gql, useApolloClient, useMutation } from "@apollo/client";
+import { useDispatch } from "react-redux";
+import { stopTimer } from "../redux/reducers/timerReducer";
 import QuizResult from "./QuizResults";
 
 export const SUBMIT_QUIZ_ANSWERS = gql`
@@ -54,10 +56,12 @@ function QuizPage(props) {
   }
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [result, setResults] = useState();
-
+  const client = useApolloClient();
+  const dispatch = useDispatch();
   async function handleSubmit() {
     setIsSubmitting(true);
     const quizId = quiz.id;
+    dispatch(stopTimer());
     const answersArray = Object.entries(answers).map(
       ([questionId, answer]) => ({
         questionId,
@@ -69,6 +73,7 @@ function QuizPage(props) {
     });
     setIsSubmitting(false);
     setResults(res.data.submitQuizAnswers);
+    client.resetStore();
   }
 
   return (
@@ -117,15 +122,15 @@ function QuizPage(props) {
           />
         </div>
       )}
-      {isSubmitting && (
-        <Modal isOpen={true}>
-          <Modal.Body>
-            <div className="text-center">
-              <p className="text-lg font-bold">Sending your answers...</p>
-            </div>
-          </Modal.Body>
-        </Modal>
-      )}
+
+      <Modal isOpen={isSubmitting}>
+        <Modal.Body>
+          <div className="text-center">
+            <p className="text-lg font-bold">Sending your answers...</p>
+          </div>
+        </Modal.Body>
+      </Modal>
+
       {result && <QuizResult {...result} />}
     </>
   );

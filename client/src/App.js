@@ -7,38 +7,38 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import Navbar from "./components/Navbar";
-import ExamPage from "./pages/ExamPage";
-import GetQuestions from "./pages/GetQuestions";
-import GetQuizzes from "./pages/GetQuizzes";
-import LandingPage from "./pages/LandingPage";
-import Loading from "./pages/LoadingPage";
-import LoginPage from "./pages/LoginPage";
-import NotFound from "./pages/NotFound";
-import UserProfile from "./pages/ProfilePage";
-import QuestionForm from "./pages/QuestionForm";
-import RegisterPage from "./pages/RegisterPage";
-import ViewScore from "./pages/ViewScore";
 import store from "./redux/store";
-import PrivateRoute from "./utils/PrivateRoute";
+const LandingPage = React.lazy(() => import("./pages/LandingPage"));
+const Navbar = React.lazy(() => import("./components/Navbar"));
+const ExamPage = React.lazy(() => import("./pages/ExamPage"));
+const GetQuestions = React.lazy(() => import("./pages/GetQuestions"));
+const GetQuizzes = React.lazy(() => import("./pages/GetQuizzes"));
+const Loading = React.lazy(() => import("./pages/LoadingPage"));
+const LoginPage = React.lazy(() => import("./pages/LoginPage"));
+const NotFound = React.lazy(() => import("./pages/NotFound"));
+const UserProfile = React.lazy(() => import("./pages/ProfilePage"));
+const QuestionForm = React.lazy(() => import("./pages/QuestionForm"));
+const RegisterPage = React.lazy(() => import("./pages/RegisterPage"));
+const ViewScore = React.lazy(() => import("./pages/ViewScore"));
+const PrivateRoute = React.lazy(() => import("./utils/PrivateRoute"));
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
     graphQLErrors.forEach(({ extensions }) => {
       if (extensions?.code === "UNAUTHENTICATED") {
-        toast.error("You have not been using the website for a while");
+        toast.error("Umaze igihe udakoresha urubuga");
         return;
       }
     });
   }
 
   if (networkError) {
-    toast.error("Please check your connection");
+    toast.error("Reba interneti yawe");
   }
 });
 const host = `${window.location.protocol}//${window.location.host}`;
@@ -67,8 +67,6 @@ const client = new ApolloClient({
   }),
 });
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="bg-bgImage bg-fixed bg-cover">
       <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1080px] mx-auto my-0 flex flex-col">
@@ -78,10 +76,7 @@ function App() {
               <Suspense fallback={<Loading />}>
                 <Navbar />
                 <Routes>
-                  <Route
-                    path="/"
-                    element={<LandingPage openModal={setIsOpen} />}
-                  />
+                  <Route path="/" element={<LandingPage />} />
                   <Route
                     path="/quiz"
                     element={

@@ -1,7 +1,8 @@
 import { gql, useLazyQuery, useMutation } from "@apollo/client";
-import { Button, Modal } from "flowbite-react";
+import { Button, Modal, Textarea, TextInput } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import QuizList from "../components/QuizList";
 
 const GET_QUIZZES = gql`
@@ -11,6 +12,12 @@ const GET_QUIZZES = gql`
       description
       id
       score
+      attempts
+      createdAt
+      user {
+        name
+        picture
+      }
     }
   }
 `;
@@ -31,26 +38,31 @@ function GetQuizzes() {
   const [quizzes, setQuizzes] = useState();
   const [createQuiz, { loading }] = useMutation(CREATE_QUIZ);
   const [showModal, setShowModal] = useState(false);
-  const { register, handleSubmit, reset } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({ mode: "onBlur" });
 
   const handleCreateQuiz = async (data) => {
-    try {
-      await createQuiz({
-        variables: { input: data },
-        onCompleted: () => {
-          reset();
-          setShowModal(false);
-          getQuizzes();
-        },
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    createQuiz({
+      variables: { input: data },
+      onCompleted: () => {
+        reset();
+        setShowModal(false);
+        getQuizzes({
+          onCompleted: (data) => setQuizzes(data.getQuizzes),
+        });
+      },
+      onError: (error) => toast.error(error.message),
+    });
   };
 
   useEffect(() => {
     getQuizzes({
       onCompleted: (data) => setQuizzes(data.getQuizzes),
+      onError: (error) => toast.error(error.message),
     });
   }, []);
 
@@ -98,12 +110,21 @@ function GetQuizzes() {
               >
                 Title
               </label>
-              <input
+              <TextInput
                 type="text"
                 name="title"
                 id="title"
                 className="form-input rounded-md shadow-sm mt-1 block w-full"
-                {...register("title", { required: true })}
+                {...register("title", {
+                  required: "This field is required",
+                  minLength: {
+                    value: 3,
+                    message: "Title must be at least 3 characters",
+                  },
+                })}
+                helperText={errors.title && <>Oops: {errors.title.message}</>}
+                placeholder="Quiz title"
+                color={errors?.title && "failure"}
               />
             </div>
             <div className="mb-4">
@@ -113,13 +134,23 @@ function GetQuizzes() {
               >
                 Description
               </label>
-              <textarea
+              <Textarea
                 name="description"
                 id="description"
                 className="form-textarea rounded-md shadow-sm mt-1 block w-full"
                 rows="3"
-                {...register("description", { required: true })}
-              ></textarea>
+                {...register("description", {
+                  required: "Description is required",
+                  minLength: {
+                    value: 10,
+                    message: "Description must be at least 10 characters",
+                  },
+                })}
+                helperText={
+                  errors?.description && <>Oops! {errors.description.message}</>
+                }
+                color={errors?.description && "failure"}
+              />
             </div>
             <div className="flex justify-end">
               <button

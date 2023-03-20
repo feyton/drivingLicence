@@ -1,10 +1,12 @@
 import { gql, useLazyQuery } from "@apollo/client";
+import { Button } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 import Timer from "../components/Timer";
-import { startTimer } from "../redux/reducers/timerReducer";
+import { startTimer, stopTimer } from "../redux/reducers/timerReducer";
 import useTitle from "../utils/useTitle";
 import QuizPage from "./QuizPage";
 
@@ -22,6 +24,8 @@ const GET_QUIZ = gql`
           text
         }
       }
+      score
+      createdAt
     }
   }
 `;
@@ -48,27 +52,40 @@ function ExamPage() {
 
   const handleFinish = () => {
     setStart(false);
+    toast.error("You have runned out of time");
+    dispatch(stopTimer());
+    return;
   };
 
   return (
-    <div className="flex flex-col items-center w-md justify-center h-full">
+    <div className="flex flex-col items-center w-md justify-center h-full relative">
       {quiz ? (
         <>
-          <div className="absolute top-10 right-5">
+          <div className="absolute top-10 right-5 rounded-md shadow-lg bg-white">
             {start && <Timer onFinish={handleFinish} duration={1200} />}
           </div>
           <div className="p-6 mt-10 bg-white rounded-md w-md shadow-md ">
             {!start && (
-              <div className="text-center">
+              <div className="text-left">
                 <h1 className="font-bold text-2xl mb-4">{quiz.title}</h1>
+                <hr />
                 <p className="text-lg font-medium">{quiz.description}</p>
-                <button
-                  className="mt-8 px-6 py-3 text-lg font-bold text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-colors duration-200"
+                <p className="text-sm font-thin text-left mt-3">
+                  Amanota: <b>{quiz.score}</b>
+                </p>
+                <p className="text-sm font-thin">
+                  Yasohotse: <b>{quiz.createdAt}</b>
+                </p>
+                <Button
+                  pill={true}
+                  gradientMonochrome="success"
+                  color={"success"}
+                  className="mt-4 duration-200 transition-all"
                   onClick={handleStart}
                 >
                   Tangira ikizamini{" "}
                   <BsArrowRight className="inline-block ml-2" />
-                </button>
+                </Button>
               </div>
             )}
 

@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import mongoose, { model, Schema } from "mongoose";
+import { Score } from "./question";
 mongoose.set("toJSON", {
   virtuals: true,
   versionKey: false,
@@ -48,6 +49,11 @@ userSchema.pre("save", async function (next) {
   if (!user.isModified("password")) return next();
   const hashedPassword = await bcrypt.hash(user.password, 10);
   user.password = hashedPassword;
+  next();
+});
+userSchema.pre("remove", async function (next) {
+  const user: any = this;
+  await Score.deleteMany({ userId: user._id });
   next();
 });
 userSchema.methods.comparePassword = async function (userPassword: string) {

@@ -1,4 +1,5 @@
 import * as DOMPurify from "dompurify";
+import { Button } from "flowbite-react";
 import React from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -69,11 +70,8 @@ function QuizResult({ score, questions }) {
           )}
         </div>
       ))}
-      <Link
-        className="px-4 py-1 bg-primary items-center justify-center rounded-md"
-        to={"/"}
-      >
-        Jya Ahatangira
+      <Link to={"/"}>
+        <Button color={"info"}>Subira Ahatangira</Button>
       </Link>
     </div>
   );

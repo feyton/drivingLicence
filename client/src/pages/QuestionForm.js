@@ -1,6 +1,6 @@
 import { useApolloClient, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
-import { Button } from "flowbite-react";
+import { Button, Select } from "flowbite-react";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
@@ -52,28 +52,28 @@ function QuestionForm() {
     <div>
       <div className="px-5 mt-5 mx-auto w-full ">
         <form
-          className="max-w-xl mx-auto bg-white rounded-md px-6"
+          className="max-w-xl mx-auto bg-white rounded-md px-6 pb-4 pt-2"
           onSubmit={handleSubmit(onSubmit)}
         >
           <h2 className="font-bold text-3xl text-center mb-2">Add question</h2>
           <hr />
-          <div className="min-h-fit mb-10">
+          <div className="min-h-fit ">
             <label htmlFor="question">Ikibazo:</label>
             <Controller
               control={control}
               name="text"
               rules={{
-                validate: (value) =>
-                  value.length >= 10 ||
-                  "Enter at least 10 characters in the description",
+                required: "This field is required",
+                minLength: {
+                  value: 15,
+                  message: "Enter at least 10 characters in the question",
+                },
               }}
-              error={errors.explanation}
+              error={errors.text}
               render={({ field: { onChange, onBlur, value } }) => (
                 <ReactQuill
                   theme="snow"
-                  onChange={(explanation, delta, source, editor) =>
-                    onChange(explanation)
-                  }
+                  onChange={(text) => onChange(text)}
                   value={value || ""}
                   modules={{
                     toolbar: [
@@ -88,14 +88,20 @@ function QuestionForm() {
                       ["clean"],
                     ],
                   }}
-                  style={{ height: "100px" }}
+                  className={
+                    errors?.text
+                      ? "border border-red-500 rounded-md"
+                      : "border border-green-300 rounded-md"
+                  }
                 />
               )}
             />
-            {errors.question && <span>This field is required</span>}
+            {errors.text && (
+              <span className="text-red-500 ">{errors.text.message}</span>
+            )}
           </div>
           <div className="  mb-4">
-            <label htmlFor="options block">Options</label>
+            <label htmlFor="options block">Amahitamo</label>
             <div className="flex flex-row gap-2 mb-1">
               <input
                 type="text"
@@ -175,11 +181,13 @@ function QuestionForm() {
           </div>
           <div className="flex flex-col">
             <label htmlFor="answer">Answer:</label>
-            <select
+            <Select
               className="rounded-md"
-              {...register("answer", { required: true })}
+              {...register("answer", { required: "This field is required" })}
               name="answer"
-              id=""
+              id="answer"
+              helperText={errors.answer && <>Oops! {errors.answer.message}</>}
+              color={errors.answer && "failure"}
             >
               <option value="" hidden>
                 Select answer ID
@@ -188,52 +196,71 @@ function QuestionForm() {
               <option value="B">B</option>
               <option value="C">C</option>
               <option value="D">D</option>
-            </select>
-
-            {errors.answer && <span>This field is required</span>}
+            </Select>
           </div>
           <div className="flex flex-col gap-1 mt-2">
             <label htmlFor="category">Category:</label>
-            <select
+            <Select
               className="rounded-md"
-              {...register("category", { required: true })}
+              {...register("category", { required: "Ikiciro kirakenewe" })}
               name="category"
               id=""
+              helperText={
+                errors?.category && <>Oops! {errors.category.message}</>
+              }
+              color={errors?.category && "failure"}
             >
               <option value="" hidden>
-                Select category
+                Hitamo ikiciro
               </option>
               <option value="general">General</option>
               <option value="posts">Ibyapa</option>
-            </select>
-
-            {errors.category && <span>This field is required</span>}
+            </Select>
           </div>
-          <div className="mb-14">
-            <label htmlFor="explanation">Explanation:</label>
+          <div className="mb-6 mt-2">
+            <label className="font-primary" htmlFor="explanation">
+              Explanation:
+            </label>
             <Controller
               control={control}
               name="explanation"
               rules={{
-                validate: (value) =>
-                  value.length >= 10 ||
-                  "Enter at least 10 characters in the description",
+                required: "This field is required",
+                minLength: {
+                  value: 15,
+                  message: "Enter at least 10 characters in the description",
+                },
               }}
               error={errors.explanation}
               render={({ field: { onChange, onBlur, value } }) => (
                 <ReactQuill
                   theme="snow"
-                  onChange={(explanation, delta, source, editor) =>
-                    onChange(explanation)
-                  }
+                  onChange={(value) => onChange(value)}
                   value={value || ""}
-                  style={{ height: "100px", borderRadius: "10px" }}
+                  modules={{
+                    toolbar: [
+                      ["bold", "italic", "underline"],
+                      [
+                        { list: "ordered" },
+                        { list: "bullet" },
+                        { indent: "-1" },
+                        { indent: "+1" },
+                      ],
+                      ["link", "image"],
+                      ["clean"],
+                    ],
+                  }}
+                  className={
+                    errors?.explanation
+                      ? "border border-red-500 rounded-md"
+                      : "border border-green-300 rounded-md"
+                  }
                 />
               )}
             />
-            {errors.explanation && <span>This field is required</span>}
+            {errors.explanation && <span>{errors.explanation.message}</span>}
           </div>
-          <Button className="mt-6" type="submit">
+          <Button className="mt-3" type="submit">
             Submit
           </Button>
         </form>

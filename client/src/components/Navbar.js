@@ -1,5 +1,13 @@
+import { Button } from "flowbite-react";
 import React, { useState } from "react";
-import { FaBars, FaUser } from "react-icons/fa";
+import {
+  FaArrowRight,
+  FaBars,
+  FaList,
+  FaPen,
+  FaPowerOff,
+  FaUser,
+} from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../redux/reducers/authReducer";
@@ -23,33 +31,40 @@ function Navbar() {
       </div>
 
       <div className="hidden md:flex flex-row gap-3">
-        <Link to="/quiz" className="button-primary">
-          Kora ikizamini
+        <Link to="/quiz">
+          <Button color={"info"} size="xs">
+            <FaArrowRight className="mr-2" /> Kora ikizamini
+          </Button>
         </Link>
-        <Link to="/add" className="button-primary">
-          Tanga Ikibazo
+        <Link to="/add">
+          <Button size={"xs"}>
+            <FaPen className="mr-2" />
+            Tanga Ikibazo
+          </Button>
         </Link>
         <CheckRole roles={["admin", "super", "editor"]}>
-          <Link to="/questions" className="button-primary">
-            Ibibazo
+          <Link to="/questions">
+            <Button size={"xs"}>
+              <FaList className="mr-2" /> Ibibazo
+            </Button>
           </Link>
         </CheckRole>
 
         {authenticated ? (
           <>
-            <Link
-              className="button-primary"
-              onClick={() => setMenuOpen(false)}
-              to="/profile"
-            >
-              <FaUser /> {user?.user?.name.split(" ")[0]}
+            <Link onClick={() => setMenuOpen(false)} to="/profile">
+              <Button size={"xs"} color="success">
+                <FaUser className="mr-1" /> {user?.user?.name.split(" ")[0]}
+              </Button>
             </Link>
-            <button
+            <Button
               onClick={() => handleLogout()}
-              className="button-primary text-red-500"
+              size={"xs"}
+              color={"failure"}
             >
+              <FaPowerOff className="mr-2" />
               Sohoka
-            </button>
+            </Button>
           </>
         ) : (
           <>

@@ -33,6 +33,11 @@ const QuizSchema = new Schema(
 QuizSchema.virtual("score").get(function () {
   return this.questions.length;
 });
+QuizSchema.pre("remove", async function (next) {
+  const quiz: any = this;
+  await Score.deleteMany({ quizId: quiz._id });
+  next();
+});
 
 export const Quiz = model("Quiz", QuizSchema);
 

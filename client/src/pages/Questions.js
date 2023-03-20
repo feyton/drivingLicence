@@ -5,8 +5,8 @@ import {
   useTable,
 } from "react-table";
 
-import React from "react";
 import { Checkbox, Table } from "flowbite-react";
+import React from "react";
 
 export default function DataTable({ data, columns }) {
   const sortedData = React.useMemo(() => [...data], [data]);
@@ -79,7 +79,7 @@ export default function DataTable({ data, columns }) {
               <Table.Row {...row.getRowProps()}>
                 {row.cells.map((cell) => {
                   return (
-                    <Table.Cell {...cell.getCellProps()}>
+                    <Table.Cell className="text-xs" {...cell.getCellProps()}>
                       {cell.render("Cell")}
                     </Table.Cell>
                   );

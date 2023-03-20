@@ -1,5 +1,6 @@
 import { mergeResolvers } from "@graphql-tools/merge";
 import { GraphQLScalarType, Kind } from "graphql";
+import moment from "moment";
 import QuizResolver from "./quizResolver";
 import userResolver from "./userResolver";
 
@@ -7,18 +8,16 @@ const DateScalar = new GraphQLScalarType({
   name: "Date",
   description: "Date custom scalar type",
   serialize(value: any) {
-    console.log("Ser", value);
-    return value.getTime();
+    const formattedDate = moment(value).format("DD MMMM YYYY, HH:MM");
+    return formattedDate;
   },
   parseValue(value: any) {
-    console.log("par", value);
     return new Date(value);
   },
   parseLiteral(ast) {
     if (ast.kind === Kind.INT) {
       return new Date(parseInt(ast.value, 10));
     }
-    console.log(ast);
 
     return ast;
   },
@@ -32,10 +31,10 @@ const resolvers = mergeResolvers([
     DateTime: new GraphQLScalarType({
       name: "DateTime",
       description: "A date and time, represented as an ISO-8601 string",
-      serialize(value:any) {
+      serialize(value: any) {
         return new Date(value).toISOString();
       },
-      parseValue(value:any) {
+      parseValue(value: any) {
         const date = new Date(value);
         if (isNaN(date.getTime())) {
           throw new Error(`Invalid date: ${value}`);
