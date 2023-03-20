@@ -1,15 +1,16 @@
 import { useApolloClient, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
 import { Button, Select } from "flowbite-react";
-import React, { useRef } from "react";
+import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import useTitle from "../utils/useTitle";
 
-const ADD_QUESTION = gql`
-  mutation AddQuestion($input: QuestionInput!) {
-    AddQuestion(input: $input) {
+const EDIT_QUESTION = gql`
+  mutation EditQuestion($id: ID!, $input: QuestionInput!) {
+    EditQuestion(id: $id, input: $input) {
       id
       text
       options {
@@ -22,60 +23,33 @@ const ADD_QUESTION = gql`
   }
 `;
 
-function QuestionForm() {
-  useTitle("Add question");
+function QuestionFormEdit({ question }) {
+  const { id, text, options, category, explanation, answer } = question;
+  useTitle("Edit question");
   const {
     register,
     handleSubmit,
     control,
     formState: { errors },
     reset,
-  } = useForm({ defaultValues: { options: [{}] } });
-  const [addQuestion] = useMutation(ADD_QUESTION);
+  } = useForm({ defaultValues: { text, options, explanation, answer, category } });
+  const navigate = useNavigate();
+  const [editQuestion] = useMutation(EDIT_QUESTION);
   const client = useApolloClient();
   const onSubmit = (data) => {
     const input = {
       ...data,
     };
-    addQuestion({ variables: { input } })
+    editQuestion({ variables: { input, id } })
       .then((result) => {
-        toast.success("Question added");
+        toast.success("Question edited");
         reset();
         client.resetStore();
+        navigate(-1);
       })
       .catch((error) => {
         toast.error(error?.message);
       });
-  };
-  const quilRef = useRef();
-
-  const handleImageUpload = () => {
-    const editor = quilRef.current.getEditor();
-    const input = document.createElement("input");
-    input.setAttribute("type", "file");
-    input.setAttribute("accept", "image/*");
-    input.click();
-    input.onchange = async (e) => {
-      const file = input.files[0];
-      const formData = new FormData();
-      formData.append("file", file);
-      formData.append("upload_preset", "driving");
-      try {
-        const res = await fetch(
-          "https://api.cloudinary.com/v1_1/feyton/image/upload",
-          {
-            method: "POST",
-            body: formData,
-          }
-        );
-        const data = await res.json();
-        console.log(data);
-        editor.insertEmbed(editor.getSelection(), "image", data.secure_url);
-      } catch (error) {
-        console.error(error);
-        toast.error(error.message);
-      }
-    };
   };
 
   return (
@@ -103,7 +77,6 @@ function QuestionForm() {
               render={({ field: { onChange, onBlur, value } }) => (
                 <ReactQuill
                   theme="snow"
-                  ref={quilRef}
                   onChange={(text) => onChange(text)}
                   value={value || ""}
                   modules={{
@@ -119,9 +92,6 @@ function QuestionForm() {
                         ["link", "image"],
                         ["clean"],
                       ],
-                      handlers: {
-                        image: handleImageUpload,
-                      },
                     },
                   }}
                   className={
@@ -282,7 +252,7 @@ function QuestionForm() {
                         { indent: "-1" },
                         { indent: "+1" },
                       ],
-                      ["link"],
+                      ["link", "image"],
                       ["clean"],
                     ],
                   }}
@@ -305,4 +275,4 @@ function QuestionForm() {
   );
 }
 
-export default QuestionForm;
+export default QuestionFormEdit;

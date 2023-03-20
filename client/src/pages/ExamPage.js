@@ -61,10 +61,10 @@ function ExamPage() {
     <div className="flex flex-col items-center w-md justify-center h-full relative">
       {quiz ? (
         <>
-          <div className="absolute top-10 right-5 rounded-md shadow-lg bg-white">
+          <div className="absolute top-5 right-5 rounded-md shadow-lg bg-white">
             {start && <Timer onFinish={handleFinish} duration={1200} />}
           </div>
-          <div className="p-6 mt-10 bg-white rounded-md w-md shadow-md ">
+          <div className="p-6 mt-14 bg-white rounded-md w-md shadow-md ">
             {!start && (
               <div className="text-left">
                 <h1 className="font-bold text-2xl mb-4">{quiz.title}</h1>

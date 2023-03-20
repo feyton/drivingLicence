@@ -12,6 +12,10 @@
     font-weight: bolder;
 }
 
+.question-content {
+    max-height: 200px !important;
+}
+
 .hero {
     background-image: linear-gradient(0deg, #10102e, #191735dd, #0c0a2045),
         url('https://www.insurethebox.com/wp-content/uploads/2017/02/PRACTICAL-AND-THEORY-DRIVING-TEST.jpg');

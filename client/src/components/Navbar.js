@@ -68,11 +68,15 @@ function Navbar() {
           </>
         ) : (
           <>
-            <Link to="/login" className="button-primary">
-              Injira
+            <Link to="/login" >
+            <Button size={"xs"} color="success">
+                <FaUser className="mr-2" /> Injira
+              </Button>
             </Link>
-            <Link to="/register" className="button-primary">
-              Iyandikishe
+            <Link to="/register" >
+            <Button size={"xs"} color="success">
+                <FaArrowRight className="mr-2" /> Iyandikishe
+              </Button>
             </Link>
           </>
         )}

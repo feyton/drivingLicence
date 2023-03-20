@@ -26,6 +26,7 @@ export default function DataTable({ data, columns }) {
     {
       data: sortedData,
       columns: sortedColumns,
+      initialState: { pageSize: 100 },
     },
 
     useGlobalFilter,
@@ -51,9 +52,10 @@ export default function DataTable({ data, columns }) {
     prepareRow,
     state,
   } = TableInstance;
+  const { pageIndex, pageSize } = state;
 
   return (
-    <div>
+    <div className="overflow-y-scroll">
       <Table
         striped={true}
         hoverable={true}
@@ -89,6 +91,12 @@ export default function DataTable({ data, columns }) {
           })}
         </Table.Body>
       </Table>
+      {/* <Pagination
+        currentPage={pageIndex + 1}
+        onPageChange={gotoPage}
+        showIcons={true}
+        totalPages={pageOptions.length}
+      /> */}
     </div>
   );
 }

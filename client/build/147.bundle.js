@@ -28,6 +28,8 @@ var esm = __webpack_require__(6515);
 var index_esm = __webpack_require__(3854);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
+var dist = __webpack_require__(9655);
 // EXTERNAL MODULE: ./node_modules/react-table/index.js
 var react_table = __webpack_require__(9521);
 ;// CONCATENATED MODULE: ./src/pages/Questions.js
@@ -59,7 +61,10 @@ function DataTable(_ref) {
   }, [columns]);
   var TableInstance = (0,react_table.useTable)({
     data: sortedData,
-    columns: sortedColumns
+    columns: sortedColumns,
+    initialState: {
+      pageSize: 100
+    }
   }, react_table.useGlobalFilter, react_table.useSortBy, react_table.usePagination);
   var getTableProps = TableInstance.getTableProps,
     setGlobalFilter = TableInstance.setGlobalFilter,
@@ -76,7 +81,11 @@ function DataTable(_ref) {
     headerGroups = TableInstance.headerGroups,
     prepareRow = TableInstance.prepareRow,
     state = TableInstance.state;
-  return /*#__PURE__*/react.createElement("div", null, /*#__PURE__*/react.createElement(esm/* Table */.iA, _extends({
+  var pageIndex = state.pageIndex,
+    pageSize = state.pageSize;
+  return /*#__PURE__*/react.createElement("div", {
+    className: "overflow-y-scroll"
+  }, /*#__PURE__*/react.createElement(esm/* Table */.iA, _extends({
     striped: true,
     hoverable: true,
     className: "px-4 mb-5 w-full"
@@ -115,6 +124,7 @@ var GET_QUESTIONS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _t
 var APPROVE_QUESTION = (0,lib/* gql */.Ps)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  mutation ApproveQuestion($id: ID!) {\n    ApproveQuestion(id: $id) {\n      id\n      approved\n      text\n    }\n  }\n"])));
 var DELETE_QUESTION = (0,lib/* gql */.Ps)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  mutation DeleteQuestion($id: ID!) {\n    DeleteQuestion(id: $id) {\n      text\n    }\n  }\n"])));
 var GET_QUESTION = (0,lib/* gql */.Ps)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  query getQuestion($id: ID!) {\n    getQuestion(id: $id) {\n      text\n      id\n      answer\n      approved\n      options {\n        id\n        text\n      }\n      explanation\n      user {\n        name\n      }\n      createdAt\n      correctAnswer {\n        id\n        text\n      }\n    }\n  }\n"])));
+
 
 
 function GetQuestions() {
@@ -188,7 +198,7 @@ function GetQuestions() {
     if (selectedQuestion) {
       deleteQuestion({
         variables: {
-          id: id
+          id: selectedQuestion
         },
         onCompleted: function () {
           var _onCompleted = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(data) {
@@ -213,7 +223,7 @@ function GetQuestions() {
     }
   };
   var handleShowDeleteModal = function handleShowDeleteModal(question) {
-    setselectedQuestion(question);
+    setselectedQuestion(question.id);
     setShowDeleteModal(true);
   };
   var handleView = function handleView(id) {
@@ -236,7 +246,9 @@ function GetQuestions() {
         role: "button",
         className: " text-xs hover:text-primary",
         dangerouslySetInnerHTML: {
-          __html: purify.sanitize(row.original.text)
+          __html: purify.sanitize(row.original.text, {
+            FORBID_ATTR: ["img"]
+          })
         }
       });
     }
@@ -284,6 +296,13 @@ function GetQuestions() {
         },
         size: "xs"
       }, /*#__PURE__*/react.createElement(index_esm/* HiEye */.Rbo, null))), /*#__PURE__*/react.createElement(esm/* Tooltip */.u, {
+        content: "Hindura"
+      }, /*#__PURE__*/react.createElement(dist/* Link */.rU, {
+        to: "/questions/edit/".concat(row.original.id)
+      }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+        color: "success",
+        size: "xs"
+      }, /*#__PURE__*/react.createElement(index_esm/* HiPencil */.LsQ, null)))), /*#__PURE__*/react.createElement(esm/* Tooltip */.u, {
         content: "Siba"
       }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
         color: "failure",
@@ -303,7 +322,7 @@ function GetQuestions() {
       return setSelectedQuestionView(null);
     }
   }, loadingQuestion && /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement(esm/* Spinner */.$j, null)), data && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(esm/* Modal.Header */.u_.Header, null, /*#__PURE__*/react.createElement("div", {
-    className: "bg-white ",
+    className: "bg-white question-content",
     dangerouslySetInnerHTML: {
       __html: purify.sanitize(data.getQuestion.text)
     }

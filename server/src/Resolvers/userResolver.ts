@@ -35,7 +35,6 @@ export default {
         SECRET,
         { expiresIn: "40h" }
       );
-      console.log(user, token);
       return { token, user };
     },
     createUser: async (_: any, args: any, context: any) => {

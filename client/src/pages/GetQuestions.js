@@ -2,7 +2,7 @@ import { useApolloClient, useLazyQuery, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
 import * as DOMPurify from "dompurify";
 import { Badge, Button, Modal, Spinner, Tooltip } from "flowbite-react";
-import { HiCheck, HiEye, HiTrash, HiX } from "react-icons/hi";
+import { HiCheck, HiEye, HiPencil, HiTrash, HiX } from "react-icons/hi";
 
 const GET_QUESTIONS = gql`
   query getQuestions {
@@ -61,6 +61,7 @@ const GET_QUESTION = gql`
 `;
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import DataTable from "./Questions";
 
 function GetQuestions() {
@@ -119,7 +120,9 @@ function GetQuestions() {
           role="button"
           className=" text-xs hover:text-primary"
           dangerouslySetInnerHTML={{
-            __html: DOMPurify.sanitize(row.original.text),
+            __html: DOMPurify.sanitize(row.original.text, {
+              FORBID_ATTR: ["img"],
+            }),
           }}
         ></div>
       ),
@@ -181,6 +184,13 @@ function GetQuestions() {
                 <HiEye />
               </Button>
             </Tooltip>
+            <Tooltip content="Hindura">
+              <Link to={`/questions/edit/${row.original.id}`}>
+                <Button color={"success"} size={"xs"}>
+                  <HiPencil />
+                </Button>
+              </Link>
+            </Tooltip>
             <Tooltip content="Siba">
               <Button
                 color={"failure"}
@@ -211,7 +221,7 @@ function GetQuestions() {
           <>
             <Modal.Header>
               <div
-                className="bg-white "
+                className="bg-white question-content"
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(data.getQuestion.text),
                 }}

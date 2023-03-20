@@ -99,6 +99,13 @@ const QuizResolver: any = {
       if (!question) throw new ApolloError("400", "BAD_DATA");
       return question;
     }),
+    EditQuestion: authenticated(async (_: any, args: any, context: any) => {
+      const question = await Question.findByIdAndUpdate(args.id, {
+        ...args.input,
+      });
+      if (!question) throw new ApolloError("400", "BAD_DATA");
+      return question;
+    }),
     CreateQuiz: authenticated(
       validateRole(["admin", "super"])(
         async (_: any, args: any, context: any) => {

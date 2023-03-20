@@ -12,7 +12,7 @@ function QuizQuestion(props) {
       <div className="flex flex-row gap-3 align-top mb-3">
         <h2 className="font-bold mb-1">{questionIndex}.</h2>
         <div
-          className="bg-white "
+          className="bg-white question-content"
           dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(question) }}
         ></div>
       </div>

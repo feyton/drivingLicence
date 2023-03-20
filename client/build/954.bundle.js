@@ -117,7 +117,7 @@ function QuizQuestion(props) {
   }, /*#__PURE__*/react.createElement("h2", {
     className: "font-bold mb-1"
   }, questionIndex, "."), /*#__PURE__*/react.createElement("div", {
-    className: "bg-white ",
+    className: "bg-white question-content",
     dangerouslySetInnerHTML: {
       __html: purify.sanitize(question)
     }
@@ -280,7 +280,7 @@ function QuizPage(props) {
     return _handleSubmit.apply(this, arguments);
   }
   return /*#__PURE__*/react.createElement(react.Fragment, null, !result && /*#__PURE__*/react.createElement("div", {
-    className: "mt-10 min-w-[600px]"
+    className: "mt-14 w-md"
   }, currentQuestion && /*#__PURE__*/react.createElement(Question, {
     key: currentQuestion.id,
     question: currentQuestion.text,
@@ -373,12 +373,12 @@ function ExamPage() {
   return /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col items-center w-md justify-center h-full relative"
   }, quiz ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "absolute top-10 right-5 rounded-md shadow-lg bg-white"
+    className: "absolute top-5 right-5 rounded-md shadow-lg bg-white"
   }, start && /*#__PURE__*/react.createElement(components_Timer, {
     onFinish: handleFinish,
     duration: 1200
   })), /*#__PURE__*/react.createElement("div", {
-    className: "p-6 mt-10 bg-white rounded-md w-md shadow-md "
+    className: "p-6 mt-14 bg-white rounded-md w-md shadow-md "
   }, !start && /*#__PURE__*/react.createElement("div", {
     className: "text-left"
   }, /*#__PURE__*/react.createElement("h1", {

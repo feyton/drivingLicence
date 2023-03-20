@@ -15,6 +15,7 @@ export default gql`
     updatedAt: Date
     createdAt: Date
     correctAnswer: Option!
+    category: String
   }
   type Quiz {
     title: String
@@ -50,7 +51,7 @@ export default gql`
     getQuizzes: [Quiz]
     getQuiz(id: ID!): Quiz
     getScore(id: ID!): QuizResult!
-    getQuestion(id:ID!): Question!
+    getQuestion(id: ID!): Question!
   }
   input QuizInput {
     title: String!
@@ -97,5 +98,6 @@ export default gql`
     DeleteQuiz(id: ID!): Quiz
     submitQuizAnswers(quizId: ID!, answers: [QuizAnswerInput]!): QuizResult!
     DeleteScore(id: ID): Score
+    EditQuestion(id: ID!, input: QuestionInput!): Question!
   }
 `;

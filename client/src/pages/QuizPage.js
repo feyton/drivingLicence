@@ -79,7 +79,7 @@ function QuizPage(props) {
   return (
     <>
       {!result && (
-        <div className="mt-10 min-w-[600px]">
+        <div className="mt-14 w-md">
           {currentQuestion && (
             <QuizQuestion
               key={currentQuestion.id}

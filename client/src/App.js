@@ -26,6 +26,7 @@ const QuestionForm = React.lazy(() => import("./pages/QuestionForm"));
 const RegisterPage = React.lazy(() => import("./pages/RegisterPage"));
 const ViewScore = React.lazy(() => import("./pages/ViewScore"));
 const PrivateRoute = React.lazy(() => import("./utils/PrivateRoute"));
+const QuestionEditPage = React.lazy(() => import("./pages/QuestionEditPage"));
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
@@ -98,6 +99,14 @@ function App() {
                     element={
                       <PrivateRoute>
                         <QuestionForm />0
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/questions/edit/:id"
+                    element={
+                      <PrivateRoute>
+                        <QuestionEditPage />
                       </PrivateRoute>
                     }
                   />
