@@ -36,7 +36,7 @@ function QuizPage(props) {
   const currentQuestion = quiz.questions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === quiz.questions.length - 1;
   const hasNextQuestion = !isLastQuestion;
-  const [submitQuizAnswers, { loading, error, data }] =
+  const [submitQuizAnswers, { loading: isSubmitting, error, data }] =
     useMutation(SUBMIT_QUIZ_ANSWERS);
 
   function handleSelectOption(questionId, option) {
@@ -54,12 +54,11 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const [result, setResults] = useState();
   const client = useApolloClient();
   const dispatch = useDispatch();
   async function handleSubmit() {
-    setIsSubmitting(true);
     const quizId = quiz.id;
     dispatch(stopTimer());
     const answersArray = Object.entries(answers).map(
@@ -71,7 +70,6 @@ function QuizPage(props) {
     const res = await submitQuizAnswers({
       variables: { quizId, answers: answersArray },
     });
-    setIsSubmitting(false);
     setResults(res.data.submitQuizAnswers);
     client.resetStore();
   }
@@ -79,7 +77,7 @@ function QuizPage(props) {
   return (
     <>
       {!result && (
-        <div className="mt-14 w-md">
+        <div className="mt-8 sm:w-full md:w-[600px]">
           {currentQuestion && (
             <QuizQuestion
               key={currentQuestion.id}
@@ -95,13 +93,57 @@ function QuizPage(props) {
 
           <div className="flex flex-row gap-5">
             {currentQuestionIndex > 0 && (
-              <Button onClick={handlePreviousQuestion}>Ikibanza</Button>
+              <Button onClick={handlePreviousQuestion}>
+                {isSubmitting && (
+                  <svg
+                    className="animate-spin h-5 w-5 mr-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+                    />
+                  </svg>
+                )}
+                Ikibanza
+              </Button>
             )}
             {hasNextQuestion && (
               <Button
                 disabled={!answers[currentQuestion.id]}
                 onClick={handleNextQuestion}
               >
+                {isSubmitting && (
+                  <svg
+                    className="animate-spin h-5 w-5 mr-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+                    />
+                  </svg>
+                )}
                 Igikurikira
               </Button>
             )}
@@ -110,19 +152,43 @@ function QuizPage(props) {
                 disabled={!answers[currentQuestion.id]}
                 onClick={handleSubmit}
               >
-                Ohereza
+                {isSubmitting && (
+                  <svg
+                    className="animate-spin h-5 w-5 mr-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <circle
+                      className="opacity-25"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      className="opacity-75"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+                    />
+                  </svg>
+                )}
+                {isSubmitting ? "Komereza..." : "Ohereza"}
               </Button>
             )}
           </div>
           <QuizProgress
             currentQuestionIndex={
-              answers[currentQuestion.id] ? currentQuestionIndex : -1
+              answers[currentQuestion.id]
+                ? currentQuestionIndex
+                : currentQuestionIndex - 1
             }
             totalQuestions={quiz.questions.length}
           />
         </div>
       )}
 
+      {result && <QuizResult {...result} />}
       <Modal isOpen={isSubmitting}>
         <Modal.Body>
           <div className="text-center">
@@ -130,8 +196,6 @@ function QuizPage(props) {
           </div>
         </Modal.Body>
       </Modal>
-
-      {result && <QuizResult {...result} />}
     </>
   );
 }

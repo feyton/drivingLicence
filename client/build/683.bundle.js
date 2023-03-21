@@ -33,7 +33,7 @@ function LandingPage(props) {
     className: "mt-28 sm:mt-20 text-2xl sm:text-4xl md:pl-10 md:text-6xl font-bold text-white dark:text-dark-text-fill font-lexend text-center md:text-left"
   }, "Bona provisoire vuba cyane."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
     className: "text-2xl md:text-4xl lg:text-3xl mt-8 md:mt-8 lg:mt-8 w-full sm:w-3/4 md:w-4/5 lg:w-full md:px-0 lg:px-8 text-white dark:text-dark-text-fill font-sans text-center"
-  }, "Aho wakimenyereza:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ukihugura \u27A1\uFE0F ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ugatsinda"))), !(user !== null && user !== void 0 && user.auth) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+  }, "Aho wakwimenyereza:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ukihugura \u27A1\uFE0F ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ugatsinda"))), !(user !== null && user !== void 0 && user.auth) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "w-full text-center justify-center items-center mt-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__/* .Link */ .rU, {
     to: "quiz",

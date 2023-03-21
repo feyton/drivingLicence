@@ -8,6 +8,7 @@ import {
   FaPowerOff,
   FaUser,
 } from "react-icons/fa";
+import { HiOutlineX } from "react-icons/hi";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { logoutUser } from "../redux/reducers/authReducer";
@@ -68,13 +69,13 @@ function Navbar() {
           </>
         ) : (
           <>
-            <Link to="/login" >
-            <Button size={"xs"} color="success">
+            <Link to="/login">
+              <Button size={"xs"} color="success">
                 <FaUser className="mr-2" /> Injira
               </Button>
             </Link>
-            <Link to="/register" >
-            <Button size={"xs"} color="success">
+            <Link to="/register">
+              <Button size={"xs"} color="success">
                 <FaArrowRight className="mr-2" /> Iyandikishe
               </Button>
             </Link>
@@ -87,71 +88,62 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="text-primary text-2xl focus:outline-none"
         >
-          <FaBars />
+          {menuOpen ? <HiOutlineX /> : <FaBars />}
         </button>
       </div>
 
       {menuOpen && (
-        <div className="md:hidden absolute top-10 bg-gray-100 w-full">
+        <div className="md:hidden absolute top-10 bg-gray-100 w-full z-20 px-4">
           <div className="flex flex-col gap-3 p-3">
-            <Link
-              to="/quiz"
-              className="button-primary"
-              onClick={() => setMenuOpen(false)}
-            >
-              Kora ikizamini
+            <Link to="/quiz" onClick={() => setMenuOpen(false)}>
+              <Button size={"xs"} className="w-full">
+                <FaArrowRight className="mr-2" /> Kora ikizamini
+              </Button>
             </Link>
-            <Link
-              to="/add"
-              className="button-primary"
-              onClick={() => setMenuOpen(false)}
-            >
-              Tanga Ikibazo
+            <Link to="/add" onClick={() => setMenuOpen(false)}>
+              <Button size={"xs"} className="w-full">
+                <FaPen className="mr-2" />
+                Tanga Ikibazo
+              </Button>
             </Link>
             <CheckRole roles={["admin", "super", "editor"]}>
-              <Link
-                to="/questions"
-                className="button-primary"
-                onClick={() => setMenuOpen(false)}
-              >
-                Ibibazo
+              <Link to="/questions" onClick={() => setMenuOpen(false)}>
+                <Button size={"xs"} className="w-full">
+                  <FaList className="mr-2" /> Ibibazo
+                </Button>
               </Link>
             </CheckRole>
 
             {authenticated ? (
               <>
-                <Link
-                  className="button-primary"
-                  onClick={() => setMenuOpen(false)}
-                  to="/profile"
-                >
-                  <FaUser /> {user?.user?.name.split(" ")[0]}
+                <Link onClick={() => setMenuOpen(false)} to="/profile">
+                  <Button className="w-full" size={"xs"} color="success">
+                    <FaUser className="mr-1" /> {user?.user?.name.split(" ")[0]}
+                  </Button>
                 </Link>
-                <button
+                <Button
                   onClick={() => {
                     handleLogout();
                     setMenuOpen(false);
                   }}
-                  className="button-primary text-red-400"
+                  size={"xs"}
+                  color={"failure"}
                 >
+                  <FaPowerOff className="mr-2" />
                   Sohoka
-                </button>
+                </Button>
               </>
             ) : (
               <>
-                <Link
-                  to="/login"
-                  className="button-primary"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Injira
+                <Link to="/login">
+                  <Button size={"xs"} color="success">
+                    <FaUser className="mr-2" /> Injira
+                  </Button>
                 </Link>
-                <Link
-                  to="/register"
-                  className="button-primary"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Iyandikishe
+                <Link to="/register">
+                  <Button size={"xs"} color="success">
+                    <FaArrowRight className="mr-2" /> Iyandikishe
+                  </Button>
                 </Link>
               </>
             )}

@@ -123,7 +123,25 @@ function ViewScore() {
       }
     });
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, loading && "Loading", score && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuizResults__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, score));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+    type: "submit",
+    className: "inline-flex items-center px-4 py-2 my-auto mt-20 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), "Loading..."), score && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QuizResults__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, score));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ViewScore);
 

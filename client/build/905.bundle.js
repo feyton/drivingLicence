@@ -547,10 +547,10 @@ function QuizList(_ref) {
     setShowDeleteModal(true);
   };
   return /*#__PURE__*/react.createElement("div", {
-    className: "flex flex-row gap-3 flex-wrap py-2"
+    className: "flex flex-row gap-3 flex-wrap py-2 w-full justify-evenly"
   }, quizzes.map(function (quiz, index) {
     return /*#__PURE__*/react.createElement(esm/* Card */.Zb, {
-      className: "max-w-sm",
+      className: "w-[400px]",
       key: index
     }, /*#__PURE__*/react.createElement("h5", {
       className: "text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -571,10 +571,10 @@ function QuizList(_ref) {
     }, quiz.createdAt))), /*#__PURE__*/react.createElement("p", {
       className: "text-muted text-xs "
     }, "Ibibazo: ", /*#__PURE__*/react.createElement("b", null, quiz.score), ". Abantu ", /*#__PURE__*/react.createElement("b", null, quiz.attempts), " ", "barayikoze."), /*#__PURE__*/react.createElement("div", {
-      className: "flex justify-between items-center mt-4 gap-4"
+      className: "flex justify-between flex-wrap items-center mt-4 gap-4"
     }, /*#__PURE__*/react.createElement(dist/* Link */.rU, {
       to: "/quiz/".concat(quiz.id)
-    }, " ", /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Kora ikizamini", /*#__PURE__*/react.createElement("svg", {
+    }, /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Kora ikizamini", /*#__PURE__*/react.createElement("svg", {
       className: "ml-2 -mr-1 h-4 w-4",
       fill: "currentColor",
       viewBox: "0 0 20 20",
@@ -668,10 +668,12 @@ function GetQuizzes() {
               onCompleted: function onCompleted() {
                 reset();
                 setShowModal(false);
+                react_toastify_esm/* toast.success */.Am.success("Quiz created succesfully");
                 getQuizzes({
                   onCompleted: function onCompleted(data) {
                     return setQuizzes(data.getQuizzes);
-                  }
+                  },
+                  fetchPolicy: "network-only"
                 });
               },
               onError: function onError(error) {
@@ -699,7 +701,7 @@ function GetQuizzes() {
     });
   }, []);
   return /*#__PURE__*/react.createElement("div", {
-    className: "px-5 mt-10"
+    className: "px-5 mt-10 w-full"
   }, /*#__PURE__*/react.createElement("div", {
     className: "flex justify-end mb-3"
   }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {

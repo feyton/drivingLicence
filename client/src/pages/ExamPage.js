@@ -61,10 +61,10 @@ function ExamPage() {
     <div className="flex flex-col items-center w-md justify-center h-full relative">
       {quiz ? (
         <>
-          <div className="absolute top-5 right-5 rounded-md shadow-lg bg-white">
+          <div className="absolute top-1 right-5 rounded-md shadow-lg bg-white">
             {start && <Timer onFinish={handleFinish} duration={1200} />}
           </div>
-          <div className="p-6 mt-14 bg-white rounded-md w-md shadow-md ">
+          <div className="p-6 mt-20 bg-white rounded-md w-md shadow-md ">
             {!start && (
               <div className="text-left">
                 <h1 className="font-bold text-2xl mb-4">{quiz.title}</h1>
@@ -95,7 +95,7 @@ function ExamPage() {
       ) : (
         <button
           type="submit"
-          className="inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="inline-flex items-center px-4 py-2 my-auto mt-20 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           disabled={loading}
         >
           {loading && (

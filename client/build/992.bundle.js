@@ -60,8 +60,9 @@ function SignupForm() {
   var location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_7__/* .useLocation */ .TH)();
   var from = (location === null || location === void 0 ? void 0 : location.state) || "/";
   var _useMutation = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_9__/* .useMutation */ .D)(SIGN_UP_MUTATION),
-    _useMutation2 = _slicedToArray(_useMutation, 1),
-    createUser = _useMutation2[0];
+    _useMutation2 = _slicedToArray(_useMutation, 2),
+    createUser = _useMutation2[0],
+    loading = _useMutation2[1].loading;
   var onSubmit = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(data) {
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
@@ -75,7 +76,7 @@ function SignupForm() {
                       case 0:
                         dispatch((0,_redux_reducers_authReducer__WEBPACK_IMPORTED_MODULE_4__/* .loginUser */ .pH)(data.createUser));
                         navigate(from);
-                        react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.success */ .Am.success("Login successful");
+                        react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.success */ .Am.success("Wiyandikishije neza");
                         _context.next = 5;
                         return client.resetStore();
                       case 5:
@@ -120,9 +121,9 @@ function SignupForm() {
     className: "bg-white p-5 rounded shadow-md w-full max-w-md"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h2", {
     className: "text-2xl mb-6 font-bold"
-  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
+  }, "Kwiyandikisha"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
     className: "block mb-2 font-bold"
-  }, "Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .TextInput */ .oi, _extends({
+  }, "Amazina"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .TextInput */ .oi, _extends({
     type: "text"
   }, register("name", {
     required: "Name is required",
@@ -182,7 +183,7 @@ function SignupForm() {
     onClick: showPassword
   }, show ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__/* .FaEyeSlash */ .tgn, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__/* .FaEye */ .dSq, null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
     className: "block mb-2 font-bold"
-  }, "Phone Number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .TextInput */ .oi, _extends({
+  }, "Telephone"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .TextInput */ .oi, _extends({
     type: "tel"
   }, register("phoneNumber", {
     required: "Phone number is required",
@@ -199,12 +200,27 @@ function SignupForm() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
     type: "submit",
     className: "mt-6 mb-2"
-  }, "Sign Up"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), "Iyandikishe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
     className: "text-sm"
   }, "Already have an account?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__/* .Link */ .rU, {
     to: "/login",
     className: "text-primary"
-  }, "Login"))));
+  }, "Injira"))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SignupForm);
 

@@ -51,8 +51,10 @@ function GetQuizzes() {
       onCompleted: () => {
         reset();
         setShowModal(false);
+        toast.success("Quiz created succesfully");
         getQuizzes({
           onCompleted: (data) => setQuizzes(data.getQuizzes),
+          fetchPolicy: "network-only",
         });
       },
       onError: (error) => toast.error(error.message),
@@ -67,7 +69,7 @@ function GetQuizzes() {
   }, []);
 
   return (
-    <div className="px-5 mt-10">
+    <div className="px-5 mt-10 w-full">
       <div className="flex justify-end mb-3">
         <Button onClick={() => setShowModal(true)}>Create Quiz</Button>
       </div>

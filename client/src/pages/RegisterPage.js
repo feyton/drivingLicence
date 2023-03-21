@@ -33,13 +33,13 @@ function SignupForm() {
   const location = useLocation();
   const from = location?.state || "/";
 
-  const [createUser] = useMutation(SIGN_UP_MUTATION);
+  const [createUser, { loading }] = useMutation(SIGN_UP_MUTATION);
   const onSubmit = async (data) => {
     createUser({
       onCompleted: async (data) => {
         dispatch(loginUser(data.createUser));
         navigate(from);
-        toast.success("Login successful");
+        toast.success("Wiyandikishije neza");
         await client.resetStore();
       },
       variables: {
@@ -61,9 +61,9 @@ function SignupForm() {
         onSubmit={handleSubmit(onSubmit)}
         className="bg-white p-5 rounded shadow-md w-full max-w-md"
       >
-        <h2 className="text-2xl mb-6 font-bold">Sign Up</h2>
+        <h2 className="text-2xl mb-6 font-bold">Kwiyandikisha</h2>
 
-        <label className="block mb-2 font-bold">Name</label>
+        <label className="block mb-2 font-bold">Amazina</label>
         <TextInput
           type="text"
           {...register("name", {
@@ -144,7 +144,7 @@ function SignupForm() {
           </button>
         </div>
 
-        <label className="block mb-2 font-bold">Phone Number</label>
+        <label className="block mb-2 font-bold">Telephone</label>
         <TextInput
           type="tel"
           {...register("phoneNumber", {
@@ -169,12 +169,30 @@ function SignupForm() {
         />
 
         <Button type="submit" className="mt-6 mb-2">
-          Sign Up
+          {loading && (
+            <svg className="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+                fill="none"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+              />
+            </svg>
+          )}
+          Iyandikishe
         </Button>
         <p className="text-sm">
           Already have an account?{" "}
           <Link to="/login" className="text-primary">
-            Login
+            Injira
           </Link>
         </p>
       </form>

@@ -39,9 +39,9 @@ function QuizList({ quizzes }) {
   };
 
   return (
-    <div className="flex flex-row gap-3 flex-wrap py-2">
+    <div className="flex flex-row gap-3 flex-wrap py-2 w-full justify-evenly">
       {quizzes.map((quiz, index) => (
-        <Card className="max-w-sm" key={index}>
+        <Card className="w-[400px]" key={index}>
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {quiz.title}
           </h5>
@@ -66,9 +66,8 @@ function QuizList({ quizzes }) {
             Ibibazo: <b>{quiz.score}</b>. Abantu <b>{quiz.attempts}</b>{" "}
             barayikoze.
           </p>
-          <div className="flex justify-between items-center mt-4 gap-4">
+          <div className="flex justify-between flex-wrap items-center mt-4 gap-4">
             <Link to={`/quiz/${quiz.id}`}>
-              {" "}
               <Button>
                 Kora ikizamini
                 <svg

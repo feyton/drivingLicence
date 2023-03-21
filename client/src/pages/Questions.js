@@ -36,26 +36,15 @@ export default function DataTable({ data, columns }) {
 
   const {
     getTableProps,
-
-    setGlobalFilter,
     getTableBodyProps,
     page,
-    nextPage,
-    previousPage,
-    canPreviousPage,
-    canNextPage,
-    gotoPage,
-    pageCount,
-    setPageSize,
-    pageOptions,
     headerGroups,
     prepareRow,
     state,
   } = TableInstance;
-  const { pageIndex, pageSize } = state;
 
   return (
-    <div className="overflow-y-scroll">
+    <div className="overflow-y-scroll w-full">
       <Table
         striped={true}
         hoverable={true}

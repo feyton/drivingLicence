@@ -14,9 +14,6 @@ const submitQuizAnswers = async (
     if (!quiz) {
       throw new Error("Quiz not found");
     }
-    if (quiz.user.toString() !== userId) {
-      throw new Error("Unauthorized to submit quiz answers");
-    }
 
     // Calculate score
     let score = 0;
@@ -41,7 +38,7 @@ const submitQuizAnswers = async (
     );
 
     // Save score
-    const newScore = await Score.create({
+    await Score.create({
       quizId,
       userId,
       score,

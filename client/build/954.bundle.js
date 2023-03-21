@@ -211,7 +211,7 @@ function QuizPage(props) {
     _useMutation2 = QuizPage_slicedToArray(_useMutation, 2),
     submitQuizAnswers = _useMutation2[0],
     _useMutation2$ = _useMutation2[1],
-    loading = _useMutation2$.loading,
+    isSubmitting = _useMutation2$.loading,
     error = _useMutation2$.error,
     data = _useMutation2$.data;
   function handleSelectOption(questionId, option) {
@@ -228,14 +228,10 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
-  var _useState5 = (0,react.useState)(false),
+  var _useState5 = (0,react.useState)(),
     _useState6 = QuizPage_slicedToArray(_useState5, 2),
-    isSubmitting = _useState6[0],
-    setIsSubmitting = _useState6[1];
-  var _useState7 = (0,react.useState)(),
-    _useState8 = QuizPage_slicedToArray(_useState7, 2),
-    result = _useState8[0],
-    setResults = _useState8[1];
+    result = _useState6[0],
+    setResults = _useState6[1];
   var client = (0,useApolloClient/* useApolloClient */.x)();
   var dispatch = (0,es/* useDispatch */.I0)();
   function handleSubmit() {
@@ -247,7 +243,6 @@ function QuizPage(props) {
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
-            setIsSubmitting(true);
             quizId = quiz.id;
             dispatch((0,timerReducer/* stopTimer */.N6)());
             answersArray = Object.entries(answers).map(function (_ref) {
@@ -259,19 +254,18 @@ function QuizPage(props) {
                 answer: answer.id
               };
             });
-            _context.next = 6;
+            _context.next = 5;
             return submitQuizAnswers({
               variables: {
                 quizId: quizId,
                 answers: answersArray
               }
             });
-          case 6:
+          case 5:
             res = _context.sent;
-            setIsSubmitting(false);
             setResults(res.data.submitQuizAnswers);
             client.resetStore();
-          case 10:
+          case 8:
           case "end":
             return _context.stop();
         }
@@ -280,7 +274,7 @@ function QuizPage(props) {
     return _handleSubmit.apply(this, arguments);
   }
   return /*#__PURE__*/react.createElement(react.Fragment, null, !result && /*#__PURE__*/react.createElement("div", {
-    className: "mt-14 w-md"
+    className: "mt-8 sm:w-full md:w-[600px]"
   }, currentQuestion && /*#__PURE__*/react.createElement(Question, {
     key: currentQuestion.id,
     question: currentQuestion.text,
@@ -294,22 +288,67 @@ function QuizPage(props) {
     className: "flex flex-row gap-5"
   }, currentQuestionIndex > 0 && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     onClick: handlePreviousQuestion
-  }, "Ikibanza"), hasNextQuestion && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+  }, isSubmitting && /*#__PURE__*/react.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), "Ikibanza"), hasNextQuestion && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     disabled: !answers[currentQuestion.id],
     onClick: handleNextQuestion
-  }, "Igikurikira"), !hasNextQuestion && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+  }, isSubmitting && /*#__PURE__*/react.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), "Igikurikira"), !hasNextQuestion && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     disabled: !answers[currentQuestion.id],
     onClick: handleSubmit
-  }, "Ohereza")), /*#__PURE__*/react.createElement(components_QuizProgress, {
-    currentQuestionIndex: answers[currentQuestion.id] ? currentQuestionIndex : -1,
+  }, isSubmitting && /*#__PURE__*/react.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), isSubmitting ? "Komereza..." : "Ohereza")), /*#__PURE__*/react.createElement(components_QuizProgress, {
+    currentQuestionIndex: answers[currentQuestion.id] ? currentQuestionIndex : currentQuestionIndex - 1,
     totalQuestions: quiz.questions.length
-  })), /*#__PURE__*/react.createElement(esm/* Modal */.u_, {
+  })), result && /*#__PURE__*/react.createElement(QuizResults/* default */.Z, result), /*#__PURE__*/react.createElement(esm/* Modal */.u_, {
     isOpen: isSubmitting
   }, /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/react.createElement("p", {
     className: "text-lg font-bold"
-  }, "Sending your answers...")))), result && /*#__PURE__*/react.createElement(QuizResults/* default */.Z, result));
+  }, "Sending your answers...")))));
 }
 /* harmony default export */ const pages_QuizPage = (QuizPage);
 ;// CONCATENATED MODULE: ./src/pages/ExamPage.js
@@ -373,12 +412,12 @@ function ExamPage() {
   return /*#__PURE__*/react.createElement("div", {
     className: "flex flex-col items-center w-md justify-center h-full relative"
   }, quiz ? /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-    className: "absolute top-5 right-5 rounded-md shadow-lg bg-white"
+    className: "absolute top-1 right-5 rounded-md shadow-lg bg-white"
   }, start && /*#__PURE__*/react.createElement(components_Timer, {
     onFinish: handleFinish,
     duration: 1200
   })), /*#__PURE__*/react.createElement("div", {
-    className: "p-6 mt-14 bg-white rounded-md w-md shadow-md "
+    className: "p-6 mt-20 bg-white rounded-md w-md shadow-md "
   }, !start && /*#__PURE__*/react.createElement("div", {
     className: "text-left"
   }, /*#__PURE__*/react.createElement("h1", {
@@ -402,7 +441,7 @@ function ExamPage() {
     onFinish: handleFinish
   }))) : /*#__PURE__*/react.createElement("button", {
     type: "submit",
-    className: "inline-flex items-center px-4 py-2 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+    className: "inline-flex items-center px-4 py-2 my-auto mt-20 bg-indigo-600 border border-transparent rounded-md font-semibold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
     disabled: loading
   }, loading && /*#__PURE__*/react.createElement("svg", {
     className: "animate-spin h-5 w-5 mr-3",
