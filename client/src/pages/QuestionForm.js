@@ -69,7 +69,6 @@ function QuestionForm() {
           }
         );
         const data = await res.json();
-        console.log(data);
         editor.insertEmbed(editor.getSelection(), "image", data.secure_url);
       } catch (error) {
         console.error(error);

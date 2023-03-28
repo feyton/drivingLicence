@@ -23,7 +23,8 @@ function Timer({ start, onFinish }) {
           ":" +
           (seconds > 9 ? seconds : "0" + seconds)
       );
-    } else {
+    }
+    if (total === 0) {
       onFinish();
     }
   };

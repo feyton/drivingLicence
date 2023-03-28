@@ -67,7 +67,8 @@ function Timer(_ref) {
       seconds = _getTimeRemaining.seconds;
     if (total >= 0) {
       setTimer((minutes > 9 ? minutes : "0" + minutes) + ":" + (seconds > 9 ? seconds : "0" + seconds));
-    } else {
+    }
+    if (total === 0) {
       onFinish();
     }
   };

@@ -30,6 +30,8 @@ var index_esm = __webpack_require__(3854);
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
 var dist = __webpack_require__(9655);
+// EXTERNAL MODULE: ./src/utils/CheckRole.js
+var CheckRole = __webpack_require__(3881);
 // EXTERNAL MODULE: ./node_modules/react-table/index.js
 var react_table = __webpack_require__(9521);
 ;// CONCATENATED MODULE: ./src/pages/Questions.js
@@ -113,6 +115,7 @@ var GET_QUESTIONS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _t
 var APPROVE_QUESTION = (0,lib/* gql */.Ps)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  mutation ApproveQuestion($id: ID!) {\n    ApproveQuestion(id: $id) {\n      id\n      approved\n      text\n    }\n  }\n"])));
 var DELETE_QUESTION = (0,lib/* gql */.Ps)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  mutation DeleteQuestion($id: ID!) {\n    DeleteQuestion(id: $id) {\n      text\n    }\n  }\n"])));
 var GET_QUESTION = (0,lib/* gql */.Ps)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  query getQuestion($id: ID!) {\n    getQuestion(id: $id) {\n      text\n      id\n      answer\n      approved\n      options {\n        id\n        text\n      }\n      explanation\n      user {\n        name\n      }\n      createdAt\n      correctAnswer {\n        id\n        text\n      }\n    }\n  }\n"])));
+
 
 
 
@@ -291,7 +294,9 @@ function GetQuestions() {
       }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
         color: "success",
         size: "xs"
-      }, /*#__PURE__*/react.createElement(index_esm/* HiPencil */.LsQ, null)))), /*#__PURE__*/react.createElement(esm/* Tooltip */.u, {
+      }, /*#__PURE__*/react.createElement(index_esm/* HiPencil */.LsQ, null)))), /*#__PURE__*/react.createElement(CheckRole/* default */.Z, {
+        roles: ["super"]
+      }, /*#__PURE__*/react.createElement(esm/* Tooltip */.u, {
         content: "Siba"
       }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
         color: "failure",
@@ -299,7 +304,7 @@ function GetQuestions() {
           return handleShowDeleteModal(row.original);
         },
         size: "xs"
-      }, /*#__PURE__*/react.createElement(index_esm/* HiTrash */._YF, null))));
+      }, /*#__PURE__*/react.createElement(index_esm/* HiTrash */._YF, null)))));
     }
   }];
   return /*#__PURE__*/react.createElement("div", {
@@ -394,6 +399,37 @@ function GetQuestions() {
   }, "Siba"))));
 }
 /* harmony default export */ const pages_GetQuestions = (GetQuestions);
+
+/***/ }),
+
+/***/ 3881:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5998);
+
+
+var CheckRole = function CheckRole(_ref) {
+  var _user$user, _user$user2;
+  var children = _ref.children,
+    _ref$roles = _ref.roles,
+    roles = _ref$roles === void 0 ? ["user"] : _ref$roles;
+  var _useSelector = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__/* .useSelector */ .v9)(function (state) {
+      return state === null || state === void 0 ? void 0 : state.auth;
+    }),
+    user = _useSelector.user;
+  if ((user === null || user === void 0 ? void 0 : (_user$user = user.user) === null || _user$user === void 0 ? void 0 : _user$user.role) === "super") {
+    return children;
+  }
+  if (roles.includes(user === null || user === void 0 ? void 0 : (_user$user2 = user.user) === null || _user$user2 === void 0 ? void 0 : _user$user2.role)) {
+    return children;
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CheckRole);
 
 /***/ })
 

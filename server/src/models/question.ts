@@ -119,10 +119,31 @@ const QuestionSchema = new Schema(
       ref: "User",
       indexedDB: true,
     },
+    difficulty: [
+      {
+        userId: {
+          type: mongoose.Types.ObjectId,
+          ref: "User",
+          required: true,
+        },
+        rating: {
+          type: Number,
+          required: true,
+          enum: [1, 2, 3, 4, 5],
+        },
+      },
+    ],
   },
   {
     timestamps: true,
   }
 );
+
+QuestionSchema.virtual("timesAddedToQuizzes", {
+  ref: "Quiz",
+  localField: "_id",
+  foreignField: "questions",
+  count: true,
+});
 
 export const Question = model("Question", QuestionSchema);

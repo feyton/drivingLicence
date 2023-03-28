@@ -16,6 +16,7 @@ export default gql`
     createdAt: Date
     correctAnswer: Option!
     category: String
+    timesAddedToQuizzes: Int
   }
   type Quiz {
     title: String
@@ -26,6 +27,7 @@ export default gql`
     createdAt: Date
     score: Int
     attempts: Int
+    userAttempts: Int
   }
 
   type Option {
@@ -56,6 +58,7 @@ export default gql`
   input QuizInput {
     title: String!
     description: String!
+    questions: [ID!]
   }
   type QuizAnswer {
     questionId: ID!
@@ -90,6 +93,11 @@ export default gql`
     explanation: String!
   }
 
+  type Response {
+    success: Boolean
+    message: String
+  }
+
   type Mutation {
     AddQuestion(input: QuestionInput!): Question!
     CreateQuiz(input: QuizInput!): Quiz!
@@ -99,5 +107,6 @@ export default gql`
     submitQuizAnswers(quizId: ID!, answers: [QuizAnswerInput]!): QuizResult!
     DeleteScore(id: ID): Score
     EditQuestion(id: ID!, input: QuestionInput!): Question!
+    rateQuestionDifficulty(questionId: ID!, rating: Int!): Response
   }
 `;

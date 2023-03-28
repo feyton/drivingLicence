@@ -103,20 +103,19 @@ function QuestionForm() {
               return res.json();
             case 10:
               data = _context.sent;
-              console.log(data);
               editor.insertEmbed(editor.getSelection(), "image", data.secure_url);
-              _context.next = 19;
+              _context.next = 18;
               break;
-            case 15:
-              _context.prev = 15;
+            case 14:
+              _context.prev = 14;
               _context.t0 = _context["catch"](4);
               console.error(_context.t0);
               react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.error */ .Am.error(_context.t0.message);
-            case 19:
+            case 18:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[4, 15]]);
+        }, _callee, null, [[4, 14]]);
       }));
       return function (_x2) {
         return _ref.apply(this, arguments);

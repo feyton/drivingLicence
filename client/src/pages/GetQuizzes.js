@@ -2,8 +2,10 @@ import { gql, useLazyQuery, useMutation } from "@apollo/client";
 import { Button, Modal, Textarea, TextInput } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import QuizList from "../components/QuizList";
+import CheckRole from "../utils/CheckRole";
 
 const GET_QUIZZES = gql`
   query GetQuizzes {
@@ -14,6 +16,7 @@ const GET_QUIZZES = gql`
       score
       attempts
       createdAt
+      userAttempts
       user {
         name
         picture
@@ -70,10 +73,15 @@ function GetQuizzes() {
 
   return (
     <div className="px-5 mt-10 w-full">
-      <div className="flex justify-end mb-3">
-        <Button onClick={() => setShowModal(true)}>Create Quiz</Button>
-      </div>
-      <hr />
+      <CheckRole roles={["admin", "superuser"]}>
+        <div className="flex justify-end mb-3">
+          <Link to={"/quiz/new"}>
+            <Button>Create Quiz</Button>
+          </Link>
+        </div>
+        <hr />
+      </CheckRole>
+
       {quizzes && <QuizList quizzes={quizzes} />}
       {getQuizLoading && (
         <button

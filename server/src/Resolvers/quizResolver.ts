@@ -57,7 +57,7 @@ const QuizResolver: any = {
     getQuestions: authenticated(
       validateRole(["admin", "super", "editor"])(
         async (_: any, args: any, context: any) => {
-          const questions = await Question.find({});
+          const questions = await Question.find({}).sort({ createdAt: -1 });
           return questions;
         }
       )
@@ -74,6 +74,7 @@ const QuizResolver: any = {
       const quizzes = await Quiz.find({
         "questions.0": { $exists: true },
       })
+        .sort({ createdAt: -1 })
         .populate("questions")
         .populate("user");
       return quizzes;
@@ -107,29 +108,8 @@ const QuizResolver: any = {
       validateRole(["admin", "super"])(
         async (_: any, args: any, context: any) => {
           const { userId } = context;
-          function shuffleArray<T>(array: T[]): T[] {
-            const clonedArray = [...array];
-
-            for (let i = clonedArray.length - 1; i > 0; i--) {
-              const j = Math.floor(Math.random() * (i + 1));
-              [clonedArray[i], clonedArray[j]] = [
-                clonedArray[j],
-                clonedArray[i],
-              ];
-            }
-
-            return clonedArray;
-          }
-          const questions: any = await Question.find({ approved: true });
-          // @ts-ignore
-          if (!questions?.length > 5)
-            throw new ApolloError("NO_QUESTIONS", "500");
-          const shuffledQuestions = shuffleArray(questions);
-          // Select the first 20 questions
-          const quizQuestions = shuffledQuestions.slice(0, 20);
           const quiz = await Quiz.create({
             ...args.input,
-            questions: quizQuestions,
             user: userId,
           });
           return quiz;
@@ -168,6 +148,37 @@ const QuizResolver: any = {
       })
     ),
     submitQuizAnswers: authenticated(submitQuizAnswers),
+    rateQuestionDifficulty: async (
+      _: any,
+      { questionId, rating }: any,
+      { userId }: any
+    ) => {
+      try {
+        // Check if user has already rated this question
+        const question: any = await Question.findById(questionId);
+        const existingRating = question.difficulty.find(
+          (d: any) => d.userId.toString() === userId
+        );
+        if (existingRating) {
+          // Update existing rating
+          existingRating.rating = rating;
+        } else {
+          // Add new rating
+          question.difficulty.push({ userId: userId, rating });
+        }
+        await question.save();
+        return {
+          success: true,
+          message: "Question difficulty rating updated successfully.",
+        };
+      } catch (error) {
+        console.error(error);
+        return {
+          success: false,
+          message: "Failed to rate question difficulty.",
+        };
+      }
+    },
   },
   Quiz: {
     attempts: async (parent: any, args: any) => {
@@ -183,6 +194,13 @@ const QuizResolver: any = {
         },
       ]);
       return count[0]?.count || 0;
+    },
+    userAttempts: async (parent: any, args: any, context: any) => {
+      const count = await Score.countDocuments({
+        userId: context.userId,
+        quizId: parent._id,
+      });
+      return count;
     },
   },
   User: {

@@ -62,6 +62,7 @@ const GET_QUESTION = gql`
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import CheckRole from "../utils/CheckRole";
 import DataTable from "./Questions";
 
 function GetQuestions() {
@@ -191,15 +192,17 @@ function GetQuestions() {
                 </Button>
               </Link>
             </Tooltip>
-            <Tooltip content="Siba">
-              <Button
-                color={"failure"}
-                onClick={() => handleShowDeleteModal(row.original)}
-                size={"xs"}
-              >
-                <HiTrash />
-              </Button>
-            </Tooltip>
+            <CheckRole roles={["super"]}>
+              <Tooltip content="Siba">
+                <Button
+                  color={"failure"}
+                  onClick={() => handleShowDeleteModal(row.original)}
+                  size={"xs"}
+                >
+                  <HiTrash />
+                </Button>
+              </Tooltip>
+            </CheckRole>
           </div>
         );
       },

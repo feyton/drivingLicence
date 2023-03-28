@@ -1,7 +1,7 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
 import { Button, Card, Modal } from "flowbite-react";
 import React, { useState } from "react";
-import { FaTrash } from "react-icons/fa";
+import { FaCheckCircle, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import CheckRole from "../utils/CheckRole";
@@ -39,14 +39,31 @@ function QuizList({ quizzes }) {
   };
 
   return (
-    <div className="flex flex-row gap-3 flex-wrap py-2 w-full justify-evenly">
+    <div className="flex flex-row gap-3 flex-wrap py-2 w-full justify-start">
       {quizzes.map((quiz, index) => (
-        <Card className="w-[400px]" key={index}>
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <Card
+          className={`w-[400px] ${
+            quiz.userAttempts > 0 && "bg-green-300 bg-opacity-10"
+          } `}
+          key={index}
+        >
+          {quiz.userAttempts > 0 && (
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center">
+                <FaCheckCircle className="mr-2 text-green-500" />
+                <span className="text-xs font-medium">
+                  You have attempted this quiz <b>{quiz.userAttempts}</b>{" "}
+                  time(s).
+                </span>
+              </div>
+            </div>
+          )}
+          <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             {quiz.title}
           </h5>
+          <hr />
 
-          <p className="font-normal text-gray-700 dark:text-gray-400">
+          <p className="font-normal text-sm text-gray-700 dark:text-gray-400">
             {quiz.description}
           </p>
           <div className="flex items-center">
@@ -84,7 +101,7 @@ function QuizList({ quizzes }) {
                 </svg>
               </Button>
             </Link>
-            <CheckRole roles={["admin", "super", "editor"]}>
+            <CheckRole roles={["super"]}>
               <Button
                 color={"failure"}
                 onClick={() => handleShowDeleteModal(quiz)}

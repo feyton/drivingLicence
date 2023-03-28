@@ -12,6 +12,7 @@ import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import QuizCreationPage from "./pages/CreateQuiz";
 import store from "./redux/store";
 const LandingPage = React.lazy(() => import("./pages/LandingPage"));
 const Navbar = React.lazy(() => import("./components/Navbar"));
@@ -83,6 +84,14 @@ function App() {
                     element={
                       <PrivateRoute>
                         <GetQuizzes />
+                      </PrivateRoute>
+                    }
+                  />
+                  <Route
+                    path="/quiz/new"
+                    element={
+                      <PrivateRoute>
+                        <QuizCreationPage />
                       </PrivateRoute>
                     }
                   />
