@@ -42,9 +42,7 @@ function QuizList({ quizzes }) {
     <div className="flex flex-row gap-3 flex-wrap py-2 w-full justify-start">
       {quizzes.map((quiz, index) => (
         <Card
-          className={`w-[400px] ${
-            quiz.userAttempts > 0 && "bg-green-300 bg-opacity-10"
-          } `}
+          className={`max-w-[400px] ${quiz.userAttempts > 0 && "bg-green-500 "} `}
           key={index}
         >
           {quiz.userAttempts > 0 && (
@@ -101,7 +99,7 @@ function QuizList({ quizzes }) {
                 </svg>
               </Button>
             </Link>
-            <CheckRole roles={["super"]}>
+            <CheckRole roles={["super", "admin", "editor"]}>
               <Button
                 color={"failure"}
                 onClick={() => handleShowDeleteModal(quiz)}

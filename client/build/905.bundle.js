@@ -24,6 +24,8 @@ var esm = __webpack_require__(6515);
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-hook-form/dist/index.esm.mjs
 var index_esm = __webpack_require__(7536);
+// EXTERNAL MODULE: ./node_modules/react-icons/hi/index.esm.js
+var hi_index_esm = __webpack_require__(3854);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
 var dist = __webpack_require__(9655);
 // EXTERNAL MODULE: ./node_modules/react-toastify/dist/react-toastify.esm.mjs + 1 modules
@@ -87,7 +89,7 @@ function QuizList(_ref) {
     className: "flex flex-row gap-3 flex-wrap py-2 w-full justify-start"
   }, quizzes.map(function (quiz, index) {
     return /*#__PURE__*/react.createElement(esm/* Card */.Zb, {
-      className: "w-[400px] ".concat(quiz.userAttempts > 0 && "bg-green-300 bg-opacity-10", " "),
+      className: "max-w-[400px] ".concat(quiz.userAttempts > 0 && "bg-green-500 ", " "),
       key: index
     }, quiz.userAttempts > 0 && /*#__PURE__*/react.createElement("div", {
       className: "flex items-center justify-between mb-2"
@@ -129,7 +131,7 @@ function QuizList(_ref) {
       d: "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z",
       clipRule: "evenodd"
     })))), /*#__PURE__*/react.createElement(CheckRole/* default */.Z, {
-      roles: ["super"]
+      roles: ["super", "admin", "editor"]
     }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
       color: "failure",
       onClick: function onClick() {
@@ -169,6 +171,7 @@ function GetQuizzes_arrayLikeToArray(arr, len) { if (len == null || len > arr.le
 function GetQuizzes_iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function GetQuizzes_arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function GetQuizzes_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 
 
 
@@ -255,7 +258,17 @@ function GetQuizzes() {
     className: "flex justify-end mb-3"
   }, /*#__PURE__*/react.createElement(dist/* Link */.rU, {
     to: "/quiz/new"
-  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Create Quiz"))), /*#__PURE__*/react.createElement("hr", null)), quizzes && /*#__PURE__*/react.createElement(components_QuizList, {
+  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Create Quiz"))), /*#__PURE__*/react.createElement("hr", null)), /*#__PURE__*/react.createElement(esm/* Alert */.bZ, {
+    color: "success",
+    rounded: false,
+    withBorderAccent: true,
+    additionalContent: /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
+      className: "mt-2 mb-4 text-sm text-green-700 dark:text-green-800"
+    }, "From today, all our quizzes are designed by Driving School Teachers with access to more than 400 questios. The quiz have a badge to show you how many times you have attempted the quiz to help you practice even better.")),
+    icon: hi_index_esm/* HiInformationCircle */.frK
+  }, /*#__PURE__*/react.createElement("h3", {
+    className: "text-lg font-medium text-green-700 dark:text-green-800"
+  }, "Important Update")), quizzes && /*#__PURE__*/react.createElement(components_QuizList, {
     quizzes: quizzes
   }), getQuizLoading && /*#__PURE__*/react.createElement("button", {
     type: "submit",

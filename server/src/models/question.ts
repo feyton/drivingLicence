@@ -24,6 +24,10 @@ const QuizSchema = new Schema(
         indexedDB: true,
       },
     ],
+    active: {
+      type: Boolean,
+      default: true,
+    },
   },
   {
     timestamps: true,
@@ -133,6 +137,10 @@ const QuestionSchema = new Schema(
         },
       },
     ],
+    active: {
+      type: Boolean,
+      default: true,
+    },
   },
   {
     timestamps: true,

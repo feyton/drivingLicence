@@ -57,7 +57,11 @@ const QuizResolver: any = {
     getQuestions: authenticated(
       validateRole(["admin", "super", "editor"])(
         async (_: any, args: any, context: any) => {
-          const questions = await Question.find({}).sort({ createdAt: -1 });
+          const questions = await Question.find({
+            active: { $in: [true, null] },
+          }).sort({
+            createdAt: -1,
+          });
           return questions;
         }
       )
@@ -73,6 +77,7 @@ const QuizResolver: any = {
     getQuizzes: async (_: any, args: any, context: any) => {
       const quizzes = await Quiz.find({
         "questions.0": { $exists: true },
+        active: { $in: [true, null] },
       })
         .sort({ createdAt: -1 })
         .populate("questions")
@@ -129,7 +134,9 @@ const QuizResolver: any = {
     ),
     DeleteQuestion: authenticated(
       validateRole(["admin", "super", "editor"])(async (_: any, args: any) => {
-        const question = await Question.findByIdAndDelete(args.id);
+        const question = await Question.findByIdAndUpdate(args.id, {
+          active: false,
+        });
         return question;
       })
     ),
@@ -143,7 +150,7 @@ const QuizResolver: any = {
     ),
     DeleteQuiz: authenticated(
       validateRole(["admin", "super", "editor"])(async (_: any, args: any) => {
-        const quiz = await Quiz.findByIdAndDelete(args.id);
+        const quiz = await Quiz.findByIdAndUpdate(args.id, { active: false });
         return quiz;
       })
     ),

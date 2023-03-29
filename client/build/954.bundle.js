@@ -194,6 +194,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var SUBMIT_QUIZ_ANSWERS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  mutation SubmitQuizAnswers($quizId: ID!, $answers: [QuizAnswerInput]!) {\n    submitQuizAnswers(quizId: $quizId, answers: $answers) {\n      score\n      questions {\n        id\n        text\n        correctAnswer {\n          id\n          text\n        }\n        userAnswer {\n          id\n          text\n        }\n        explanation\n      }\n    }\n  }\n"])));
 function QuizPage(props) {
   var _useState = (0,react.useState)(0),
@@ -211,13 +212,9 @@ function QuizPage(props) {
   var _useMutation = (0,useMutation/* useMutation */.D)(SUBMIT_QUIZ_ANSWERS),
     _useMutation2 = QuizPage_slicedToArray(_useMutation, 2),
     submitQuizAnswers = _useMutation2[0],
-    _useMutation2$ = _useMutation2[1],
-    isSubmitting = _useMutation2$.loading,
-    error = _useMutation2$.error,
-    data = _useMutation2$.data;
+    isSubmitting = _useMutation2[1].loading;
   function handleSelectOption(questionId, option) {
     setAnswers(_objectSpread(_objectSpread({}, answers), {}, _defineProperty({}, questionId, option)));
-    console.log(answers);
   }
   function handleNextQuestion() {
     if (hasNextQuestion && answers[currentQuestion.id]) {
@@ -240,7 +237,7 @@ function QuizPage(props) {
   }
   function _handleSubmit() {
     _handleSubmit = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var quizId, answersArray, res;
+      var quizId, answersArray;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -255,18 +252,20 @@ function QuizPage(props) {
                 answer: answer.id
               };
             });
-            _context.next = 5;
-            return submitQuizAnswers({
+            submitQuizAnswers({
               variables: {
                 quizId: quizId,
                 answers: answersArray
+              },
+              onCompleted: function onCompleted(data) {
+                setResults(data.submitQuizAnswers);
+                client.resetStore();
+              },
+              onError: function onError(err) {
+                return react_toastify_esm/* toast.error */.Am.error(err.message);
               }
             });
-          case 5:
-            res = _context.sent;
-            setResults(res.data.submitQuizAnswers);
-            client.resetStore();
-          case 8:
+          case 4:
           case "end":
             return _context.stop();
         }

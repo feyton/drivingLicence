@@ -53,10 +53,11 @@ function DataTable(_ref) {
   }, [data]);
   var sortedColumns = react.useMemo(function () {
     return [{
-      Header: "☑️",
+      Header: "SN",
       accessor: "",
-      Cell: function Cell() {
-        return /*#__PURE__*/react.createElement(esm/* Checkbox */.XZ, null);
+      Cell: function Cell(_ref2) {
+        var row = _ref2.row;
+        return /*#__PURE__*/react.createElement(react.Fragment, null, row.index + 1);
       },
       sortable: false
     }].concat(_toConsumableArray(columns));
@@ -200,6 +201,9 @@ function GetQuestions() {
                   _context2.next = 2;
                   return client.resetStore();
                 case 2:
+                  setShowDeleteModal(false);
+                  setSelectedQuestionView(null);
+                case 4:
                 case "end":
                   return _context2.stop();
               }
@@ -211,7 +215,6 @@ function GetQuestions() {
           return onCompleted;
         }()
       });
-      setShowDeleteModal(false);
     }
   };
   var handleShowDeleteModal = function handleShowDeleteModal(question) {
@@ -295,7 +298,7 @@ function GetQuestions() {
         color: "success",
         size: "xs"
       }, /*#__PURE__*/react.createElement(index_esm/* HiPencil */.LsQ, null)))), /*#__PURE__*/react.createElement(CheckRole/* default */.Z, {
-        roles: ["super"]
+        roles: ["super", "admin", "editor"]
       }, /*#__PURE__*/react.createElement(esm/* Tooltip */.u, {
         content: "Siba"
       }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
@@ -308,7 +311,7 @@ function GetQuestions() {
     }
   }];
   return /*#__PURE__*/react.createElement("div", {
-    className: "w-full justify-center ml-2"
+    className: "w-full justify-center ml-2 "
   }, questions && /*#__PURE__*/react.createElement(DataTable, {
     data: questions,
     columns: columns

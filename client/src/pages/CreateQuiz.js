@@ -127,7 +127,9 @@ const QuizCreationPage = () => {
         {data && (
           <>
             <div className="bg-white rounded-lg shadow-md p-4 overflow-y-scroll h-[600px]">
-              <h2 className="text-xl font-bold mb-4">Questions</h2>
+              <h2 className="text-xl font-bold mb-4">
+                Questions ({data.length})
+              </h2>
 
               {data.map((question, index) => (
                 <QuestionCard
@@ -141,7 +143,7 @@ const QuizCreationPage = () => {
             </div>
             <div className="bg-white rounded-lg shadow-md p-4 overflow-y-scroll h-[600px]">
               <h2 className="text-xl font-bold mb-4">
-                Quiz Questions {quizQuestions.length}
+                Quiz Questions ({quizQuestions.length})
               </h2>
               {quizQuestions.length === 0 && (
                 <p>Click add to place question in a quiz</p>

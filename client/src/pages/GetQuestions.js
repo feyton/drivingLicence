@@ -96,9 +96,10 @@ function GetQuestions() {
         variables: { id: selectedQuestion },
         onCompleted: async (data) => {
           await client.resetStore();
+          setShowDeleteModal(false);
+          setSelectedQuestionView(null);
         },
       });
-      setShowDeleteModal(false);
     }
   };
   const handleShowDeleteModal = (question) => {
@@ -192,7 +193,7 @@ function GetQuestions() {
                 </Button>
               </Link>
             </Tooltip>
-            <CheckRole roles={["super"]}>
+            <CheckRole roles={["super", "admin", "editor"]}>
               <Tooltip content="Siba">
                 <Button
                   color={"failure"}
@@ -209,7 +210,7 @@ function GetQuestions() {
     },
   ];
   return (
-    <div className="w-full justify-center ml-2">
+    <div className="w-full justify-center ml-2 ">
       {questions && <DataTable data={questions} columns={columns} />}
       {loading && (
         <div className="w-full flex justify-center">

@@ -5,6 +5,7 @@ import QuizProgress from "../components/QuizProgress";
 
 import { gql, useApolloClient, useMutation } from "@apollo/client";
 import { useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 import { stopTimer } from "../redux/reducers/timerReducer";
 import QuizResult from "./QuizResults";
 
@@ -36,12 +37,11 @@ function QuizPage(props) {
   const currentQuestion = quiz.questions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === quiz.questions.length - 1;
   const hasNextQuestion = !isLastQuestion;
-  const [submitQuizAnswers, { loading: isSubmitting, error, data }] =
+  const [submitQuizAnswers, { loading: isSubmitting }] =
     useMutation(SUBMIT_QUIZ_ANSWERS);
 
   function handleSelectOption(questionId, option) {
     setAnswers({ ...answers, [questionId]: option });
-    console.log(answers);
   }
 
   function handleNextQuestion() {
@@ -67,11 +67,14 @@ function QuizPage(props) {
         answer: answer.id,
       })
     );
-    const res = await submitQuizAnswers({
+    submitQuizAnswers({
       variables: { quizId, answers: answersArray },
+      onCompleted: (data) => {
+        setResults(data.submitQuizAnswers);
+        client.resetStore();
+      },
+      onError: (err) => toast.error(err.message),
     });
-    setResults(res.data.submitQuizAnswers);
-    client.resetStore();
   }
 
   return (

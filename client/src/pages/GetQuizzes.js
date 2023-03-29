@@ -1,7 +1,8 @@
 import { gql, useLazyQuery, useMutation } from "@apollo/client";
-import { Button, Modal, Textarea, TextInput } from "flowbite-react";
+import { Alert, Button, Modal, Textarea, TextInput } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { HiInformationCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import QuizList from "../components/QuizList";
@@ -81,6 +82,26 @@ function GetQuizzes() {
         </div>
         <hr />
       </CheckRole>
+      <Alert
+        color="success"
+        rounded={false}
+        withBorderAccent={true}
+        additionalContent={
+          <React.Fragment>
+            <div className="mt-2 mb-4 text-sm text-green-700 dark:text-green-800">
+              From today, all our quizzes are designed by Driving School
+              Teachers with access to more than 400 questios. The quiz have a
+              badge to show you how many times you have attempted the quiz to
+              help you practice even better.
+            </div>
+          </React.Fragment>
+        }
+        icon={HiInformationCircle}
+      >
+        <h3 className="text-lg font-medium text-green-700 dark:text-green-800">
+          Important Update
+        </h3>
+      </Alert>
 
       {quizzes && <QuizList quizzes={quizzes} />}
       {getQuizLoading && (

@@ -5,7 +5,7 @@ import {
   useTable,
 } from "react-table";
 
-import { Checkbox, Table } from "flowbite-react";
+import { Table } from "flowbite-react";
 import React from "react";
 
 export default function DataTable({ data, columns }) {
@@ -13,9 +13,9 @@ export default function DataTable({ data, columns }) {
   const sortedColumns = React.useMemo(
     () => [
       {
-        Header: "☑️",
+        Header: "SN",
         accessor: "",
-        Cell: () => <Checkbox />,
+        Cell: ({ row }) => <>{row.index + 1}</>,
         sortable: false,
       },
       ...columns,
@@ -80,12 +80,6 @@ export default function DataTable({ data, columns }) {
           })}
         </Table.Body>
       </Table>
-      {/* <Pagination
-        currentPage={pageIndex + 1}
-        onPageChange={gotoPage}
-        showIcons={true}
-        totalPages={pageOptions.length}
-      /> */}
     </div>
   );
 }
