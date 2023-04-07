@@ -33,7 +33,7 @@ export default {
       const token = jwt.sign(
         { userId: user._id, email: user.email, role: user.role },
         SECRET,
-        { expiresIn: "40h" }
+        { expiresIn: "7d" }
       );
       return { token, user };
     },
@@ -47,7 +47,7 @@ export default {
       const token = jwt.sign(
         { userId: user._id, email: user.email, role: user.role },
         SECRET,
-        { expiresIn: "40h" }
+        { expiresIn: "7d" }
       );
       return { token, user };
     },

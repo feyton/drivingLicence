@@ -33,7 +33,12 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
     graphQLErrors.forEach(({ extensions }) => {
       if (extensions?.code === "UNAUTHENTICATED") {
-        toast.error("Umaze igihe udakoresha urubuga");
+        toast.error("Umaze igihe udakoresha urubuga. Urajya kuyindi page");
+        window.localStorage.clear();
+        window.setTimeout(() => {
+          window.location.pathname = "/login";
+        }, 3000);
+
         return;
       }
     });
