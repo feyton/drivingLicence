@@ -1,6 +1,45 @@
 "use strict";
 (self["webpackChunkclient"] = self["webpackChunkclient"] || []).push([[723],{
 
+/***/ 6708:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var flowbite_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6515);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
+var _excluded = ["loading", "children"];
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+function ButtonCustom(_ref) {
+  var _ref$loading = _ref.loading,
+    loading = _ref$loading === void 0 ? false : _ref$loading,
+    children = _ref.children,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, props, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("svg", {
+    className: "animate-spin h-5 w-5 mr-3",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("circle", {
+    className: "opacity-25",
+    cx: "12",
+    cy: "12",
+    r: "10",
+    stroke: "currentColor",
+    strokeWidth: "4",
+    fill: "none"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("path", {
+    className: "opacity-75",
+    fill: "currentColor",
+    d: "M4 12a8 8 0 018-8V0c4.418 0 8 3.582 8 8s-3.582 8-8 8-8-3.582-8-8zm8-4a4 4 0 100 8 4 4 0 000-8z"
+  })), children);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonCustom);
+
+/***/ }),
+
 /***/ 8723:
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -8,15 +47,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(319);
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6252);
-/* harmony import */ var _apollo_client_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9098);
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(319);
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(6252);
+/* harmony import */ var _apollo_client_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9098);
 /* harmony import */ var flowbite_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6515);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7536);
+/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7536);
 /* harmony import */ var react_quill__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1167);
 /* harmony import */ var react_toastify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6042);
-/* harmony import */ var _utils_useTitle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3196);
+/* harmony import */ var _components_ButtonCustom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6708);
+/* harmony import */ var _utils_useTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3196);
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 var _templateObject;
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -43,10 +83,11 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var ADD_QUESTION = (0,_apollo_client_core__WEBPACK_IMPORTED_MODULE_5__/* .gql */ .Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  mutation AddQuestion($input: QuestionInput!) {\n    AddQuestion(input: $input) {\n      id\n      text\n      options {\n        id\n        text\n      }\n      answer\n      explanation\n    }\n  }\n"])));
+
+var ADD_QUESTION = (0,_apollo_client_core__WEBPACK_IMPORTED_MODULE_6__/* .gql */ .Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  mutation AddQuestion($input: QuestionInput!) {\n    AddQuestion(input: $input) {\n      id\n      text\n      options {\n        id\n        text\n      }\n      answer\n      explanation\n    }\n  }\n"])));
 function QuestionForm() {
-  (0,_utils_useTitle__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z)("Add question");
-  var _useForm = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_6__/* .useForm */ .cI)({
+  (0,_utils_useTitle__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z)("Add question");
+  var _useForm = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_7__/* .useForm */ .cI)({
       defaultValues: {
         options: [{}]
       }
@@ -56,10 +97,11 @@ function QuestionForm() {
     control = _useForm.control,
     errors = _useForm.formState.errors,
     reset = _useForm.reset;
-  var _useMutation = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_7__/* .useMutation */ .D)(ADD_QUESTION),
-    _useMutation2 = _slicedToArray(_useMutation, 1),
-    addQuestion = _useMutation2[0];
-  var client = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_8__/* .useApolloClient */ .x)();
+  var _useMutation = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_8__/* .useMutation */ .D)(ADD_QUESTION),
+    _useMutation2 = _slicedToArray(_useMutation, 2),
+    addQuestion = _useMutation2[0],
+    loading = _useMutation2[1].loading;
+  var client = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_9__/* .useApolloClient */ .x)();
   var onSubmit = function onSubmit(data) {
     var input = _objectSpread({}, data);
     addQuestion({
@@ -87,41 +129,60 @@ function QuestionForm() {
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
+              e.preventDefault();
               file = input.files[0];
               formData = new FormData();
               formData.append("file", file);
               formData.append("upload_preset", "driving");
-              _context.prev = 4;
-              _context.next = 7;
+              _context.prev = 5;
+              _context.next = 8;
               return fetch("https://api.cloudinary.com/v1_1/feyton/image/upload", {
                 method: "POST",
                 body: formData
               });
-            case 7:
+            case 8:
               res = _context.sent;
-              _context.next = 10;
+              _context.next = 11;
               return res.json();
-            case 10:
+            case 11:
               data = _context.sent;
               editor.insertEmbed(editor.getSelection(), "image", data.secure_url);
-              _context.next = 18;
+              _context.next = 19;
               break;
-            case 14:
-              _context.prev = 14;
-              _context.t0 = _context["catch"](4);
+            case 15:
+              _context.prev = 15;
+              _context.t0 = _context["catch"](5);
               console.error(_context.t0);
               react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.error */ .Am.error(_context.t0.message);
-            case 18:
+            case 19:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[4, 14]]);
+        }, _callee, null, [[5, 15]]);
       }));
       return function (_x2) {
         return _ref.apply(this, arguments);
       };
     }();
   };
+  var modules = react__WEBPACK_IMPORTED_MODULE_1__.useMemo(function () {
+    return {
+      toolbar: {
+        container: [["bold", "italic", "underline"], [{
+          list: "ordered"
+        }, {
+          list: "bullet"
+        }, {
+          indent: "-1"
+        }, {
+          indent: "+1"
+        }], ["link", "image"], ["clean"]],
+        handlers: {
+          image: handleImageUpload
+        }
+      }
+    };
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "px-5 mt-5 mx-auto w-full "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("form", {
@@ -129,11 +190,12 @@ function QuestionForm() {
     onSubmit: handleSubmit(onSubmit)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("h2", {
     className: "font-bold text-3xl text-center mb-2"
-  }, "Add question"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+  }, "Ongeraho Ikibazo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "min-h-fit "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
+    required: true,
     htmlFor: "question"
-  }, "Ikibazo:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_6__/* .Controller */ .Qr, {
+  }, "Ikibazo:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_7__/* .Controller */ .Qr, {
     control: control,
     name: "text",
     rules: {
@@ -152,62 +214,50 @@ function QuestionForm() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_quill__WEBPACK_IMPORTED_MODULE_2__, {
         theme: "snow",
         ref: quilRef,
-        onChange: function onChange(text) {
-          return _onChange(text);
+        onChange: function onChange(value) {
+          return _onChange(value);
         },
         value: value || "",
-        modules: {
-          toolbar: {
-            container: [["bold", "italic", "underline"], [{
-              list: "ordered"
-            }, {
-              list: "bullet"
-            }, {
-              indent: "-1"
-            }, {
-              indent: "+1"
-            }], ["link", "image"], ["clean"]],
-            handlers: {
-              image: handleImageUpload
-            }
-          }
-        },
+        modules: modules,
         className: errors !== null && errors !== void 0 && errors.text ? "border border-red-500 rounded-md" : "border border-green-300 rounded-md"
       });
     }
   }), errors.text && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", {
     className: "text-red-500 "
   }, errors.text.message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "  mb-4"
+    className: "  mb-4 mt-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
-    htmlFor: "options block"
-  }, "Amahitamo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "flex flex-row gap-2 mb-1"
+    htmlFor: "options block mb-2",
+    required: true
+  }, "Amahitamo:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "flex flex-row gap-2 mb-1 mt-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("input", _extends({
     type: "text",
     name: "options[0].id",
     id: "options[0].id",
-    defaultValue: "A",
-    className: "mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline",
+    readOnly: true,
+    value: "A",
+    className: "mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline",
     placeholder: "Option ID"
   }, register("options[0].id", {
-    required: true
+    required: "Aha hakeneye kuzuzwa"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("input", _extends({
     type: "text",
     name: "options[0].text",
     id: "options[0].text",
     className: "flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline",
-    placeholder: "Option Text"
+    placeholder: "Uzuza hano igisubizo"
   }, register("options[0].text", {
-    required: true
+    required: "Aha hakeneye kuzuzwa"
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex flex-row gap-2 mb-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("input", _extends({
     type: "text",
     name: "options[1].id",
     id: "options[1].id",
-    defaultValue: "B",
-    className: "mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline",
+    value: "B",
+    readOnly: true,
+    className: "mr-2 w-[40px] font-bold outline-none border-0 leading-tight  appearance-none  rounded-md focus:outline-none focus:shadow-outline",
     placeholder: "Option ID"
   }, register("options[1].id", {
     required: true
@@ -216,7 +266,7 @@ function QuestionForm() {
     name: "options[1].text",
     id: "options[1].text",
     className: "flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline",
-    placeholder: "Option Text"
+    placeholder: "Uzuza hano igisubizo"
   }, register("options[1].text", {
     required: true
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -225,8 +275,9 @@ function QuestionForm() {
     type: "text",
     name: "options[2].id",
     id: "options[2].id",
-    defaultValue: "C",
-    className: "mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline",
+    readOnly: true,
+    value: "C",
+    className: "mr-2 w-[40px] font-bold outline-none border-0 leading-tight appearance-none  rounded-md focus:outline-none focus:shadow-outline",
     placeholder: "Option ID"
   }, register("options[2].id", {
     required: true
@@ -235,17 +286,18 @@ function QuestionForm() {
     name: "options[2].text",
     id: "options[2].text",
     className: "flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline",
-    placeholder: "Option Text"
+    placeholder: "Uzuza hano igisubizo"
   }, register("options[2].text", {
     required: true
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex flex-row gap-2 mb-1"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("input", _extends({
     type: "text",
-    defaultValue: "D",
+    value: "D",
     name: "options[3].id",
     id: "options[3].id",
-    className: "mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline",
+    readOnly: true,
+    className: "mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none rounded-md focus:outline-none focus:shadow-outline",
     placeholder: "Option ID"
   }, register("options[3].id", {
     required: true
@@ -254,7 +306,7 @@ function QuestionForm() {
     name: "options[3].text",
     id: "options[3].text",
     className: "flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline",
-    placeholder: "Option Text"
+    placeholder: "Uzuza hano igisubizo"
   }, register("options[3].text", {
     required: true
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -264,7 +316,7 @@ function QuestionForm() {
   }, "Answer:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Select */ .Ph, _extends({
     className: "rounded-md"
   }, register("answer", {
-    required: "This field is required"
+    required: "Ugomba guhitamo igisubizo"
   }), {
     name: "answer",
     id: "answer",
@@ -273,7 +325,7 @@ function QuestionForm() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
     value: "",
     hidden: true
-  }, "Select answer ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
+  }, "Hitamo igisubizo cya nyacyo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
     value: "A"
   }, "A"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
     value: "B"
@@ -285,7 +337,7 @@ function QuestionForm() {
     className: "flex flex-col gap-1 mt-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
     htmlFor: "category"
-  }, "Category:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Select */ .Ph, _extends({
+  }, "Ikiciro:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Select */ .Ph, _extends({
     className: "rounded-md"
   }, register("category", {
     required: "Ikiciro kirakenewe"
@@ -299,21 +351,21 @@ function QuestionForm() {
     hidden: true
   }, "Hitamo ikiciro"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
     value: "general"
-  }, "General"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
+  }, "Ibisanzwe"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("option", {
     value: "posts"
   }, "Ibyapa"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "mb-6 mt-2"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("label", {
     className: "font-primary",
     htmlFor: "explanation"
-  }, "Explanation:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_6__/* .Controller */ .Qr, {
+  }, "Ubusobanuro bw'igisubizo:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_hook_form__WEBPACK_IMPORTED_MODULE_7__/* .Controller */ .Qr, {
     control: control,
     name: "explanation",
     rules: {
-      required: "This field is required",
+      required: "Ubusobanuro buracyenewe",
       minLength: {
         value: 15,
-        message: "Enter at least 10 characters in the description"
+        message: "Byibura imigemo 10 y'amagambo irakenewe"
       }
     },
     error: errors.explanation,
@@ -342,29 +394,13 @@ function QuestionForm() {
         className: errors !== null && errors !== void 0 && errors.explanation ? "border border-red-500 rounded-md" : "border border-green-300 rounded-md"
       });
     }
-  }), errors.explanation && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, errors.explanation.message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
+  }), errors.explanation && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("span", null, errors.explanation.message)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_components_ButtonCustom__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+    loading: loading,
     className: "mt-3",
     type: "submit"
-  }, "Submit"))));
+  }, "Ohereza"))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionForm);
-
-/***/ }),
-
-/***/ 3196:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-
-function useTitle(title) {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    document.title = "".concat(title, " | DL");
-  }, [title]);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTitle);
 
 /***/ })
 

@@ -128,9 +128,9 @@ function UserProfile() {
                         : "bg-red-200 bg-opacity-40"
                     }
                   >
-                    <Table.Cell>{index}</Table.Cell>
+                    <Table.Cell>{index + 1}</Table.Cell>
                     <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-                      {quiz.title}
+                      <Link to={`/score/${id}`}>{quiz.title}</Link>
                     </Table.Cell>
                     <Table.Cell>{`${score} / ${quiz.score}`}</Table.Cell>
                     <Table.Cell className="flex flex-row gap-3 justify-center">

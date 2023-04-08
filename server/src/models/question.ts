@@ -11,6 +11,11 @@ const QuizSchema = new Schema(
       type: String,
       required: true,
     },
+    cover: {
+      type: String,
+      default:
+        "https://res.cloudinary.com/feyton/image/upload/v1680981703/10-driving-test-tips-eclipse-driving-school_dzjmmn.jpg",
+    },
     user: {
       type: mongoose.Types.ObjectId,
       ref: "User",
@@ -147,11 +152,49 @@ const QuestionSchema = new Schema(
   }
 );
 
-QuestionSchema.virtual("timesAddedToQuizzes", {
-  ref: "Quiz",
-  localField: "_id",
-  foreignField: "questions",
-  count: true,
+QuestionSchema.virtual("timesAddedToQuizzes").get(async function () {
+  const questionId: any = this._id;
+  const res = await mongoose.models.Question.aggregate([
+    {
+      $match: {
+        _id: questionId,
+      },
+    },
+    {
+      $lookup: {
+        from: "quizzes",
+        localField: "_id",
+        foreignField: "questions",
+        as: "quizzes",
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        count: { $size: "$quizzes" },
+      },
+    },
+  ]);
+
+  return res[0].count;
 });
+
+QuestionSchema.virtual("averageDifficulty").get(function () {
+  if (this.difficulty.length === 0) {
+    return null;
+  }
+  const totalRating = this.difficulty.reduce(
+    (acc, curr) => acc + curr.rating,
+    0
+  );
+
+  return totalRating / this.difficulty.length;
+});
+QuestionSchema.methods.getUserRating = function (userId: any) {
+  const userRating = this.difficulty.find(
+    (item: any) => item.userId.toString() === userId.toString()
+  );
+  return userRating ? userRating.rating : null;
+};
 
 export const Question = model("Question", QuestionSchema);

@@ -19,7 +19,7 @@ const submitQuizAnswers = async (
     let score = 0;
     const questions = await Promise.all(
       answers.map(async ({ questionId, answer }: any) => {
-        const question = await Question.findById(questionId);
+        const question: any = await Question.findById(questionId);
         if (!question) {
           throw new Error("Question not found");
         }
@@ -30,8 +30,10 @@ const submitQuizAnswers = async (
         return {
           id: question._id,
           text: question.text,
-          correctAnswer: question.options.find((q) => q.id === question.answer),
-          userAnswer: question.options.find((q) => q.id === answer),
+          correctAnswer: question.options.find(
+            (q: any) => q.id === question.answer
+          ),
+          userAnswer: question.options.find((q: any) => q.id === answer),
           explanation: question.explanation,
         };
       })
@@ -155,37 +157,35 @@ const QuizResolver: any = {
       })
     ),
     submitQuizAnswers: authenticated(submitQuizAnswers),
-    rateQuestionDifficulty: async (
-      _: any,
-      { questionId, rating }: any,
-      { userId }: any
-    ) => {
-      try {
-        // Check if user has already rated this question
-        const question: any = await Question.findById(questionId);
-        const existingRating = question.difficulty.find(
-          (d: any) => d.userId.toString() === userId
-        );
-        if (existingRating) {
-          // Update existing rating
-          existingRating.rating = rating;
-        } else {
-          // Add new rating
-          question.difficulty.push({ userId: userId, rating });
+    rateQuestionDifficulty: authenticated(
+      async (_: any, { questionId, rating }: any, { userId }: any) => {
+        try {
+          // Check if user has already rated this question
+          const question: any = await Question.findById(questionId);
+          const existingRating = question.difficulty.find(
+            (d: any) => d.userId.toString() === userId
+          );
+          if (existingRating) {
+            // Update existing rating
+            existingRating.rating = rating;
+          } else {
+            // Add new rating
+            question.difficulty.push({ userId: userId, rating });
+          }
+          await question.save();
+          return {
+            success: true,
+            message: "Question difficulty rating updated successfully.",
+          };
+        } catch (error) {
+          console.error(error);
+          return {
+            success: false,
+            message: "Failed to rate question difficulty.",
+          };
         }
-        await question.save();
-        return {
-          success: true,
-          message: "Question difficulty rating updated successfully.",
-        };
-      } catch (error) {
-        console.error(error);
-        return {
-          success: false,
-          message: "Failed to rate question difficulty.",
-        };
       }
-    },
+    ),
   },
   Quiz: {
     attempts: async (parent: any, args: any) => {
@@ -213,7 +213,9 @@ const QuizResolver: any = {
   User: {
     scores: authenticated(async (parent, args: any, context: any) => {
       const { userId } = context;
-      const scores = await Score.find({ userId }).populate("quizId");
+      const scores = await Score.find({ userId }).populate("quizId").sort({
+        createdAt: -1,
+      });
 
       const scs = scores.map((score) => ({
         ...score,

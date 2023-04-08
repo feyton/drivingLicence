@@ -35,7 +35,7 @@ function QuestionEditPage() {
       variables: { id },
       onCompleted: (data) => setQuestion(data.getQuestion),
     });
-  });
+  }, []);
   return (
     <div>
       {loading && <Spinner />}

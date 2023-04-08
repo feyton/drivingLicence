@@ -32,6 +32,8 @@ var react = __webpack_require__(7294);
 var dist = __webpack_require__(9655);
 // EXTERNAL MODULE: ./src/utils/CheckRole.js
 var CheckRole = __webpack_require__(3881);
+// EXTERNAL MODULE: ./src/utils/useTitle.js
+var useTitle = __webpack_require__(3196);
 // EXTERNAL MODULE: ./node_modules/react-table/index.js
 var react_table = __webpack_require__(9521);
 ;// CONCATENATED MODULE: ./src/pages/Questions.js
@@ -120,7 +122,9 @@ var GET_QUESTION = (0,lib/* gql */.Ps)(_templateObject4 || (_templateObject4 = _
 
 
 
+
 function GetQuestions() {
+  (0,useTitle/* default */.Z)("Ibibazo");
   var _useLazyQuery = (0,useLazyQuery/* useLazyQuery */.t)(GET_QUESTIONS),
     _useLazyQuery2 = _slicedToArray(_useLazyQuery, 2),
     getQuestions = _useLazyQuery2[0],
@@ -370,17 +374,22 @@ function GetQuestions() {
     }
   })), /*#__PURE__*/react.createElement("div", {
     className: "text-muted text-xs my-1"
-  }, /*#__PURE__*/react.createElement("span", null, "Submitted by: ", /*#__PURE__*/react.createElement("b", null, data.getQuestion.user.name)))), /*#__PURE__*/react.createElement(esm/* Modal.Footer */.u_.Footer, null, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+  }, /*#__PURE__*/react.createElement("span", null, "Submitted by: ", /*#__PURE__*/react.createElement("b", null, data.getQuestion.user.name)))), /*#__PURE__*/react.createElement(esm/* Modal.Footer */.u_.Footer, null, !data.getQuestion.approved && /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     color: "success",
     onClick: function onClick() {
-      return handleApprove(data.getQuestion.id);
+      handleApprove(data.getQuestion.id);
+      setSelectedQuestionView(null);
     }
   }, "Emeza"), /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     color: "failure",
     onClick: function onClick() {
       return handleShowDeleteModal(data.getQuestion);
     }
-  }, "Siba"), /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+  }, "Siba"), /*#__PURE__*/react.createElement(dist/* Link */.rU, {
+    to: "/questions/edit/".concat(data.getQuestion.id)
+  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+    color: "success"
+  }, "Shyira kugihe")), /*#__PURE__*/react.createElement(esm/* Button */.zx, {
     color: "warning",
     onClick: function onClick() {
       return setSelectedQuestionView(null);

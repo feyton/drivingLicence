@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import { stopTimer } from "../redux/reducers/timerReducer";
 import QuizResult from "./QuizResults";
+import useTitle from "../utils/useTitle";
 
 export const SUBMIT_QUIZ_ANSWERS = gql`
   mutation SubmitQuizAnswers($quizId: ID!, $answers: [QuizAnswerInput]!) {
@@ -54,6 +55,7 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
+  useTitle(quiz.title)
 
   const [result, setResults] = useState();
   const client = useApolloClient();
@@ -192,10 +194,12 @@ function QuizPage(props) {
       )}
 
       {result && <QuizResult {...result} />}
-      <Modal isOpen={isSubmitting}>
+      <Modal show={isSubmitting}>
         <Modal.Body>
           <div className="text-center">
-            <p className="text-lg font-bold">Sending your answers...</p>
+            <p className="text-lg font-bold">
+              Turi kohereza ibisubizo byanyu...
+            </p>
           </div>
         </Modal.Body>
       </Modal>

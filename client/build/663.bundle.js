@@ -46,22 +46,28 @@ function Navbar() {
     menuOpen = _useState2[0],
     setMenuOpen = _useState2[1];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "flex flex-row justify-between px-3 py-1 md:py-2"
+    className: "bg-dark-blue"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "flex py-6 z-10 w-[90%] mx-auto flex-row justify-between px-3  "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
-    to: "/",
-    className: "text-2xl md:text-3xl font-bold text-primary"
-  }, "Permit")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
+    className: "w-40 md:w-48",
+    src: "https://res.cloudinary.com/feyton/image/upload/v1680981055/drivetestpro_logo_gxnshf.png",
+    alt: " "
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "hidden md:flex flex-row gap-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
     to: "/quiz"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
+    className: "outline-none appearance-none focus:outline-none",
     color: "info",
     size: "xs"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaArrowRight */ .Z1Y, {
     className: "mr-2"
-  }), " Kora ikizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
+  }), "Ibizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
     to: "/add"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
     size: "xs"
@@ -128,7 +134,7 @@ function Navbar() {
     className: "w-full"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaArrowRight */ .Z1Y, {
     className: "mr-2"
-  }), " Kora ikizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
+  }), " Ibizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
     to: "/add",
     onClick: function onClick() {
       return setMenuOpen(false);
@@ -184,7 +190,7 @@ function Navbar() {
     color: "success"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaArrowRight */ .Z1Y, {
     className: "mr-2"
-  }), " Iyandikishe"))))));
+  }), " Iyandikishe")))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 

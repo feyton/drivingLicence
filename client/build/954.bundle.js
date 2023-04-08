@@ -195,6 +195,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
+
 var SUBMIT_QUIZ_ANSWERS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  mutation SubmitQuizAnswers($quizId: ID!, $answers: [QuizAnswerInput]!) {\n    submitQuizAnswers(quizId: $quizId, answers: $answers) {\n      score\n      questions {\n        id\n        text\n        correctAnswer {\n          id\n          text\n        }\n        userAnswer {\n          id\n          text\n        }\n        explanation\n      }\n    }\n  }\n"])));
 function QuizPage(props) {
   var _useState = (0,react.useState)(0),
@@ -226,6 +227,7 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
+  (0,useTitle/* default */.Z)(quiz.title);
   var _useState5 = (0,react.useState)(),
     _useState6 = QuizPage_slicedToArray(_useState5, 2),
     result = _useState6[0],
@@ -343,12 +345,12 @@ function QuizPage(props) {
     currentQuestionIndex: answers[currentQuestion.id] ? currentQuestionIndex : currentQuestionIndex - 1,
     totalQuestions: quiz.questions.length
   })), result && /*#__PURE__*/react.createElement(QuizResults/* default */.Z, result), /*#__PURE__*/react.createElement(esm/* Modal */.u_, {
-    isOpen: isSubmitting
+    show: isSubmitting
   }, /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement("div", {
     className: "text-center"
   }, /*#__PURE__*/react.createElement("p", {
     className: "text-lg font-bold"
-  }, "Sending your answers...")))));
+  }, "Turi kohereza ibisubizo byanyu...")))));
 }
 /* harmony default export */ const pages_QuizPage = (QuizPage);
 ;// CONCATENATED MODULE: ./src/pages/ExamPage.js
@@ -375,7 +377,7 @@ var GET_QUIZ = (0,lib/* gql */.Ps)(ExamPage_templateObject || (ExamPage_template
 function ExamPage() {
   var _useParams = (0,dist/* useParams */.UO)(),
     id = _useParams.id;
-  (0,useTitle/* default */.Z)("Take Quiz");
+  (0,useTitle/* default */.Z)("Kora Ikizamini");
   var dispatch = (0,es/* useDispatch */.I0)();
   var _useState = (0,react.useState)(false),
     _useState2 = ExamPage_slicedToArray(_useState, 2),
@@ -461,99 +463,6 @@ function ExamPage() {
   })), "Loading..."));
 }
 /* harmony default export */ const pages_ExamPage = (ExamPage);
-
-/***/ }),
-
-/***/ 2716:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var dompurify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7856);
-/* harmony import */ var flowbite_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6515);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7294);
-/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9583);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9655);
-
-
-
-
-
-function QuizResult(_ref) {
-  var score = _ref.score,
-    questions = _ref.questions;
-  var percentScore = (score / questions.length * 100).toFixed();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-    className: "w-full p-6"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-    className: "font-bold text-2xl mb-4 flex items-center flex-row gap-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("h1", null, "Amanota: ", score, " / ", questions.length, " \u27A1\uFE0F", " ", percentScore >= 60 ? "Watsinze" : "Ntabwo watsinze"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-    className: "h-12 w-12 flex items-center justify-center rounded-full mb-4 ".concat(percentScore >= 60 ? "bg-green-400" : "bg-red-400")
-  }, percentScore >= 60 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__/* .FaCheck */ .l_A, {
-    className: "text-white text-2xl"
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__/* .FaTimes */ .aHS, {
-    className: "text-white text-2xl"
-  }))), questions.map(function (question) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      key: question.id,
-      className: "p-4 border-2 rounded-lg mb-4 ".concat(question.correctAnswer.id === question.userAnswer.id ? "border-green-400 bg-green-100" : "border-red-400 bg-red-100")
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: " mb-2",
-      dangerouslySetInnerHTML: {
-        __html: dompurify__WEBPACK_IMPORTED_MODULE_0__.sanitize(question.text)
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("hr", {
-      className: "text-red-500 border border-red-500"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "flex items-center mb-2 mt-2"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "font-bold mr-2"
-    }, "Igisubizo cya nyacyo:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", null, question.correctAnswer.text)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "flex items-center mb-2"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "font-bold mr-2"
-    }, "Igisubizo cyawe:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", null, question.userAnswer.text)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "flex flex-col  justify-start"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "font-bold mr-2"
-    }, "Ubusobanuro:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      dangerouslySetInnerHTML: {
-        __html: dompurify__WEBPACK_IMPORTED_MODULE_0__.sanitize(question.explanation)
-      }
-    })), question.correctAnswer.id === question.userAnswer.id ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "flex items-center mt-2 text-green-400"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__/* .FaCheck */ .l_A, {
-      className: "mr-1"
-    }), "Wagikoze neza") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: "flex items-center mt-2 text-red-400"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_3__/* .FaTimes */ .aHS, {
-      className: "mr-1"
-    }), "Ntabwo wagikoze"));
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__/* .Link */ .rU, {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_1__/* .Button */ .zx, {
-    color: "info"
-  }, "Subira Ahatangira")));
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuizResult);
-
-/***/ }),
-
-/***/ 3196:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-
-function useTitle(title) {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    document.title = "".concat(title, " | DL");
-  }, [title]);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTitle);
 
 /***/ })
 

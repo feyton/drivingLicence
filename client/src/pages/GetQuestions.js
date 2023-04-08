@@ -63,9 +63,11 @@ const GET_QUESTION = gql`
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CheckRole from "../utils/CheckRole";
+import useTitle from "../utils/useTitle";
 import DataTable from "./Questions";
 
 function GetQuestions() {
+  useTitle("Ibibazo");
   const [getQuestions, { loading }] = useLazyQuery(GET_QUESTIONS);
   const [getQuestion, { loading: loadingQuestion, data }] =
     useLazyQuery(GET_QUESTION);
@@ -289,18 +291,27 @@ function GetQuestions() {
               </div>
             </Modal.Body>
             <Modal.Footer>
-              <Button
-                color="success"
-                onClick={() => handleApprove(data.getQuestion.id)}
-              >
-                Emeza
-              </Button>
+              {!data.getQuestion.approved && (
+                <Button
+                  color="success"
+                  onClick={() => {
+                    handleApprove(data.getQuestion.id);
+                    setSelectedQuestionView(null);
+                  }}
+                >
+                  Emeza
+                </Button>
+              )}
+
               <Button
                 color={"failure"}
                 onClick={() => handleShowDeleteModal(data.getQuestion)}
               >
                 Siba
               </Button>
+              <Link to={`/questions/edit/${data.getQuestion.id}`}>
+                <Button color={"success"}>Shyira kugihe</Button>
+              </Link>
               <Button
                 color={"warning"}
                 onClick={() => setSelectedQuestionView(null)}

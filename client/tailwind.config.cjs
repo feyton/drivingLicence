@@ -13,11 +13,13 @@ module.exports = {
         "dark-purple": "#081A51",
         "light-white": "rgba(255,255,255,0.17)",
         current: "#03C9D7",
+        "dark-blue": "#14274A",
       },
       fontFamily: {
         primary: ["Poppins", "sans-serif"],
         secondary: ["Lato", "sans-serif"],
         lexend: ["Lexend", "sans-serif"],
+        sans: ["Dosis", "sans-serif"],
       },
       backgroundImage: {
         bgImage:

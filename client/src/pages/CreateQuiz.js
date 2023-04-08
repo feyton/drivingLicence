@@ -5,11 +5,12 @@ import {
   useMutation,
 } from "@apollo/client";
 import * as DOMPurify from "dompurify";
-import { Button, Modal, Textarea, TextInput } from "flowbite-react";
+import { Button, Modal, TextInput, Textarea } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import useTitle from "../utils/useTitle";
 
 const CREATE_QUIZ = gql`
   mutation CreateQuiz($input: QuizInput!) {
@@ -24,10 +25,7 @@ const CREATE_QUIZ = gql`
 
 const QuestionCard = ({ question, onRemove, onChecked, field = "add" }) => {
   return (
-    <div
-      className="bg-white shadow-md rounded-md p-4 my-2 cursor-pointer"
-      draggable="true"
-    >
+    <div className="bg-gray-100 shadow-md rounded-md p-4 my-2 cursor-pointer">
       <div
         dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(question.text, {
@@ -37,8 +35,15 @@ const QuestionCard = ({ question, onRemove, onChecked, field = "add" }) => {
         className="font-semibold text-gray-800 mb-2"
       ></div>
       <div className="text-gray-600">
-        <div className="flex items-center mb-1">
-          <div>{question.correctAnswer.text}</div>
+        <div className="flex flex-col mb-1">
+          <div>
+            <b>Answer: </b>
+            {question.correctAnswer.text}
+          </div>
+          <div>
+            <b>Appears in: </b>
+            {question.timesAddedToQuizzes} quizzes
+          </div>
         </div>
 
         {field === "add" ? (
@@ -72,10 +77,12 @@ const GET_QUESTIONS = gql`
       correctAnswer {
         text
       }
+      averageDifficulty
     }
   }
 `;
 const QuizCreationPage = () => {
+  useTitle("Ongeraho Ikizamini");
   const [getQuestions, { loading }] = useLazyQuery(GET_QUESTIONS);
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [data, setData] = useState(null);

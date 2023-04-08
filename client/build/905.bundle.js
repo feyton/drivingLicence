@@ -24,8 +24,6 @@ var esm = __webpack_require__(6515);
 var react = __webpack_require__(7294);
 // EXTERNAL MODULE: ./node_modules/react-hook-form/dist/index.esm.mjs
 var index_esm = __webpack_require__(7536);
-// EXTERNAL MODULE: ./node_modules/react-icons/hi/index.esm.js
-var hi_index_esm = __webpack_require__(3854);
 // EXTERNAL MODULE: ./node_modules/react-router-dom/dist/index.js
 var dist = __webpack_require__(9655);
 // EXTERNAL MODULE: ./node_modules/react-toastify/dist/react-toastify.esm.mjs + 1 modules
@@ -89,20 +87,28 @@ function QuizList(_ref) {
     className: "flex flex-row gap-3 flex-wrap py-2 w-full justify-start"
   }, quizzes.map(function (quiz, index) {
     return /*#__PURE__*/react.createElement(esm/* Card */.Zb, {
-      className: "max-w-[400px] ".concat(quiz.userAttempts > 0 && "bg-green-500 ", " "),
+      className: "w-[350px]",
       key: index
-    }, quiz.userAttempts > 0 && /*#__PURE__*/react.createElement("div", {
+    }, quiz.userAttempts > 0 ? /*#__PURE__*/react.createElement("div", {
       className: "flex items-center justify-between mb-2"
     }, /*#__PURE__*/react.createElement("div", {
       className: "flex items-center"
     }, /*#__PURE__*/react.createElement(fa_index_esm/* FaCheckCircle */.FJM, {
       className: "mr-2 text-green-500"
     }), /*#__PURE__*/react.createElement("span", {
+      className: "text-xs font-sans font-medium"
+    }, "Iki kizamini wagikoze inshuro ", /*#__PURE__*/react.createElement("b", null, quiz.userAttempts), " "))) : /*#__PURE__*/react.createElement("div", {
+      className: "flex items-center justify-between mb-2"
+    }, /*#__PURE__*/react.createElement("div", {
+      className: "flex items-center"
+    }, /*#__PURE__*/react.createElement(fa_index_esm/* FaArrowAltCircleRight */.Rdr, {
+      className: "mr-2 text-blue-500"
+    }), /*#__PURE__*/react.createElement("span", {
       className: "text-xs font-medium"
-    }, "You have attempted this quiz ", /*#__PURE__*/react.createElement("b", null, quiz.userAttempts), " ", "time(s)."))), /*#__PURE__*/react.createElement("h5", {
-      className: "text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+    }, "Kora iki kizamini bwa mbere"))), /*#__PURE__*/react.createElement("h5", {
+      className: "text-xl font-sans font-bold tracking-tight text-gray-900 dark:text-white"
     }, quiz.title), /*#__PURE__*/react.createElement("hr", null), /*#__PURE__*/react.createElement("p", {
-      className: "font-normal text-sm text-gray-700 dark:text-gray-400"
+      className: "font-normal font-sans text-xs text-gray-700 dark:text-gray-400"
     }, quiz.description), /*#__PURE__*/react.createElement("div", {
       className: "flex items-center"
     }, /*#__PURE__*/react.createElement("img", {
@@ -112,7 +118,7 @@ function QuizList(_ref) {
     }), /*#__PURE__*/react.createElement("div", {
       className: "flex flex-col"
     }, /*#__PURE__*/react.createElement("h5", {
-      className: "text-sm font-medium text-gray-900 dark:text-white"
+      className: "text-xs font-medium text-gray-900 dark:text-white"
     }, quiz.user.name), /*#__PURE__*/react.createElement("p", {
       className: "text-xs text-gray-500"
     }, quiz.createdAt))), /*#__PURE__*/react.createElement("p", {
@@ -157,6 +163,8 @@ function QuizList(_ref) {
   }, "Siba"))));
 }
 /* harmony default export */ const components_QuizList = (QuizList);
+// EXTERNAL MODULE: ./src/utils/useTitle.js
+var useTitle = __webpack_require__(3196);
 ;// CONCATENATED MODULE: ./src/pages/GetQuizzes.js
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 var GetQuizzes_templateObject, _templateObject2;
@@ -180,9 +188,11 @@ function GetQuizzes_taggedTemplateLiteral(strings, raw) { if (!raw) { raw = stri
 
 
 
-var GET_QUIZZES = (0,lib/* gql */.Ps)(GetQuizzes_templateObject || (GetQuizzes_templateObject = GetQuizzes_taggedTemplateLiteral(["\n  query GetQuizzes {\n    getQuizzes {\n      title\n      description\n      id\n      score\n      attempts\n      createdAt\n      userAttempts\n      user {\n        name\n        picture\n      }\n    }\n  }\n"])));
+
+var GET_QUIZZES = (0,lib/* gql */.Ps)(GetQuizzes_templateObject || (GetQuizzes_templateObject = GetQuizzes_taggedTemplateLiteral(["\n  query GetQuizzes {\n    getQuizzes {\n      title\n      description\n      id\n      score\n      cover\n      attempts\n      createdAt\n      userAttempts\n      user {\n        name\n        picture\n      }\n    }\n  }\n"])));
 var CREATE_QUIZ = (0,lib/* gql */.Ps)(_templateObject2 || (_templateObject2 = GetQuizzes_taggedTemplateLiteral(["\n  mutation CreateQuiz($input: QuizInput!) {\n    CreateQuiz(input: $input) {\n      title\n      description\n      id\n      score\n    }\n  }\n"])));
 function GetQuizzes() {
+  (0,useTitle/* default */.Z)("Ibizamini");
   var _useLazyQuery = (0,useLazyQuery/* useLazyQuery */.t)(GET_QUIZZES),
     _useLazyQuery2 = GetQuizzes_slicedToArray(_useLazyQuery, 2),
     getQuizzes = _useLazyQuery2[0],
@@ -258,17 +268,7 @@ function GetQuizzes() {
     className: "flex justify-end mb-3"
   }, /*#__PURE__*/react.createElement(dist/* Link */.rU, {
     to: "/quiz/new"
-  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Create Quiz"))), /*#__PURE__*/react.createElement("hr", null)), /*#__PURE__*/react.createElement(esm/* Alert */.bZ, {
-    color: "success",
-    rounded: false,
-    withBorderAccent: true,
-    additionalContent: /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement("div", {
-      className: "mt-2 mb-4 text-sm text-green-700 dark:text-green-800"
-    }, "From today, all our quizzes are designed by Driving School Teachers with access to more than 400 questios. The quiz have a badge to show you how many times you have attempted the quiz to help you practice even better.")),
-    icon: hi_index_esm/* HiInformationCircle */.frK
-  }, /*#__PURE__*/react.createElement("h3", {
-    className: "text-lg font-medium text-green-700 dark:text-green-800"
-  }, "Important Update")), quizzes && /*#__PURE__*/react.createElement(components_QuizList, {
+  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, null, "Create Quiz"))), /*#__PURE__*/react.createElement("hr", null)), quizzes && /*#__PURE__*/react.createElement(components_QuizList, {
     quizzes: quizzes
   }), getQuizLoading && /*#__PURE__*/react.createElement("button", {
     type: "submit",

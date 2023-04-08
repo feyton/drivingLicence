@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import QuizList from "../components/QuizList";
 import CheckRole from "../utils/CheckRole";
+import useTitle from "../utils/useTitle";
 
 const GET_QUIZZES = gql`
   query GetQuizzes {
@@ -15,6 +16,7 @@ const GET_QUIZZES = gql`
       description
       id
       score
+      cover
       attempts
       createdAt
       userAttempts
@@ -38,6 +40,7 @@ const CREATE_QUIZ = gql`
 `;
 
 function GetQuizzes() {
+  useTitle("Ibizamini")
   const [getQuizzes, { loading: getQuizLoading }] = useLazyQuery(GET_QUIZZES);
   const [quizzes, setQuizzes] = useState();
   const [createQuiz, { loading }] = useMutation(CREATE_QUIZ);
@@ -82,26 +85,7 @@ function GetQuizzes() {
         </div>
         <hr />
       </CheckRole>
-      <Alert
-        color="success"
-        rounded={false}
-        withBorderAccent={true}
-        additionalContent={
-          <React.Fragment>
-            <div className="mt-2 mb-4 text-sm text-green-700 dark:text-green-800">
-              From today, all our quizzes are designed by Driving School
-              Teachers with access to more than 400 questios. The quiz have a
-              badge to show you how many times you have attempted the quiz to
-              help you practice even better.
-            </div>
-          </React.Fragment>
-        }
-        icon={HiInformationCircle}
-      >
-        <h3 className="text-lg font-medium text-green-700 dark:text-green-800">
-          Important Update
-        </h3>
-      </Alert>
+  
 
       {quizzes && <QuizList quizzes={quizzes} />}
       {getQuizLoading && (

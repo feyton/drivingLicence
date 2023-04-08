@@ -1,10 +1,43 @@
+import { gql, useMutation } from "@apollo/client";
 import * as DOMPurify from "dompurify";
 import { Button } from "flowbite-react";
-import React from "react";
+import React, { useState } from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import ButtonCustom from "../components/ButtonCustom";
+
+const RATE_QUESTION_DIFFICULTY = gql`
+  mutation RateDifficulty($questionId: ID!, $rating: Int!) {
+    rateQuestionDifficulty(questionId: $questionId, rating: $rating) {
+      success
+      message
+    }
+  }
+`;
 
 function QuizResult({ score, questions }) {
+  const [ratings, setRatings] = useState({});
+  const [rateQuestionDifficulty, { loading }] = useMutation(
+    RATE_QUESTION_DIFFICULTY
+  );
+  const submitRatings = async () => {
+    try {
+      await Promise.all(
+        Object.keys(ratings).forEach((item) => {
+          rateQuestionDifficulty({
+            variables: {
+              questionId: item,
+              rating: ratings[item],
+            },
+          });
+        })
+      );
+      toast.success("Your ratings has been submitted. Thank you");
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
   const percentScore = ((score / questions.length) * 100).toFixed();
   return (
     <div className="w-full p-6">
@@ -68,11 +101,47 @@ function QuizResult({ score, questions }) {
               Ntabwo wagikoze
             </div>
           )}
+          <div className="hidden md:flex items-center mt-2">
+            <div className="font-bold mr-2">Rate the difficulty:</div>
+            <div className=" hidden md:flex">
+              {[1, 2, 3, 4, 5].map((rating) => (
+                <Button
+                  key={rating}
+                  color={
+                    ratings[question.id] === rating
+                      ? rating === 5
+                        ? "failure"
+                        : "info"
+                      : "secondary"
+                  }
+                  onClick={() =>
+                    setRatings({ ...ratings, [question.id]: rating })
+                  }
+                >
+                  {rating}{" "}
+                  {rating === 1
+                    ? "Very Easy"
+                    : rating === 2
+                    ? "Easy"
+                    : rating === 3
+                    ? "Moderate"
+                    : rating === 4
+                    ? "Difficult"
+                    : "Very Difficult"}
+                </Button>
+              ))}
+            </div>
+          </div>
         </div>
       ))}
-      <Link to={"/"}>
-        <Button color={"info"}>Subira Ahatangira</Button>
-      </Link>
+      <div className="flex flex-row gap-4 ">
+        <Link to={"/quiz"}>
+          <Button color={"info"}>Subira kubizamini</Button>
+        </Link>
+        <ButtonCustom color="warning" loading={loading} onClick={submitRatings}>
+          Send Ratings
+        </ButtonCustom>
+      </div>
     </div>
   );
 }

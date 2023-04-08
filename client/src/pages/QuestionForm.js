@@ -1,10 +1,11 @@
 import { useApolloClient, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
-import { Button, Select } from "flowbite-react";
+import { Select } from "flowbite-react";
 import React, { useRef } from "react";
 import { Controller, useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
 import { toast } from "react-toastify";
+import ButtonCustom from "../components/ButtonCustom";
 import useTitle from "../utils/useTitle";
 
 const ADD_QUESTION = gql`
@@ -31,8 +32,9 @@ function QuestionForm() {
     formState: { errors },
     reset,
   } = useForm({ defaultValues: { options: [{}] } });
-  const [addQuestion] = useMutation(ADD_QUESTION);
+  const [addQuestion, { loading }] = useMutation(ADD_QUESTION);
   const client = useApolloClient();
+
   const onSubmit = (data) => {
     const input = {
       ...data,
@@ -56,6 +58,7 @@ function QuestionForm() {
     input.setAttribute("accept", "image/*");
     input.click();
     input.onchange = async (e) => {
+      e.preventDefault();
       const file = input.files[0];
       const formData = new FormData();
       formData.append("file", file);
@@ -77,6 +80,28 @@ function QuestionForm() {
     };
   };
 
+  const modules = React.useMemo(
+    () => ({
+      toolbar: {
+        container: [
+          ["bold", "italic", "underline"],
+          [
+            { list: "ordered" },
+            { list: "bullet" },
+            { indent: "-1" },
+            { indent: "+1" },
+          ],
+          ["link", "image"],
+          ["clean"],
+        ],
+        handlers: {
+          image: handleImageUpload,
+        },
+      },
+    }),
+    []
+  );
+
   return (
     <div>
       <div className="px-5 mt-5 mx-auto w-full ">
@@ -84,10 +109,14 @@ function QuestionForm() {
           className="max-w-xl mx-auto bg-white rounded-md px-6 pb-4 pt-2"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <h2 className="font-bold text-3xl text-center mb-2">Add question</h2>
+          <h2 className="font-bold text-3xl text-center mb-2">
+            Ongeraho Ikibazo
+          </h2>
           <hr />
           <div className="min-h-fit ">
-            <label htmlFor="question">Ikibazo:</label>
+            <label required htmlFor="question">
+              Ikibazo:
+            </label>
             <Controller
               control={control}
               name="text"
@@ -103,26 +132,9 @@ function QuestionForm() {
                 <ReactQuill
                   theme="snow"
                   ref={quilRef}
-                  onChange={(text) => onChange(text)}
+                  onChange={(value) => onChange(value)}
                   value={value || ""}
-                  modules={{
-                    toolbar: {
-                      container: [
-                        ["bold", "italic", "underline"],
-                        [
-                          { list: "ordered" },
-                          { list: "bullet" },
-                          { indent: "-1" },
-                          { indent: "+1" },
-                        ],
-                        ["link", "image"],
-                        ["clean"],
-                      ],
-                      handlers: {
-                        image: handleImageUpload,
-                      },
-                    },
-                  }}
+                  modules={modules}
                   className={
                     errors?.text
                       ? "border border-red-500 rounded-md"
@@ -135,25 +147,32 @@ function QuestionForm() {
               <span className="text-red-500 ">{errors.text.message}</span>
             )}
           </div>
-          <div className="  mb-4">
-            <label htmlFor="options block">Amahitamo</label>
-            <div className="flex flex-row gap-2 mb-1">
+          <div className="  mb-4 mt-2">
+            <label htmlFor="options block mb-2" required>
+              Amahitamo:
+            </label>
+            <div className="flex flex-row gap-2 mb-1 mt-2">
               <input
                 type="text"
                 name="options[0].id"
                 id="options[0].id"
-                defaultValue={"A"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                readOnly
+                value={"A"}
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
-                {...register("options[0].id", { required: true })}
+                {...register("options[0].id", {
+                  required: "Aha hakeneye kuzuzwa",
+                })}
               />
               <input
                 type="text"
                 name="options[0].text"
                 id="options[0].text"
                 className="flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline"
-                placeholder="Option Text"
-                {...register("options[0].text", { required: true })}
+                placeholder="Uzuza hano igisubizo"
+                {...register("options[0].text", {
+                  required: "Aha hakeneye kuzuzwa",
+                })}
               />
             </div>
             <div className="flex flex-row gap-2 mb-1">
@@ -161,8 +180,9 @@ function QuestionForm() {
                 type="text"
                 name="options[1].id"
                 id="options[1].id"
-                defaultValue={"B"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                value={"B"}
+                readOnly
+                className="mr-2 w-[40px] font-bold outline-none border-0 leading-tight  appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[1].id", { required: true })}
               />
@@ -171,7 +191,7 @@ function QuestionForm() {
                 name="options[1].text"
                 id="options[1].text"
                 className="flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline"
-                placeholder="Option Text"
+                placeholder="Uzuza hano igisubizo"
                 {...register("options[1].text", { required: true })}
               />
             </div>
@@ -180,8 +200,9 @@ function QuestionForm() {
                 type="text"
                 name="options[2].id"
                 id="options[2].id"
-                defaultValue={"C"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                readOnly
+                value={"C"}
+                className="mr-2 w-[40px] font-bold outline-none border-0 leading-tight appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[2].id", { required: true })}
               />
@@ -190,17 +211,18 @@ function QuestionForm() {
                 name="options[2].text"
                 id="options[2].text"
                 className="flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline"
-                placeholder="Option Text"
+                placeholder="Uzuza hano igisubizo"
                 {...register("options[2].text", { required: true })}
               />
             </div>
             <div className="flex flex-row gap-2 mb-1">
               <input
                 type="text"
-                defaultValue={"D"}
+                value={"D"}
                 name="options[3].id"
                 id="options[3].id"
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                readOnly
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[3].id", { required: true })}
               />
@@ -209,7 +231,7 @@ function QuestionForm() {
                 name="options[3].text"
                 id="options[3].text"
                 className="flex-1 px-3 py-2 leading-tight border rounded-md appearance-none focus:outline-none focus:shadow-outline"
-                placeholder="Option Text"
+                placeholder="Uzuza hano igisubizo"
                 {...register("options[3].text", { required: true })}
               />
             </div>
@@ -218,14 +240,14 @@ function QuestionForm() {
             <label htmlFor="answer">Answer:</label>
             <Select
               className="rounded-md"
-              {...register("answer", { required: "This field is required" })}
+              {...register("answer", { required: "Ugomba guhitamo igisubizo" })}
               name="answer"
               id="answer"
               helperText={errors.answer && <>Oops! {errors.answer.message}</>}
               color={errors.answer && "failure"}
             >
               <option value="" hidden>
-                Select answer ID
+                Hitamo igisubizo cya nyacyo
               </option>
               <option value="A">A</option>
               <option value="B">B</option>
@@ -234,7 +256,7 @@ function QuestionForm() {
             </Select>
           </div>
           <div className="flex flex-col gap-1 mt-2">
-            <label htmlFor="category">Category:</label>
+            <label htmlFor="category">Ikiciro:</label>
             <Select
               className="rounded-md"
               {...register("category", { required: "Ikiciro kirakenewe" })}
@@ -248,22 +270,22 @@ function QuestionForm() {
               <option value="" hidden>
                 Hitamo ikiciro
               </option>
-              <option value="general">General</option>
+              <option value="general">Ibisanzwe</option>
               <option value="posts">Ibyapa</option>
             </Select>
           </div>
           <div className="mb-6 mt-2">
             <label className="font-primary" htmlFor="explanation">
-              Explanation:
+              Ubusobanuro bw'igisubizo:
             </label>
             <Controller
               control={control}
               name="explanation"
               rules={{
-                required: "This field is required",
+                required: "Ubusobanuro buracyenewe",
                 minLength: {
                   value: 15,
-                  message: "Enter at least 10 characters in the description",
+                  message: "Byibura imigemo 10 y'amagambo irakenewe",
                 },
               }}
               error={errors.explanation}
@@ -295,9 +317,9 @@ function QuestionForm() {
             />
             {errors.explanation && <span>{errors.explanation.message}</span>}
           </div>
-          <Button className="mt-3" type="submit">
-            Submit
-          </Button>
+          <ButtonCustom loading={loading} className="mt-3" type="submit">
+            Ohereza
+          </ButtonCustom>
         </form>
       </div>
     </div>

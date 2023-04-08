@@ -1,11 +1,12 @@
 import { useApolloClient, useMutation } from "@apollo/client";
 import { gql } from "@apollo/client/core";
-import { Button, Select } from "flowbite-react";
+import { Select } from "flowbite-react";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
 import ReactQuill from "react-quill";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import ButtonCustom from "../components/ButtonCustom";
 import useTitle from "../utils/useTitle";
 
 const EDIT_QUESTION = gql`
@@ -32,9 +33,11 @@ function QuestionFormEdit({ question }) {
     control,
     formState: { errors },
     reset,
-  } = useForm({ defaultValues: { text, options, explanation, answer, category } });
+  } = useForm({
+    defaultValues: { text, options, explanation, answer, category },
+  });
   const navigate = useNavigate();
-  const [editQuestion] = useMutation(EDIT_QUESTION);
+  const [editQuestion, { loading }] = useMutation(EDIT_QUESTION);
   const client = useApolloClient();
   const onSubmit = (data) => {
     const input = {
@@ -51,6 +54,59 @@ function QuestionFormEdit({ question }) {
         toast.error(error?.message);
       });
   };
+
+  const quilRef = React.useRef();
+
+  const handleImageUpload = () => {
+    const editor = quilRef.current.getEditor();
+    const input = document.createElement("input");
+    input.setAttribute("type", "file");
+    input.setAttribute("accept", "image/*");
+    input.click();
+    input.onchange = async (e) => {
+      e.preventDefault();
+      const file = input.files[0];
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", "driving");
+      try {
+        const res = await fetch(
+          "https://api.cloudinary.com/v1_1/feyton/image/upload",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+        const data = await res.json();
+        editor.insertEmbed(editor.getSelection(), "image", data.secure_url);
+      } catch (error) {
+        console.error(error);
+        toast.error(error.message);
+      }
+    };
+  };
+
+  const modules = React.useMemo(
+    () => ({
+      toolbar: {
+        container: [
+          ["bold", "italic", "underline"],
+          [
+            { list: "ordered" },
+            { list: "bullet" },
+            { indent: "-1" },
+            { indent: "+1" },
+          ],
+          ["link", "image"],
+          ["clean"],
+        ],
+        handlers: {
+          image: handleImageUpload,
+        },
+      },
+    }),
+    []
+  );
 
   return (
     <div>
@@ -76,24 +132,11 @@ function QuestionFormEdit({ question }) {
               error={errors.text}
               render={({ field: { onChange, onBlur, value } }) => (
                 <ReactQuill
+                  ref={quilRef}
                   theme="snow"
                   onChange={(text) => onChange(text)}
                   value={value || ""}
-                  modules={{
-                    toolbar: {
-                      container: [
-                        ["bold", "italic", "underline"],
-                        [
-                          { list: "ordered" },
-                          { list: "bullet" },
-                          { indent: "-1" },
-                          { indent: "+1" },
-                        ],
-                        ["link", "image"],
-                        ["clean"],
-                      ],
-                    },
-                  }}
+                  modules={modules}
                   className={
                     errors?.text
                       ? "border border-red-500 rounded-md"
@@ -114,7 +157,7 @@ function QuestionFormEdit({ question }) {
                 name="options[0].id"
                 id="options[0].id"
                 defaultValue={"A"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[0].id", { required: true })}
               />
@@ -225,7 +268,7 @@ function QuestionFormEdit({ question }) {
           </div>
           <div className="mb-6 mt-2">
             <label className="font-primary" htmlFor="explanation">
-              Explanation:
+              Ibisobanuro:
             </label>
             <Controller
               control={control}
@@ -252,7 +295,7 @@ function QuestionFormEdit({ question }) {
                         { indent: "-1" },
                         { indent: "+1" },
                       ],
-                      ["link", "image"],
+                      ["link"],
                       ["clean"],
                     ],
                   }}
@@ -266,9 +309,9 @@ function QuestionFormEdit({ question }) {
             />
             {errors.explanation && <span>{errors.explanation.message}</span>}
           </div>
-          <Button className="mt-3" type="submit">
-            Submit
-          </Button>
+          <ButtonCustom loading={loading} className="mt-3" type="submit">
+            Ohereza
+          </ButtonCustom>
         </form>
       </div>
     </div>

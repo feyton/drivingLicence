@@ -17,6 +17,8 @@ export default gql`
     correctAnswer: Option!
     category: String
     timesAddedToQuizzes: Int
+    averageDifficulty: Float
+    currentUserRating: Int
   }
   type Quiz {
     title: String
@@ -28,6 +30,7 @@ export default gql`
     score: Int
     attempts: Int
     userAttempts: Int
+    cover: String
   }
 
   type Option {

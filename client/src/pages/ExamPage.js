@@ -32,7 +32,7 @@ const GET_QUIZ = gql`
 
 function ExamPage() {
   const { id } = useParams();
-  useTitle("Take Quiz");
+  useTitle("Kora Ikizamini");
   const dispatch = useDispatch();
   const [start, setStart] = useState(false);
   const [quiz, setQuiz] = useState();

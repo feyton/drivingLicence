@@ -1,7 +1,7 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
 import { Button, Card, Modal } from "flowbite-react";
 import React, { useState } from "react";
-import { FaCheckCircle, FaTrash } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaCheckCircle, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import CheckRole from "../utils/CheckRole";
@@ -41,27 +41,32 @@ function QuizList({ quizzes }) {
   return (
     <div className="flex flex-row gap-3 flex-wrap py-2 w-full justify-start">
       {quizzes.map((quiz, index) => (
-        <Card
-          className={`max-w-[400px] ${quiz.userAttempts > 0 && "bg-green-500 "} `}
-          key={index}
-        >
-          {quiz.userAttempts > 0 && (
+        <Card className={`w-[350px]`} key={index}>
+          {quiz.userAttempts > 0 ? (
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center">
                 <FaCheckCircle className="mr-2 text-green-500" />
+                <span className="text-xs font-sans font-medium">
+                  Iki kizamini wagikoze inshuro <b>{quiz.userAttempts}</b>{" "}
+                </span>
+              </div>
+            </div>
+          ) : (
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center">
+                <FaArrowAltCircleRight className="mr-2 text-blue-500" />
                 <span className="text-xs font-medium">
-                  You have attempted this quiz <b>{quiz.userAttempts}</b>{" "}
-                  time(s).
+                  Kora iki kizamini bwa mbere
                 </span>
               </div>
             </div>
           )}
-          <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="text-xl font-sans font-bold tracking-tight text-gray-900 dark:text-white">
             {quiz.title}
           </h5>
           <hr />
 
-          <p className="font-normal text-sm text-gray-700 dark:text-gray-400">
+          <p className="font-normal font-sans text-xs text-gray-700 dark:text-gray-400">
             {quiz.description}
           </p>
           <div className="flex items-center">
@@ -71,7 +76,7 @@ function QuizList({ quizzes }) {
               className="w-10 h-10 rounded-full mr-2"
             />
             <div className="flex flex-col">
-              <h5 className="text-sm font-medium text-gray-900 dark:text-white">
+              <h5 className="text-xs font-medium text-gray-900 dark:text-white">
                 {quiz.user.name}
               </h5>
               <p className="text-xs text-gray-500">{quiz.createdAt}</p>

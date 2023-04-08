@@ -12,7 +12,11 @@ import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs";
 import QuizCreationPage from "./pages/CreateQuiz";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import store from "./redux/store";
 const LandingPage = React.lazy(() => import("./pages/LandingPage"));
 const Navbar = React.lazy(() => import("./components/Navbar"));
@@ -76,7 +80,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <div className="bg-bgImage bg-fixed bg-cover">
-      <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1080px] mx-auto my-0 flex flex-col">
+      <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1200px] mx-auto my-0 flex flex-col grow">
         <ApolloProvider client={client}>
           <Provider store={store}>
             <BrowserRouter>
@@ -84,6 +88,9 @@ function App() {
                 <Navbar />
                 <Routes>
                   <Route path="/" element={<LandingPage />} />
+                  <Route path="/about" element={<AboutUs />} />
+                  <Route path="/privacy" element={<PrivacyPolicy />} />
+                  <Route path="/terms" element={<TermsAndConditions />} />
                   <Route
                     path="/quiz"
                     element={
@@ -152,6 +159,7 @@ function App() {
                   <Route path="/register" element={<RegisterPage />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>{" "}
+                <Footer />
               </Suspense>
             </BrowserRouter>
             <ToastContainer theme="colored" />
