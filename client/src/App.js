@@ -7,10 +7,10 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 import { onError } from "@apollo/client/link/error";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import Loading from "./pages/LoadingPage";
 import store from "./redux/store";
@@ -80,90 +80,94 @@ const client = new ApolloClient({
   }),
 });
 function App() {
+  const location = useLocation();
+
+  // scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
   return (
     <div className="bg-bgImage bg-fixed bg-cover">
       <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1200px] mx-auto my-0 flex flex-col grow">
         <ApolloProvider client={client}>
           <Provider store={store}>
-            <BrowserRouter>
-              <Suspense fallback={<Loading />}>
-                <Navbar />
-                <Routes>
-                  <Route path="/" element={<LandingPage />} />
-                  <Route path="/about" element={<AboutUs />} />
-                  <Route path="/privacy" element={<PrivacyPolicy />} />
-                  <Route path="/terms" element={<TermsAndConditions />} />
-                  <Route
-                    path="/quiz"
-                    element={
-                      <PrivateRoute>
-                        <GetQuizzes />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/quiz/new"
-                    element={
-                      <PrivateRoute>
-                        <QuizCreationPage />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/quiz/:id"
-                    element={
-                      <PrivateRoute>
-                        <ExamPage />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/add"
-                    element={
-                      <PrivateRoute>
-                        <QuestionForm />0
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/questions/edit/:id"
-                    element={
-                      <PrivateRoute>
-                        <QuestionEditPage />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/questions"
-                    element={
-                      <PrivateRoute>
-                        <GetQuestions />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/profile"
-                    element={
-                      <PrivateRoute>
-                        <UserProfile />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route
-                    path="/score/:id"
-                    element={
-                      <PrivateRoute>
-                        <ViewScore />
-                      </PrivateRoute>
-                    }
-                  />
-                  <Route path="/login" element={<LoginPage />} />
-                  <Route path="/register" element={<RegisterPage />} />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>{" "}
-                <Footer />
-              </Suspense>
-            </BrowserRouter>
+            <Suspense fallback={<Loading />}>
+              <Navbar />
+              <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsAndConditions />} />
+                <Route
+                  path="/quiz"
+                  element={
+                    <PrivateRoute>
+                      <GetQuizzes />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/quiz/new"
+                  element={
+                    <PrivateRoute>
+                      <QuizCreationPage />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/quiz/:id"
+                  element={
+                    <PrivateRoute>
+                      <ExamPage />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/add"
+                  element={
+                    <PrivateRoute>
+                      <QuestionForm />0
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/questions/edit/:id"
+                  element={
+                    <PrivateRoute>
+                      <QuestionEditPage />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/questions"
+                  element={
+                    <PrivateRoute>
+                      <GetQuestions />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/profile"
+                  element={
+                    <PrivateRoute>
+                      <UserProfile />
+                    </PrivateRoute>
+                  }
+                />
+                <Route
+                  path="/score/:id"
+                  element={
+                    <PrivateRoute>
+                      <ViewScore />
+                    </PrivateRoute>
+                  }
+                />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>{" "}
+              <Footer />
+            </Suspense>
             <ToastContainer theme="colored" />
           </Provider>
         </ApolloProvider>

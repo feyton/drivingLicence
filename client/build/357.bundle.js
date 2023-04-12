@@ -72,4 +72,3 @@ function ViewScore() {
 /***/ })
 
 }]);
-//# sourceMappingURL=357.bundle.js.map

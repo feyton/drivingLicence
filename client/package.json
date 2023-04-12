@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack --mode production"
+    "start": "cross-env BN_URL=http://localhost:8000/graphql webpack serve",
+    "build": "cross-env NODE_ENV=production BN_URL=/graphql webpack --mode production"
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
+    "cross-env": "^7.0.3",
     "@babel/plugin-transform-react-jsx-source": "^7.19.6",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",

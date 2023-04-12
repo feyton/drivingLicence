@@ -34,4 +34,3 @@ var PrivateRoute = function PrivateRoute(props) {
 /***/ })
 
 }]);
-//# sourceMappingURL=60.bundle.js.map

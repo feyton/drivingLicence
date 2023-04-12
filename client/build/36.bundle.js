@@ -2239,4 +2239,3 @@ function useLazyQuery(query, options) {
 /***/ })
 
 }]);
-//# sourceMappingURL=36.bundle.js.map
