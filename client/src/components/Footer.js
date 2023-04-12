@@ -10,7 +10,7 @@ function Footer() {
             <Link to={"/"}>
               <img
                 className="w-40 md:w-48 mx-auto md:mx-0"
-                src="https://res.cloudinary.com/feyton/image/upload/v1680981055/drivetestpro_logo_gxnshf.png"
+                src="https://res.cloudinary.com/feyton/image/upload/v1681276152/updatez_drivetest_pro_logo_xzj5si.png"
                 alt="DriveTest Logo"
               />
             </Link>

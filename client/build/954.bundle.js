@@ -345,12 +345,15 @@ function QuizPage(props) {
     currentQuestionIndex: answers[currentQuestion.id] ? currentQuestionIndex : currentQuestionIndex - 1,
     totalQuestions: quiz.questions.length
   })), result && /*#__PURE__*/react.createElement(QuizResults/* default */.Z, result), /*#__PURE__*/react.createElement(esm/* Modal */.u_, {
+    size: "md",
+    position: "center",
+    popup: true,
     show: isSubmitting
   }, /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement("div", {
-    className: "text-center"
+    className: "text-center flex flex-col items-center justify-center"
   }, /*#__PURE__*/react.createElement("p", {
     className: "text-lg font-bold"
-  }, "Turi kohereza ibisubizo byanyu...")))));
+  }, "Turi kohereza ibisubizo byanyu..."), /*#__PURE__*/react.createElement(esm/* Spinner */.$j, null)))));
 }
 /* harmony default export */ const pages_QuizPage = (QuizPage);
 ;// CONCATENATED MODULE: ./src/pages/ExamPage.js
@@ -463,6 +466,23 @@ function ExamPage() {
   })), "Loading..."));
 }
 /* harmony default export */ const pages_ExamPage = (ExamPage);
+
+/***/ }),
+
+/***/ 3196:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+
+function useTitle(title) {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    document.title = "".concat(title, " | DriveTestPro");
+  }, [title]);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTitle);
 
 /***/ })
 

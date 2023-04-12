@@ -76,7 +76,6 @@ __webpack_require__.d(__webpack_exports__, {
   "Ct": () => (/* reexport */ Badge),
   "zx": () => (/* reexport */ Button),
   "Zb": () => (/* reexport */ Card),
-  "XZ": () => (/* reexport */ Checkbox),
   "__": () => (/* reexport */ Label),
   "u_": () => (/* reexport */ Modal),
   "Ex": () => (/* reexport */ Progress),
@@ -89,7 +88,7 @@ __webpack_require__.d(__webpack_exports__, {
   "u": () => (/* reexport */ Tooltip)
 });
 
-// UNUSED EXPORTS: Accordion, Alert, Avatar, Breadcrumb, Carousel, DarkThemeToggle, Dropdown, FileInput, Flowbite, Footer, FooterComponent, HelperText, ListGroup, Navbar, Pagination, RangeSlider, Rating, Sidebar, Tabs, TabsComponent, Timeline, Toast, ToggleSwitch, useTheme, useThemeMode
+// UNUSED EXPORTS: Accordion, Alert, Avatar, Breadcrumb, Carousel, Checkbox, DarkThemeToggle, Dropdown, FileInput, Flowbite, Footer, FooterComponent, HelperText, ListGroup, Navbar, Pagination, RangeSlider, Rating, Sidebar, Tabs, TabsComponent, Timeline, Toast, ToggleSwitch, useTheme, useThemeMode
 
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(5893);

@@ -402,6 +402,23 @@ function QuestionForm() {
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionForm);
 
+/***/ }),
+
+/***/ 3196:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
+
+function useTitle(title) {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    document.title = "".concat(title, " | DriveTestPro");
+  }, [title]);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTitle);
+
 /***/ })
 
 }]);

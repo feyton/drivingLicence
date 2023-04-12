@@ -68,15 +68,15 @@ const QuizResolver: any = {
         }
       )
     ),
-    getQuiz: async (_: any, args: any, context: any) => {
+    getQuiz: authenticated(async (_: any, args: any, context: any) => {
       const quiz = await Quiz.findById(args.id).populate("questions");
       return quiz;
-    },
-    getQuestion: async (_: any, args: any, context: any) => {
+    }),
+    getQuestion: authenticated(async (_: any, args: any, context: any) => {
       const question = await Question.findById(args.id).populate("user");
       return question;
-    },
-    getQuizzes: async (_: any, args: any, context: any) => {
+    }) ,
+    getQuizzes: authenticated(async (_: any, args: any, context: any) => {
       const quizzes = await Quiz.find({
         "questions.0": { $exists: true },
         active: { $in: [true, null] },
@@ -85,7 +85,7 @@ const QuizResolver: any = {
         .populate("questions")
         .populate("user");
       return quizzes;
-    },
+    }),
     getScore: authenticated(async (_: any, args: any, context: any) => {
       const score: any = await Score.findById(args.id).populate("quizId");
       const result = {

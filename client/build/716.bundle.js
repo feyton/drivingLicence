@@ -109,13 +109,12 @@ function QuizResult(_ref) {
             }));
           case 3:
             react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.success */ .Am.success("Your ratings has been submitted. Thank you");
-            _context.next = 9;
+            _context.next = 8;
             break;
           case 6:
             _context.prev = 6;
             _context.t0 = _context["catch"](0);
-            react_toastify__WEBPACK_IMPORTED_MODULE_3__/* .toast.error */ .Am.error(_context.t0.message);
-          case 9:
+          case 8:
           case "end":
             return _context.stop();
         }
@@ -141,7 +140,7 @@ function QuizResult(_ref) {
       key: question.id,
       className: "p-4 border-2 rounded-lg mb-4 ".concat(question.correctAnswer.id === question.userAnswer.id ? "border-green-400 bg-green-100" : "border-red-400 bg-red-100")
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
-      className: " mb-2",
+      className: " mb-2 font-sans",
       dangerouslySetInnerHTML: {
         __html: dompurify__WEBPACK_IMPORTED_MODULE_0__.sanitize(question.text)
       }
@@ -193,6 +192,8 @@ function QuizResult(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_1__/* .Button */ .zx, {
     color: "info"
   }, "Subira kubizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_components_ButtonCustom__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+    disabled: Object.keys(ratings).length === 0,
+    className: "hidden md:block",
     color: "warning",
     loading: loading,
     onClick: submitRatings

@@ -55,7 +55,7 @@ function QuizList({ quizzes }) {
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center">
                 <FaArrowAltCircleRight className="mr-2 text-blue-500" />
-                <span className="text-xs font-medium">
+                <span className="text-xs font-sans font-medium">
                   Kora iki kizamini bwa mbere
                 </span>
               </div>
@@ -76,19 +76,19 @@ function QuizList({ quizzes }) {
               className="w-10 h-10 rounded-full mr-2"
             />
             <div className="flex flex-col">
-              <h5 className="text-xs font-medium text-gray-900 dark:text-white">
+              <h5 className="text-xs font-sans font-medium text-gray-900 dark:text-white">
                 {quiz.user.name}
               </h5>
               <p className="text-xs text-gray-500">{quiz.createdAt}</p>
             </div>
           </div>
-          <p className="text-muted text-xs ">
+          <p className="text-muted text-xs font-sans">
             Ibibazo: <b>{quiz.score}</b>. Abantu <b>{quiz.attempts}</b>{" "}
             barayikoze.
           </p>
           <div className="flex justify-between flex-wrap items-center mt-4 gap-4">
-            <Link to={`/quiz/${quiz.id}`}>
-              <Button>
+            <Link className="font-sans" to={`/quiz/${quiz.id}`}>
+              <Button className="font-sans">
                 Kora ikizamini
                 <svg
                   className="ml-2 -mr-1 h-4 w-4"
@@ -106,6 +106,7 @@ function QuizList({ quizzes }) {
             </Link>
             <CheckRole roles={["super", "admin", "editor"]}>
               <Button
+                className="font-sans"
                 color={"failure"}
                 onClick={() => handleShowDeleteModal(quiz)}
               >
@@ -116,7 +117,11 @@ function QuizList({ quizzes }) {
           </div>
         </Card>
       ))}
-      <Modal show={showDeleteModal} onClose={() => setShowDeleteModal(false)}>
+      <Modal
+        popup={true}
+        show={showDeleteModal}
+        onClose={() => setShowDeleteModal(false)}
+      >
         <Modal.Header>Siba ikizamini</Modal.Header>
         <Modal.Body>Koko se dukomeze dusibe iki kizamini?</Modal.Body>
         <Modal.Footer>

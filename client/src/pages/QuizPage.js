@@ -1,4 +1,4 @@
-import { Button, Modal } from "flowbite-react";
+import { Button, Modal, Spinner } from "flowbite-react";
 import React, { useState } from "react";
 import QuizQuestion from "../components/Question";
 import QuizProgress from "../components/QuizProgress";
@@ -7,8 +7,8 @@ import { gql, useApolloClient, useMutation } from "@apollo/client";
 import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import { stopTimer } from "../redux/reducers/timerReducer";
-import QuizResult from "./QuizResults";
 import useTitle from "../utils/useTitle";
+import QuizResult from "./QuizResults";
 
 export const SUBMIT_QUIZ_ANSWERS = gql`
   mutation SubmitQuizAnswers($quizId: ID!, $answers: [QuizAnswerInput]!) {
@@ -55,7 +55,7 @@ function QuizPage(props) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
     }
   }
-  useTitle(quiz.title)
+  useTitle(quiz.title);
 
   const [result, setResults] = useState();
   const client = useApolloClient();
@@ -194,12 +194,13 @@ function QuizPage(props) {
       )}
 
       {result && <QuizResult {...result} />}
-      <Modal show={isSubmitting}>
+      <Modal size="md" position={"center"} popup={true} show={isSubmitting}>
         <Modal.Body>
-          <div className="text-center">
+          <div className="text-center flex flex-col items-center justify-center">
             <p className="text-lg font-bold">
               Turi kohereza ibisubizo byanyu...
             </p>
+            <Spinner />
           </div>
         </Modal.Body>
       </Modal>

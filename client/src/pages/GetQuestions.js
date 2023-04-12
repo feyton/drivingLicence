@@ -212,7 +212,7 @@ function GetQuestions() {
     },
   ];
   return (
-    <div className="w-full justify-center ml-2 ">
+    <div className="w-full justify-center ">
       {questions && <DataTable data={questions} columns={columns} />}
       {loading && (
         <div className="w-full flex justify-center">
@@ -243,6 +243,7 @@ function GetQuestions() {
       <Modal
         show={!!selectedQuestionView}
         onClose={() => setSelectedQuestionView(null)}
+        dismissible={true}
       >
         {loadingQuestion && (
           <Modal.Body>
@@ -253,7 +254,7 @@ function GetQuestions() {
           <>
             <Modal.Header>
               <div
-                className="bg-white question-content"
+                className="bg-white question-content "
                 dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(data.getQuestion.text),
                 }}

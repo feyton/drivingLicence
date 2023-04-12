@@ -55,7 +55,7 @@ function Navbar() {
     to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("img", {
     className: "w-40 md:w-48",
-    src: "https://res.cloudinary.com/feyton/image/upload/v1680981055/drivetestpro_logo_gxnshf.png",
+    src: "https://res.cloudinary.com/feyton/image/upload/v1681276152/updatez_drivetest_pro_logo_xzj5si.png",
     alt: " "
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "hidden md:flex flex-row gap-3"

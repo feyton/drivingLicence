@@ -12,18 +12,20 @@ import "react-quill/dist/quill.snow.css";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import Footer from "./components/Footer";
-import AboutUs from "./pages/AboutUs";
-import QuizCreationPage from "./pages/CreateQuiz";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsAndConditions from "./pages/TermsAndConditions";
+import Loading from "./pages/LoadingPage";
 import store from "./redux/store";
+const Footer = React.lazy(() => import("./components/Footer"));
+const QuizCreationPage = React.lazy(() => import("./pages/CreateQuiz"));
+const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
+const TermsAndConditions = React.lazy(() =>
+  import("./pages/TermsAndConditions")
+);
+const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 const LandingPage = React.lazy(() => import("./pages/LandingPage"));
 const Navbar = React.lazy(() => import("./components/Navbar"));
 const ExamPage = React.lazy(() => import("./pages/ExamPage"));
 const GetQuestions = React.lazy(() => import("./pages/GetQuestions"));
 const GetQuizzes = React.lazy(() => import("./pages/GetQuizzes"));
-const Loading = React.lazy(() => import("./pages/LoadingPage"));
 const LoginPage = React.lazy(() => import("./pages/LoginPage"));
 const NotFound = React.lazy(() => import("./pages/NotFound"));
 const UserProfile = React.lazy(() => import("./pages/ProfilePage"));

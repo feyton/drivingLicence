@@ -51,9 +51,9 @@ export default {
       );
       return { token, user };
     },
-    deactivateUser: async (_: any, args: any, context: any) => {
+    deactivateUser: authenticated(async (_: any, args: any, context: any) => {
       const user = await User.findByIdAndUpdate(args.id, { active: false });
       return user;
-    },
+    }) ,
   },
 };

@@ -34,9 +34,7 @@ function QuizResult({ score, questions }) {
         })
       );
       toast.success("Your ratings has been submitted. Thank you");
-    } catch (error) {
-      toast.error(error.message);
-    }
+    } catch (error) {}
   };
   const percentScore = ((score / questions.length) * 100).toFixed();
   return (
@@ -68,7 +66,7 @@ function QuizResult({ score, questions }) {
           }`}
         >
           <div
-            className=" mb-2"
+            className=" mb-2 font-sans"
             dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(question.text),
             }}
@@ -138,7 +136,13 @@ function QuizResult({ score, questions }) {
         <Link to={"/quiz"}>
           <Button color={"info"}>Subira kubizamini</Button>
         </Link>
-        <ButtonCustom color="warning" loading={loading} onClick={submitRatings}>
+        <ButtonCustom
+          disabled={Object.keys(ratings).length === 0}
+          className="hidden md:block"
+          color="warning"
+          loading={loading}
+          onClick={submitRatings}
+        >
           Send Ratings
         </ButtonCustom>
       </div>

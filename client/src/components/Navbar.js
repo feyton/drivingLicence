@@ -30,7 +30,7 @@ function Navbar() {
           <Link to="/">
             <img
               className="w-40 md:w-48"
-              src="https://res.cloudinary.com/feyton/image/upload/v1680981055/drivetestpro_logo_gxnshf.png"
+              src="https://res.cloudinary.com/feyton/image/upload/v1681276152/updatez_drivetest_pro_logo_xzj5si.png"
               alt=" "
             />
           </Link>
@@ -38,7 +38,11 @@ function Navbar() {
 
         <div className="hidden md:flex flex-row gap-3">
           <Link to="/quiz">
-            <Button className="outline-none appearance-none focus:outline-none" color={"info"} size="xs">
+            <Button
+              className="outline-none appearance-none focus:outline-none"
+              color={"info"}
+              size="xs"
+            >
               <FaArrowRight className="mr-2" />
               Ibizamini
             </Button>
