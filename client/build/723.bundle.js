@@ -169,6 +169,10 @@ function QuestionForm() {
     return {
       toolbar: {
         container: [["bold", "italic", "underline"], [{
+          color: []
+        }, {
+          background: []
+        }], [{
           list: "ordered"
         }, {
           list: "bullet"
@@ -179,6 +183,9 @@ function QuestionForm() {
         }], ["link", "image"], ["clean"]],
         handlers: {
           image: handleImageUpload
+        },
+        link: {
+          target: "_blank" // opens links in a new tab
         }
       }
     };

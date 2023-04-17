@@ -159,8 +159,9 @@ function QuizResult(_ref) {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
       className: "font-bold mr-2"
     }, "Ubusobanuro:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
+      className: "content",
       dangerouslySetInnerHTML: {
-        __html: dompurify__WEBPACK_IMPORTED_MODULE_0__.sanitize(question.explanation)
+        __html: question.explanation
       }
     })), question.correctAnswer.id === question.userAnswer.id ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement("div", {
       className: "flex items-center mt-2 text-green-400"

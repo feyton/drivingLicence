@@ -85,6 +85,7 @@ function QuestionForm() {
       toolbar: {
         container: [
           ["bold", "italic", "underline"],
+          [{ color: [] }, { background: [] }],
           [
             { list: "ordered" },
             { list: "bullet" },
@@ -96,6 +97,9 @@ function QuestionForm() {
         ],
         handlers: {
           image: handleImageUpload,
+        },
+        link: {
+          target: "_blank", // opens links in a new tab
         },
       },
     }),

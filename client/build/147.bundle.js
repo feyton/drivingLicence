@@ -345,10 +345,20 @@ function GetQuestions() {
       return setSelectedQuestionView(null);
     },
     dismissible: true
-  }, loadingQuestion && /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement(esm/* Spinner */.$j, null)), data && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(esm/* Modal.Header */.u_.Header, null, /*#__PURE__*/react.createElement("div", {
-    className: "bg-white question-content ",
+  }, loadingQuestion && /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, {
+    className: "text-center"
+  }, /*#__PURE__*/react.createElement(esm/* Button */.zx, {
+    color: "gray"
+  }, /*#__PURE__*/react.createElement(esm/* Spinner */.$j, {
+    "aria-label": "Alternate spinner button example"
+  }), /*#__PURE__*/react.createElement("span", {
+    className: "pl-3"
+  }, "Loading..."))), data && /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(esm/* Modal.Header */.u_.Header, null, /*#__PURE__*/react.createElement("div", {
+    className: "bg-white question-content pt-4",
     dangerouslySetInnerHTML: {
-      __html: purify.sanitize(data.getQuestion.text)
+      __html: purify.sanitize(data.getQuestion.text, {
+        ADD_TAGS: ["target"]
+      })
     }
   })), /*#__PURE__*/react.createElement(esm/* Modal.Body */.u_.Body, null, /*#__PURE__*/react.createElement("div", {
     className: "bg-gray-100 px-3 py-2 rounded-md shadow-md"
@@ -370,8 +380,9 @@ function GetQuestions() {
   }, /*#__PURE__*/react.createElement("div", {
     className: "font-bold mr-2"
   }, "Ubusobanuro:"), /*#__PURE__*/react.createElement("div", {
+    className: "content",
     dangerouslySetInnerHTML: {
-      __html: purify.sanitize(data.getQuestion.explanation)
+      __html: data.getQuestion.explanation
     }
   })), /*#__PURE__*/react.createElement("div", {
     className: "text-muted text-xs my-1"

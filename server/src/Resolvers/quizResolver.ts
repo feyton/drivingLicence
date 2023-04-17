@@ -1,6 +1,7 @@
 import { ApolloError } from "apollo-server-express";
 import mongoose from "mongoose";
 import { Question, Quiz, Score } from "../models/question";
+import { User } from "../models/user";
 import { authenticated, validateRole } from "../utils/authenticate";
 
 const submitQuizAnswers = async (
@@ -75,7 +76,7 @@ const QuizResolver: any = {
     getQuestion: authenticated(async (_: any, args: any, context: any) => {
       const question = await Question.findById(args.id).populate("user");
       return question;
-    }) ,
+    }),
     getQuizzes: authenticated(async (_: any, args: any, context: any) => {
       const quizzes = await Quiz.find({
         "questions.0": { $exists: true },
@@ -95,6 +96,13 @@ const QuizResolver: any = {
       };
       return result;
     }),
+    getCounts: async () => {
+      return {
+        users: await User.countDocuments(),
+        quizzes: await Quiz.countDocuments(),
+        questions: await Question.countDocuments(),
+      };
+    },
   },
   Mutation: {
     AddQuestion: authenticated(async (_: any, args: any, context: any) => {

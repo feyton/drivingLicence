@@ -12,6 +12,11 @@
     font-weight: bolder;
 }
 
+.content a {
+    color: rgb(41, 41, 160) !important;
+    text-decoration: underline;
+}
+
 .question-content img {
     max-height: 200px !important;
 }

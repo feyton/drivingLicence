@@ -9,6 +9,23 @@ import { toast } from "react-toastify";
 import ButtonCustom from "../components/ButtonCustom";
 import useTitle from "../utils/useTitle";
 
+const Quill = ReactQuill.Quill;
+var Link = Quill.import("formats/link");
+
+class MyLink extends Link {
+  static create(value) {
+    let node = super.create(value);
+    value = this.sanitize(value);
+    node.setAttribute("href", value);
+    if (value.startsWith("https://quilljs.com")) {
+      node.removeAttribute("target");
+    }
+    return node;
+  }
+}
+
+Quill.register(MyLink);
+
 const EDIT_QUESTION = gql`
   mutation EditQuestion($id: ID!, $input: QuestionInput!) {
     EditQuestion(id: $id, input: $input) {
@@ -91,6 +108,7 @@ function QuestionFormEdit({ question }) {
       toolbar: {
         container: [
           ["bold", "italic", "underline"],
+          [{ color: [] }, { background: [] }],
           [
             { list: "ordered" },
             { list: "bullet" },
@@ -102,6 +120,9 @@ function QuestionFormEdit({ question }) {
         ],
         handlers: {
           image: handleImageUpload,
+        },
+        link: {
+          target: "_blank", // opens links in a new tab
         },
       },
     }),
@@ -176,7 +197,7 @@ function QuestionFormEdit({ question }) {
                 name="options[1].id"
                 id="options[1].id"
                 defaultValue={"B"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[1].id", { required: true })}
               />
@@ -195,7 +216,7 @@ function QuestionFormEdit({ question }) {
                 name="options[2].id"
                 id="options[2].id"
                 defaultValue={"C"}
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[2].id", { required: true })}
               />
@@ -214,7 +235,7 @@ function QuestionFormEdit({ question }) {
                 defaultValue={"D"}
                 name="options[3].id"
                 id="options[3].id"
-                className="mr-2 leading-tight w-[20%] appearance-none border rounded-md focus:outline-none focus:shadow-outline"
+                className="mr-2 leading-tight w-[40px] font-bold outline-none border-0 appearance-none  rounded-md focus:outline-none focus:shadow-outline"
                 placeholder="Option ID"
                 {...register("options[3].id", { required: true })}
               />
@@ -289,6 +310,7 @@ function QuestionFormEdit({ question }) {
                   modules={{
                     toolbar: [
                       ["bold", "italic", "underline"],
+                      [{ color: [] }, { background: [] }],
                       [
                         { list: "ordered" },
                         { list: "bullet" },

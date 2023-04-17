@@ -51,12 +51,19 @@ export default gql`
     id: ID!
   }
 
+  type Count {
+    quizzes: Int!
+    users: Int!
+    questions: Int!
+  }
+
   type Query {
     getQuestions: [Question]
     getQuizzes: [Quiz]
     getQuiz(id: ID!): Quiz
     getScore(id: ID!): QuizResult!
     getQuestion(id: ID!): Question!
+    getCounts: Count!
   }
   input QuizInput {
     title: String!

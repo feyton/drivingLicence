@@ -246,17 +246,22 @@ function GetQuestions() {
         dismissible={true}
       >
         {loadingQuestion && (
-          <Modal.Body>
-            <Spinner />
+          <Modal.Body className="text-center">
+            <Button color="gray">
+              <Spinner aria-label="Alternate spinner button example" />
+              <span className="pl-3">Loading...</span>
+            </Button>
           </Modal.Body>
         )}
         {data && (
           <>
             <Modal.Header>
               <div
-                className="bg-white question-content "
+                className="bg-white question-content pt-4"
                 dangerouslySetInnerHTML={{
-                  __html: DOMPurify.sanitize(data.getQuestion.text),
+                  __html: DOMPurify.sanitize(data.getQuestion.text, {
+                    ADD_TAGS: ["target"],
+                  }),
                 }}
               ></div>
             </Modal.Header>
@@ -280,8 +285,9 @@ function GetQuestions() {
               <div className="flex flex-col  justify-start">
                 <div className="font-bold mr-2">Ubusobanuro:</div>
                 <div
+                  className="content"
                   dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(data.getQuestion.explanation),
+                    __html: data.getQuestion.explanation,
                   }}
                 ></div>
               </div>

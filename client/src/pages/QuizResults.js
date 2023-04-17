@@ -83,8 +83,9 @@ function QuizResult({ score, questions }) {
           <div className="flex flex-col  justify-start">
             <div className="font-bold mr-2">Ubusobanuro:</div>
             <div
+              className="content"
               dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(question.explanation),
+                __html: question.explanation,
               }}
             ></div>
           </div>
