@@ -121,7 +121,7 @@ function Navbar() {
     },
     className: "text-primary text-2xl focus:outline-none"
   }, menuOpen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_hi__WEBPACK_IMPORTED_MODULE_7__/* .HiOutlineX */ .fMW, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_icons_fa__WEBPACK_IMPORTED_MODULE_6__/* .FaBars */ .Fm7, null))), menuOpen && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "md:hidden absolute top-10 bg-gray-100 w-full z-20 px-4"
+    className: "md:hidden absolute w-[90%] top-20 bg-gray-100 z-20 px-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "flex flex-col gap-3 p-3"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {

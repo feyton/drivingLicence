@@ -76,10 +76,21 @@ function DataTable(_ref) {
     page = TableInstance.page,
     headerGroups = TableInstance.headerGroups,
     prepareRow = TableInstance.prepareRow,
-    state = TableInstance.state;
+    state = TableInstance.state,
+    setGlobalFilter = TableInstance.setGlobalFilter;
+  var globalFilter = state.globalFilter;
   return /*#__PURE__*/react.createElement("div", {
-    className: "overflow-y-scroll w-full"
-  }, /*#__PURE__*/react.createElement(esm/* Table */.iA, _extends({
+    className: "overflow-y-scroll w- px-2"
+  }, /*#__PURE__*/react.createElement("div", {
+    className: "w-sm my-2"
+  }, /*#__PURE__*/react.createElement(esm/* TextInput */.oi, {
+    placeholder: "Shakisha...",
+    className: "w-md",
+    defaultValue: globalFilter || "",
+    onChange: function onChange(e) {
+      return setGlobalFilter(e.target.value);
+    }
+  })), /*#__PURE__*/react.createElement(esm/* Table */.iA, _extends({
     striped: true,
     hoverable: true,
     className: "px-4 mb-5 w-full"
@@ -114,7 +125,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-var GET_QUESTIONS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  query getQuestions {\n    getQuestions {\n      text\n      answer\n      approved\n      id\n      correctAnswer {\n        text\n      }\n    }\n  }\n"])));
+var GET_QUESTIONS = (0,lib/* gql */.Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  query getQuestions {\n    getQuestions {\n      text\n      answer\n      approved\n      id\n      correctAnswer {\n        text\n      }\n      category\n    }\n  }\n"])));
 var APPROVE_QUESTION = (0,lib/* gql */.Ps)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  mutation ApproveQuestion($id: ID!) {\n    ApproveQuestion(id: $id) {\n      id\n      approved\n      text\n    }\n  }\n"])));
 var DELETE_QUESTION = (0,lib/* gql */.Ps)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  mutation DeleteQuestion($id: ID!) {\n    DeleteQuestion(id: $id) {\n      text\n    }\n  }\n"])));
 var GET_QUESTION = (0,lib/* gql */.Ps)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  query getQuestion($id: ID!) {\n    getQuestion(id: $id) {\n      text\n      id\n      answer\n      approved\n      options {\n        id\n        text\n      }\n      explanation\n      user {\n        name\n      }\n      createdAt\n      correctAnswer {\n        id\n        text\n      }\n    }\n  }\n"])));
@@ -254,6 +265,9 @@ function GetQuestions() {
   }, {
     Header: "Answer",
     accessor: "correctAnswer.text"
+  }, {
+    Header: "Category",
+    accessor: "category"
   }, {
     Header: "Approved",
     accessor: "approved",
@@ -454,23 +468,6 @@ var CheckRole = function CheckRole(_ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null);
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CheckRole);
-
-/***/ }),
-
-/***/ 3196:
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7294);
-
-function useTitle(title) {
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    document.title = "".concat(title, " | DriveTestPro");
-  }, [title]);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTitle);
 
 /***/ })
 

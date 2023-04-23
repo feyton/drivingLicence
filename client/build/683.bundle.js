@@ -471,12 +471,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9098);
-/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6162);
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9098);
+/* harmony import */ var _apollo_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6162);
 /* harmony import */ var flowbite_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6515);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7294);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5998);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9655);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9655);
 var _templateObject;
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -489,14 +488,9 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 
 
-
-var GET_COUNTS = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_3__/* .gql */ .Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  query getCounts {\n    getCounts {\n      users\n      quizzes\n      questions\n    }\n  }\n"])));
+var GET_COUNTS = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_2__/* .gql */ .Ps)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  query getCounts {\n    getCounts {\n      users\n      quizzes\n      questions\n    }\n  }\n"])));
 function LandingPage(props) {
-  var _useSelector = (0,react_redux__WEBPACK_IMPORTED_MODULE_2__/* .useSelector */ .v9)(function (state) {
-      return state === null || state === void 0 ? void 0 : state.auth;
-    }),
-    user = _useSelector.user;
-  var _useLazyQuery = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_4__/* .useLazyQuery */ .t)(GET_COUNTS),
+  var _useLazyQuery = (0,_apollo_client__WEBPACK_IMPORTED_MODULE_3__/* .useLazyQuery */ .t)(GET_COUNTS),
     _useLazyQuery2 = _slicedToArray(_useLazyQuery, 2),
     getCounts = _useLazyQuery2[0],
     _useLazyQuery2$ = _useLazyQuery2[1],
@@ -508,7 +502,7 @@ function LandingPage(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: "hero"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "hero w-full min-h-full flex flex-col justify-center grow items-center "
+    className: "hero w-full min-h-screen flex flex-col justify-center grow items-center "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     className: ""
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
@@ -517,16 +511,24 @@ function LandingPage(props) {
     className: "mt-28 sm:mt-20 text-2xl sm:text-4xl md:pl-10 md:text-6xl font-bold text-white dark:text-dark-text-fill font-lexend text-center md:text-left"
   }, "Bona provisoire vuba cyane."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("p", {
     className: "text-2xl md:text-4xl lg:text-3xl mt-8 md:mt-8 lg:mt-8 w-full sm:w-3/4 md:w-4/5 lg:w-full md:px-0 lg:px-8 text-white dark:text-dark-text-fill font-sans text-center"
-  }, "Aho wakwimenyereza:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ukihugura \u27A1\uFE0F ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ugatsinda"))), !(user !== null && user !== void 0 && user.auth) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "w-full text-center justify-center items-center mt-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__/* .Link */ .rU, {
+  }, "Aho wakwimenyereza:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ukihugura \u27A1\uFE0F ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("em", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("b", null, " Ugatsinda"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "w-full text-center flex flex-row gap-6 justify-center items-center mt-20 mb-20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__/* .Link */ .rU, {
     to: "quiz",
-    className: "justify-center mx-auto"
+    className: " "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
     variant: "primary",
     className: "px-4 py-0 mx-auto font-lexend",
     size: "lg"
-  }, "Tangira"))) : " ")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("section", {
+  }, "Tangira")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__/* .Link */ .rU, {
+    to: "igazeti",
+    className: " "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_0__/* .Button */ .zx, {
+    variant: "primary",
+    color: "success",
+    className: "px-4 py-0 mx-auto font-lexend",
+    size: "lg"
+  }, "Soma igazeti"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("section", {
     "class": "bg-gray-100 py-12"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
     "class": "container mx-auto"

@@ -1,8 +1,7 @@
 import { gql, useLazyQuery, useMutation } from "@apollo/client";
-import { Alert, Button, Modal, Textarea, TextInput } from "flowbite-react";
+import { Button, Modal, TextInput, Textarea } from "flowbite-react";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { HiInformationCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import QuizList from "../components/QuizList";
@@ -40,7 +39,7 @@ const CREATE_QUIZ = gql`
 `;
 
 function GetQuizzes() {
-  useTitle("Ibizamini")
+  useTitle("Ibizamini");
   const [getQuizzes, { loading: getQuizLoading }] = useLazyQuery(GET_QUIZZES);
   const [quizzes, setQuizzes] = useState();
   const [createQuiz, { loading }] = useMutation(CREATE_QUIZ);
@@ -77,6 +76,12 @@ function GetQuizzes() {
 
   return (
     <div className="px-5 mt-10 w-full">
+      <div className="flex flex-row gap-3 justify-end">
+        <div className="flex justify-end mb-3">
+        <Link to={"/igazeti"}>
+          <Button color={'success'}>Soma igazeti</Button>
+        </Link>
+      </div>
       <CheckRole roles={["admin", "superuser"]}>
         <div className="flex justify-end mb-3">
           <Link to={"/quiz/new"}>
@@ -85,7 +90,8 @@ function GetQuizzes() {
         </div>
         <hr />
       </CheckRole>
-  
+      </div>
+      
 
       {quizzes && <QuizList quizzes={quizzes} />}
       {getQuizLoading && (

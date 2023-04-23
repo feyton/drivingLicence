@@ -103,7 +103,7 @@ function Navbar() {
         </div>
 
         {menuOpen && (
-          <div className="md:hidden absolute top-10 bg-gray-100 w-full z-20 px-4">
+          <div className="md:hidden absolute w-[90%] top-20 bg-gray-100 z-20 px-3">
             <div className="flex flex-col gap-3 p-3">
               <Link to="/quiz" onClick={() => setMenuOpen(false)}>
                 <Button size={"xs"} className="w-full">

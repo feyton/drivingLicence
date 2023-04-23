@@ -56,6 +56,7 @@ function QuizResult({ score, questions }) {
           )}
         </div>
       </div>
+
       {questions.map((question) => (
         <div
           key={question.id}
@@ -136,6 +137,9 @@ function QuizResult({ score, questions }) {
       <div className="flex flex-row gap-4 ">
         <Link to={"/quiz"}>
           <Button color={"info"}>Subira kubizamini</Button>
+        </Link>
+        <Link to={"/igazeti"}>
+          <Button color={"success"}>Soma igazeti</Button>
         </Link>
         <ButtonCustom
           disabled={Object.keys(ratings).length === 0}

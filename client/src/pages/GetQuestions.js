@@ -14,6 +14,7 @@ const GET_QUESTIONS = gql`
       correctAnswer {
         text
       }
+      category
     }
   }
 `;
@@ -134,6 +135,10 @@ function GetQuestions() {
     {
       Header: "Answer",
       accessor: "correctAnswer.text",
+    },
+    {
+      Header: "Category",
+      accessor: "category",
     },
     {
       Header: "Approved",

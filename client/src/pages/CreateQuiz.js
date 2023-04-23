@@ -78,16 +78,19 @@ const GET_QUESTIONS = gql`
         text
       }
       averageDifficulty
+      category
     }
   }
 `;
 const QuizCreationPage = () => {
-  useTitle("Ongeraho Ikizamini");
+  useTitle("Ikizamini gishya");
   const [getQuestions, { loading }] = useLazyQuery(GET_QUESTIONS);
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [data, setData] = useState(null);
   const [createQuiz, { loading: quizLoading }] = useMutation(CREATE_QUIZ);
   const [showModal, setShowModal] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredQuestions, setFilteredQuestions] = useState(data || []);
   const {
     register,
     handleSubmit,
@@ -98,6 +101,16 @@ const QuizCreationPage = () => {
   useEffect(() => {
     getQuestions({ onCompleted: (data) => setData(data.getQuestions) });
   }, []);
+  useEffect(() => {
+    setFilteredQuestions(
+      data?.filter((question) =>
+        question.text.toLowerCase().includes(searchQuery.toLowerCase())
+      ) || []
+    );
+  }, [data, searchQuery]);
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
 
   const onChecked = (question) => {
     if (quizQuestions.length >= 20) return;
@@ -127,6 +140,13 @@ const QuizCreationPage = () => {
       onError: (error) => toast.error(error.message),
     });
   };
+  const handleFilter = (term) => {
+    setFilteredQuestions(
+      data?.filter((question) =>
+        question.category.toLowerCase().includes(term.toLowerCase())
+      ) || []
+    );
+  };
 
   return (
     <div className="p-4">
@@ -134,11 +154,42 @@ const QuizCreationPage = () => {
         {data && (
           <>
             <div className="bg-white rounded-lg shadow-md p-4 overflow-y-scroll h-[600px]">
+              <div className="flex flex-row gap-2 items-center w-full">
+                <TextInput
+                  type="text"
+                  placeholder="Search"
+                  className="w-full"
+                  value={searchQuery}
+                  onChange={handleSearchChange}
+                  sizing={"sm"}
+                />
+                <Button
+                  onClick={() => handleFilter("general")}
+                  size={"xs"}
+                  color={"success"}
+                >
+                  General
+                </Button>
+                <Button
+                  onClick={() => handleFilter("posts")}
+                  size={"xs"}
+                  color={"warning"}
+                >
+                  Ibyapa
+                </Button>
+                <Button
+                  onClick={() => handleFilter("")}
+                  size={"xs"}
+                  color={"info"}
+                >
+                  All
+                </Button>
+              </div>
               <h2 className="text-xl font-bold mb-4">
-                Questions ({data.length})
+                Questions ({filteredQuestions.length})
               </h2>
 
-              {data.map((question, index) => (
+              {filteredQuestions.map((question, index) => (
                 <QuestionCard
                   key={question.id}
                   onRemove={onRemove}

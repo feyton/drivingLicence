@@ -5,7 +5,7 @@ import {
   useTable,
 } from "react-table";
 
-import { Table } from "flowbite-react";
+import { Table, TextInput } from "flowbite-react";
 import React from "react";
 
 export default function DataTable({ data, columns }) {
@@ -41,10 +41,20 @@ export default function DataTable({ data, columns }) {
     headerGroups,
     prepareRow,
     state,
+    setGlobalFilter,
   } = TableInstance;
+  const { globalFilter } = state;
 
   return (
-    <div className="overflow-y-scroll w-full">
+    <div className="overflow-y-scroll w- px-2">
+      <div className="w-sm my-2">
+        <TextInput
+          placeholder="Shakisha..."
+          className="w-md"
+          defaultValue={globalFilter || ""}
+          onChange={(e) => setGlobalFilter(e.target.value)}
+        />
+      </div>
       <Table
         striped={true}
         hoverable={true}

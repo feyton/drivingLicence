@@ -1,7 +1,6 @@
 import { gql, useLazyQuery } from "@apollo/client";
 import { Button } from "flowbite-react";
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const GET_COUNTS = gql`
@@ -15,7 +14,6 @@ const GET_COUNTS = gql`
 `;
 
 function LandingPage(props) {
-  const { user } = useSelector((state) => state?.auth);
   const [getCounts, { loading, data }] = useLazyQuery(GET_COUNTS);
   useEffect(() => {
     getCounts();
@@ -23,7 +21,7 @@ function LandingPage(props) {
   return (
     <>
       <div className="hero">
-        <div className="hero w-full min-h-full flex flex-col justify-center grow items-center ">
+        <div className="hero w-full min-h-screen flex flex-col justify-center grow items-center ">
           <div className="">
             <div className="flex h-full flex-col items-center justify-start  w-full px-4 py-2">
               <h1 className="mt-28 sm:mt-20 text-2xl sm:text-4xl md:pl-10 md:text-6xl font-bold text-white dark:text-dark-text-fill font-lexend text-center md:text-left">
@@ -38,21 +36,28 @@ function LandingPage(props) {
                   <b> Ugatsinda</b>
                 </em>
               </p>
-              {!user?.auth ? (
-                <div className="w-full text-center justify-center items-center mt-8">
-                  <Link to="quiz" className="justify-center mx-auto">
-                    <Button
-                      variant="primary"
-                      className="px-4 py-0 mx-auto font-lexend"
-                      size="lg"
-                    >
-                      Tangira
-                    </Button>
-                  </Link>
-                </div>
-              ) : (
-                " "
-              )}
+
+              <div className="w-full text-center flex flex-row gap-6 justify-center items-center mt-20 mb-20">
+                <Link to="quiz" className=" ">
+                  <Button
+                    variant="primary"
+                    className="px-4 py-0 mx-auto font-lexend"
+                    size="lg"
+                  >
+                    Tangira
+                  </Button>
+                </Link>
+                <Link to="igazeti" className=" ">
+                  <Button
+                    variant="primary"
+                    color={"success"}
+                    className="px-4 py-0 mx-auto font-lexend"
+                    size="lg"
+                  >
+                    Soma igazeti
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

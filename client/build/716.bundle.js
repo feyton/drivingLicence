@@ -192,7 +192,11 @@ function QuizResult(_ref) {
     to: "/quiz"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_1__/* .Button */ .zx, {
     color: "info"
-  }, "Subira kubizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_components_ButtonCustom__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
+  }, "Subira kubizamini")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_8__/* .Link */ .rU, {
+    to: "/igazeti"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(flowbite_react__WEBPACK_IMPORTED_MODULE_1__/* .Button */ .zx, {
+    color: "success"
+  }, "Soma igazeti")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.createElement(_components_ButtonCustom__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {
     disabled: Object.keys(ratings).length === 0,
     className: "hidden md:block",
     color: "warning",

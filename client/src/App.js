@@ -14,6 +14,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import Loading from "./pages/LoadingPage";
 import store from "./redux/store";
+import Igazeti from "./pages/Igazeti";
 const Footer = React.lazy(() => import("./components/Footer"));
 const QuizCreationPage = React.lazy(() => import("./pages/CreateQuiz"));
 const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
@@ -98,6 +99,7 @@ function App() {
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsAndConditions />} />
+                <Route path="/igazeti" element={<Igazeti />} />
                 <Route
                   path="/quiz"
                   element={
