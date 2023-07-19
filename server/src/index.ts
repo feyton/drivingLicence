@@ -3,10 +3,10 @@ import cors from "cors";
 import "dotenv/config";
 import express from "express";
 import path from "path";
-import connect from "./config/db";
-import { context } from "./context";
 import resolvers from "./Resolvers";
 import typeDefs from "./Schema/index";
+import connect from "./config/db";
+import { context } from "./context";
 
 const PORT = process.env.PORT || 5000;
 const app = express().use(cors());
@@ -22,9 +22,9 @@ server.start().then(() => {
   server.applyMiddleware({ app });
 });
 
-app.use(express.static(path.join(path.resolve(), "server/build")));
+app.use(express.static(path.join(path.resolve(), "build")));
 app.get("*", (req, res) => {
-  return res.sendFile(path.join(path.resolve(), "server/build/index.html"));
+  return res.sendFile(path.join(path.resolve(), "build/index.html"));
 });
 
 connect.then(() => {

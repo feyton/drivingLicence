@@ -1,5 +1,3 @@
-printf "Updating the repositories \n"
-source /home/igityopp/nodevenv/drivingLicense/14/bin/activate && cd /home/igityopp/drivingLicense
 git clean -f
 git reset --hard
 printf "\n\nGetting git content from remote\n"
@@ -8,6 +6,10 @@ printf "\n Updating the backend part\n"
 cd ./server
 yarn
 yarn run build 
+cd ../client 
+yarn 
+yarn run build
 cd ..
 cp ./client/build ./server -r
+pm2 restart driving
 printf "\nUpdate has been completed\n"
