@@ -1,4 +1,5 @@
 import { gql, useApolloClient, useMutation } from "@apollo/client";
+import { GoogleLogin } from "@react-oauth/google";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -8,6 +9,7 @@ import { Button, TextInput } from "flowbite-react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { loginUser } from "../redux/reducers/authReducer.js";
+
 const LOGIN_MUTATION = gql`
   mutation LoginUser($input: LoginInput!) {
     loginUser(input: $input) {
@@ -52,6 +54,23 @@ const LoginPage = () => {
         toast.error("Invalid credentials");
       },
     });
+  };
+  const onFailure = (error) => {
+    console.log(error);
+    toast.error("Login with google failed");
+  };
+  const handleLogin = async (googleData) => {
+    const { data } = await LoginUser({
+      variables: {
+        input: { token: googleData.credential },
+      },
+    });
+    dispatch(loginUser(data.loginUser));
+    navigate(from);
+    toast.success("Login successful");
+    await client.resetStore();
+    return;
+    // store returned user somehow
   };
   const [show, setShow] = useState(false);
   const showPassword = () => {
@@ -152,13 +171,33 @@ const LoginPage = () => {
           )}
           {loading ? "Loading..." : "Log In"}
         </Button>
-        <p className="mt-4 text-center">
+        <hr className="my-1" />
+        <div className="items-center justify-center w-full text-center">
+          <GoogleLogin
+            clientId={process.env.REACT_APP_CLIENT_ID}
+            text={loading ? "Loading...." : "Continue with Google"}
+            onSuccess={handleLogin}
+            onFailure={onFailure}
+            cookiePolicy={"single_host_origin"}
+            className="mx-auto"
+            useOneTap
+          />
+        </div>
+
+        <p className="mt-4 text-center text-sm">
           Don't have an account?{" "}
           <Link
             to="/register"
             className="text-indigo-500 font-bold hover:underline"
           >
             Sign up
+          </Link>{" "}
+          or{" "}
+          <Link
+            to="/reset"
+            className="text-indigo-500 font-bold hover:underline"
+          >
+            Reset password
           </Link>
         </p>
       </form>

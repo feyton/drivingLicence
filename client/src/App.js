@@ -15,6 +15,7 @@ import { toast, ToastContainer } from "react-toastify";
 import Loading from "./pages/LoadingPage";
 import store from "./redux/store";
 import Igazeti from "./pages/Igazeti";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 const Footer = React.lazy(() => import("./components/Footer"));
 const QuizCreationPage = React.lazy(() => import("./pages/CreateQuiz"));
 const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"));
@@ -35,6 +36,8 @@ const RegisterPage = React.lazy(() => import("./pages/RegisterPage"));
 const ViewScore = React.lazy(() => import("./pages/ViewScore"));
 const PrivateRoute = React.lazy(() => import("./utils/PrivateRoute"));
 const QuestionEditPage = React.lazy(() => import("./pages/QuestionEditPage"));
+
+const clientId = process.env.REACT_APP_CLIENT_ID;
 
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors) {
@@ -90,7 +93,8 @@ function App() {
   return (
     <div className="bg-bgImage bg-fixed bg-cover">
       <div className="min-h-screen bg-gray-100 min-w-screen max-w-[1200px] mx-auto my-0 flex flex-col grow">
-        <ApolloProvider client={client}>
+        <GoogleOAuthProvider clientId={clientId}>
+           <ApolloProvider client={client}>
           <Provider store={store}>
             <Suspense fallback={<Loading />}>
               <Navbar />
@@ -173,6 +177,8 @@ function App() {
             <ToastContainer theme="colored" />
           </Provider>
         </ApolloProvider>
+        </GoogleOAuthProvider>
+       
       </div>
     </div>
   );

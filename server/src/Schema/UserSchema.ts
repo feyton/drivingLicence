@@ -24,8 +24,9 @@ export default gql`
     getProfile: User!
   }
   input LoginInput {
-    email: String!
-    password: String!
+    email: String
+    password: String
+    token: String
   }
   input ChangeInput {
     role: String

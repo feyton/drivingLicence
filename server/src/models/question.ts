@@ -79,6 +79,7 @@ ScoreSchema.virtual("questions").get(function () {
   const score: any = this;
   return JSON.parse(score?.questionsData);
 });
+ScoreSchema.index({ createdAt: 1 }, { expireAfterSeconds: 2592000 });
 
 export const Score = model("Score", ScoreSchema);
 

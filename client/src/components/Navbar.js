@@ -1,3 +1,4 @@
+import { googleLogout } from "@react-oauth/google";
 import { Button } from "flowbite-react";
 import React, { useState } from "react";
 import {
@@ -18,6 +19,7 @@ function Navbar() {
   const { authenticated, user } = useSelector((state) => state?.auth);
   const dispatch = useDispatch();
   const handleLogout = () => {
+    googleLogout();
     dispatch(logoutUser());
   };
 

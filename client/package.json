@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.10",
+    "@react-oauth/google": "^0.11.1",
     "@reduxjs/toolkit": "^1.9.3",
     "dompurify": "^3.0.1",
     "flowbite": "^1.6.4",

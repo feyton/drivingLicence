@@ -191,8 +191,8 @@ function SignupForm() {
         </Button>
         <p className="text-sm">
           Already have an account?{" "}
-          <Link to="/login" className="text-primary">
-            Injira
+          <Link to="/login" className="text-primary text-bold">
+            Login
           </Link>
         </p>
       </form>
