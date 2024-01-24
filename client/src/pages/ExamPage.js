@@ -83,7 +83,7 @@ function ExamPage() {
                   className="mt-4 duration-200 transition-all"
                   onClick={handleStart}
                 >
-                  Tangira ikizamini{" "}
+                  Tangira ikizamini
                   <BsArrowRight className="inline-block ml-2" />
                 </Button>
               </div>

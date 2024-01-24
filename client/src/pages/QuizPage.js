@@ -120,7 +120,7 @@ function QuizPage(props) {
                     />
                   </svg>
                 )}
-                Ikibanza
+                BACK
               </Button>
             )}
             {hasNextQuestion && (
@@ -149,7 +149,7 @@ function QuizPage(props) {
                     />
                   </svg>
                 )}
-                Igikurikira
+                NEXT
               </Button>
             )}
             {!hasNextQuestion && (
@@ -178,7 +178,7 @@ function QuizPage(props) {
                     />
                   </svg>
                 )}
-                {isSubmitting ? "Komereza..." : "Ohereza"}
+                {isSubmitting ? "Sending..." : "Ohereza"}
               </Button>
             )}
           </div>
