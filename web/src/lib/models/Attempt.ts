@@ -23,6 +23,8 @@ const AttemptSchema = new Schema(
       count: { type: Number, required: true },
       categories: { type: [String], default: [] }, // empty = all
       focus: { type: String, enum: ["all", "unseen", "missed"], default: "all" },
+      // When to reveal correct answers: after each question, or at the end.
+      reveal: { type: String, enum: ["immediate", "end"], default: "immediate" },
     },
     questions: { type: [AttemptQuestionSchema], required: true },
     startedAt: { type: Date, required: true },

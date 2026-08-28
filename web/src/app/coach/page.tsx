@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Markdown } from "@/components/markdown";
 import { cn } from "@/lib/utils";
 
 type Msg = { role: "user" | "assistant"; content: string };
@@ -78,11 +79,11 @@ export default function CoachChatPage() {
           <div key={i} className={cn("flex", m.role === "user" ? "justify-end" : "justify-start")}>
             <div
               className={cn(
-                "max-w-[85%] whitespace-pre-line rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
-                m.role === "user" ? "bg-primary text-primary-foreground" : "border bg-card"
+                "max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
+                m.role === "user" ? "whitespace-pre-line bg-primary text-primary-foreground" : "border bg-card"
               )}
             >
-              {m.content || "…"}
+              {m.role === "assistant" ? <Markdown>{m.content || "…"}</Markdown> : m.content || "…"}
             </div>
           </div>
         ))}

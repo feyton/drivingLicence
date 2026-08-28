@@ -14,6 +14,7 @@ const startSchema = z.object({
   count: z.number().int().min(5).max(50).optional(),
   categories: z.array(z.enum(["general", "signs"])).default([]),
   focus: z.enum(["all", "unseen", "missed"]).default("all"),
+  reveal: z.enum(["immediate", "end"]).optional(),
 });
 
 export async function startAttempt(input: unknown): Promise<{ ok: false; error: string } | never> {
@@ -28,6 +29,8 @@ export async function startAttempt(input: unknown): Promise<{ ok: false; error: 
   const count = cfg.mode === "exam" ? EXAM.count : cfg.count ?? PRACTICE.defaultCount;
   const categories = cfg.mode === "exam" ? [] : cfg.categories;
   const focus = cfg.mode === "exam" ? "all" : cfg.focus;
+  // Reveal timing: default immediate for practice, end for exam — but user-configurable.
+  const reveal = cfg.reveal ?? (cfg.mode === "exam" ? "end" : "immediate");
 
   const drawn = await drawQuestions(session.user.id, { count, categories, focus });
   if (drawn.length === 0) return { ok: false, error: focus === "missed" ? "no_missed" : "no_questions" };
@@ -37,7 +40,7 @@ export async function startAttempt(input: unknown): Promise<{ ok: false; error: 
   const attempt = await Attempt.create({
     user: session.user.id,
     mode: cfg.mode,
-    config: { count: drawn.length, categories, focus },
+    config: { count: drawn.length, categories, focus, reveal },
     questions: buildAttemptQuestions(drawn),
     startedAt: now,
     expiresAt: cfg.mode === "exam" ? new Date(now.getTime() + EXAM.minutes * 60 * 1000) : null,
@@ -55,7 +58,10 @@ const answerSchema = z.object({
 
 export type AnswerResult =
   | { ok: true; feedback: null }
-  | { ok: true; feedback: { correct: boolean; correctAnswer: string; explanation: string } }
+  | {
+      ok: true;
+      feedback: { correct: boolean; correctAnswer: string; explanation: string; whyWrong: string | null };
+    }
   | { ok: false; error: string };
 
 export async function recordAnswer(input: unknown): Promise<AnswerResult> {
@@ -82,13 +88,22 @@ export async function recordAnswer(input: unknown): Promise<AnswerResult> {
   attempt.markModified("questions");
   await attempt.save();
 
-  // Practice mode teaches immediately; exam mode stays silent until submit.
-  if (attempt.mode === "practice") {
+  // Reveal timing is per-attempt: "immediate" teaches after each answer,
+  // "end" stays silent until submit.
+  if (attempt.config?.reveal === "immediate") {
     const q = await Question.findById(aq.questionId);
     if (!q) return { ok: false, error: "not_found" };
+    const notes = (q.optionNotes ?? {}) as Record<string, string>;
+    // If the learner was wrong, surface the note specific to the option they chose.
+    const whyWrong = q.answer !== optionId ? notes[optionId] ?? null : null;
     return {
       ok: true,
-      feedback: { correct: q.answer === optionId, correctAnswer: q.answer, explanation: q.explanation ?? "" },
+      feedback: {
+        correct: q.answer === optionId,
+        correctAnswer: q.answer,
+        explanation: q.explanation ?? "",
+        whyWrong,
+      },
     };
   }
   return { ok: true, feedback: null };

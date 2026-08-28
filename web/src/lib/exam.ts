@@ -87,6 +87,7 @@ export async function gradeAttempt(attemptId: string) {
         correctAnswer: q?.answer ?? "",
         userAnswer: counted,
         explanation: q?.explanation ?? "",
+        optionNotes: q?.optionNotes ?? null,
         category: q?.category ?? "general",
         image: q?.image ?? null,
         correct: isCorrect,

@@ -10,6 +10,7 @@ import { startAttempt } from "@/actions/attempts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CoachReview } from "@/components/coach-review";
+import { Markdown } from "@/components/markdown";
 import { cn } from "@/lib/utils";
 
 type SnapshotItem = {
@@ -20,6 +21,7 @@ type SnapshotItem = {
   correctAnswer: string;
   userAnswer: string | null;
   explanation: string;
+  optionNotes: Record<string, string> | null;
   category: string;
   correct: boolean;
 };
@@ -204,12 +206,20 @@ export default async function ResultsPage({ params }: PageProps<"/results/[id]">
                   })}
                 </div>
                 {!s.userAnswer && <p className="text-xs italic text-muted-foreground">{t("noAnswer")}</p>}
+                {!s.correct && s.userAnswer && s.optionNotes?.[s.userAnswer] && (
+                  <div className="rounded-md border border-destructive/30 bg-destructive/5 p-3 text-sm">
+                    <p className="mb-1 font-heading text-xs font-semibold uppercase tracking-wide text-destructive">
+                      {t("yourAnswer")}
+                    </p>
+                    <Markdown className="text-foreground">{s.optionNotes[s.userAnswer]}</Markdown>
+                  </div>
+                )}
                 {s.explanation && htmlToText(s.explanation) && (
                   <div className="rounded-md bg-muted/60 p-3 text-sm">
                     <p className="mb-1 font-heading text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                       {t("explanation")}
                     </p>
-                    <p className="whitespace-pre-line">{htmlToText(s.explanation)}</p>
+                    <Markdown className="text-foreground">{s.explanation}</Markdown>
                   </div>
                 )}
               </CardContent>

@@ -15,6 +15,9 @@ const QuestionSchema = new Schema(
     options: { type: [OptionSchema], required: true },
     answer: { type: String, required: true },
     explanation: { type: String, default: "" },
+    // Optional per-option notes (option id -> why it's right/wrong), for
+    // selected-answer-aware feedback. Populated by the AI enrichment pass.
+    optionNotes: { type: Schema.Types.Mixed, default: null },
     // "general" = rules of the road, "posts" = road signs (legacy value kept for data continuity)
     category: { type: String, enum: ["general", "posts"], default: "general", index: true },
     image: { type: String, default: null }, // road-sign image URL when the question needs one

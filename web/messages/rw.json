@@ -4,6 +4,7 @@
     "practice": "Imyitozo",
     "exam": "Ikizamini",
     "coach": "Umutoza",
+    "igazeti": "Igazeti",
     "profile": "Umwirondoro",
     "admin": "Ubuyobozi",
     "signIn": "Injira",
@@ -62,6 +63,9 @@
     "focusAll": "Ibibazo byose",
     "focusUnseen": "Ibishya mbere",
     "focusMissed": "Ibyo nibeshye",
+    "reveal": "Ibisubizo bigaragare ryari?",
+    "revealImmediate": "Ako kanya",
+    "revealEnd": "Ku iherezo",
     "start": "Tangira imyitozo",
     "noMissed": "Nta bibazo wibeshye birahari — koze neza! Hitamo ubundi buryo.",
     "noQuestions": "Nta bibazo bihari muri iki cyiciro."
@@ -74,6 +78,11 @@
     "rule3": "Gutsinda ni 12/20 (60%)",
     "rule4": "Nta gusubiza nabi bihanwa — subiza byose",
     "start": "Tangira ikizamini",
+    "reveal": "Ibisubizo bigaragare ryari?",
+    "revealImmediate": "Nyuma ya buri kibazo",
+    "revealEnd": "Ku iherezo (nk'ikizamini nyacyo)",
+    "revealEndHint": "Uzabona amanota n'ibisubizo urangije ikizamini cyose.",
+    "revealImmediateHint": "Uzabona igisubizo cy'ukuri nyuma ya buri kibazo — byiza mu kwiga.",
     "timeLeft": "Igihe gisigaye",
     "question": "Ikibazo",
     "of": "kuri",
@@ -147,6 +156,12 @@
     "pending": "Bitegereje",
     "approved": "Byemejwe",
     "search": "Shakisha"
+  },
+  "igazeti": {
+    "title": "Igazeti - Amategeko y'Umuhanda",
+    "subtitle": "Soma igitabo cy'amategeko y'umuhanda mu Rwanda.",
+    "download": "Kuramo PDF",
+    "loading": "Igazeti irimo gufungura..."
   },
   "coach": {
     "title": "Umutoza",

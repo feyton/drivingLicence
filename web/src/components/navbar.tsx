@@ -13,12 +13,10 @@ export async function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-5xl items-center gap-2 px-4">
-        <Link href="/" className="mr-auto flex items-center gap-2 font-heading font-semibold text-primary">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
-            <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2.2" />
-            <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-          </svg>
-          {t("appName")}
+        <Link href="/" className="mr-auto flex items-center" aria-label={t("appName")}>
+          {/* Original DRIVETEST logo (white wordmark); inverted in light mode so it reads on both themes. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt={t("appName")} className="h-7 w-auto invert dark:invert-0" />
         </Link>
 
         {user ? (
@@ -31,6 +29,9 @@ export async function Navbar() {
             </Button>
             <Button variant="ghost" size="sm" render={<Link href="/coach" />}>
               {t("coach")}
+            </Button>
+            <Button variant="ghost" size="sm" render={<Link href="/igazeti" />}>
+              {t("igazeti")}
             </Button>
             <Button variant="ghost" size="sm" render={<Link href="/profile" />}>
               {t("profile")}

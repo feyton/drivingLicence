@@ -56,6 +56,7 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
     <SessionPlayer
       attemptId={id}
       mode={attempt.mode}
+      reveal={attempt.config?.reveal === "end" ? "end" : "immediate"}
       questions={payload}
       expiresAt={attempt.expiresAt ? attempt.expiresAt.toISOString() : null}
     />

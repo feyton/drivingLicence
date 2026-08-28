@@ -4,6 +4,7 @@
     "practice": "Practice",
     "exam": "Exam",
     "coach": "Coach",
+    "igazeti": "Gazette",
     "profile": "Profile",
     "admin": "Admin",
     "signIn": "Sign in",
@@ -62,6 +63,9 @@
     "focusAll": "All questions",
     "focusUnseen": "New ones first",
     "focusMissed": "Ones I missed",
+    "reveal": "Show answers",
+    "revealImmediate": "After each question",
+    "revealEnd": "At the end",
     "start": "Start practicing",
     "noMissed": "No missed questions yet — nice work! Pick another option.",
     "noQuestions": "No questions available in this category."
@@ -74,6 +78,11 @@
     "rule3": "Pass mark is 12/20 (60%)",
     "rule4": "No penalty for wrong answers — answer everything",
     "start": "Start the exam",
+    "reveal": "Show answers",
+    "revealImmediate": "After each question",
+    "revealEnd": "At the end (like the real exam)",
+    "revealEndHint": "You'll see your score and answers after finishing the whole exam.",
+    "revealImmediateHint": "You'll see the correct answer after each question — great for learning.",
     "timeLeft": "Time left",
     "question": "Question",
     "of": "of",
@@ -147,6 +156,12 @@
     "pending": "Pending",
     "approved": "Approved",
     "search": "Search"
+  },
+  "igazeti": {
+    "title": "Gazette - Rules of the Road",
+    "subtitle": "Read the official Rwandan traffic-law book.",
+    "download": "Download PDF",
+    "loading": "Opening the gazette..."
   },
   "coach": {
     "title": "Umutoza (Coach)",

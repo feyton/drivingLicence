@@ -4,6 +4,7 @@
     "practice": "Exercices",
     "exam": "Examen",
     "coach": "Coach",
+    "igazeti": "Gazette",
     "profile": "Profil",
     "admin": "Admin",
     "signIn": "Se connecter",
@@ -62,6 +63,9 @@
     "focusAll": "Toutes les questions",
     "focusUnseen": "Les nouvelles d'abord",
     "focusMissed": "Celles que j'ai ratées",
+    "reveal": "Afficher les réponses",
+    "revealImmediate": "Après chaque question",
+    "revealEnd": "À la fin",
     "start": "Commencer",
     "noMissed": "Aucune question ratée pour l'instant — bravo ! Choisissez une autre option.",
     "noQuestions": "Aucune question disponible dans cette catégorie."
@@ -74,6 +78,11 @@
     "rule3": "La réussite est à 12/20 (60 %)",
     "rule4": "Pas de pénalité pour les mauvaises réponses — répondez à tout",
     "start": "Commencer l'examen",
+    "reveal": "Afficher les réponses",
+    "revealImmediate": "Après chaque question",
+    "revealEnd": "À la fin (comme le vrai examen)",
+    "revealEndHint": "Vous verrez votre note et les réponses après tout l'examen.",
+    "revealImmediateHint": "Vous verrez la bonne réponse après chaque question — idéal pour apprendre.",
     "timeLeft": "Temps restant",
     "question": "Question",
     "of": "sur",
@@ -147,6 +156,12 @@
     "pending": "En attente",
     "approved": "Approuvées",
     "search": "Rechercher"
+  },
+  "igazeti": {
+    "title": "Gazette - Code de la route",
+    "subtitle": "Consultez le livre officiel du code de la route rwandais.",
+    "download": "Télécharger le PDF",
+    "loading": "Ouverture de la gazette..."
   },
   "coach": {
     "title": "Umutoza (Coach)",

@@ -8,6 +8,7 @@ import { recordAnswer, submitAttempt, type AnswerResult } from "@/actions/attemp
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Markdown } from "@/components/markdown";
 import { cn } from "@/lib/utils";
 
 type PlayerQuestion = {
@@ -18,16 +19,18 @@ type PlayerQuestion = {
   answer: string | null;
 };
 
-type Feedback = { correct: boolean; correctAnswer: string; explanation: string };
+type Feedback = { correct: boolean; correctAnswer: string; explanation: string; whyWrong: string | null };
 
 export function SessionPlayer(props: {
   attemptId: string;
   mode: "exam" | "practice";
+  reveal: "immediate" | "end";
   questions: PlayerQuestion[];
   expiresAt: string | null;
 }) {
   const t = useTranslations();
-  const { attemptId, mode, questions, expiresAt } = props;
+  const { attemptId, mode, reveal, questions, expiresAt } = props;
+  const revealImmediate = reveal === "immediate";
 
   const [current, setCurrent] = useState(() => {
     const firstUnanswered = questions.findIndex((q) => !q.answer);
@@ -75,7 +78,7 @@ export function SessionPlayer(props: {
   }, [expiresAt, doSubmit, t]);
 
   function choose(optionId: string) {
-    if (pending || (mode === "practice" && feedback)) return;
+    if (pending || (revealImmediate && feedback)) return;
     setAnswers((a) => ({ ...a, [q.index]: optionId }));
     startTransition(async () => {
       const res: AnswerResult = await recordAnswer({ attemptId, index: q.index, optionId });
@@ -183,8 +186,11 @@ export function SessionPlayer(props: {
               <p className="font-heading font-semibold">
                 {feedback.correct ? t("session.correct") : t("session.wrong")}
               </p>
+              {feedback.whyWrong && (
+                <Markdown className="mt-1 text-destructive">{feedback.whyWrong}</Markdown>
+              )}
               {feedback.explanation && (
-                <p className="mt-1 whitespace-pre-line text-muted-foreground">{feedback.explanation}</p>
+                <Markdown className="mt-1 text-muted-foreground">{feedback.explanation}</Markdown>
               )}
             </div>
           )}
@@ -192,7 +198,7 @@ export function SessionPlayer(props: {
       </Card>
 
       <div className="flex items-center justify-between gap-3">
-        {mode === "exam" ? (
+        {!revealImmediate ? (
           <>
             <Button variant="ghost" disabled={current === 0} onClick={() => setCurrent(current - 1)}>
               {t("exam.back")}

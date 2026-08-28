@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Markdown } from "@/components/markdown";
 
 function CoachIcon() {
   return (
@@ -57,7 +58,7 @@ export function CoachReview({ attemptId, allCorrect }: { attemptId: string; allC
         </div>
 
         {coaching ? (
-          <div className="whitespace-pre-line text-sm leading-relaxed text-foreground">{coaching}</div>
+          <Markdown className="text-sm leading-relaxed text-foreground">{coaching}</Markdown>
         ) : (
           <>
             <p className="text-sm text-muted-foreground">{allCorrect ? t("introPerfect") : t("intro")}</p>

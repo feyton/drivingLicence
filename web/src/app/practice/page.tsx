@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 const COUNTS = [10, 20, 40];
 const CATEGORIES = ["all", "general", "signs"] as const;
 const FOCUSES = ["all", "unseen", "missed"] as const;
+const REVEALS = ["immediate", "end"] as const;
 
 function OptionRow<T extends string | number>(props: {
   label: string;
@@ -48,6 +49,7 @@ export default function PracticePage() {
   const [count, setCount] = useState<number>(10);
   const [category, setCategory] = useState<(typeof CATEGORIES)[number]>("all");
   const [focus, setFocus] = useState<(typeof FOCUSES)[number]>("all");
+  const [reveal, setReveal] = useState<(typeof REVEALS)[number]>("immediate");
 
   function start() {
     startTransition(async () => {
@@ -56,6 +58,7 @@ export default function PracticePage() {
         count,
         categories: category === "all" ? [] : [category],
         focus,
+        reveal,
       });
       if (res && !res.ok) {
         toast.error(res.error === "no_missed" ? t("noMissed") : res.error === "no_questions" ? t("noQuestions") : tc("error"));
@@ -85,6 +88,13 @@ export default function PracticePage() {
             labels={{ all: t("focusAll"), unseen: t("focusUnseen"), missed: t("focusMissed") }}
             value={focus}
             onChange={setFocus}
+          />
+          <OptionRow
+            label={t("reveal")}
+            values={REVEALS}
+            labels={{ immediate: t("revealImmediate"), end: t("revealEnd") }}
+            value={reveal}
+            onChange={setReveal}
           />
           <Button className="w-full" size="lg" disabled={pending} onClick={start}>
             {t("start")}
