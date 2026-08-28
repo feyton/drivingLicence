@@ -3,7 +3,7 @@ import "dotenv/config";
 import { OAuth2Client } from "google-auth-library";
 import jwt from "jsonwebtoken";
 import { User } from "../models/user";
-import { authenticated } from "../utils/authenticate";
+import { authenticated, validateRole } from "../utils/authenticate";
 
 const SECRET: any = process.env.ACCESS_TOKEN_SECRET;
 const client = new OAuth2Client(process.env.CLIENT_ID);
@@ -13,11 +13,12 @@ interface Context {
 }
 export default {
   Query: {
-    getUsers: async (_: any, args: any, context: Context) => {
-      const { userId, role } = context;
-      const users = await User.find({});
-      return users;
-    },
+    getUsers: authenticated(
+      validateRole(["admin", "super"])(async (_: any, args: any, context: Context) => {
+        const users = await User.find({}).select("-password");
+        return users;
+      })
+    ),
     getProfile: authenticated(async (_: any, args: any, { userId }: any) => {
       const user = await User.findById(userId);
       return user;
@@ -101,6 +102,11 @@ export default {
       return { token, user };
     },
     deactivateUser: authenticated(async (_: any, args: any, context: any) => {
+      // Only admins may deactivate other accounts; users may deactivate themselves.
+      const isAdmin = ["admin", "super"].includes(context.role);
+      if (!isAdmin && String(args.id) !== String(context.userId)) {
+        throw new ApolloError("FORBIDDEN", "403");
+      }
       const user = await User.findByIdAndUpdate(args.id, { active: false });
       return user;
     }),

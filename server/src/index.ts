@@ -13,7 +13,8 @@ const app = express().use(cors());
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  introspection: true,
+  // Off by default (pm2 does not set NODE_ENV); opt in explicitly for local dev.
+  introspection: process.env.ENABLE_INTROSPECTION === "true",
   cache: "bounded",
   context: context,
 });

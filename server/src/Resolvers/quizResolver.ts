@@ -89,6 +89,12 @@ const QuizResolver: any = {
     }),
     getScore: authenticated(async (_: any, args: any, context: any) => {
       const score: any = await Score.findById(args.id).populate("quizId");
+      if (!score) throw new ApolloError("NOT_FOUND", "404");
+      // Owner or admin only
+      const isAdmin = ["admin", "super"].includes(context.role);
+      if (!isAdmin && String(score.userId) !== String(context.userId)) {
+        throw new ApolloError("FORBIDDEN", "403");
+      }
       const result = {
         score: score?.score,
         id: score._id.toString(),
@@ -112,13 +118,17 @@ const QuizResolver: any = {
       if (!question) throw new ApolloError("400", "BAD_DATA");
       return question;
     }),
-    EditQuestion: authenticated(async (_: any, args: any, context: any) => {
-      const question = await Question.findByIdAndUpdate(args.id, {
-        ...args.input,
-      });
-      if (!question) throw new ApolloError("400", "BAD_DATA");
-      return question;
-    }),
+    EditQuestion: authenticated(
+      validateRole(["admin", "super", "editor"])(
+        async (_: any, args: any, context: any) => {
+          const question = await Question.findByIdAndUpdate(args.id, {
+            ...args.input,
+          });
+          if (!question) throw new ApolloError("400", "BAD_DATA");
+          return question;
+        }
+      )
+    ),
     CreateQuiz: authenticated(
       validateRole(["admin", "super"])(
         async (_: any, args: any, context: any) => {
@@ -150,14 +160,16 @@ const QuizResolver: any = {
         return question;
       })
     ),
-    DeleteScore: authenticated(
-      validateRole(["admin", "super", "editor", "user"])(
-        async (_: any, args: any) => {
-          const question = await Score.findByIdAndDelete(args.id);
-          return question;
-        }
-      )
-    ),
+    DeleteScore: authenticated(async (_: any, args: any, context: any) => {
+      // Owner or admin only
+      const score: any = await Score.findById(args.id);
+      if (!score) throw new ApolloError("NOT_FOUND", "404");
+      const isAdmin = ["admin", "super"].includes(context.role);
+      if (!isAdmin && String(score.userId) !== String(context.userId)) {
+        throw new ApolloError("FORBIDDEN", "403");
+      }
+      return Score.findByIdAndDelete(args.id);
+    }),
     DeleteQuiz: authenticated(
       validateRole(["admin", "super", "editor"])(async (_: any, args: any) => {
         const quiz = await Quiz.findByIdAndUpdate(args.id, { active: false });

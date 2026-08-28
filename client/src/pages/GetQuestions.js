@@ -292,7 +292,7 @@ function GetQuestions() {
                 <div
                   className="content"
                   dangerouslySetInnerHTML={{
-                    __html: data.getQuestion.explanation,
+                    __html: DOMPurify.sanitize(data.getQuestion.explanation || ""),
                   }}
                 ></div>
               </div>

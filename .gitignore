@@ -17,3 +17,19 @@ temp/
 .env.production.local
 tmp
 build
+
+# Next.js
+web/.next/
+web/next-env.d.ts
+
+# Source corpus (large binary PDFs/DOCs, kept locally)
+Driving Licence/
+
+# Pipeline outputs (derived data; scripts are tracked)
+pipeline/extracted/
+pipeline/converted/
+pipeline/existing-questions.json
+pipeline/insert-ready.json
+pipeline/parked-*.json
+pipeline/duplicates-report.json
+pipeline/corpus/

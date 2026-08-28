@@ -65,8 +65,14 @@ module.exports = () => {
       new HtmlWebpackPlugin({
         template: path.join(__dirname, "public", "index.html"),
       }),
+      // Only expose the variables the client actually needs — never the whole
+      // build environment (which on the server contains real secrets).
       new webpack.DefinePlugin({
-        "process.env": JSON.stringify(process.env),
+        "process.env": JSON.stringify({
+          NODE_ENV: process.env.NODE_ENV || "development",
+          BN_URL: process.env.BN_URL || "",
+          REACT_APP_CLIENT_ID: process.env.REACT_APP_CLIENT_ID || "",
+        }),
       }),
       new MiniCssExtractPlugin(),
       new CompressionPlugin({

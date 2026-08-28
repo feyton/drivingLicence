@@ -86,7 +86,7 @@ function QuizResult({ score, questions }) {
             <div
               className="content"
               dangerouslySetInnerHTML={{
-                __html: question.explanation,
+                __html: DOMPurify.sanitize(question.explanation || ""),
               }}
             ></div>
           </div>
