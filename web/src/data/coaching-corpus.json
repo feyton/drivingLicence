@@ -1,0 +1,4574 @@
+{
+ "generatedFrom": [
+  "gugu1.json",
+  "gugu2.json",
+  "gugu4.json",
+  "gugu7.json",
+  "ibibazo1.json",
+  "ibibazo-ibisubizo.json",
+  "ikizami-cy-amategeko.json"
+ ],
+ "count": 760,
+ "entries": [
+  {
+   "q": "Ibimenyetso bigenga uburyo bwo kugenda mu muhanda birimo ibyiciro bingahe? Bivuge",
+   "a": "Ni bitatu (3): art 91.1; Ibyapa; Ibimenyetso bimurika; Ibimenyetso byo mumuhanda",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Vuga uko ibitegekwa mu nzira nyabagendwa birushanya agaciro.",
+   "a": "Ibitegekwa n'abakozi babifitiye ububasha birusha agaciro ibindi bimenyetso. (art 5.6); Ibimenyetso bimurika birusha ububasha ibyapa n'ibimenyetso byo mumuhanda (art 91.2)",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "ishyirwaho ry'ibimenyetso rigengwa na nde? Art 91 . 4",
+   "a": "Minisitiri ushinzwe gutwara abantu n'ibintu ku mihanda y'igihugu n'iy'Imigi; Njyanama z'uturere ku byerekeye imihanda y'uturere",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa byo ku muhanda bigizwe n'ubuhe bwoko bw'ibyapa? Art 92. 1",
+   "a": "Ibyapa biburira (A); Ibyapa byo gutambuka mbere (B); Ibyapa bibuza (C ); Ibyapa bitegeka (D); Ibyapa ndanga (E)",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa byo kumuhanda bigomba gushingwa ku ruhe ruhande rw'umuhanda? Art 92. 2",
+   "a": "Kuruhande rw'iburyo bw'umuhanda",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kubuhe buryo",
+   "a": "Kubuyo umusozo wo hasi utajya munsi ya 1,50 m cg hejuru ya 2,10 m uhereye kubutaka.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ubusobanuro bw'icyapa gishobora kuzuzwa , gusiganuwa cg kugenwa n'iki?",
+   "a": "N'ibyapa by'inyongera",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa biburira bibereyeho kumenyesha umugenzi iki? Byerekana iki? Bimutegeka iki? Kubera iki? Art 93.1",
+   "a": "Bibereyeho kumenyesha umugenzi ko hali icyago; Byerekana imiterere yacyo; Bimutegeka ubwitonzi budasanzwe; Kugira ngo imigenzereze ye ihure n'imiterere n'ububi bw'icyago cyerekanwe",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa byo gutambuka mbere bibereyeho iki? Art 93.1",
+   "a": "Bibereyeho kumenyesha abagenda mu nzira nyabagendwa amategeko yihariye yo gutambuka mbere mu nkomane.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ahatari mu nsisiro, ibyapa biburira n'ibyapa byo gutambuka mbere bigomba gushyirwa muntera ingana ite? Art 94.2",
+   "a": "mu ntera kuva kuri 150 m kugera kurli 200 m y'ahantu habi byerekana",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo ahantu icyago cyaranzwe ari harehare uburebure bw'igice cy'inzira nyabaendwa icyo cyago kirimo bushobora kwerekanwa n'ikihe cyapa? (Art 94.4)",
+   "a": "Icyapa cy'inyongera F:2",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mu nsisiro, ibyapa biburira bigomba gushyirwa he?",
+   "a": "Iruhande neza rw'ahantu habi",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Icapa cyo gitanga uburenganzira bwo gutambuka mbere gisobora gushyirwa ku nzira nyabagendwa gusa iyo andi mayira yose arasukira mu masangano ariho icyapa gitegeka gutanga inzira cg guhagarara akanya gato (STOP). 95.",
+   "a": "Icyapa k'inyongera kigizwe n'akarangakerekezo kirabura gashobora kwerekana icyerekezo cy'ahantu habi.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa bitegeka n'ibyapa bibuza bitandukanwa bite? Art 97.1",
+   "a": "Ibyapa bibuza: Bimeze nk'ingasire izengurutswe n'ibara ritukura kandi ubuso bukera (ibibuza guhagarara umwanya muto n'umunini bifite ubuso bw'ubururu); Ingasire igira ibara ry'ubururu iyo icyapa gitegeka.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa bibuza n'ibitegeka bikurikizwa mu kihe gice cy'inzira? Art 98",
+   "a": "Mu gice cy'inzira nyabagendwa kiri hagati y'aho bishinze n'inkomane ikurikiye ku ruhande rw'inzira bishinzeho.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo ibibuzwa byinshi byubahirizwa ahantu hamwe bigenda gute? Art 101",
+   "a": "Ibigereranyo bibyerekeye bishobora gushyirwa hamwe ku ngasire imwe",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Vuga umubare ntarengwa w'ibimenyetso bishobora gushyirwa kungasire imwe .",
+   "a": "Bitatu",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa bitegeka bishyirwa ahantu hameze hate? Art 102",
+   "a": "Ahantu birushijeho kubonwa neza n'abo bigenewe",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyapa biyobora bigamije iki? Art 103",
+   "a": "Bigamije kuyobora no gusobanurira abagenzi b'inzira nyabagendwa",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso bimurika mu buryo bw'amatara bifite amatara angahe? yavuge kandi uyasobanure. Art 104.1",
+   "a": "Bigira amatara atatu; Itara ritukura: Birabujijwe kurenga icyo kimenyetso; Itara ry'umuhondo: Birabujijwe gutambuka umurongo wo guhagarara umwanya muto cg igihe uwo murongo udahari birabujijwe kurenga icyo kimenyetso ubwacyo, keretse iyo ryatse umuyobozi yamaze kurenga uwo murongo ashobora kwambukiranya amasangano gusa ari uko atateza abandi ibyago.; Itara ry'icyatsi: uburenganzira bwo kurenga icyo kimenyetso; NB. Amatara atukura n'ay'icyatsi kibisi y'ibimenyetso bimurika by'amabara abiri bisobanura kimwe n'amatara ahuje n'ayak ku buryo butatu. Iyo yakiye rimwe asobanura kimwe n'itara ry'umuhondo mu buryo bwakamo amatara atatu. Art 104.5",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo ikimenyetso kimurika cyagenewe ibinyabiziga kidakora bigenda bite? Art 104. 6",
+   "a": "Itegeko rigenga gutambuka mbere kw'iburyo rirakurikizwa, keretse iyo harinicyapa cyerekana ko uturutse inzira iyi n'iyi ariwe uhita mbere y'abaturutse mu zindi",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Aamatara ashyirwa kubimenyetso bimurika akurikirana ate? Mu buryo bwo kwaka akurikirana ate? Art 105",
+   "a": "Itara ritukura riba hejuru; Umuhondo hagati; Icyansi hasi,; NB. Amatara y'inyondera agizwe n'akarangacerekezo k'ibara ry'icyatsi kibisi, ashyirwa mu sni cg iruhande rw'itara ry'icyatsi kibisi.; Yaka akurikirana muburyo bukurikira; Itara ry'umuhondo ryaka nyuma y'itara ry'icyatsi kibisi,; Itara ritukura ryaka nyuma y'itara ry'umuhondo; Itara ry'icyatsi ryaka nyuma y'itara ritukura; Iyo ari kubimenyetso by'uburyo bw'amatara abiri:; Itara ritukura n'itara ry'icyatsi kibisi azima akurikirana yabanje kwakirizwa rimwe.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso bimurika byerekana iki? Bishyirwa he? Art 106",
+   "a": "Byerekana uburyo bwo kugenda mumuhanda; Bishyirwa iburyo bw'umuhanda ukurikije icyerekezo abagenzi bireba baganamo. Ariko, bishobora no gushyirwa ibumosso cyangwa hejuru y'umuhanda n'ahandi hose bitunganiye uburyo bwo kugenda mu muhanda, kugirango birusheho kugaragara neza.; NB. Ahantu uburyo bwo kugenda mu muhanda byerekanwa n'ibimenyetso bimurika, ibinyabiziga bishobora kuhagenda biteganye n'aho umubare wabyo utatuma biba ngmbwa.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kugirango berrekane ahantu habi cyane, hakoreshwa ikihe kimenyetso? Bivuga iki? Art 107",
+   "a": "Hakoreshwa ikimenyetso k'itara ry'umuhondo rimyatsa; Rivuga uburenganzira bwo gutambuka icyo kimenyetso barushijeho kwitonda; Ntacyo rihindura ku mategeko agenga guhita mbere, kandi rikoreshwa nijoro no kumanywa.; NB: Iyo rikoreshejwe mu masangano y'amayira ahwanije agaciro, rishyirwa kuri buri nzira cg hagati y'amasangano kuburyo ribonwa n'umuyobozi wese ugiye kuyinjiramo.; Iyo rimyatsa rir ku kintu kimwe n'ibimenyetso bimurika byerekana uburyo bwo kugenda mu muhanda, cyangwa hafi yabyo ntirshobora kwakira rimwe nabyo.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara cg Ibikoresho ngarura -rumuri bikoreshwa kubera iki? Art 108",
+   "a": "Bikoreshwa kugirango bigaragaze inkengero z'inzira nyabagendwa bigomba gushyirwaho kuburyo abagenda kuri iyo nkengero babibona; Iburyo ni ibara ritukura cg isa n'icunga; Ibumoso n'ibara ryera",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso byo mumuhanda bigenewe iki? Art 109",
+   "a": "Bigenewe gutunganya uburyo bwo kugendera mu muhanda cg kuburira gc de kuyobora abagendera mu muhanda.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso birombereje bigizwe n'imirongo iteganye n'umurongo ugabanyamo umuhanda mo kabiri bishobora kuba bigizwe n'iki? Art 110.1",
+   "a": "Umurongo udacagaguye; Umurongo ucagaguye; Umurongo udacagauye n'umurongo ucagaguye ibangikanye; Petite notes (Art 11O.2, 3...); Birabujijwe kurenga umurongo wera udacagaguye; Umurongo ucagaguye birabujijwe kuwurenga, keretse mu gihe agomba kunyura ku kindi kinyabiziga, gukatira ibumoso, guhindukira cgangwa kujya mu kindi gice cy'umuhanda.; Iyo uduce tw'umurongo ari tugufi kandi twegeranye cyane, tuvuga ko umurongo ukomeza wegereje.; Iyo umurongo wera ukomeje n'umurongo wera ucagaguye ibangikanye umuyobozi agomba kwita gusa ku murongo urushijeho kumwegera.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mu muhanda ufite igice banyuramo gikikijwe n'uduce tugari tudafatanye tw'ibara ryera hagomba guca ibihe binyabiziga ? 110.5",
+   "a": "Ibinyabiziga bigenda buhoro n'ibinyabiziga bitwara abantu muri rusange, bigomba kunyura muri icyo gice cy'umuhanda.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Igice cy'inzira nyabagendwa kigarukira kumirongo ibiri yera icagaguye ibangikanye kandi gifite ubugari budahagije kiba kigeewe iki ? Art 110.6",
+   "a": "Kiba ari agahanda k'amagare",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umurongo w'umuhondo ucagaguye uciye ku nkombe nyayo y'umuhanda, umusezero w'inzira y'abanyamaguru cyangwa w'inkengero y'umuhanda yegutse bivuga iki ? 110. 8",
+   "a": "Bivuga uguhagarara umwanya munini bibujijwe kuri uwo muhanda kuburebure bw'uwo murongo.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umurongo mugari udacagaguye ugaragaza iki ? 110.9",
+   "a": "Ushobora gucibwa kumuhanda kugirango ugaragaze inkombe zawe.; NB. Igice cyo hakurya y'uwo murongo hagenewe guhagararwa umwanya muto n'umwanya munini, keretse kubyerekeye imihanda irombereje y'ibisate byinshi n'imihanda y'imodoka.; Intangiriro n'iherezo ry'aho hahagararwa umwanya munini bishobora kugaragazwa n'umurongo wera udacagaguye wambukiranya umuhanda.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umurongo mugari wera udac gaguye uciye kuburyo bugororotse ku nkengero y'umuhanda werekana iki ?",
+   "a": "Werekana aho abayobozi b'ibinyabiziga bagomba guhagarara akanya gato gategetswe babyeretswe n'icyapa STOP",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umurongo ugizwe na mpandeshatu nyampanga zifite amasonga yerekeye aho abayobozi zireba baturuka kandi uciye ku byuryo bugororotse ku nkengero y'umuhanda werekana iki ?",
+   "a": "Werekana aho abayobozi bagomba guhagarara akanya gato iyo bishoboka, kugirango batange inzira",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso byerekana imirimo mu nzira nyabagendwa bishyirwaho nande? Bivanwaho nande? (113)",
+   "a": "Bishyirwaho n'uyikora kandi bivanwaho n'ukora imirimo iyo ikimara kurangira",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibimenyetso by'inkomyi bishyirwaho na nde? (113.2)",
+   "a": "Bishyirwaho n'ubutegetsi bushinzwe inzira nyabagendwa, iyo ari inkomyi idaturutse ku muntu, cg n'uwateye iyo nkomyi",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo imirimo cg inkomyi biri ahantu hatoya bigomba gushyirwaho ibihe bimenyetso? (114.1)",
+   "a": "Hagati ya nimugoroba na mugitondo: amatara ashyiraho imbibe; Hagati ya mugitondo na nimugoroba: utubendera dutukura dufite byibura 50cm z'uruhande",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Igihe ikorwa ry'imirimo ribangamiye cyanee cg buke uburyo bwo kugenda mu muhanda ahakorerwa imirimo hagaragazwwa ku buryo bumeze bute? 114.2",
+   "a": "Ahitaruye hashyirwa icyapa kerekana ko hari imirimo ikorwa (A15); Aho imirimo ikorwa hashyirwa uruzitiro ruri ku mpera zombie.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi agomba gukora iki ngo yirinde kwangiza umuhanda ? (9)",
+   "a": "Kugenda buhoro; Kugabanya ibyo ikinyabiziga kikoreye; Anyura indi nzira",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ikinyabiziga cyose cg ibinyabiziga bikururana bigomba kugira iki ? (10.1)",
+   "a": "Bigomba kugira ubiyobora",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "By'umwihariko, umuyobozi ntagomba guterwa imbogamizi igihe ayobora n'iki ? (10.2)",
+   "a": "No gukingirizwa bitewe n'umubare w'abagenzi cg n'uko bafashe imyanya,; Bitewe n'ibintu bitabonerana bometse ku birahure",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Imyaka y'ifatizo kugirango umuntu yemererwe kuyobora hakurikijwe urwego rw'ibyo ayobora n'iyihe?",
+   "a": "20 ans (C,D,E, na F); 18 ans ( A na B); 15 Velomoteri na 17 ans ahetse; 14 ans (inyamaswa zikurura); 12 ans (amatungo)",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kugenda ku mirongo ibangikanye byemewe he?",
+   "a": "Byemewe ku mihanda igenderwamo mu cyerekezo kimwe kandi igabanijwemo ibisate nbura bibiri (12.3); Ku gice cya kabiri cy'iburyo bw'umuhanda aho kubisikana mu muhande ufite ibice byinshi byemewe (12.3); Abakozi babifitiye ububasha bashobora kubitegeka",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese ugiye kugera mu nkomane agomba gukora iki? 15.1",
+   "a": "Kwitonda bihagije bijyanye n'uko aho agenda hameze;; Kureba niba umuhanda agiye kwinjiramo nta nkomyi irimo;; Kugenda agabanya umuvudukoakurikije uko asanga atabona",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese uvuye mu nzira nyabagendwa ifite ibyerekezo bibiri akaba ashaka kwinjira mu yindi ifite icyerekezo kimwe agomba gukora iki? 15.2",
+   "a": "Agomba kureka ibinyabiziga biyigezemo bigatambuka",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi ugiye kwinjira mu isangano aho bagomba kuzenguruka akora iki? 16.2",
+   "a": "Agomba kureka ibinyabiziga byagezemo bikabanza gutambuka",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mbere yo gukata cyangwa kujya kuruhande rw'uuhanda, umuyobozi wese agomba mbere y'igihe gukora iki? 17",
+   "a": "Kubigaragaza kuburyo budashidikanywaho akoresheje indanga - cyerekezo cg ibirangacyerekezo by'ikinyabiziga cye byaba bidakora agakoresha ukuboko",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kubisikana no kunyuranaho bireba nde? (19.1)",
+   "a": "Ibinyabiziga bigenda",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo ubugari bw'inzira nyabagendwa budahagije kugirango ibisikana ryorohe, abayobozi bashobora gukora iki? Bategetswe iki? 20.3",
+   "a": "Kunyura mu nzira z'impande z'abanyamaguru ariko bitonze ngo badateza abanzinyuramo impanuka; Bategetswe koroherana kugirango batambuke (20.4)",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mu mihanda yo mu misozi no mu nzira nyabagendwa zicuramye cyane cyane aho ibisikana ridashoboka cg riruhije, abayobozi babigenza bate? 20.5",
+   "a": "Umuyobozi umanuka agomba gushyira ikinyabiziga kuruhande ngo uzamuka abone uko ahita; Iyo ari ngombwa gusubira inyuma, abasubira inyuma ni abatwaye ibinyabiziga bidakomataye iyo bahuye n'abatwaye ibikomateanye;; Abatwaye ibinyabiziga bito iyo bahuye n'abatwaye ibinini; Abatwaye ibinyabiziga byikorreye imizigo iyo bahuye n'abatwaye ibinyabiziga bitwarira hamwe abantu (bus, taxi,..); Ibimanuka iyo bihuye n'ibizamuka (biri murwego rumwe) keretse iyo gusubira inyuma byoroheye uzamuka.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kunyuranaho bikorewa muruhe ruhande?",
+   "a": "Ibumoso",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Kunyuranaho bikorewe iburyo ryali? 21.1",
+   "a": "Iyo umuyobozi unyurwaho amaze kwerekana ko ashaka kugana ibumoso.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mbere yo kugira uwo anyuraho, umuyobozi wese agomba kwirngira iki? 21.2",
+   "a": "Agomba kwiringira ko:; Nta wndi muyobozi umukurikiye watangiye kumunyuraho; Umuyobozi umuri immbere atagaragaje ko ashaka kunyura k'uwundi cg gukatira ibumoso; Igisate agiye kunyuramo kitarimo inkomyi mu ntamwe zihagije; Ashobora kugarura ikinyabiziga cye iburyo atabangamiye abagenzi yanyuzeho; Kwerekana icyo agiye gukora kandi akabyereka uwo agiye gucaho",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese ubonye ko hari ugiye kumunyuraho agomba gukora iki? 21.6",
+   "a": "Kwegera uruhande rw'iburyo rw'umuhanda atongereye umuvuduko; Iyo ikinyabiziga gifite uburebure burenga 8m agomba, akoresheje ikimenyetso cyabigenewe cy'icyo kinyabiziga, kugaragaza ko yabonye ikimenyetso cy'umuyobozi ugiye kumunyuraho.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mu mihanda bagendamo mu byerekezo byombi, kunyuranaho ibumoso birabujijwe, bitewe n' iki? 22.1 - 2",
+   "a": "Bitewe n'impamvu nk'ibihu , kuba hafi y'ikoni cg y'impinga y'umupando, iyo umuyobozi adashobora kubonera abagenzi bamuturutse imbere mu ntambwe zihagije.; Iyo umuyobozi ugiye kunyuraho yerekana ko ashaka gukatira ibumoso",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese agomba kuringaniza umuvuduko w'ikinyabiziga akurikije iki? 26.1",
+   "a": "N'uko ahantu hameze; Uko habona; Imimerere y'umuhanda; Imimerere y'ikinyabiziga n'ibyo kikoreye; Imiterere y'ikirere; Ubwinshi bw'ibigenda",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Agomba guhagarika ikinyabiziga cye akurikije iki? 26.1",
+   "a": "Akurikije aho ageza amaso n'imbere y'inkomyi yose idatunguranye",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo nta mategeko awugabanya by'umwihariko, umuvuduko ntarengwa w'ibinyabiziga uteye ute? 29.2",
+   "a": "80 km/ h: Moto n'ibinyabiziga bitarenza 3500 kg; 70 km / h: Voitures + taxi bitarenza 3500kg; 60 kms /h: Bus + Ibifite uburemere buri hagati ya 3500 - 12500kg; 50 kms /h: Velomoteri + Ibinyabiziga bikomatanye n'ibifite plus de 12500 kg; 25 kms /h : Trotoro, ibihinga n'ibindi bitavuzwe haruguru",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuvuduko wo mu nsisiro : (29.3)",
+   "a": "50 Kms / h : Ibinyabiziga byagenewe gusa gutwara abantu (moto, voiture); 40 Kms / h: Ibindi binyabiziga",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Uretse igihe hari amategeko abitegeka ukundi, ikinyabiziga cyose cg inyamaswa ihagaze umwanya muto cg munini igomba kua iri he?",
+   "a": "Mu kuboko kw'iburyo hakurikijwe aho yaganaga, yaba ari mu kerekezo kimwe ashobora kuba ari ibumoso; Ahegereye bishoboka akayira k'abanyamaguru ariko ntasige umwanya urenga 50 cm; Kure cyane y'umurongo ugabanya umuhanda mo kabiri",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bibujijwe guhagarara umwanya munini mu gihe cy'iminsi irindwi ku nzira nyabagendwa? 32.3",
+   "a": "Ibinyabiziga bifite moteri bitagishoboye kugenda kumwe na za romoroko",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Vuga Ibinyabiziga iyo bihagaritswe ku muhanda bitagomba kurangirwa kure n'ikimenyetso cyabigenewe kugira ngo kiburire hakiri kare abandi bayobozi baza babisanga, iyo ari ni joro cg iyo umuyobozi agihagaritse ahantu habujijwe guhagarara (32.6)",
+   "a": "Velomoteri cg ipikipiki idafite akanyabiziga kari ku ruhande.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo nta mategeko yihariye akurikizwa, ni uwuhe mwanya usigara hagati y'ibinyabiziga bibiri bihagaze umwanya munini ku ruhande rumwe rw'umuhanda ubisikanirwamo?. 32.7",
+   "a": "Nibura 5m mu nsisiro; 20 m ahatari mu nsisiro",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Guhagarara akanya gato no guhagarara akanya kanini bibujijwe: (33.2)",
+   "a": "Mu duhanda tw'abanyamagare no mubice byagenewe abanyamaguru; Kunkengero zigiye hejyru, mu nzira z'abanyamaguru no mu nsisiro; Mu ruhande ruteganye n'urw'ikindi kinyabiziga gihagazemo akanya gato cg kanini (6 m ibisikanirwamo) (3 mu muhanda w'icyerekezo kimwe); Hejuu no munsi y'amateme no mumihanda inyura ikuzimu; Mu muhanda, mu ikoni; Ku mihanda ibisikanirwamo; Ahari ibimenyetso bibuza byabigenewee; N'ibindi",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Intabaza zihariye zigomba gukoreshwa ryali? Amatara yazo amyatsa asa ate? 36.1",
+   "a": "Mu gihe ikinyabiziga ndakumirwa kiri mu butumwa; Asa n'ubururu",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Intabaza ndangurura jui ikoreshwa ryali? 36.3",
+   "a": "igihe ikinyabiziga ndakumirwa kiri mu butumwa bwihutirwa",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umugenzi uri mu nzira nyabagendwa iyo asatiriwe n'ikinyabiziga ndakumirwa kirangwa n'intabaza ndangurura jwi yihariye abigenza ate ? 37.1",
+   "a": "agomba kugihigamira ako kanya, byaba ngombwa agahagarara",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Imirongo y'ingabo n'udutsiko tw'abanyamaguru bagendera he mu muhanda ? 38.1",
+   "a": "Kuruhande rw'iburyo bw'umuhanda",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Abagenda mu nzira nyabagendwa babujijwe kwata (couper) :38.2",
+   "a": "Umurongo w'abasiikare bagenda cg imirongo y'ibinyabiziga by'ingabo zigihugu zigenda mu muhanda; Mu murongo w'abanyeshuli bayobowe n'umwalimu; Uruhererekane (cortge) NB : izi nkomyi ntizikurikizwa ku binyabiziga ndakumirwa",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Uruhushya rw'amasiganwa rutangwa na nde ? 39.2",
+   "a": "Umuyobozi w'akarere : Iyo bitarenga akarere kamwe; Umuyobozi w'intara : Iyo birenze akarere kamwe bitarenze intara imwe; Minisitiri w'ubutegetsi bw'igihugu : Iyo birenze intara imwe",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Uruhushya rw'amasiganwa cg imikino y'ibinyabiziga ruhabwa nde ? agomba kwerekana iki ? 39.3",
+   "a": "Ruhabwa gusa abtegura amasiganwa cg andi marushanwa y'ibinyabiziga; Berekana ko bafite ubwishingizi ku barushanwa no ku bintu by'abaje kureba iyo mikino.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Uretse iyo icyapa kibyerekana ukundi, uburemere ntarengwa ku mateme akozwe mu biti cg mu mbaho bungana iki ? 40.2",
+   "a": "ni toni 8",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo begereye ibyome, abayobozi bagitegereje gutambuka bagomba gukora iki ? 40.3",
+   "a": "Gutonda umurongo umwe no guhagarara iburyo bw'umuhanda.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibinyabiziga byemerewe gutambuka mbere y'ibindi, iyo byegereye ibyome ni ibihe? 40.3",
+   "a": "Ibinyabiziga bitwaye abarwayui, inkomere n'abaganga bahurujwe; Ibin,yabiziga ndakumirwa; Ibinyabiziga bitwaye umuntu ufite uburenganzira bwo guhita mbere; Ibinyabiziga bitwaye ubutumwa bwanditse bifite ikimenyetso kibiranga; Ibinyabiziga bitwaye amatungo",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni nde (bande) bemerewe kujya mu kunyabiziga igihe gishyirwa mu cyome (kiva mu cyome)? 40.4",
+   "a": "uretse abayobozi n'abagiherekeje, abantu bose bagomba kuvamo",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umuyobozi w'imodoka agomba gukora iki mbere yo kuyishyira mu cyome na mbere yo kuyikuramo ageze ku nkombe yo hakurya ? 40.5",
+   "a": "Agomba kumanura ibirahure",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyerekeranye N'amatara Ndanga",
+   "a": "Iyo bwije kugeza bukeye cg bitewe n'ihe cy'ibihu, imvura nyisnhi bitagishoboka kubona muri 200 m ukuba mu nzira nyabagendwa kugomba kugaragazwa muri ubu buryo :; Velomoteri, moto (bidafite akanyamitende kuruhande, bifite umuyobozi kandi bifite bateri),: imbere ; Itara rimwe ryera cg umuhondo cg risa nicunga ihishije ; Inyuma : Itara rimwe ritukura (ndanga nyuma); Ibindi binyabiziga bigendeshwa na moteri, : inyuma : Amatara abiri atukura (ndanganyuma); Imodoka zikuruwe n'inyamaswa, ingorofani, inyamaswa zitwaye imizigo ........... (cfr art 42.1.d); A revoir l'article",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ryali amatara magufi, amatara ndanga n'amaremare bicanirwa rimwe ? 43.1",
+   "a": "Iyo hagati yo kurenga no kurasa kw'izuba cg bitewe bitewe n'uko ibihe byifashe, nk'igihe k'igihu cg cccy'imvura nyinshi, bidashobotse kubona neza muri 100 m.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara magufi n'amaremare bigomba kuzima ryali ? 43.2",
+   "a": "Iyo ikinyabiziga gihagaze umwanya muto cg umunini",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara maremare y'ikinyabiziga agomba kuzimwa ryali ? 43.3",
+   "a": "Iyo umuhanda umulikiwe hose kuburyo buhagije; Iyo, ikinyabiziga kigiye kubisikana n'ikindi; Iyo ikinyabiziga gikurikiye ikindi mu ntabwe zitarenze 50m, keretse iyo ashaka kunyura kucyo akurikiye; Iyo ikinyabiziga gihagaze",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara magufi y'amapikipiki na za velomoteri agomba gukoreshwa ryali ? 43.4",
+   "a": "Igihe cyose bigenda mu nzira nyabagendwa",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara kamenabihu akoreshwa ryali ? 43.5",
+   "a": "Akoreshwa gusa iyo imiterere y'ikirere (imvura, ibihu) gituma ntawe ubona neza nko muri 100m, iyo ikinyabiziga kigenda mu nzira nyabagendwa ifunganye irimo amakoniS",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara yo gusubira inyuma acanwa ryali? 43.7",
+   "a": "Igihe cyo gusubira inyuma gusa",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara ashakisha acanwa ryali? 43.8",
+   "a": "igihe ari ngombwa kandi atabangamiye abandi bagenzi",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ryali gukoresha amahoni ari ngombwa ? Bimara umwanya ungana ute ? 47.2",
+   "a": "Igihe hari impamvu yo kwirinda impanuka, cyangwa igihe atari mu nsisiro, kugira ngo umuyoboei uri imbere amenyeshwe ko bagiye kumunyuraho.; Bigomba kumara umwanya muto",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ese biremewe kuvuza ihoni ahegereye amatungo cg inyamaswa ? 47.5",
+   "a": "OYA",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Abanyamaguru bagenda mu muhanda nijoro, hatabona cg hari ibinyabiziga byinshi bagenda bate? 48.5",
+   "a": "Bagenda ku murongo",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Hagati y'ibinyabiziga biherekeranije mu butumwa hagomba kubamo umwanya ungana ute ? 49.1",
+   "a": "Hagomba kuba byibura 30m; Ibinyabiziga biherekerenije mu butumwa ntibishobora gutonda uburebure urenga umurongo wa 500 m. iyo bibaye bityo ibinyabiziga bishobora kugabanywamo amatsinda atonze umurongo atarengeje 500 m z'uburebure kandi hagati yayo hakaba byibura 50m.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ryali ibinyabiziga bya gisilikare biherekeranije mu butumwa bitubahiriza amategeko agenga imodoka ziherekeranije mubutumwa ? Art 49.1",
+   "a": "Mu nsisiro; Kuva bwije kugeza bukeye; Igihe igihu cyabuditse bigatuma badashobora kureba neza muri 30m byibura",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umubare w'inyamaswa zikurura ikinyabiziga ni zingahe ? art 51.1",
+   "a": "4 iyo zikurikiranye; 3 iyo zibangikanye",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ubugari bw'ikinyabiziaga cg ibinyabiziga bikururana nibirenze ku mubyimba wabyo hatabariwemo amatara yerekana ikerekezo n'indorerwamo ziboneshsa ntibishobora kurenza uruhe rugero? 57.1",
+   "a": "2,65 m, ubutambike butambitse uwo ari bwo bwose, ariko",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ubugari ntarengwa bwa romoroki ikuruwe n'ipikipiki, igare cg velomoteri ni ubuhe? 57.1.a et b",
+   "a": "75 cm iyo ikuruwe n'igare cg velomoteri; 1,25 m iyo ikuruwe n'ipikipiki idafite akanyabiziga kometse ku ruhande.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ubuhe bugari ntarengwa bwa romoroki ikuruwe n'ipikipiki ifite akanyabiziga kometse ku ruhande rwayo, cg iyo ikuruwe n'ikinyamitende itatu cg ine, gifite cg kidafite moteur? 57.1.c",
+   "a": "Ni ubugari bw'ikinyabiziga gikurura",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ubuhe bugali ntarengwa bw'inyabiziga bihiinga, bitarenza umuvuduko wa 20km/h iyo bijya cg biva mu murima? 57.1.c",
+   "a": "3 m",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigira uburebure ntarengwa bwa 7 m? 57.2.a",
+   "a": "Ibinyabiziga cg ibinyabiziga bikururana bifite umutambiko umwe uhuza imipira;; Ibinyabiziga bifite imitambiko ibiri yihindukiza kucyo ifundiyeho; Ibinyabiziga bifite imitambiko ibiri ifite ikiyihuza, imitambiko ikoranye (hagati ntiharenze 1,60 m",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigira uburebure ntarengwa bwa 11m? 57.2.B",
+   "a": "Ibinyabiziga bifite imitambiko ibiri cg irenga",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Igice kirenga ku biziga (kirenga ku mapine): porte faux:",
+   "a": "Igice kirenga imbere: 2,70 m; Igice kirenga inyuma: 3,50m",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Uburebure buri hagati y'imipira y'inyuma n'iyimbere n'uburebure bw'ibice by'imbere n'iyinyuma y'imipira ku binyabiziga bifite imitambiko irenga ibiri bupimwa bahereye ku ki? 57.4.",
+   "a": "Bupimwa bahereye hagati y'imipira iteganye",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ni mu buhe buryo imizigo ipakiye mu kinyabiziga igomba gupakirwa no gupangwa? 60.1",
+   "a": "Ipakirwa ndetse igapangwa ku buryo idashobora:; Guteza abantu ibyago; Kwangiza murugendo inzira nyabagendwa; Kubuza umuyobozi kubona neza; Guingiriza amatara, ururebanyuma two hanze, utugarura rumuri plaque; Igomba kandi gupangwa no kuzirikwa ku modoka",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo imizigo irenga impera y'imyuma y'iknyabiziga ho 1 m, igice cy'imyuma y'iknyabizigo kigomba kugaragazwa n'iki? 63.",
+   "a": "Ku manywa: agatambaro gatukura gafite byibura 50 cm z'uruhande; Nijoro (iyo amatara y'ikinyabiziga agomba gucanwa): itara cg akagarura - rumuri bitukura",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Mu mijyi ndetse ,o mumihanda y'igihugu, ubwikorezi ntarengwa bwemewe kuri buri mutambiko ufungwaho ibiziga bine buzaba: (67.1.A)",
+   "a": "Kuri buri mutambiko usanzwe : 10 tones; Ku mitambiko ibiri ikurikiranye: 16 tons; Ku mitambiko itatu ikurikiranye: 24 tones;; Ikamyo iyo ari yo yose ntishobora na rimwe gutwara ibintu birenze 53 tones.; NB. Uburemere ntarengwa, subira muri journal officiel usonme art 67 yose ni ya 68.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo hagati y'uruhande rw'imbere rwa romororki n'uruhande rw'inyuma rw'ikinyabiziga kiyikururahari umwanya urenze 3m, ikibiziritse kigomba kugaragazwa n'iki? 71.1",
+   "a": "Ku manywa: Agatambaro gatukura gafite nibura 50cm; Nijoro (iya amatara y'ikinyabiziga agomba gucanwa): itarara ria n'icunga rihishije; keretse iyo ikibizirikanije kimuritswe.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibizirikisho by'iminyururu cg by'insinga kimwe n'ibindi bizirikisho by'ingoboka bikoreshwa ryari? Kubera iyihe mpamvu? 71.2",
+   "a": "Bikoreshwa gusa igihe nta kundi umuntu yabigenza; Nta kindi bigirirwa, uretse gusa kugira ngo ikinyabiziga kigere aho kigomba gukorerwa. ( ne pas depasser 20km /h)",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibyo bizirikisho bigaragazwa n'iki? 71.2",
+   "a": "N'icyapa cyera cya mpande enye zingana gifite nibura 30 cm kuri buri ruhande; gishyirwa kuruhande rw'imbere z'ikinyabiziga gikurura.",
+   "cat": "signs",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "obanura aya magambo:",
+   "a": "Ibiziga by'umutambiko (roues d'un esseiu): ni ibiziga biteganye cg bijya gusa n'ibiteganye, uhereye ku murongo ugabanya ikinyabiziga mo kabiri mu burebure. 73.1.a; Feri y'urugendo (frein de service): bivuga ubueyo busanzwe bukoreshwa kugirango ikinyabiziga kigende buhoro cg gihagarare (73.1.b); Feri yo guhagarara umwanya munini (frein de stationnement): Bivuga uburyo bukoreshwa ngo ikinyabiziga kigume hamwe mu gihe umuyobozi atakirimo. 73.1.c; Feri yop gutabara (frein de secours): Bivuga uburyo bukoreshwa kugirango ikinyabiziga kigende buhoro kandi gihagarare, igihe feri idakora neza. 74.1.d; Romoroki: Bivuga ikinyabiziga kigenewe gukururwa n'ikindi kinyabiziga 2.19 cg 74.1.e; Makuzungu (semi - remorque): bivuga romoroki yagenewe gufatishwa ku kinyabiziga gikurura kuburyo igice cyacyo kiba kikiryamyeho 2.20",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara y'ibinyabiziga agomba kuba ateye kubuhe buryo? 75.1",
+   "a": "Ku buryo nta tara cg akagarurarumuri by'imbere y'ikinyabiziga bigaragara bitukura; Kuba nta tara cg akagarura - rumuri byera cg bisa n'umuhondo bigaragara ku ruhande rw'inyuma rw'ikinyabiziga, uretse itara ryo gusubira inyuma n'iriranga icyerekezo",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Amatara ashobora kurenga ibiri asa ku kinyabiziga ni ayahe? 75.3",
+   "a": "Itara ndanga mubyimba (ndangburumbarare); Itara ryerekana icyerekezo",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Utugarura rumuri tuba duteye dute? 75.5",
+   "a": "Imbere: Umweru; Inyuma: Umutuku; Utwo mu mbavu: Umuhondo cg icunga rihishije",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Umugenzi wese uri mu nzira agomba guhita akora iki?",
+   "a": "Guhita yumvira ibitegetswe n'abakozi babifitiye ububasha",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibitabo by'amashakiro byanditsemo numro z'ibinyabiziga ni : 6, bivuge. 121.1",
+   "a": "Ibitabo by'amashakiro y'ibinyabiziga by'abikorera ku giti cyabo; ... Iby'ambasade n'indi miryango ifite ubusonerwe n'abakozi bahakora; Iby'ubutegetsi bwa Leta, imishinga ya Leta, ibigo bya Leta; ..... Iby'ingabo z'igihugu; ...... Ibya polisi y'igihugu; ...... Ibyinjiye mu gihugu by'agateganyo",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibinyabiziga bitemerewe guhabwa plaque zo mu rwanda: 122",
+   "a": "Ibyinjijwe by'agateganyo n'abantu badasanzwe batuye mu Rwanda, ariko byambaye plaque yo hanze byujuje ibiteganywa n'amasezerano y'i Viyeni; Ibyinjijwe n'abasanzwe batuye mu Rwanda ariko, bikaba byujuje ibivuzwe haruguru, mu gihe kitarenze umwaka.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Plaques",
+   "a": "N; Urwego; Ikinyabiziga; Plaques; Ibara ry'ibati; Ibara ry'inyuguti; Imbere; Inyuma; Imbere; Inyuma; 1; Leta + Ibigo bya Leta; Imodoka; GR 001 A; 001A; GR; Umweru; Umuhondo; Ubururu; Moto; 001 A; GP; 2; Imishinga ya Leta; Imodoka; GP 001 A; 001 A; GP; Umweru; Umuhondo; Ubururu; Moto; 001 A; GP; 3; Abikorera; Imodoka; RAA 001 A; 001 A; RAA; Umweru; Umuhondo; Umukara; 4; Moto; RAA; 001 A; Umuhondo; Umukara; 5; Romoroki; RL; 0001; Umuhondo; Umkara; 6; Ibyavanywe mu mahanga n'abacuruzi; Imodoka; MR A 001; 011; MR A; Umweru; Umuhondo; Umukara; 7; Ambassade; Imodoka; 01CD 01 R; 01 R; 01 CD; Umweru; Umuhondo; Icyatsi; Amapikipiki; 01 R; 01 CD; Umuhondo; Icyatsi; 8; Ibya za Consula; Imodoka; 01CC 01 R; 01R; 01CC; Umweru; Umuhondo; Icyatsi; Amapikipiki; 01CC; 01R; Umuhondo; Icyatsi; 9; Ibiva mu mahanga by'agateganyo; Imodoka; IT 0001 R; IT; 0001 R; Umweru; Umuhondo; Umukara; Amapikipiki; IT; 0001 R; Umuhondo; Umukara; 10; Izishamikiye kuri UN; Imodoka; 01 UN 01 R; 01 R; 01 UN; Umweru; Umuhondo; Icyatsi; Amapikipiki; 01UN; 01 R; Umuhondo; Icyatsi; 11; Mu mazina bwite; Imodoka; R Kajepe; R Kajepe; Umweru; Umuhondo; Umutuku",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ikiranga ntego cy'igihugu kigaragara : 128 NB",
+   "a": "Imbere : Mu nguni y'ibumoso; Inyuma : Hejuru mu nguni y'iburyo (32/30)",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Ibinyabiziga bigomba kwandikwaho amazina n'icumbi bya banyirabyo, ku buryo bugaragara imbere kuruhande rw'ibumoso ni ibi bikurikira : 131",
+   "a": "Ibinyabiziga bikururwa; Ibinyabiziga bisunikwa n'abantu; Ibinyabiziga bidasorerwa; Ibinyabiziga bigendeshwa na moteri byikorera ibio birenga 1.000 kandi bidatwara abantu gusa",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Buri mezi atandatu, hagenzurwa : 142.a",
+   "a": "Ibinyabiziga bigenewe gutwara abantu muri rusange; Ibinyabiziga bigenewe gutwara ibintu birengeje 3,5 tones; Ibinyabiziga bigenewe ibigo byigisha gutwara ibinyabiziga; NB. Ibinyabiziga bisigaye, bikorerwa igenzura biri mwaka. 142. b.",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Iyo ikinyabiziga kitujuje ibisabwa ntigihabwa icyemezo kibyemerera gushyirwa mu muhanda, kandi kigomba kongera gukorerwa igenzurwa ryemeza ko amakosa yakosowe mbere yo guhabwa icyemezo. 143.",
+   "a": "Amategeko y'umuhanda; Prpar en vue d'obtention d'un permis de conduire au Rwanda; 1",
+   "cat": "general",
+   "src": "Gugu 1.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Inzira nyabagendwa.Ing.2",
+   "a": "Ni imbago zose z'imihanda minini, amabarabara, aho abantu nyamwinshi bahurira, aho imodoka nyinshi zihagarara, inzira n'utuyira two ku muhanda, ibiraro, ibyombo, muri rusange imihanda nyabagendwa igendwamo ku butaka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Umuhanda.",
+   "a": "Ni igice cy'inzira nyabagerwa kinyurwamo n'ibinyabiziga ikaba yagira imihanda myinshi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Inzira y'ibinyabiziga.",
+   "a": "Ni umuhanda n'inzira ziwukikije.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Igisate cy'umuhanda.",
+   "a": "Kimwe mu bisate bigabanyije umuhanda mu burebure bwawo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Agahanda k'amagare.",
+   "a": "Igice cy'inzira nyabagerwa cyahariwe amagare na velomoteri kigaragazwa n'ikimenyetso cyabigenewe.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Isangano.",
+   "a": "Ahantu hose imihanda ihurira",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Inkomane.",
+   "a": "Aho umuhanda wisukira mu wundi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Akayira.",
+   "a": "Inzira ifunganye yagenewe abanyamaguru, ibinyabiziga by'ibiziga bibiri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Inzira y'igitaka.",
+   "a": "Inzira nyabagerwa yagutse ariko itanyurwamo n'ibiziga bibiri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Urusisiro.",
+   "a": "Ahantu hari amazu yegeranye cg afatanye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Umuyobozi.",
+   "a": "Ni umuntu wese utwaye ikinyabiziga cg uyobora mu nzira nyabagerwa inyamaswa cg amatungo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Umukozi ubifitiye ububasha.",
+   "a": "Umukozi wambaye mu buryo bugarara imyenda iranga imirimo ashinzwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyabiziga.",
+   "a": "Igikoresho cyose gikoreshwa mu gutwara ibintu n'abantu ku butaka, igihingishwa, gikoreshwa mu nganda n'ahandi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyamitende.",
+   "a": "Ikinyabiziga cyose kigendeshwa n'ingufu z'abantu nk'igare,...",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Igare.",
+   "a": "Ikinyamitende cyose cy'ibiziga bibiri",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Velomoteri.",
+   "a": "Ikinyabiziga gifite ibiziga bibiri kandi gifite moteri itarengeje imbaraga za KvA 4 n'umuvuduko ntarengwa ukaba 60km/h",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ipikipiki.",
+   "a": "Ikinyabiziga cyose cy'ibiziga bibiri gifite moteri ukuyemo za velomoteri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyamitende itatu cg ine.",
+   "a": "Ibinyabiziga bifite moteri itarengeje KvA15",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyabiziga kigendeshwa na moteri.",
+   "a": "Ikinyabiziga cyose gifite moteri kandi kigendeshwa gusa n'ibikigize.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Imodoka.",
+   "a": "Ikinyabiziga cyose kigendeshwa na moteri uretse za velomoteri, amapikipiki, imashini zihinga cg zikurura izindi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Romoroki.",
+   "a": "Ikinyabiziga cyose cyagenewe gukururwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Makuzungu.",
+   "a": "Ni romoroki iyo ariyo yose ifatishwa ku kinyabiziga gikurura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Romoroki ntoya.",
+   "a": "Romoroki ifite ibiro bitarenga 750",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ibinyabiziga bikomatanye cg ibinyabiziga bikururana.",
+   "a": "Ibinyabiziga bikomatanye bigenda nkaho ari kimwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyabiziga gifanije.",
+   "a": "Ni ikinyabiziga gikomatanye kimwe ari ikinyabiziga ikindi ari makuzungu",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyabiziga gikururana kabiri.",
+   "a": "Ikinyabiziga gifatanije n'ikindi ari makuzungu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Uburemere bwite",
+   "a": "Uburemere bw'ikidapakiye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Uburemere bwikorewe",
+   "a": "Uburemere bwite hongewemo uburemere bw'imizigo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Uburemere ntaregwa bwemewe",
+   "a": "Uburemere bugendanwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Guhagarara umwanya munini",
+   "a": "Igihe kiruta igihe ikinyabiziga giharara hinjiramo abantu cg ibintu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Guhagarara umwanya muto.",
+   "a": "Igihe ikinyabiziga giharara kugira ngo abantu bajyemo cg ibintu bijyemo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Akagarura rumuri. Ing.2(30)",
+   "a": "Akantu karabagirana gasubiza urumuri ku kirwohereje.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ikinyabiziga ndakumirwa",
+   "a": "Ibinyabiziga by'abapolisi, Ibizimya inkongi, Ibitwara abarwayi, aho bijya bigiye gutabara birangwa n'intabaza irabagira cg irangurura amajwi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara y'urugendo. Ing.2(32)",
+   "a": "Amatara y'ikinyabiziga amurika imbere mu muhanda mu ntera ndende",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara yo kubisikana .Ing.2(33)",
+   "a": "Amatara y'ikinyabiziga amurika inzira nyabagerwa atagobye guhuma ibinyabiziga bituruka imbere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara ndangambere. Ing2(34)",
+   "a": "Amatara y'ikinyabiziga akiranga kandi agaragaza ubugari bwacyo burebewe imbere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara ndanganyuma. Ing.2(35)",
+   "a": "Amatara y'ikinyabiziga akiranga kandi agaragaza ubugari bwacyo burebewe inyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara kamena-bihu y'imbere.Ing.2(36)",
+   "a": "Amatara y'ikinyabiziga abonesha neza imbere yacyo mu gihe cy'igihu, cy'imvura nyinshi, cy'urubura cg cy'umukungugu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara kamena-bihu y'inyuma.Ing.2(37)",
+   "a": "Amatara y'ikinyabiziga akiranga kandi yerekana ubugari bwacyo uburebeye inyuma, mu gihe cy'ibihu, cy'urubura cg mu bihe by'umukungugu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara yo kubisikana..Ing.2(33)",
+   "a": "Amatara magufi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Amatara yo gusubira inyuma.Ing.2(38)",
+   "a": "Amatara abonesha inzira inyuma y'ikinyabiziga, akereka n'abandi ko icyo kinyabiziga kiri gusubira inyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Itara ndangacyerekezo. Ing.2(39)",
+   "a": "Cg ikinnyoteri, Itara ry'ikinyabiziga ryereka abandi bagenzi ko ikinyabiziga gishaka gukata.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Itara rishakisha. Ing.2(40)",
+   "a": "Itara rihindukizwa rishobora kureba ikintu kiri no mu mpande zacyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Itara ndangamubyimba. Ing.2(41)",
+   "a": "Itara ndangaburumbarare, itara ry'ikinyabiziga ryerekana ubugari bw'ikinyabiziga haba inyuma cg imbere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ubuso bubonesha. Ing.2(42)",
+   "a": "Ubuso busohokana urumuri, cg ubuso burabagiranamo urumuri ku tugarurarumuri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Itara ry'umuhondo. Ing.2(43)",
+   "a": "Umuhondo wiganje, cg usa n'icunga rihishije cg umuhondo wiganje.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ukuboko kuzamuye k'umukozi ubifitiye ububasha kuvuga iki ?",
+   "a": "Kuvuga ko umugenzi wese agomba guhagarara keretse uwageze mu masangano ugomba guhita ahava.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Ukuboko cg amaboko atambitse ategeka iki ?Ing.5(2b)",
+   "a": "Hategekwa guhagarara abaturuka mu cyerekezo gisanganya amaboko arambuye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura ijambo: Kuzunguza intambike itara ritukura bivuga iki ?",
+   "a": "Hahagarara abo iryo tara rireba.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga batanu mu bakozi babifitiye ububasha.Ing.3",
+   "a": "Ba ofosiye na ba suzofiye bo muri polisi y'igihugu bari mu kazi.; Ba kaporali na abapolisi bo muri Polisi y'igihugu igihe bari mu kazi.; Abapolisi bo mu mutwe ushinzwe umutekano mu muhanda.; Abakozi bo mu biro by'amateme.; Abakozi ba gasutamo.; Abakozi bo mu biro by'imisoro.; Abakozi b'ikigo cy'ubucyerarugendo.; Abakozi bo mu biro bya Ministeri ishinzwe gutwara ibintu n'ibintu babiherewe uburenganzira na Ministiri w'ubutabera.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bitanu umugenzi wese uguweho n'impanuka asabwa ?Ing.4",
+   "a": "Guhita ahagarara niba bishoboka.; Gukora uko ashoboye kugirango badahungabanya uburyo bwo kugendera mu muhanda.; Kwirinda guhindura ibimenyetso,; Kumenyesha no gutumaho abubahiriza amahoro bari hafi aho.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umuyobozi wese ategetswe kugaragaza umwirondoro we ? Ing.4(4)",
+   "a": "Iyo abandi bantu bahuye n'impanuka babimusabye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umuyobozi agomba guhita akuraho ikinyabiziga cye gihagaze umwanya munini cg muto ?",
+   "a": "Ni igihe abisabwe n'umukozi ubifitiye ububasha.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umugenzi wese agomba kubahiriza ibimenyetso byashyiriweho gutunganya uburyo bwo kugenda mu muhanda ?Ing.5(5)",
+   "a": "Igihe bitunganijwe neza kandi bigaragara bihagije.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibitegekwa birusha ibindi gukomera ni ibihe ?Ing.5(6)",
+   "a": "Ni ibitegekwa n'abakozi babifitiye ubushobozi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ikintu utagomba kwibagirwa igihe ugiye gutwara ikinyabiziga kigendeshwa na moteri?Ing.6(1)",
+   "a": "Ni uruhushya rwo gutwara icyo kinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Izindi modoka zitaboneka muri izi nzego zibarirwa mu ruhe rwego ?",
+   "a": "Ni mu rwego rwa B.Ing.6(3)",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari uruhushya rw'ibinyabiziga rutangwa burundu ?Ing.6(4)",
+   "a": "Ni igihe ubazwa azi amategeko y'umuhanda n'igihe ubazwa azi bihagije gutwara ikinyabiziga cyo mu rwego asabira uruhushya rwo gutwara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uruhushya rw'agateganyo rufite agaciro ku zihe nzego ?",
+   "a": "Rufite agaciro ku nzego zose.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ufite uruhushya rw'agateganyo ashobora gutwara ikinyabiziga ?",
+   "a": "Ni igihe ari kumwe n'umuyobozi ufite uruhushya rwo gutwara icyo kinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ikintu kiranga ikinyabiziga kigirwaho.",
+   "a": "kirangwa n'inyuguti ya L yanditswe mu ibara ry'ubururu kandi n'uburebure butari hasi ya 15cm. Cg icyapa cy'umweru cyanditsweho \" Auto-Ecole \".",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo uruhushya rwo gutwara ikinyabiziga rutakaye rusimburwa n'iki ?Ing.6(6)",
+   "a": "Rusimburwa n'inyandiko yarwo mu minsi itarenga 15.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uruhushya rwo gutwara ibinyabiziga rwimwa cg rwamburwa nde ?",
+   "a": "Abantu barwaye amaso ku buryo bitakosorwa n'indorerwamo.; Abantu batumva n'izindi ndwara zabuza ingingo gukora neza.Ing.6(8)",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo rwambuwe rwamburwa na nde kandi bigenda gute ?",
+   "a": "Rwamburwa na Prokireri wa Repubulika abonye icyemezo cya muganga wa Leta.Ing.6(8)",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni bande batagomba kugendana impushya zatangiwe mu Rwanda?Ing.6(9)",
+   "a": "Abantu bataramara umwaka mu Rwanda ariko bafite uruhushya mva mahanga rwemewe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bitanu bishobora kubangamira uburyo kugendera mu muhanda.Ing.8",
+   "a": "Kujugunya, kurunda, gusiga cg kugusha ibintu ibyo aribyo byose, nk'ibisate by'ibirahure, mazutu, lisansi, gazi, n'amavuta, kuka ibyotsi cg ikindi kintu cy'inkomyi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uku kubangamira umuhanda byemerewe nde kandi ryari?",
+   "a": "Byemerewe ku bakozi b'imirimo ya Leta cg se abandi bantu bikorera babiherwe uruhushya.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni iki umuyobozi agomba gukora igihe aguweho n'impanuka? Ing.8(2)",
+   "a": "Guhita atunganya umuhanda kugira ngo arinde impanuka ishobora guterwa na we yabinanirwa bigakorwa n'umuherekeje.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuyobozi atabishoboye bikorwa nande?",
+   "a": "Bikorwa n'umuherekeje.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bitanu byonona inzira nyabagerwa?Ing.8(3)",
+   "a": "Kuvanaho, kwimura, guhirika cg gusenya imbago, ibimenyetso cg ibyapa biyiteyeho cg biyubatseho.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi agomba gukora iki kugira ngo atangiza umuhanda?",
+   "a": "Kugabanya ibitwawe cg kunyura undi muhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni uruhe ruhande rugomba kugendwamo mu muhanda? Ni ryari agomba kwegera inkombe y'iburyo?",
+   "a": "Ni uruhande rw'iburyo. Agomba kwegera cyane uruhande rw'iburyo igihe agiye guhura n'undi cg undi agiye kumunyuraho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Inyamaswa zigenda mu muhanda zigendeshwa ku yihe nkombe?",
+   "a": "Zigendeshwa ku nkombe y'uruhande rw'iburyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku muhanda ugabanyijemo ibisate bine bigendwamo gute?",
+   "a": "Umuyobozi agomba kugenda muri kimwe mu bisate bibiri by'iburyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari byemewe kugenda ku mirongo ibangikanye?",
+   "a": "Igihe umuhanda ugendwamo mu cyerekezo kimwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ugenda mu muhanda abujijwe kurengera iki?Ing.13(1)",
+   "a": "Kurengera inzira y'abanyamaguru.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ikihe kinyabiziga kibujijwe gukomeza kugenzwa mu muhanda? Ing.13(2)",
+   "a": "Igihe ikinyabiziga kirengeje metero 4 z'ubuhagarike habariwemo n'ibyikorewe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Hasigwa ubugari bungana iki iyo umuyobozi anyuze ku nkomyi?Ing.14",
+   "a": "Hasigwa metero imwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo bidashobotse umuyobozi agendera ku wuhe muvuduko?",
+   "a": "5km/h",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ugiye kugera mu nkomane akora iki?",
+   "a": "Agomba kugabanya umuvuduko byaba ngombwa akerekana ikimenyetso cy'uko ahageze.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese uvuye mu nzira nyabagerwa ifite ibyerekezo bibiri akaba ashaka kwinjira mu yindi ategetswe iki? Ing.15(2)",
+   "a": "Areka ibindi biyigendamo bigatambuka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese uvuye mu muhanda utarimo kaburimbo ategetswe iki?",
+   "a": "Ategetswe kureka abagenda mu muhanda urimo kaburimbo bagatambuka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese uvuye mu kayira cg mu nzira y'igitaka ategetswe iki?",
+   "a": "Ategetswe kureka abandi bagatambuka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese uvuye ahantu hahana imbibi n'inzira nyabagerwa ategetswe iki?",
+   "a": "Ategetswe kureka abayigendamo bagatambuka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ategetswe kureka binyabiziga bituruka mu kuhe kuboko gutambuka?Ing.16",
+   "a": "Mu kuboko kw'iburyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amategeko yo gutambuka mbere yerekanwa n'ibihe byapa?",
+   "a": "Ibimenyetso by'amatara n'ibindi byapa B1, B2b na A22",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ugiye kugera mu masangano aho agomba kuzenguruka asabwa iki?Ing.16(2)",
+   "a": "Asabwa kureka abayigezemo bakabanza bakavamo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ugeze mu masangano aho ibinyabiziga biyoborwa n'ibimenyetso by'umuriro asabwa iki?",
+   "a": "Agomba guhita avamo adategereje ko yemererwa ntawe abangamiye.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ushaka kugira aho agana asabwa iki?Ing.17",
+   "a": "Asabwa kubanza kumenya ko ntawe ari bubere inkomyi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Mbere yo gukata cg kujya ku ruhande rw'umuhanda umuyobozi asabwa iki?Ing.17",
+   "a": "Agomba mbere y'igihe kubigaragaza akoresheje amatara ndanga cyerekezo cg agakoresha ukuboko.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikimenyetso cyatanzwe kirekeraho gutangwa?",
+   "a": "Iyo imiyoborere irangiye.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abayobozi b'ibindi binyabiziga basabwa iki igihe bahuye n'ibinyabiziga bitwarira abantu hamwe?Ing.18",
+   "a": "Kugenda buhoro, byaba ngombwa bagahagarara akanya gato.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kubisikana bikorerwa he? Ing.20",
+   "a": "Bikorerwa iburyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ubisikana n'undi asabwa iki? Ing.20(2)",
+   "a": "Asabwa gusiga umwanya uhagije ibumoso bwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo ubugari bw'umuhanda budahagije ibisikanwa rikorwa rite?Ing.2(3)",
+   "a": "Abayobozi basabwa koroherana.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuhanda ucuramye cyane, aho ibisikana ridashoboka cg riruhije, bigenda bite?Ing.20(5)",
+   "a": "Umuyobozi w'ikinyabiziga kimanuka ashyira ku ruhande ikinyabiziga cye, Iyo hagomba kugira abasubira inyuma, ni abatwaye ibinyabiziga bidakomatanye basubira inyuma, cg abatwaye ibinyabiziga bitwaye ibintu bihuye n'ibitwarira abantu hamwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kunyuranaho bikorerwa mu ruhe ruhande?Ing.21",
+   "a": "Bikorerwa mu ruhande rw'ibumoso.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari kunyuranaho bishobora gukorerwa iburyo?Ing.21",
+   "a": "Igihe uwo ushaka kunyuraho yagaragaje ko ashaka gukatira ibumoso ndetse yabitangiye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bine umuyobozi agomba kwiringira mbere yo kunyura ku wundi?Ing21(2)",
+   "a": "Agomba kwiringira:; Ko uwagiye kunyuraho na we atatangiye kunyura ku wundi cg atagiye gukatira ibumoso,; Ko nta wundi muyobozi watangiye kumunyuraho,; Ko igisate cy'umuhanda agiye kunyuramo kitarimo inkomyi,; Ko ashobora kugaruka mu muhanda atabangamiye mugenzi we, Kandi agomba kwerekana igikorwa agiye gukora.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ushaka kunyuranaho asiga intera ingana iki yitaza mugenzi we?Ing.21(3)",
+   "a": "Agomba gusiga umwanya uhagije ntujye munsi ya 50cm na 1m igihe agiye kunyura ku banyamaguru cg ku nyamaswa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ugenda mu muhanda ashaka kunyuranaho igihe ubugari bwawo budahagije ashobora kunyura he? Ing.21(6)",
+   "a": "Ashobora kunyura mu nzira y'abanyamaguru amaze kwiringira ko ntawe ari buteze inkomyi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ubonye ko hari undi ushaka kumunyuraho asabwa iki?Ing.21(6)",
+   "a": "Yegera ku buryo bushoboka bwose kwegera inkombe y'iburyo kandi akagabanya n'umuvuduko.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umuyobozi asabwa kugenda buhoro byaba ngombwa agahagarara? Ing.21(6)",
+   "a": "Iyo hari undi uri kumunyuraho kandi umuhanda ari muto anamurusha umuvuduko.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ufite ikinyabiziga kirenga m 8 asabwa iki iyo abonye ko hari undi ugiye kumunyuraho?Ing.21(6)",
+   "a": "Agomba kwerekana ko yabonye ko ugiye kumunyuraho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi w'ikinyabiziga cyari gihageze asabwa iki mbere yo kongera kugenda?",
+   "a": "Arabanza akareka ibinyabiziga bigiye kumunyuraho bigahita cg ibigiye guhura nabyo bigahita.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari kunyuranaho ibumoso bibujijwe?Ing.22(2)",
+   "a": "Iyo uwo ugiye kunyuraho yerekanye ko agiye gukatira ibumoso.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kunyura ku binyabiziga bindi uretse icy'ibiziga bibiri bibujijwe ahantu hari ikihe cyapa?",
+   "a": "Dessin C13a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umuhanda ushobora kugirwa icyerekezo kimwe?Ing.23(1)",
+   "a": "Igihe bifuza kongera umutekano mu muhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Icyerekezo kimwe gishyirwaho nande?",
+   "a": "Umukuru w'intara, haba ari mu gihugu cyose bigakorwa na Ministiri ushinzwe imirimo ya Leta.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi wese ushaka gukata , kuva mu muhanda cg guhagarika ikinyabiziga cye ibumoso ategetswe iki?Ing.23(1)",
+   "a": "Agomba kugaragaza icyo ashaka gukora mbere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo akatira iburyo abigenza ate Ing.23(1a)",
+   "a": "Iyo ashaka gukatira iburyo yegera uko bishobotse kose iburyo bw'umuhanda kandi akagabanya umuvuduko, kandi na none ashobora kwegera ibumoso igihe abonye aribyo byamworohera ariko abonye ko ntawatangiye kumunyuraho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo akatira ibumoso abigenza ate?Ing.23(1b)",
+   "a": "Yegera uko bishobotse kose umurongo ugabanya umuhanda mo ibice bibiri mu burebure ariko atawugiye hejuru, kandi akagabanya umuvuduko, iyo ari umuhanda ufite icyerekezo kimwe yegera ibumoso.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Mu guhindura icyerekezo umuyobozi asabwa ibiki? Asabwa kureka hagahita bande?Ing.23(3)",
+   "a": "Agomba kubigira abanje kugabanya umuvuduko.; Kandi agomba kureka ibinyabiziga n'abanyamaguru bari mu muhanda avuyemo bagahita. Nanone kandi areka abanyamaguru bashaka kwambuka bakabanza bakambuka yaba ari mu muhanda avuyemo cg uwajyamo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuvuduko w'ikinyabiziga uringanizwa hakurikijwe iki?Ing.26",
+   "a": "Biterwa n'uko ahantu hameze, imimerere y'ikirere, imimerere y'ikinyabiziga cg ibyo kikoreye ndetse n'ubwinshi bw'ibigendera mu muhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Gukacira feri cg kugabanya umuvuduko mu buryo budasanzwe byakwagiza iki?Ing.26(2)",
+   "a": "Bishobora kubangamira imigendere isanzwe y'ibindi binyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abayobozi b'ibinyabiziga bifite moteri bageze hafi y'amatungo, inyamaswa zikorera cg zigenderwaho basabwa iki?Ing.28",
+   "a": "Basabwa kugenda buhoro, bakitaza byaba ngombwa bagahagarara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana umuvuduko wa ngombwa ku bintu bikurikira:Ing.29 -- Amapikipiki n'imodoka zifite uburemere ntarengwa 350kg",
+   "a": "Umuvuduko wa 80km/h",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana umuvuduko wa ngombwa ku bintu bikurikira:Ing.29 -- Imodoka zifite uburemere ntarengwa bwa 12500 n'ibitwarira abantu hamwe.",
+   "a": "Umuvuduko wa 60km/h",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana umuvuduko wo mu nsisiro ku modoka zagenewe gutwara abantu.",
+   "a": "Imodoka zidashobora kurenza toni 5 n'izitwarira abantu hamwe ni umuvuduko wa 50km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibindi binyabiziga byose.Ing.29",
+   "a": "Ibindi ni 40km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imizigo y'ikinyabiziga igomba gupangwa hakurikijwe iki? Ing.60",
+   "a": "Ku buryo idashobora kubangamira uburyo bwo kugendera mu muhanda busanzwe. Kubuza kubona neza imbere umuyobozi cg inyuma, gukingiriza amatara cg ibimenyetso by'ikinyabiziga.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ikinyabiziga cyose gifite uburemere ntarengwa bwemewe burenga toni 5 kigomba gushyirwaho iki?Ing.29(4)",
+   "a": "Bashyiraho icyapa cyerekana umuvuduko ntarengwa w'icyo kinyabiziga.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Icyapa gishyirwa ku kinyabiziga kirengeje toni 5 gishyirwa he kandi kiba kumeze gite?Ing.29(5)",
+   "a": "Icyo cyapa kigomba gushyirwa inyuma mu ruhande rw'iburyo, kigira ubugari bwa 21cm kandi umuzenguruko ugomba kuba utukura.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku binyabiziga by'ingabo z'igihugu ikimenyetso kiranga umuvuduko gishyirwa he?Ing.29(6)",
+   "a": "Gishyirwa inyuma ku ruhande rw'iburyo kimwe n'ikimaze kuvugwa.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni iyihe Ministeri ishinzwe gushyiraho imivuduko ntarengwa?Ing.30",
+   "a": "Ni Ministeri ishinzwe imirimo ya Leta.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni umwanya ungana iki usigwa hagati y'ibinyabiziga bikurikiranye? Kuki? Ing.31",
+   "a": "Ni intera yitaje kandi ihagije.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku binyabiziga bikomatanye basiga umwanya ungana iki? Kuki?",
+   "a": "Agomba gusiga umwanya uhagije keretse igihe agiye kukinyuraho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari gusiga umwanya uhagije hagati y'ibinyabiziga bikurikiranye atari ngombwa? Ing.31(3)",
+   "a": "Ni igihe kunyuranaho bibujijwe cg se igihe mu muhanda harimo ibinyabiziga byinshi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ikinyabiziga cg inyamaswa bihagaze umwanya muto cg munini biba biri mu ruhe ruhande? Ing.32",
+   "a": "bigomba kuba biri mu ruhande rw'iburyo cg se bikaba ibumoso igihe umuhanda ufite icyerekezo kimwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari bishobora kuba mu rundi ruhande?",
+   "a": "Ni igihe umuhanda ufite icyerekezo kimwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibinyabiziga bihagaze mu muhanda umwanya muto bihagarara bite? Kandi hehe?Ing.32(2)",
+   "a": "Bigomba gutonda umurongo bikurikiranye ku nkombe y'umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Igihe ntarengwa cyo guhagarika ikinyabiziga mu nzira nyabagerwa kingana iki?Ing.32(3)",
+   "a": "Ni iminsi 7.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni iki umuyobozi agomba kwiringira mbere yo gusiga ikinyabiziga cye cg inyamaswa ze?Ing.32(4)",
+   "a": "Agomba kwiringira ko icyo kinyabiziga cye kitaza guteza impanuka kandi akiringira ko kitaza gukoreshwa n'undi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Mbere yo gukingura umuryango w'ikinyabiziga, kuva cg kujya mu kinyabiziga ugomba kwiringira iki?Ing.32(5)",
+   "a": "Kwiringira ko utaza kubera imbogamizi abandi bagenzi bari mu nzira nyabagerwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni bihe binyabiziga bitari ngombwa kurangwa n'ikimenyetso igihe bihagaritswe mu muhanda?Ing.32(6)",
+   "a": "Ni velomoteri cg ipikipiki idafite akanyabiziga ku ruhande.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Icyo kimenyetso kiba kiri he?Ing.32(6)",
+   "a": "Icyo kimenyetso kiba kiri ahantu hagaragarira buri wese.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari biba ngombwa gushyira ku kinyabiziga ikimenyetso kikiranga igihe gihagaritswe mu muhanda? Ing.32(6)",
+   "a": "Iyo abayobozi bakigana badashobora gupfa kumenya ko kibabereye imbogamizi. Cg se ari ahantu habujijwe guhagarara.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umwanya usigara hagati y'ibinyabiziga bibiri bihagaze umwanya munini ku ruhande rumwe rw'umuhanda ugomba kuba ungana ute mu nsisiro? Ahatari mu nsisiro?Ing.32(7)",
+   "a": "ni 5m mu nsisiro na 20m ahatari mu nsisiro.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ahantu hatanu bibujijwe guhagarara umwanya muto cg munini.Ing.33",
+   "a": "Ku iteme, mu ikoni, ahari ibimenyetso bibibuzanya, munsi y'amateme, mu mpinga, mu muhanda ufite ubugari buto, hafi cyane y'ibimenyetso by'umuriro 2m, mu nzira z'abanyamaguru, mu ruhande ruteganye n'urwo ikindi kinyabiziga gihagazemo, mu nsisiro,...",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ahantu hatanu ikinyabiziga kibujijwe guhagarara akanya kanini. Ing.33(3)",
+   "a": "Ahantu hinjirwa n'ahasohokerwa n'abantu benshi,; Imbere y'amashuri cg ahagenewe imyidagaduro,; Hafi yaho binjirira mu duhanda tujya mu bibanza byatikanye n'uwo muhanda,; Ahantu abanyamaguru banyura ngo bakikire inkomyi,; Ahantu habuza uko bagera ahateganyijwe guhararamo,; Ahatagejeje muri 1m y'ikinyabiziga gihagaze umwanya muto cg munini,; Ahatagejeje muri 15m y'ikimenyetso kerekana aho ibinyabiziga bitwarira abantu hamwe bihagarara.; Mu muhanda urimo umurongo udacagaguye,; Mu muhanda wo hagati mu nzira igabanijwemo ibisate bitatu,...",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa kigaragaza ahantu umuntu atagomba guhagarara akanya . Ing.34",
+   "a": "Dessin C20a cg C20b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuyobozi w'ikinyabiziga adahari ikinyabiziga gikurwaho nande? Ibyangiritse birihwa nande? Ing.35",
+   "a": "Gikurwaho n'umukozi ubifitiye ububashaibyangirite bikarihwa na Leta, ariko cyaba cyari gihagaze nabi bikarihwa na nyiracyo..",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara y'intabaza agira irihe bara? Ayo matara y'intabaza akoreshwa ryari?Ing.Ing.36(1)",
+   "a": "Ibara ry'ubururu, agakoreshwa igihe ikinyabiziga kiri mu butumwa bwihutirwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Intabaza ndangurura majwi ikoreshwa gusa ryari? Ing.36",
+   "a": "Ikoreshwa gusa igihe ikinyabiziga kiri mu butumwa bwihutirwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umugenzi ari mu nzira nyabagerwa asatiriwe n'ikinyabiziga ndakumirwa akora iki? Ing.37",
+   "a": "Agomba kugihigamira byaba na ngombwa agahagarara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ayahe mategeko ibinyabiziga ndakumirwa bisabwa kubahiriza?Ing.37",
+   "a": "Abakozi babifitiye ububasha, Ibyapa biyobora (byerakana)n' Ibiburira)",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe bimenyetso ibinyabiziga ndakumirwa bisabwa byanze bikunze kubahiriza?",
+   "a": "Ibyapa biburira n'ibyapa biyobora.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo yose y'ingabo n'agatsiko kose k'abanyamaguru bari mu muhanda bategetswe kugendera mu ruhe ruhande?Ing.38(1)",
+   "a": "Mu ruhande rw'iburyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abagendera mu nzira nyabagerwa babujijwe kwata ibiki? Ing.38(2)",
+   "a": "Umurongo w'abanyeshuri bashorewe na mwarimu,; Umurongo w'abasirikare,; Uruhererekane,",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni izihe nkomyi zidakurikizwa ku binyabiziga ndakumirwa?",
+   "a": "Imirongo imaze kuvugwa hejuru ku kibazo cya 151.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abashaka gusiganwa mu nzira nyabagerwa basabwa iki?Ing.39",
+   "a": "Kwishingira ibyakwangirika byose",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uruhushya rw'amasiganwa rusabwa nde iyo amasiganwa abera mu karere kamwa? Mu ntara? Mu gihugu?",
+   "a": "Umuyobozi w'akarere, Umukuru w'intara. Ministiri ushinzwe ubutegetsi bw'igihugu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abahabwa uru ruhushya babanza kuzuza ibiki?Ing.39(3)",
+   "a": "Kugira ubwishingizi bw'ibyakwangirika byose.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uburemere bwemewe bunyuzwa ku iteme bwerekanirwa hehe? N'iki? Ing.40",
+   "a": "Ubwo buremere bwerekanwa n'icyapa kiba kiri ku ntangiriro y'iryo teme ku buryo kibonwa neza.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ubuhe buremere bwemewe ku mateme y'ibiti? Ing.40(2)",
+   "a": "Ni toni 8.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ninde ushobora guhindura uburemere bunyura ku iteme ry'ibiti?",
+   "a": "Ni umukuru w'intara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo abayobozi begereye ibyome babigenza gute?Ing.40(3)",
+   "a": "Bahagarara ku murongo umwe bashoreranye iburyo bw'umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Garagaza uko ibinyabiziga bitambuka mbere bikurikirana.Ing.40(3)",
+   "a": "Ibitwaye abarwayi,; Ibinyabiziga ndakumirwa,; Ufite icyemezo kimwanditseho cyo guhita mbere,; Ibitwaye ubutumwa bwandite bifite ikimenyetso kibiranga,; Ibitwaye amatungo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni bande basigara mu kinyabiziga iyo kigiye kwinjira mu cyome?Ing.40(4)",
+   "a": "Ni umuyobozi n'ugiherekeje.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo imodoka igiye kwinjira mu cyome umuyobozi akora iki?Ing.40(5)",
+   "a": "Umuyobozi agomba kumanura ibirahure.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa byerekana uburemere bw'ibijya mu cyome biba biri he?",
+   "a": "Biba biri ku nkombe y'icyo cyome.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku binyabiziga bikurikira erekana uko iyo biri mu nzira nyabagendwa bitagishoboye kugenda uko bigaragazwa biri nko muri metero 200 hatabona neza:Ing.42 -- Ibinyamitende, velomoteri n'amapikipiki bidafite akanyabiziga ku ruhande;",
+   "a": "Imbere n'itara rimwe ryera cg ry'umuhondo naho inyuma ni itara ritukura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo amatara yo ku muhanda adatuma ikinyabiziga gihagaze umwanya munini kitagaragara neza muri metero 100, umuyobozi akora iki?Ing.42(2)",
+   "a": "Bakoresha amatara ndanga mbere na ndanganyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndangambere na ndanganyuma ashobora gusimburwa n'ayahe matara igihe ibinyabiziga bihagaze umwanya munini mu nsisiro kandi bibangikanye ku ruhande rumwe?Ing.42(3)",
+   "a": "Amatara yo guhagarara umwanya munini.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura amoko y'amabara yo ku kibazo cya 165 imbere n'inyuma z'ikinyabiziga.",
+   "a": "Amatara yera imbere cg asa n'umuhondo; inyuma aba atukura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Hacanwa itara ryo ku ruhe ruhande iyo ikinyabiziga gihagaze ahantu umwanya munini kandi hatabona neza? Ing.42(3)",
+   "a": "Hacanwa amatara ari hafi y'umurongo ugabanya umuhanda mo kabiri mu burebure.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ya kamenabihu akoreshwa iyo umuntu atabona neza muri metero zingahe?Ing.42(4)",
+   "a": "Muri 100m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara magufi n'amatara maremare acanirwa rimwe n'ayahe matara? Acanwa ryari?Ing.43",
+   "a": "Acanirwa rimwe n'amatara ndanga hagati yo kurenga kw'izuba no kurasa kwaryo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara magufi cg amaremare azinywa ryari?Ing.43(2)",
+   "a": "Iyo uhagaze yaba umwanya muto cg munini.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibihe bitatu amatara maremare agomba kuzinywa.Ing.43(3)",
+   "a": "Igihe ugiye guhura n'undi,; Igihe umuhanda umurikiwe hose,; Iyo ugiye kubisikana n'undi,; Iyo ikinyabiziga gikurikiye ikindi mu ntambwe zitagera kuri 50m keretse iyo ashaka kukinyuraho nibwo ashobora gucana azimya.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigomba guhora bicanye amatara (magufi) igihe cyose no mu buryo bwose igihe bigenda? Ing.43(4)",
+   "a": "Ni velomoteri n'amapikipiki.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara kamena bihu y'ikinyabiziga akoreshwa gusa ryari? Ing.43(5)",
+   "a": "Igihe hatabona neza nko muri metero 100.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara kamena bihu ashobora gusimbura ayahe matara yandi?Ing.43(5)",
+   "a": "Amatara yo kubisikana cg amatara y'urugendo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara yo kubisikana n'amatara y'urugendo acanirwa rimwe n'ayahe matara? Ing.43(6)",
+   "a": "Acanirwa rimwe n'amatara ndanga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara yo gusubira inyuma acanwa gusa ryari? Ing.43(7)",
+   "a": "Igihe ikinyabiziga kigiye gusubira inyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ashakisha acanwa gusa ryari? Ing.43(8)",
+   "a": "Ni igihe ari ngombwa kandi atabangamiye abandi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umuyobozi ushaka guhindukiza ikinyabiziga cye cg kukiganisha ku ruhande, abigaragariza muri metero zingana iki?Ing.44",
+   "a": "Muri metero 50 byibura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ushaka kugabanya umuvuduko w'ikinyabiziga akora iki?Ing.45",
+   "a": "Acana amatara abyerekana cg agakoresha ukuboko.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo amatara yo guhagarara atagikora neza umuyobozi akoresha iki?Ing.45",
+   "a": "Akoresha ukuboko.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kuvuza amahoni bimara igihe kingana iki?Ing.47",
+   "a": "Bimara umwanya muto ushoboka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amahoni akoreshwa gusa ryari? Ing.47",
+   "a": "Akoreshwa gusa ushaka kwirinda impanuka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amahoni asimbuzwa iki iyo bwije? Ing.47",
+   "a": "Asimbuzwa gucana uzimya amatara magufi cg usimburanya amatara magufi n'amatara maremare.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuyobozi agiye kunyura ku wundi abyerekana ate? Ing.47",
+   "a": "Akoresha imburira zimurika.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ahegereye inyamaswa zikurura, izikoreye ibintu cg amatungo umuyobozi akora iki kubijyanye n'amahoni? Ing.47(5)",
+   "a": "Birabujijwe gukoresha amahoni.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abagenzi bicaye mu myanya irimo imikandara bakora iki?Ing.47bis",
+   "a": "Bagomba kurumanya neza imikandara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Utuyira turi ku mpande z'umuhanda n'inkengero zigiye hejuru bihariwe bande? Ing.48(1)",
+   "a": "Ni abanyamaguru.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abanyamaguru badahuje gahunda banyura he? Ing.48(2)",
+   "a": "Banyura ibumoso ku nkengero y'umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo nta tuyira twabigenewe, abanyamaguru baca he? Kandi gute?",
+   "a": "Bashobora guca mu muhanda ariko bitonze.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo abanyamaguru bagenda nijoro bagenda gute? Ing.48(5)",
+   "a": "Bagenda bakurikiranye ibumoso bw'umuhanda iyo badafitanye gahunda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abanyamaguru bagomba kwambukira mu myanya yabugenewe iyo iri muri metero zingahe?Ing.48(6)",
+   "a": "Iyo iri ahatageze muri 50m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo ari mu nkomane kandi nta mwanya wateguriwe abanyamaguru, banyura he?",
+   "a": "Bambukira mu murongo wambukiranya iyo nkomane.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Mbese abanyamaguru bategetswe kubahiriza amategeko atangwa n'abashinzwe umutekano mu muhanda? Ing.48(7)",
+   "a": "Cyane.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Abantu batwaye utunyabiziga tw'abana, tw'abarwayi, utw'ibimuga bubahiriza ayahe mategeko? Ing.47(10)",
+   "a": "Amategeko y'abanyamaguru.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Hagati y'imodoka ziherekeranije mu butumwa hagomba kuba hari umwanya ungana iki? Ing.49(1)",
+   "a": "Ni 30m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ubuhe burebure ntarengwa bwemewe bw'ibinyabiziga biherekeranije mu butumwa?",
+   "a": "Ni 500m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatsinda y'ibinyabiziga biherekeranije mu butumwa atandukanywa n'intera ingana iki? Ing.49",
+   "a": "Ni 50m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ku bihe binyabiziga amategeko agenga ibinyabiziga biherekeranije atubahirizwa?Kandi ryari?Ing.49",
+   "a": "Ku binyabiziga by'ingabo z'igihugu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ikinyabiziga cya mbere mu bihjerekeranije kirangwa n'iki? Icya nyuma cyo kirangwa n'iki?Ing.49(2)",
+   "a": "Icya mbere ni \"Attention Convoi\" naho icya nyuma ni \"Fin de Convoi\".",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amabwiriza agenga ibinyabiziga bya gisirikare biherekeranije ashyirwaho nande? Ing.49(2)",
+   "a": "Ni Ministiri w'ingabo z'igihugu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibinyabiziga bikururwa n'inyamaswa bigabanywamo amatsinda afite uburebure bungana iki? Ing.49(3)",
+   "a": "Uburebure butarengeje 500m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umubare w'inyamaswa zikurura zikurikiranye ugomba kungana ute? Ungana ute iyo zibangikanye? Ing.51",
+   "a": "Zikurikiranye ntizirenga enye.; Zibangikanye ntizirenga eshatu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari umuyobozi akenera umuherekeza? Ing.51(4,5)",
+   "a": "Iyo uburebure burenga 18m cg 12m y'imizigo gusa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuyobozi w'akanyabiziga gasunikwa atarebaneza imbere abigenza ate? Ing.52(1)",
+   "a": "Agomba gukurura ikinyabiziga cye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ingorofani zinyuzwa he mu nzira nyabagendwa?Ing.52(2)",
+   "a": "Ku nkengero yegutse.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bine abayobozi b'amagare na velomoteri babujijwe gukora igihe babiyoboye? Ing.53 (1)(a)",
+   "a": "Kuyobora badafashe amahembe,; Badakandagiye ku birenge,; Bakurura inyamaswa,; Bakururwa,; Basunika, bakurura cg batwaye ibyabangamira imiyoborere y'ikinyabiziga.; Kunyura mu muhanda kandi hari agahanda kabo,; Kurenza umuvuduko wa 40km/h; Gukoresha andi mahoni atarayo byagenewe,; No kunyura hagati y'imirongo ibiri y'ibinyabiziga bibangikanye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari abayobozi b'amagare na velomoteri bagenda bashoreranye aho kugenda babangikanye?",
+   "a": "Iyo nta kinyabiziga bagiye guhura nacyo kandi ari ku manywa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ingofero zirinda impanuka zambarwa nabande? Ing.53(3)",
+   "a": "Zambarwa n'umuyobozi n'uhetswe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Niryari abayobozi b'amagare na velomoteri bubahiriza amategeko y'abanyamaguru? Ing.53(5)",
+   "a": "Iyo basunika ikinyabiziga cyabo ni ukuvuga igihe bayoboye ikinyabiziga batakicayeho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni hehe bibujijwe gukinagiza inyamaswa zikorera cg izo bagenderaho kimwe n'amatungo? Ing.55",
+   "a": "Mu nzira nyabagerwa mu nsisiro.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni hehe bibujijwe kubyagiza inyamaswa zikurura, izikorera ibintu cg izi bagendaho?",
+   "a": "Ni mu nzira nyabagerwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa cy'ahantu hagewe kugendera amatungo. Ing.54(3)",
+   "a": "D7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa cyemerera gushyiramo abantu mu kinyabiziga. Ing.56 bis",
+   "a": "E19",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ikinyabiziga gihagarara he ugereranije n'icyapa kibimwemerera. Ing.56 bis",
+   "a": "Ku ntera itarenga 10m uvuye ku cyapa kibimwemera.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga uburebure bw'ikinyabiziga cg ibinyabiziga bikururana ntarengwa.",
+   "a": "Ni 7m",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uburebure bwa makuzungu bugomba kungana iki? Ing.57(2)",
+   "a": "Ni 17,40m",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ubuhagarike bw'ikinyabiziga bugomba kungana iki? Ing.57(3)",
+   "a": "Ni 4,20m",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana uko igice kirenga ku biziga kigomba kuba kingana imbere n'inyuma. Ing 57(4)",
+   "a": "Ni 3,50m inyuma na 2,70m imbere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ninde utanga uburenganzira ku binyabiziga bifite uburumbarare burenga ubwemewe kugendera mu muhanda? Ing.59",
+   "a": "Ni Minisriri ushonzwe gutwara ibintu n'abantu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imizigo y'ikinyabiziga igomba gupakirwa neza hirindwa ibiki? Byibura ibintu bitatu. Ing.60(1)",
+   "a": "Hirindwa guteza abantu ibyago mu rugendo,; Kwangiza inzira nyabagerwa, impande zayo, ibiyubatsweho...; Kubuza umuyobozi kibona neza,; Gukingiriza amatara, utureba nyuma, utugarura rumuri, numero, cg ibimesyetso umuyobozi yerekanisha intoki.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ubuhe burumbarare bw'ikinyabiziga ntarengwa habariwemo n'imizigo haba n'inyamaswa cg romoroki? Ing.61(1)",
+   "a": "ni 2,50m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga gishobora gupakira kugera ku burumbarare bwa metero 2,75.Ing.61(1.a)",
+   "a": "Ni igihe gipakiye ibinyampeke, ikawa, amakara, ibishara, ibyatsi cg ibishami cg ubwatsi bw'amatungo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari uburumbarare bw'ibipakiwe bushobora kugera kuri metero 3?",
+   "a": "Ni igihe hapakiwe ibimaze kuvugwa haruguru ariko bijyanwa ahatarenga 25km.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ubuhagarike bw'ibitwawe bushobora kurenga metero 4? Ing.61(3)",
+   "a": "Ni igihe byakiwe uruhushya.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku mpera y'inyuma y'ikinyabiziga uburebure bw'imizigo ntarengwa bungana iki? Ing.62(1)",
+   "a": "Ni 3m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo imizigo irenga ku kinyabiziga ho metero 1 babyerekanisha iki nijoro? Ku manywa? Ing.63 Ku buhe buhagarike ntarengwa? Ing.63",
+   "a": "Babyerekanisha agatambaro gatukura ka 50cm z'uruhande.; Ni ijoro hacanwa itara ritukura cg akagarura rumuri gatukura.Bishyirwa ahatarenze 1,55m z'ubuhagarike.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ubugari ntarengwa bw'imizigo yikorewe n'igare na velomoteri kimwe na romoroki zabyo bungana iki?Ing.64(1)",
+   "a": "Ni 75cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ubugari bw'imizigo yikorewe n'amapikipiki adafite akanyabiziga ndetse na romoroki yazo bungana iki?",
+   "a": "Ni 1,25m",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ubugari ntarengwa bw'imizigo ku kinyamitende itatu n'ikinyamitende ine bugomba kungana iki?Ing.64(3)",
+   "a": "2,50m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga aho imizigo yikorewe n'amagare na velomoteri n'amapikipiki itagomba kurenga haba inyuma cg imbere. Ing.65",
+   "a": "Ni 50cm inyuma, imbere ho ntiyarenga impera y'imbere y'ikinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umwanya w'umuyobozi w'ikinyamitende itatu cg ine bifite moteri ugomba kuba byibura ungana iki? Ing.66 (a)",
+   "a": "Ni 55cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari abana badafite imyaka 12 bemerewe kwicara mu myanya y'imbere y'ikinyabiziga? Ing.66(3)",
+   "a": "Ni igihe hatarimo indi myanya.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Igare, velomoteri n'amapikipiki bitwara abantu bangana iki? Ing.66(5)",
+   "a": "Bangana n'umubare w'intebe yabyo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga byemerewe gutwara abantu hejuru muri karisori? Ing.66(6:c)",
+   "a": "Ni ibinyabiziga by'ingabo z'igihugu, Abapolisi, Abasukura imihanda n'Abazimya umuriro.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa kigaragaza uburemere ntarengwa ku binyabiziga. Ing.68",
+   "a": "Ni C7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amasaha ntarengwa yo kugenzura uburemere bw'ibipakiwe ni angahe? Ing.68(3)",
+   "a": "Ni amasaha 2.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni uwuhe mubare ntarengwa w'ibinyabiziga ugomba gukururwa n'ikindi kinyabiziga gitwarwa na moteri cg inyamaswa? Ing.70(1)",
+   "a": "Ni bibiri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ipikipiki ifite akanyabiziga ku ruhande ikurura romoki zingahe? Ing.70(1)",
+   "a": "Nta na kimwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari washyira mu muhanda ibinyabiziga bikururana birenze bitatu? Ing.70(2)",
+   "a": "Ni igihe hatanzwe uburenganzira na minisitiri ushinzwe gutwara ibintu n'abantu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo hagati ya romoroki n'ikiyikurura hari metero zirenze eshatu bigenda gute? Ing.71(1)",
+   "a": "Ikibizirikanije kigaragazwa ku manywa n'agatambaro gatukura,; Ni ijoro ni amatara asa n'icunga rihishije mu mbavu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ninde utanga uruhushya rwo gutwara ibintu birenga ibyateganyijwe? Ing.72(1)",
+   "a": "Ni Ministiri ushinzwe gutwara abantu n'ibintu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uwasabye urwo ruhushya aruhabwa amaze kuzuza ibiki?Ing.72(4)",
+   "a": "Aruhabwa ari uko yemeye kwishyura indishyi cg amafaranga y'ingwate ashobora guturuka ku byakwangirika.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umuyobozi yarenze ku mategeko yo gupakira akorerwa iki? Ing.73",
+   "a": "Agomba gupakurura yakwanga agahagarikwa burundu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ijambo \"Ibiziga by'umutambiko\" bivuga iki? Ing.74",
+   "a": "Ni ibiziga biteganye uhereye ku murongo ugabanya ikinyabiziga mo kabiri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ijambo \"feri y'urugendo\" bivuga iki? Ing.74",
+   "a": "Uburyo busanzwe bukoreshwa kugira ngo ikinyabiziga kigende buhoro cg ngo gihagarare.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ijambo \"feri yo guhagarara umwanya munini\" bivuga iki?Ing.74",
+   "a": "Ni uburyo busanzwe bukoreshwa kugira ngo ikinyabiziga kigume hamwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ijambo \"feri yo gutabara\" ivuga iki? Ing.74",
+   "a": "Ni uburyo bukoreshwa kugira ngo ikinyabiziga kigende buhoro cg gihagarare igihe feri y'urugendo idakora neza.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ijambo \"Romoroki\" rikoreshwa ryari? Ing.74(e)",
+   "a": "Ni ibinyabiziga bikururwa n'imodoka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga amoko ya feri. Ing.74(3)",
+   "a": "Hari feri y'urugendo, feri yo gutabara na feri yo guhagarara umwanya munini.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ese Romoroki igomba kugira aya moko yose yaza feri? Ing.74(4)",
+   "a": "Igomba kuyagira.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo Romoroki icitse ihagarikwa n'iki?Ing.74(4.f)",
+   "a": "Feri yayo igomba kuba ikozwe ku buryo yihagarika igihe icitse.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ayahe matara yera cg y'umuhondo agomba kujya inyuma?Ing.75(1)",
+   "a": "Ni amatara yo gusubira inyuma gusa n'aranga icyerekezo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara y'imbere agira ayahe mabara? Ing.75",
+   "a": "Ibara ry'umweru cg umuhondo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara y'inyuma agomba kuba afite ayahe mabara?Ing.75",
+   "a": "Ni umutuku cg icunga rihishije.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ayahe matara agomba kurenga abiri ku kinyabiziga? Ing.75(3)",
+   "a": "Ni amatara ndanga mubyimba, ndangaburumbarare, cg ayerekana icyerekezo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Bigenda gute iyo ikinyabiziga gifite amatara abiri cg arenze abiri y'ubwoko bumwe? Ing.75(4)",
+   "a": "Agomba kugira imbaraga zingana kandi agashyirwa hamwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga amabara y'utugarura rumuri tw'ikinyabiziga imbere, inyuma no ku mpanda. Ing.75(5)",
+   "a": "Imbere ni umweru naho inyuma ni umutuku naho mu mbavu ni umuhondo cg icunga rihishije.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara cg utugarura rumuri agomba kuba ateye ku buhe buhagarike uvuye ku butaka? Ing.75(7)",
+   "a": "Ahatari munsi ya 40cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari amatara maremare cg amagufi atakira rimwe n'amatara ndanga? Ing.75(8.2)",
+   "a": "Igihe akoreshejwe nk' ibimenyetso bimurika ho imburira.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ndanga rishyirwa he ku kinyabiziga? Ing.76(a.3)",
+   "a": "Rishyirwa ahegereye inguni y'ibumoso.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari itara ryo guhagarara rishyirwa ku kinyabiziga? Ing.76(a.2)",
+   "a": "Ni igihe ingufu za moteri zirengeje 125cm3.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara maremare n'ayo kubisikana akoreshwa ryari? Ing.76(5)",
+   "a": "Ni igihe ikinyabiziga kidapakiye gishobora kurenza 20km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibinyamitende itatu agira amatara ndanga mbere angahe n'ndanga nyuma angahe? Ing.76(6)",
+   "a": "Amatara 2 ndanga mbere n'amatara 2 ndanga nyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari hakoreshwa itara ribonesha icyapa kiranga numero z'ikinyabiziga? Ing.76(7)",
+   "a": "Ni igihe icyo kinyabiziga gifite icyo cyapa.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari Romoroki igomba kugira amatara nkay'ikiyikurura? Ing.76(8)",
+   "a": "Ni igihe iyo Romoroki itera imbogamizi amatara y'imodoka iyikurura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigira amatara ndangaburumbarare? Ing.76(8,b)",
+   "a": "Ni ibinyabiziga bifite ubugari burenga 2,10m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ry'icyatsi riboneka ku matagisi risobanura iki? Ing.76(2,c)",
+   "a": "Ryerekana ko icyo kinyabiziga kitakodeshejwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ry'icyatsi riboneka kuri za romoroki rimaze iki kandi rishyirwa he? Ing.76(2,g)",
+   "a": "Umuyobozi arikoresha ashaka kwerekana ko yabonye ikimenyetso cy'ushaka kumunyuraho.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bidashyirwaho amatara yabugenewe? Ing.76(2,h)",
+   "a": "Ni ibinyabiziga bihinga n'ibindi bikoresho bikoreshwa n'abapataniye mirimo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Za Otobis zigenewe gutwara abanyeshuri zishobora gushyirwaho amatara asa ate? Kuki? Angahe inyuma n'imbere? Kandi yaka gute? Ing.76(2,i)",
+   "a": "Amatara asa n'icunga rihishije amyatsa, rimwe imbere, irindi inyuma. Yerekana ko Otobis igeze aho igomba guhagarara. Kandi akamurika muri 100m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndaga yaba ay'inyuma cg imbere agaragarira mu ntera ingana ite nijoro igihe ijuru ricyeye? Ing.77(1)",
+   "a": "Ni mu ntera ya 300m..",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku matara y'inyuma ya za velomoteri n'ibinyamitende intera y'ayo matara ireshya ite? Ing.77(1)",
+   "a": "Ni mu ntera ya 100m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Utugarura rumuri tuboneka muri ntera ingana ite nijoro iyo tumuritswe? Ing.77(2)",
+   "a": "Ni mu ntera ya 150m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Utugarura rumuri tw'inyuma ha romoroki tugomba kugira iyihe shusho kandi tungana iki? Ing.77(2)",
+   "a": "Ni ishusho ya mpandeshatu ndinganire ya 15cm cg 20cm z'uruhande.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni zihe romoroki zishyirwaho akagarurarumuri kamwe? Ing.77(2)",
+   "a": "Ni Romoroki zifite ubugari ntarengwa bwa 80cm ikuruwe n'ipikipiki.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndanga mbere na ndanga nyuma agomba kuba ku ntera ingana ite uvuye ku butaka? Ing.77(3)",
+   "a": "Kuri 40cm uvuye ku mpera z'ubugari z'ikinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku bijyanye n'utugarura rumuri intera kuva ku butaka iba ireshya ite? Ing.77(4)",
+   "a": "Ni intera itarenze 1m uvuye ku butaka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndanga burumbarare abonwa ku yihe ntera iyo ijuru ricyeye? Ing.77(5)",
+   "a": "Ni intera ya 200m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara yo guhagarara umwanya munini yohereza imbere urumuri rusa rute cg inyuma?Ing.77(6)",
+   "a": "Imbere rusa n'umweru n'urutukura inyuma.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara maremare y'ibara ryera cg umuhondo agomba kumurika mu yihe ntera igihe ijoro ricyeye? Ing.78(1)",
+   "a": "Ni mu ntera ya 100m imbere y'ikinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari iyo ntera ireshya na metero 75? Ing.78(1)",
+   "a": "Ni igihe ikinyabiziga gifite moteri itarengeje ingufu za 125cm3.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara yo kubisikana abonekera mu ntera ireshya ite? Ing.78(2)",
+   "a": "Ni mu ntera ya 40m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari iyo ntera ingana na metero 15? Ing.78(2)",
+   "a": "Ku kinyabiziga kitarengeje 125cm3.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ryo gusubira inyuma ryohereza urumuri mu ntera ireshya ite?",
+   "a": "Ni mu ntera ya 20m",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ryo guhagarara rigomba kugaragarira muri metero zingahe nijoro? Ku manywa? Ing.79(1)",
+   "a": "Ni mu ntera ya 150m nijoro igihe ijuru ricyeye neza.; Ni mu ntera ya 20m ku manywa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo ikinyabiziga gifite itara rimwe ryo guhagarara rishyirwa he? Ing.79(3)",
+   "a": "Rishyirwa ku murongo ugabanya ikiziga mo kabiri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ryo guhagarara ryaka ryari? Ing.79(4)",
+   "a": "ryaka gusa igihe bakandagiye feri y'urugendo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga amabara y'amatara ndangacyerekezo y'inyuma n'ay'imbere. Ing.80(1)",
+   "a": "Imbere ni umweru cg umuhondo naho unyuma agasa n'icunga rihishije n' umutuku.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndanga cyerekezo ashobora gufatanywa n'ayahe matara yandi? Ing.80(1)",
+   "a": "Yafatanywa n'amatara yo guhagarara.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndangacyerekezo agaragarira mu ntera ingana ite nijoro? Ku manywa? Ing.80(3)",
+   "a": "Ni mu ntera ya 150m nijoro na 20m ku manywa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara ndangacyerekezo aba ahagana he uvuye ku butaka? Ing.80(4)",
+   "a": "Aba ahatari hejuru ya 1,90m uvuye ku butaka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara riranga nimero rigira irihe bara? Rigomba gutuma nimero zisomeka byibura mu ntera ingana iki igihe ijuru rikeye? Ing.81",
+   "a": "Ni umweru rikagaragarira byibura muri 20m ikinyabiziga gihagaze.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kuva bwije, umuyobozi w'inyamaswa zikurura cg zikorera ibintu zitaziritse yitwaza urumuri rusa rute? Kandi rumurika gute? Ing.82(2)",
+   "a": "Ni urumuri rw'umweru cg umuhondo rubonesha impande zose.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo umukumbi ugizwe n'amatungo maremare kandi arenze ane cg amatungo magufi arenze atandatu, umuyobozi abigenza ate ku bijyanye n'amatara? Ing.82(3)",
+   "a": "Imbere hajya itara ry'umweru naho inyuma itara ritukura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ihoni rya velomoteri ryumvikanira mu ntera ireshya ite?Ing.83(1)",
+   "a": "Ni mu ntera ya 20m.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ihoni ry'ibinyabiziga bigendeshwa na moteri ryumvikanira mu ntera ingana iki? Ing.83(1) Ni ryari ryumvikanira mu ntera ya metero 50? Ing.83(1)",
+   "a": "Ni mu ntera ya 100m. Bikaba 50m igihe ikinyabiziga kitarenza 50km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigira amahoni adasanzwe? Ing.83(2)",
+   "a": "Ni ibinyabiziga ndakumirwa.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni akahe kamaro k'uturebanyuma ku kinyabiziga? Ing.84",
+   "a": "Kureba inyuma ko nta kinyabiziga gishaka cg cyatangiye kumunyuraho.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibirahuri by'ibinyabiziga bigomba kuba bikoze bite? Ing.85(1)(a)",
+   "a": "Bigomba kuba bikozwe ku buryo bimenetse ibyago byo gukomereka bitaba bikabije cyane.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibirahure byo guhagarika umuyaga bigomba kuba bikozwe gute? Ing.85(1,b)",
+   "a": "Bigomba kuba bidacuya, bidahindura ibara ry'icyo urebeyemo kandi nabyo byameneka ugakomeza kugenda nta kibazo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ku kinyabiziga cyose uretse amapikipiki hagomba uduhanagura ibirahure tungahe? Ing.85(3)",
+   "a": "Byibura kamwe ko guhanagurira umuyobozi ngo abone neza.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari gusakurisha moteri bibujijwe? Ing.86(3)",
+   "a": "Mu nsisiro ikinyabiziga gihagaze.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amano y'ibinyabiziga bifite moteri na velomoteri agomba byibura ku afite milimetero zingahe? Ni ryari ibi bitubahirizwa? Ing.87(1)",
+   "a": "Ni 1mm, ntibyubahirizwa igihe ikinyabiziga kidapakiye kandi kitarenza 25km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigira ibiranga umuvuduko? Ing.88(3)",
+   "a": "Ni ibinyabiziga birenza 40km/h.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni izihe modoka zigira imikandara yo kwirinda impanuka? Ing.88(4)",
+   "a": "Ni imodoka zagenewe gutwara abantu batarenze 6 n'umuyobozi arimo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga muri macye icyapa kiburira. Ing.88(5,a)",
+   "a": "Ni mpandeshatu ndinganire ya 40cm ifite umuzenguruko utukura.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu bitanu buri kinyabiziga kigomba kugira. Ing.88(5)",
+   "a": "Icyapa kiburira, udupfuko byibura 4, ibikwasi 4 bitifungura, umuti wo kwica microbe, muri macye ibyagufasha gutabara igihe habaye impanuka.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga gifite moteri gishobora kugenda mu muhanda moteri itaka cg vitesi idakora? Ing.88(9)",
+   "a": "Ni igihe gikuruwe n'ikindi kinyabiziga gifite moteri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso bigenga uburyo bwo kugendera mu muhanda birimo ibyiciro bingahe? Ing.91(1)",
+   "a": "Ni bitatu:; Ibyapa, Ibimenyetso byo mu muhanda n'ibimenyetso bimurika.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Nibihe birusha ibindi agaciro hagati y'ibimenyetso by'amatara n'ibyapa? Ing.91(2)",
+   "a": "Ni iby'amatara.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ishyirwaho ry'ibimenyetso bigengwa nande? Ing.91(4)",
+   "a": "Bigenwa na Minisistiri ushinzwe gutwara ibintu n'abantu ku mihanda y'igihugu, n'umukuru w'intara mu ntara, na njyanama y'akarere mu karere.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa byo ku muhanda birimo amoko angahe?Ing.92(1)",
+   "a": "Birimo amoko 4:; Ibyapa byo gutambuka mbere,; Ibyapa biburira,; Ibyapa bibuza cg bitegeka,; Ibyapa ndanga.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa byo ku muhanda bishingwa mu kuhe kuboko? Ku buhe burebure?Ing.92(2)",
+   "a": "Bishingwa ku ruhande rw'iburyo bw'umuhanda.; Umusozo wo hasi ntube hasi ya 1,50m naho uwo hejuru nturenge 2,10m uretse ibyapa by'agateganyo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa biburira bibereyeho iki? Ing.93(1)",
+   "a": "Kumenyesha icyago n'imiterere yacyo kandi bikanamutegeka ubwitonzi.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana ibyapa biburira n'ibyapa byo gutambuka mbere. Ing.93(2)",
+   "a": "Bishushanyije kuri mpandeshatu ndinganire izengurutswe n'ibara ritukura uretse bicye.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa biburira bishyirwa ku yihe ntera ahatari mu nsisiro?Ing.94(2)",
+   "a": "Bishyirwa mu ntera ya 150m kugeza kuri 200m yaho icyago kiri.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Mu nsisiro ibyapa biburira bishyirwa he? Ing.94(5)",
+   "a": "Bishyirwa iruhande neza y'ahantu habi.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa byeraka abagenda ibyo babujijwe biba bimeze bite? Vuga n'amabara yabyo Ing.97(1)",
+   "a": "Biba bishushanyije ku ngasire izengurutswe n'ibara ritukura kandi ubuso bwera. Keretse ibibuza guhagarara umwanya muto cg umunini bigira ubuso bw'ubururu.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa bibuza n'ibitegeka bikurikizwa kugeza hehe? Ing.98",
+   "a": "Hagati y'inkomane naho icyapa gishinze.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa bibuza bishyirwa ku ruhe ruhande? Ing. 99",
+   "a": "Bishyirwa ahantu hagaragarira buri wese iburyo ndetse byaba ngombwa ikindi bisa kigashyirwa ibumoso.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa kemerera guhagarara umwanya munini. Ing.99(2)",
+   "a": "C20a na C20b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibibuzwa ntarengwa bishobora gushyirwa ku ngasire imwe bingana iki?Ing.101",
+   "a": "Ntibigomba kurenga bitatu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa bitegeka bishyirwa he? Ing.102",
+   "a": "Bishyirwa aharushijeho kubona neza.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibyapa biyobora bishyirwa he? Ing.103",
+   "a": "Bishyirwa ahantu haboneye kurusha ahandi bitewe n'icyo byerekana.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo amatara atukura n'ay'icyatsi yakiye rimwe biba bivuga iki? Ing.104(5)",
+   "a": "Bisobanura kimwe n'amatara atatu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo ibimenyetso bimurika bidakora abagenzi babigenza gute? Ing.104(6)",
+   "a": "Bubahiriza amategeko yo gutambuka mbere.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo hakomeje kwaka itara ritukura abagenzi rireba babigenza gute? Ing.104(7)",
+   "a": "Bashora gutambuka ariko barebye ko ntawe babangamiye.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ry'icyatsi rishyirwa ugereranije n'iry'umutuku? Ing.105(1)",
+   "a": "Rishyirwa hasi y'iritukura.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Itara ry'umuhondo rishyirwa ugereranije n'itara ritukura cg iry'icyatsi? Ing.105(1)",
+   "a": "Rishyirwa hagati y'iritukura n'icyatsi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara y'inyongera agizwe n'akaranga cyerekezo k'icyatsi ashyirwa he? Ing.105(1)",
+   "a": "Munsi cg iruhande rw'itara ry'icyatsi.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kurikiranya amatara y'ibimenyetso bimurika uko akurikirana mu kwaka. Ing.105(2)",
+   "a": "Habanza iritukura, icyatsi hanyuma umuhondo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amatara y'ibimenyetso bimurika ashyirwa ku buhe buhagarike, agira izihe ngero z'ubuso? Ing.105(3)",
+   "a": "Ni 1,50m.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso bimurika bishyirwa mu ruhe ruhande rw'umuhanda? Ing.106(1)",
+   "a": "Bishyirwa iburyo bw'umuhanda ukurikije icyerekezo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Kugira ngo berekane ahantu habi bakoresha ikihe kimenyetso mu by'amatara? Ing.107(1)",
+   "a": "Bakoresha itara ry'umuhondo rimyatsa.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imbibi ziri ku muhanda zisigwa irihe bara? Ing.108(1)",
+   "a": "Ni ibara ry'umuhondo ngarurarumuri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibikoresho ngarura rumuri bishyirwa ku muhanda biba bisa bite ugereranije n'amerekezo y'umuhanda? Ing.108(2)",
+   "a": "Iburyo ni umutuku cg icunga rihishije naho ibumoso ni umweru.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga amoko y'imirongo y'ibimenyetso biri mu muhanda. Ing.110(1) -- Umurongo wera udacagaguye;",
+   "a": "Bivuga ko umuyobozi abujijwe kuwurenga, kandi ntawe ugomba kugendera ibumoso bwawo iyo uwo murongo utandukanya ibyerekezo byombi.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umurongo wera ukomeje n'umurongo wera ucagaguye bibangikanye umuyobozi yakwita ku wuhe? Ing.110(4)",
+   "a": "Yita ku murongo urushijeho kumwegera.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Agahanda k'amagare kaba kameze gute? Ing.110(6)",
+   "a": "Kagaragazwa n'imirongo ibiri yera icagaguye ibangikanye ifite ubugari budahagije kugira ngo imodoka zitambuke neza.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni uwuhe murongo ugaragaza ko guhagarara umwanya munini bibujijwe ku burebure bw'umurongo? Ing.110(8)",
+   "a": "Ni umurongo w'umuhondo ucagaguye uciye ku nkengero y'umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umurongo mugari wera udacagaguye ugaragaza iki? Ing.110(9)",
+   "a": "Ugaragaza inkombe mpimbano y'umuhanda",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Igice cy'umuhanda kiri hakurya y'umurongo wera mugari cyagenewe iki?Ing.110(9)",
+   "a": "Icyo gice cyagenewe guhagararwamo umwanya muto cg munini.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni iki kigaragaza umwanya ibinyabiziga bigomba guhagararamo? Ing.110(9)",
+   "a": "Ni imirongo yera yambukiranya umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ubugari bw'imirongo iromboreje cg itaromboreje. Ing.110(10)",
+   "a": "Ni 10cm kugera kuri 15cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo yera iromboreje n'icagaguye ishobora gusimburwa n'iki mu muhanda? Ing.110(11,b)",
+   "a": "Ishobora gusimburwa n'imitemeri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umurongo mugari wera udacagaguye uciye ku buryo bugororotse ku nkengero y'umuhanda uvuga iki? Ing.111(1)",
+   "a": "Werekana aho bagomba guhagarara akanya gato gategetswe n'icyapa (STOP) cg ikimenyetso kimurika cyerekana uburyo bwo kugenda mu muhanda.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Umurongo ugizwe na mpandeshatu nyampanga uciye ku nkengero y'umuhanda mu buryo bugororotse uvuga iki? Ing.111(2)",
+   "a": "Werekana aho bagomba guhagarara akanya gato iyo bishoboka ngo batange inzira babyeretswe n'icyapa B1.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo yera iteganye n'umurongo ugabanya umuhanda mo kabiri ivuga iki? Ing.111(3)",
+   "a": "Yerekana inzira abanyamaguru bagomba kwambukiramo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo ibiri icagaguye igizwe na kare cg ingirwamwashi by'ibara ryera isobanura iki? Ing.111(4)",
+   "a": "Isobanura akayira abanyamagere bashobora gucamo bambukiranya umuhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo yera yambukiranya umuhanda igomba kuba ifite ubugari bungana iki? Ing.111(5)",
+   "a": "Igomba kugira hagati ya 20cm na 60cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Uturangacyerekezo n'ibyanditswe mu muhanda bigomba kugira byibura uburebure bungana iki? Ing.112(6)",
+   "a": "Bugomba kugira byibura 2,50m z'uburebure n'ubugari bwa 10cm na 30cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Imirongo iberamye iteganye yera isobanura iki? Igira ubugari bungana iki? Kandi itandukanywa n'intera ingana iki? Ing.112(7)",
+   "a": "Yerekana icyerekezo iki n'iki kigomba kunyurwamo, iyo mirongo igira ubugari buri hagati ya 10cm na 15cm itandukanijwe na 20cm kugeza kuri 30cm.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso by'inkomyi bishyirwaho nande? Ing.113(2)",
+   "a": "Bishyirwaho n'uwateje iyo nkomyi, yaba itaturutse ku muntu igashyirwaho n'ubutegetsi bubishinzwe.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo hari imirimo iri gukorerwa ku muhanda hakoreshwa iki nijoro ? Ku manywa? Ing.114(1,a,b)",
+   "a": "Ni joro bakoresha amatara y'umutuku ku mpande zambukiranya umuhanda, akaba yera ku burebure bw'umuhanda.; Ku manywa babigaragaza bashyiraho udutambaro dutukura twa kare ya 50cm z'uruhande.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa kerekana imirimo irimo gukorerwa mu muhanda. Ing.114(1,b)",
+   "a": "Ikimenyetso A15.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni iki kikubwira ko ugiye kwegera ahakorerwa imirimo mu muhanda? Ko uhageze? Ing.114(2.a)",
+   "a": "Ukiri kure ni ikimenyetso A15, waba uhageze bikagaragazwa n'uruzitiro ruri ku mpera zombi.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana icyapa cyo kuyobya umuhanda. Ing.114(2.e)",
+   "a": "Icyapa cyanditsweho dviation: E5c.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni mu yihe ntera byibura ibyapa bigomba kugaragariramo n'ijoro igihe ijuru ricyeye? Ing.114(4)",
+   "a": "Ni mu ntera ya 100m.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ayahe matara abujijwe kumurikishwa ku byapa byamamaza? Ing.118",
+   "a": "Ni amatara afite ibara ry'icyatsi, umutuku iyo ari ahantu ha 75m uvuye ku bimenyetso bimurika.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga bitatu mu bitabo bitandatu by'amashakiro. Ing.121(1)",
+   "a": "1. Abikorera ku giti cyabo,; 2. Ingabo z'igihugu,; 3. Ibigo bya Leta,; 4. Ibyinjijwe by'agateganyo,; 5. Ibya Polisi y'igihugu,; 6. Ibinyabiziga bya sa Ambasade.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bitagomba guhabwa numero zo mu Rwanda? Ing.122(2)",
+   "a": "Ni ibinyabiziga bitaramara umwaka mu Rwanda cg byinjijwe mu Rwanda n'abantu badasanzwe kandi bifite numero ibiranga yemewe n'amasezerano y'i Viyeni ya Le 08/11/1968.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibinyabiziga bihabwa numero n'ubutegetsi bubigenga. Ing.123(B)",
+   "a": "Ni ibinyabiziga by'ingabo z'igihugu n'iby'ubutegetsi n'ibigo byigenga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ikarita y'umuhondo ihabwa ibihe binyabiziga? Ing.124(1)",
+   "a": "Ihabwa ibinyabiziga by'abikorera ku giti cyabo, iz' Ambasade cg imiryango ifite ubusonerwe.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso n'amabara biranga ibyapa bya polisi n'ingabo z'igihugu bishyirwaho nande? Ing.127",
+   "a": "Ni Ministeri zifite izo nzego mu nshingano zabo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso n'amabara y'ibyapa by'ibinyabiziga bikoreshwa n'abayobozi bakuru b'igihugu bigenwa nande? Ing.128",
+   "a": "Ni Ministeri yo gutwara abantu n'ibintu.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ahagaragara ikirangantego cy'igihugu ku byapa by'ibinyabiziga, haba ku modoka cg ku mapikipiki. Ing.128(Ikitonderwa)",
+   "a": "Kigaragara hejuru mu nguni y'ibumoso imbere naho inyuma ni mu nguni y'iburyo.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyo ubuze icyapa ndanga ukora iki? Ing.129(1)",
+   "a": "Ubimenyesha bidatinze ibiro byabitanze.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Izina, izina ry'ingereka n'icumbi bya nyirabyo bigomba kwandikwa he ku kinyabiziga? Ing.131",
+   "a": "Byandikwa imbere ku ruhande rw'ibumoso.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga cyemerewe kugendera mu muhanda cyambaye ibyapa by'igihugu cyaturutsemo? Ing.132",
+   "a": "Ni igihe ikinyabiziga kitazaguma mu gihugu ariko gifite ibyapa byemewe n'amasezerano mpuzamahanga.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga cyitwa ko kiri mu igeragezwa? Ing.133(1)",
+   "a": "Ni igihe kiri mu igeragezwa n'uwagikoze, n'uwagiteranije, Abasannyi bacyo, Abagishyiraho karisori, Abakigurisha.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari ikigo cyitwa ikigo gishinzwe igenzura ry'imiterere y'ibinyabiziga? Ing.136",
+   "a": "Ni igihe cymewe na Ministeri ishinzwe gutwara abantu n'ibintu, kandi gikora imirimo yo gusuzuma ikinyabiziga.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ninde wemerera ikigo kugenzura imitere y'ikinyabiziga? Ing.137",
+   "a": "Ni Ministiri ushinzwe gutwara abantu n'ibintu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibintu byibura bitatu Umugenzuzi w'ikigo gishinzwe igenzura ry'imiterere agomba kuba yujuje? Ing.138",
+   "a": "Ubumenyi buhagije yavanye mu ishuri,; Kuba yarakoze byibura imyaka 5 ari umukanishi,; Ashoboye gusuzuma ikinyabiziga,; Ashoboye kuyobora no gucunga abakozi,; Ashoboye kugaragaza mu nyandiko ibyasuzumwe,; Yarahuguwe byibura mu gihe cy'amezi atatu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibkoresho bitanu by'ibanze bipima n'iby'igerageza. Ing.139(A)",
+   "a": "Umunzani wo gupima uburemere kuri buri mutambiko,; Icyuma cyagenewe gusuzuma feri,; Imashini isuzuma icyerekezo cy'ibitara bimurika cyane,; Ibipimisho by'urumuri,; Igipimisho cya moteri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibikoresho shingiro bikoreshwa by'inyongera bisuzuma ibinyabiziga. Ing.139(A6,A7)",
+   "a": "Ijeki kabuhariwe ,; Icyuma gipima niba imodoka itayumbayumba,",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibikoresho 3 bipima n'iby'igerageza by'ibanze n'ibindi bibiri byangombwa.Ing.139(B)",
+   "a": "Umunzani wo gupima uburemere kuri buri mutambiko,; Icyuma cyagenewe gusuzuma feri,; Imashini isuzuma icyerekezo cy'ibitara bimurika cyane.; Icyuma gisuzuma ibyotsi bivuburwa n'imodoka.; Igipimisho cya moteri.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe bikoresho by'inyongera bya ngombwa by'ikinyabiziga? Ing.139(B7,B8)",
+   "a": "Ijeki kabuhariwe ,; Icyuma gipima niba imodoka itayumbayumba,",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga ibindi bikoresho bishobora gukenerwa. Ing.139(C)",
+   "a": "Kompureseri y'umwuka n'igipimo cyo guhaga imipira,; Ijeki isunukwa,; Itara rigendanwa,; Ibikoresho binyuranye mu g ufata neza ikigo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Vuga amoko byibura icumi y'imfunguzo z'ikinyabiziga. Ing.139(D)",
+   "a": "Imfunguzo zifite umutwe usatuye,; Imfunguzo zifite ku mutwe hahese,; Imfunguzo ndende zihese ku mutwe,; Urufunguzo rw'amaburo anyuranye,; Ipensi isanzwe,; Ipensi ikata ihese,; Turunevisi z'umutwe ugororotse,; Turunevisi z'umutwe usongoye,; Inyundo 2 zo kugorora,; Igifashi kizenguruka,; Umukasi w'abanyamashanyarazi,; Ipobo itera girisi,; Akabobeza byuma,; Igipimisho cya metero ebyiri,; Imfunguzo ebyiri z'umusaraba,; Imfunguzo za buji,; Imashini isuzuma muri rusange.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bisuzumwa buri mezi atandatu? Buri mwaka?Ing.142",
+   "a": "Ibinyabiziga bitwarira abantu hamwe ndetse n'ibitwara ibintu birengeje toni 3,5 ndetse n'ibyigishirizwaho bisuzumwa buri mezi 6, Ibisigaye ni rimwe mu mwaka.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Amafaranga y'imirimo y'igenzura agenwa nande? Ing.144",
+   "a": "Agenwa n'iteka rya Ministiri w'ubucuruzi abisabwe na ministiri ushinzwe gutwara abantu n'ibintu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Sobanura mu magambo arambuye CNSR. Ing.145",
+   "a": "CNSR: Ni Komite ishinzwe umutekano mu muhanda.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "CNSR igizwe nabande: Prezida?Visi-prezida? Ugize inama? Umunyamabanga? Ing.145",
+   "a": "Prezida ni Umuyobozi wo gutwara abantu n'ibintu muri iyo Ministeri,; Visi-Prezida ni Komanda w'umutwe wa polisi y'igihugu ushinzwe umutekano mu mihanda.; Ugize inama: ni Umuyobozi ushinzwe amateme n'imihanda muri Ministeri ibishinzwe.; Umunyamabanga ni Ushinzwe ishami ry'umutekano mu muhanda muri Ministeri yo gutwara abantu n'ibintu.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Iyi komite CNSR iterana mu gihe kingana iki? Itumizwa nande? Iyo impaka zivutse zikemurwa n'ijwi ryande?Ing.148",
+   "a": "Iterana rimwe mu mezi ane kandi itumizwa na Prezida wayo kandi n'iyo impaka zivutse zikemurwa n'ijwi rya Prezida.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Agaciro k'ibyigwa na CNSR bigira agaciro hari abantu bangana iki? Ing.149",
+   "a": "Hagomba kuba hari byibura 2/3.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Gufunga ikinyabiziga bitegekwa nande? Ing.152",
+   "a": "Bitegekwa n'umushinjacyaha mu karere akoreramo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni hehe hagenewe gufungira ibinyabiziga? Ing.153",
+   "a": "Ni muri Parking zemejwe na Ministiri ushinzwe gutwara abantu n'ibintu. Cg se abakuru b'intara n'abayobozi b'uturere.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari uva mu murongo wari urimo iyo mwagendanaga mu bangikanye?",
+   "a": "Uwuvamo ari uko ugiye guhindura icyerekezo.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryari uta priorit wari ufite?",
+   "a": "Ni igihe uvuye mu muhanda mutoya uriye mu munini,; Igihe uyambuwe n'umukozi ubifitiye ububasha,; Igihe ugeze ku cyapa kiyikwambura,; Igihe uhuye n'ibinyabiziga ndakumirwa,; Igihe ubonye ko ikinyabiziga gitwarira abantu hamwe cyatangiye guhaguruka.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ikihe kimenyetso kigaragaza ko wahagaze umwanya munini ?",
+   "a": "Ni uko uba wajimije moteri.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ibimenyetso biromboreje birimo amoko angahe ?",
+   "a": "Birimo amoko 3; Umurongo ucagaguye,; Umurongo udacagaguye,; Umurongo ucagaguye ubangikanye n'udacagaguye.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni umwanya ungana iki iyo ugiye guparika iruhande rw'icyapa?",
+   "a": "Usiga umwanya uhagije.",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Permis zirimo amoko angahe?",
+   "a": "Zirimo amoko atatu:; Permis Provisoire,; Permis Nationale,; Permis internationale.",
+   "cat": "general",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyapa cy' ikoni ry'ibumoso",
+   "a": "A,1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyapa cy'ikoni ry'iburyo",
+   "a": "A,1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyapa cy'uruhererekane rw'amakoni irya mbere riri ibumoso",
+   "a": "A1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Akamanuko gashobora guteza ibyago",
+   "a": "A2",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Akazamuko gashinze cyane",
+   "a": "A3",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ifungana ry'umuhanda",
+   "a": "A4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ifungana ry'umuhanda n'akayira gasatira umuhanda ibumoso",
+   "a": "A4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ifungana ry'umuhanda bitewe n'akayira gasatira umuhanda iburyo",
+   "a": "A4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Uguhinguka ku mwaro cg ku nkombe",
+   "a": "A5",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda utaringaniye",
+   "a": "A6",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda unyerera",
+   "a": "A7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Utubuye dutaruka mu muhanda",
+   "a": "A8",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Akayira k'abanyamaguru",
+   "a": "A10",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Amabuye ahanuka",
+   "a": "A9",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Abana bavuye kwiga cg gukina",
+   "a": "A11",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Akayira k'amatungo",
+   "a": "A13",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Akayira k'inyamaswa",
+   "a": "A14",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahegereye igice cy'umuhanda gikorwamo imirimo",
+   "a": "A15",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ikibuga cy'indege",
+   "a": "A17",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inkomane aho umuhanda umwe urasukira ibumoso mi mfuruka yenda kuba igororotse",
+   "a": "A21",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Uruhererekane rw'inkomane",
+   "a": "A21g et A21h",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahegereye inkomane aho guhagarara akanya gato ari itegeko",
+   "a": "A24",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho banyura bazengurutse",
+   "a": "A25",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahegereye amasangano y'inzira nyabagerwa n'inzira ya gare ya moshi ibambiye",
+   "a": "A26",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahegereye amasangano n'inzira ya gare ya moshi",
+   "a": "A28a, A28b, A28c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ibyago bidasobanuye ukundi",
+   "a": "A29",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyago cg aho baba bayobereza umuhanda",
+   "a": "A30 et A31",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Tanga inzira",
+   "a": "B1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Hagarara akanya gato",
+   "a": "B2",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda batambukamo mbere",
+   "a": "B3",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ryo gutambuka mbere",
+   "a": "B4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Gutambuka mbere kw'ibinyabiziga biturutse aho ujya",
+   "a": "B5",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Gutambuka mbere y'ibinyabiziga biturutse imbere",
+   "a": "B6",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inkomane y'inzira nyabagerwa n'inzira ya Gare ya moshi",
+   "a": "B7a et B7b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa",
+   "a": "C1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa mu byerekezo byombi",
+   "a": "C2a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'abandi uretse abahatuye",
+   "a": "C2b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga bimwe na bimwe cg abagenzi bamwe na bamwe",
+   "a": "C3a kugeza C3j",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ikinyabiziga icyo aricyo cyose gifite moteri uretse amapikipiki adafite akanyamitende ko ku ruhande ndetse na velomoteri",
+   "a": "C3a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'amapikipiki",
+   "a": "C3b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyamitende",
+   "a": "C3c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa na za velomoteri",
+   "a": "C3d",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga bigenewe gutwara ibicuruzwa",
+   "a": "C3e",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'abanyamaguru",
+   "a": "C3g",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga bikururwa n'inyamaswa",
+   "a": "C3h",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'utunyamitwaro dusunikwa",
+   "a": "C3i",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga bihinga bifite moteri",
+   "a": "C3k",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'amoko menshi y'ibinyabiziga",
+   "a": "C4a na C4b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga bifite ubugari burenze urugero rwerekanwe",
+   "a": "C5",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ntihanyurwa n'ibinyabiziga cg ibinyabiziga bikomatanye bifite uburebure habariwemo n'imitwaro burenze urugero rwerekanwe muri metero",
+   "a": "C9",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe ko ibinyabiziga bigenda bidasize hagati yabyo intera yerekanywe muri metero",
+   "a": "C10",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe gukata werekeza aho akarangacyerekezo kerekana",
+   "a": "C11a et C11b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe guhindukira",
+   "a": "C12",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe guca ku binyabiziga byose uretse ibinyamitende ibiri n'amapikipiki adafite akanyabiziga ko ku ruhande",
+   "a": "C13a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe kunyura ku kindi kinyabiziga",
+   "a": "C13b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuvuduko ntarengwa",
+   "a": "C14",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe kuvuza amahoni",
+   "a": "C15",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe gutambuka udahagaze umwanya muto",
+   "a": "C16",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'ibibuzwa byose mu karere ku binyabiziga bigenda",
+   "a": "C17a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'ibuzwa ry'umuvuduko",
+   "a": "C17b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'ibuzwa kunyuranaho",
+   "a": "C17c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Birabujijwe guhagarara umwanya munini",
+   "a": "C18",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ibyapa byibura bitatu by'inyongera",
+   "a": "F3a, F3b, F3c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyerekezo gitegetswe",
+   "a": "D1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ugukikira ibitegetswe",
+   "a": "D2",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inkomane banyuramo bazengurutse",
+   "a": "D3",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira y'ibinyamitende itegetswe",
+   "a": "D4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira y'abanyamaguru",
+   "a": "D5",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira y'abanyamafarashi itegetswe",
+   "a": "D6",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira y'amatungo itegetswe",
+   "a": "D7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuvuduko muto ntarengwa utegetswe",
+   "a": "D8",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'umuvuduko muto",
+   "a": "D9",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Kumenyesha mbere icyerekezo",
+   "a": "E1a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda udakomeza",
+   "a": "E2a, E2b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira igomba kunyurwamo",
+   "a": "E3",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umwanya mu muhanda bitewe icyerekezo umugenzi ashaka gufata imbere mu nkomane",
+   "a": "E4",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyerekezo cy'akarere",
+   "a": "E5a, E5b",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Kuyobya umuhanda",
+   "a": "E5c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ikibanza cy'ingando",
+   "a": "E7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icumbi ry'urubyiruko",
+   "a": "E8",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Kwinjira mu mudugudu",
+   "a": "E9",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'umudugudu",
+   "a": "E10",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira y'abanyamaguru aho itangirira",
+   "a": "E11",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ibitaro",
+   "a": "E12",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Icyerekezo kimwe",
+   "a": "E13a",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Inzira idakomeza",
+   "a": "E14",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda uromboreje w'ibice byinshi",
+   "a": "E15",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'umuhanda uromboreje",
+   "a": "E16",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Umuhanda ugenewe imodoka",
+   "a": "E17",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Iherezo ry'umuhanda ugenewe imodoka",
+   "a": "E18",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho otobis zihagarara",
+   "a": "E19",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho amatagisi ahagarara",
+   "a": "E19bis",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Parking",
+   "a": "E20",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Amabwiriza yihariye (uburyo bwo kugendera ku byambu cg ku kibuga cy'indege)",
+   "a": "E21",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Intera iri hagati y'icyapa n'intangiriro y'ahantu hatera ibyago",
+   "a": "F1",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Uburebure bw'igice cyatera ibyago",
+   "a": "F2",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Kwerekana ahabujijwe guhagarara umwanya munini",
+   "a": "F3a kugeza F3c",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ikintu ngoboka",
+   "a": "F5",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahari ubutabazi",
+   "a": "F6",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho bagobokera ibinyabiziga",
+   "a": "F7",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahari telefoni",
+   "a": "F8",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahari lisansi na Mazutu",
+   "a": "F9",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Hoteli cg icumbi ry'abangenzi",
+   "a": "F10",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho bafatira ifunguro",
+   "a": "F11",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Urunywero cg urusamuriro",
+   "a": "F12",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ahateganyirijwe ururiro rw'abahisi",
+   "a": "F13",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Aho bahagurukira batembera",
+   "a": "F14",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ikibanza cy'abantu bagendera ku nyamaswa",
+   "a": "F16",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Erekana/menya ikimenyetso: Ikibanza cy'ingando cg abantu benshi bagendera ku nyamaswa",
+   "a": "F17",
+   "cat": "signs",
+   "src": "Gugu2.doc"
+  },
+  {
+   "q": "Ni ryali umuyobozi w'ikinyabiziga ashobora kuzimya moteri, akavanamo vitesi, igihe agenda ahamanuka?",
+   "a": "Iyo ikinyabiziga gikururwa n'ikindi",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe bintu buri ikinyabiziga kigomba kugira?",
+   "a": "Icyapa kiburira cya mpandeshatu ndinganire; Agahago k'ubutabazi karimo ibipfuko bine bitanduza, ibikwasi 4 bitifungura, agatabo kanditsemo iby'ubutabazi, agacupa k'umuti wica udukoko",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ayahe matara aranga ikinyabiziga kandi akigaragaza ubugari bwacyo burebewe imbere?",
+   "a": "Amatara ndangambere",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umurongo ugizwe na mpandeshatu zerekeje imitwe aho abayobozi b'ibinyabiziga baturuka umenyesha iki mumuhanda?",
+   "a": "Werekana aho abayobozi zireba bagomba guhagarara akanya gato niba bishoboka kugirango batange inzira bakurikije icyapa B1",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umurongo mugari wera udacagaguye uciye kuburyo bugororotse ku nkengero y'umuhanda werekana iki?",
+   "a": "Aho abayobozi bategetswe guhagarara akanya gato babitegetswe n'icyapa (STOP) cyangwa ikimenyetso kimurika kerekana uburyo bwo kugenda mu muhanda",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Vuga uko ahantu abayobozi b'amagare n'aba velomoteri bafite imitende ibiri bambukiranya umuhanda haba hameze.",
+   "a": "Haba hari imirongo ibiri icagaguye iteganye, igizwe na za mpandenye ndinganire cyangwa ingirwamwashi",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Imyaka y'ifatizo ku nzego z'ibinyabiziga zibaho mu Rwanda ni ingahe? Vuga buri rwego n'imyaka yarwo.",
+   "a": "20 ans: C,D,E na F; 18 ans: A na B; 17 ans: velomoteri/igare ihetse; 15 ans: velomoteri/igare yitwaye; 14 ans: ayoboye inyamaswa zikurura; 12 ans: ayoboye amatungo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari uva mumurongo wari urimo iyo mwagendaga mubangikanye?",
+   "a": "Ashobora gukatira ibumoso iyo yari ari mu murongo w'ibumoso; Ashobora gukatira iburyo iyo yari ari mu murongo w'iburyo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi w'ikinyabiziga uhinduye ikerekezo agomba gukora iki?",
+   "a": "Kubanza kubyerekana ku buryo buhagije nibura muri 50m akoresheje amatara ndanga y'ikinyabiziga cye, yaba atayafite agakoresha ukuboko kwe; Kugabanya umuvuduko; Kureka hagahita ibinyabiziga n'abanyamaguru bigenda mu muhanda avuyemo cyangwa biwugenda kuruhande; Kureka hagahita abanyamaguru bambukiranya umuhanda avuyemo cyangwa aganamo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo nta mategeko awugabanya birushijeho, umuvuduko ntarengwa ni uwuhe kubinyabiziga (vuga buri kimwe kimwe)?",
+   "a": "Ibinyabiziga bitarengeje 3500 kg: 80 km/h; Voiture, taxis: 70 km/h; Bus (3500-12500 kg): 60 km/h; Camions (>12500 kg) + velomoteri: 50 km/h; Tracteurs: 25 km/h",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuvuduko wo munsisiro uteye ute?",
+   "a": "50 km/h: izitwara abantu; 40 km/h: izindi",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo ibinyabiziga bigeze mu masangano aho banyura bagombye kuzenguruka (rond point), ari ibyagezemo ari n'ibigiye kwinjira, ni ibihe bitambuka mbere?",
+   "a": "Ibyagezemo nibyo bitambuka mbere",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi ugeze mu isangano aho ibimenyetso by'umuriro biyobora ibinyabiziga abigenza ate?",
+   "a": "Agomba guhita ava muri iryo sangano adategereje ko kugenda mucyerekezo ajyamo byemerwa, akabikora atabangamiye ibindi binyabiziga bifite uburenganzira bwo gutambuka",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigomba gukorerwa isuzumwa nibura 2 mu mwaka?",
+   "a": "Ibitwara abantu muri rusange; Ibyo bigiraho gutwara; Ibitwara ibintu birengeje toni 3,5",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari ibinyabiziga bya gisilikare bidakurikiza amategeko agenga ibinyabiziga biherekeranyije mu butumwa?",
+   "a": "Iyo ari mu nsisiro; Kuva bwije kugeza bukeye; Iyo igihu cyabuditse",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo abanyamaguru bagendera mu nzira nyabagendwa, ni uruhe ruhande bategetswe kugenderamo?",
+   "a": "Bategetswe kugendera ku nkengero z'umuhanda ku ruhande rw'ibumoso ukurikije ikerekezo baganamo; Abacunga za velomoteri na za moto bategetswe kunyura kuruhande rw'iburyo; Iyo ari umurongo w'abasilikare cyangwa umurongo w'abanyeshuli uyobowe n'umwalimu, banyura iburyo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari ibigereranyo (pictogrammes) bigomba gushyirwa ku ngasire (disque) imwe?",
+   "a": "Iyo ibibuzwa byinshi byubahirizwa ahantu hamwe, nyamara ntibishobora kurenga bitatu ku ngasire imwe",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ubugari ntarengwa bw'imizigo yikorewe ni ubuhe?",
+   "a": "Velomoteri + Amagare + romoroki zikururwa n'utwo tunyabiziga zidafite udupine kuruhande: 0,75m; Moto zidafite akanyabiziga kuruhande: 1,25m; Ipikipiki ifite akanyabiziga na za romoroki zikuruwe na bene ibyo binyabiziga ntibishobora kurenza 30 cm ku bugari bw'ibyo binyabiziga bidapakiye; Ibinyamitende itatu cyangwa ine bifite cyangwa bidafite moteri: 30 cm ku bugari bw'ibyo binyabiziga; Ubugari rusange bw'imizigo ipakiwe n'ikibipakiye ntibushobora kurenza 2,50m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari bibujijwe kugenda ibumoso bw'umurongo wera udacagaguye?",
+   "a": "Igihe cyose birabujijwe",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Icyapa kibuza kurenza 80 km/h n'icyapa gitegeka kutajya munsi ya 80 km/h bitandukaniye he? Bishushanye.",
+   "a": "Icyapa kibuza kurenga 80 km/h kiba ari ingasire ifite umuzenguruko utukura, ubuso bw'umweru, na 80 yanditse mw'ibara ry'umukara; Naho icyapa gitegeka kutajya munsi ya 80 km/h kiba gifite ingasire ifite ubuso bw'ubururu na 80 byanditse n'ibara ryera",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibimenyetso bigenga uburyo bwo kugenda mu muhanda birimo uburyo bungahe? Buvuge.",
+   "a": "Butatu: Ibyapa; Ibimenyetso bimurika; Ibimenyetso byo mu muhanda",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibyapa (ibimenyetso) byo mumuhanda biri amoko angahe?",
+   "a": "Ibyapa biburira; Ibyapa byo gutambuka mbere; Ibyapa bibuza n'ibitegeka; Ibyapa biyobora",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi ugenda mumuhanda ugabanijwe n'umurongo ucagaguye abwirwa n'iki ko ari hafi kugera kumurongo udacagaguye?",
+   "a": "Abyerekwa n'umurongo ucagaguye uduce tugufi kandi twegeranye",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibimenyetso abayobozi b'ibinyabiziga ndakumirwa badakurikiza ni ibihe, mu gihe guhita kwabo kurangwa n'intabaza yihariye?",
+   "a": "Uretse ibyo bategekwa n'abakozi babifitiye ububasha, ntibategetswe kubahiriza amategeko agenga umuvuduko ntarengwa n'ay'ibimenyetso bimurika bigenga uburyo bwo kugenda mu muhanda",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibyapa biburira n'ibyo gutambuka mbere bifite amabara ki?",
+   "a": "Ibyapa biburira: Triangle umuzenguruko utukura, ubuso ni umweru, ikimenyetso ni umukara; Hariho ibyo gutambuka mbere bifite ubuso bw'umuhondo",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibyapa bibuza n'ibindi byapa bifite amabara ki?",
+   "a": "Ibyapa bibuza: Ingasire izengurutswe n'ibara ritukura, ubuso umweru, ikimenyetso ni umukara; Ibyapa bitegeka: Ubururu (ubuso), ikimenyetso ni umweru; Ibiyobora: ibyinshi ni ubururu, ikimenyetso umweru; Iby'ingoboka: Ubururu, ikimenyetso cy'umukara mu buso bw'umweru",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi w'ikinyabiziga cyangwa w'ikinyamitende itatu (ine) bifite moteri agomba kugira aho yicara hafite ubugari butari munsi ya cm zingahe?",
+   "a": "Agomba kugira aho yicara hatari munsi ya 55 cm (iyo yicaranye n'abandi, ntibyemewe ko buri wese yajya munsi ya 40cm)",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Hagati y'ibinyabiziga biherekeranije mu butumwa bigamije urugendo rumwe hagomba kubamo byibura metero zingahe?",
+   "a": "30m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ikinyabiziga cya mbere n'icya nyuma bikurikiranye mubutumwa bishyirwaho ibihe bimenyetso?",
+   "a": "Imbere: \"ATTENTION CONVOI\"; Inyuma: \"FIN DE CONVOI\"",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Vuga umubare ntarengwa w'inyamaswa zikurura ikinyabiziga zikururanye n'umubare ntarengwa zibangikanye.",
+   "a": "Ntushobora kurenga enye zikururanye n'esatu zibangikanye",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Isonga y'impombo yohereza ibyotsi ryerekezwa muruhe ruhande rw'ikinyabiziga?",
+   "a": "Mu ruhande rw'ibumoso",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ninde ushyiraho ibimenyetso byerekana imirimo ikorerwa mu nzira? Bivanwaho ryari kandi nande?",
+   "a": "Ibimenyetso byerekana imirimo ikorwa bishyirwaho n'uyikora, bigakurwaho n'uyikora iyo imirimo ikimara kurangira",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ninde ushyiraho ibimenyetso by'inkomyi mu nzira nyabagendwa?",
+   "a": "Ubutegetsi bushinzwe inzira nyabagendwa, iyo ari inkomyi itatewe n'umuntu; Uwayiteye",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari abanyamaguru bagenda mumuhanda bategetswe kugendera kuruhande rw'iburyo aho kugendera ku ruhande rw'ibumoso?",
+   "a": "Imirongo yose y'ingabo n'agatsiko kose k'abanyamaguru bategetswe kugendera iburyo bw'umuhanda kandi bagasiga umwanya uhagije ibumoso ngo ibinyabiziga bihite",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bitegetswe kugendera mu gice cy'umuhanda gikikijwe n'uduce tugari tw'imirongo tudafatanye tw'ibara ryera?",
+   "a": "Ibinyabiziga bigenda buhoro n'ibinyabiziga byagenewe gutwara abantu muri rusange",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Vuga ubwoko butatu bw'amatara yakira rimwe buri gihe.",
+   "a": "Amatara ndanga yakira rimwe n'amatara magufi n'amatara maremare (cyangwa kamenabihu)",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bitegetswe kugira amatara ndangaburumbarare?",
+   "a": "Ibinyabiziga cyangwa imitwaro birengeje ubugari bwa 2,50m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibikoresho ngarura-rumuli bigaragaza inkombe zombi z'inzira nyabagendwa bigomba kugaragara mu yahe mabara?",
+   "a": "Ku ruhande rw'iburyo bigomba kugaragara mw'ibara ritukura cyangwa risa n'icunga rihishije; Ibumoso rigaragaza ibara ryera",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe byapa bibujijwe gushyirwa ku nzira nyabagendwa?",
+   "a": "Ibyapa byamamaza ibimenyetso biranga cyangwa ibindi bikoresho bituma abayobozi b'ibinyabiziga bahuma; bayoba byerekana cyangwa byenda gusa naho cyaba igice n'ibyapa; byakwitiranywa n'uri kure n'ibyapa; cyangwa bikagirira nabi uburyo ubwo ari bwo bwose akamaro gahuje n'ibimenyetso bihuje n'amategeko",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Gereranya ibitegekwa n'abakozi babifitiye ububasha n'ibimenyetso bimurika.",
+   "a": "Ukuboko kuzamuye: itara ritukura; Amaboko atambitse: itara ritukura ku baturuka imbere n'inyuma (itara ry'icyatsi ku baturuka kuruhande); Ibitegetswe n'abakozi babifitiye ububasha birusha ububasha ibindi bimenyetso",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bitari ngombwa kurangirwa kure n'ibimenyetso byabugenewe kugirango biburire hakiri kare abandi baza babigana, mu gihe cyose byaba bihagaritswe ahantu habujijwe?",
+   "a": "Amapikipiki na za velomoteri bidafite akanyabiziga kuruhande",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Vuga nibura abantu batatu bafite ububasha bwo kuyobora umuhanda.",
+   "a": "Aba ofisiye na ba suzofisiye ba polisi y'igihugu bari mu kazi; Ba kapulari ba polisi y'igihugu bari ku kazi; Abapolisi bashinzwe umutekano mu muhanda; Abakozi ba za gasutamo; Abakozi bashinzwe amateme",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo impanuka yangije ibintu gusa cyangwa hakaba hari abakomeretse byoroshye, abayobozi bakora iki?",
+   "a": "Kuguma aho impanuka yabereye kugirango abyumvikaneho n'uwo bagonganye; Gufasha umukozi ubishinzwe kugirango abyirebere; Kubimenyesha umutegetsi ushinzwe amahoro uri hafi (igihe umukozi ubishinzwe atabonetse)",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo habaye impanuka, umuyobozi w'ikinyabiziga akora iki?",
+   "a": "Guhita ahagarara iyo bimushobokera kandi ntabangamire bushya uburyo bwo kugenda mu muhanda; Guhita yakiriza rimwe amatara ndanga cyerekezo; Kwerekana umwirondoro we iyo abandi babimusabye; Guhamagara abashinzwe amahoro; Iyo umuntu yapfiriye mu mpanuka cyangwa yakomeretse cyane, kudahindura ibimenyetso by'uko byari bimeze",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Uruhushya rw'agateganyo rwo gutwara ibinyabiziga gafite agaciro kubuhe bwoko bw'ibinyabiziga?",
+   "a": "Ubwoko bwose bw'ibinyabiziga",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Igice cy'inzira nyabagendwa kiri hagati y'imirongo ibiri yera icagaguye ibangikanye (kandi gifite ubugari budahagije kugirango imodoka zitambuke neza) kimenyesha iki?",
+   "a": "Agahanda k'amagare",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ayahe mabara y'inyugguti ku byapa by'ibinyabiziga bikurikira: iz'abikorera ku giti cyabo, ibinyabiziga bya leta, ibigo bishamikiye kuri leta, ambassade, ibyanditse mu mazina bwite?",
+   "a": "Umukara (RAA 001 A); Ubururu (GR 001 A); Ubururu (GP 001 A); Icyatsi (ambassade) (01 CD 001 R); Umutuku",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga kibujijwe guhagarara umwanya muto n'umunini mu ruhande ruteganye n'urw'ikindi kinyabiziga gihagazemo?",
+   "a": "Ku mihanda ibisikanirwamo, iyo ubugali butuma ibisikana rikorwa butakigeze kuri 6m; Ku mihanda y'icyerekezo kimwe, iyo ubugali bw'umuhanda usigaye butakigera kuri 3m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari imodoka ipakiye (nk'ikawa, ibyatsi) ishobora kurenza 2,75 m?",
+   "a": "Iyo ijya mu karere hatarengeje 25 km uvuye aho yapakiriwe",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Itara ryo gusubira inyuma ryaka ryari?",
+   "a": "Ryaka gusa iyo gusubira inyuma gutangiye",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ugutangwa ku ibyapa ndanga biri kumwe n'ikarita iranga ikinyabiziga, bibanza gutangirwa imisoro bigenwa n'iteka rya nde?",
+   "a": "Minisitiri w'imari",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari ikinyabiziga cyemererwa kugenda mu nzira nyabagendwa?",
+   "a": "Iyo cyambaye inimero zikiranga",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ishyirwaho ry'ibimenyetso rigengwa na nde? (Art 91.4)",
+   "a": "Minisitiri ushinzwe gutwara abantu n'ibintu",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ubusobanuro bw'icyapa gishobora kuzuzwa, gusiganuwa cyangwa kugenwa n'iki?",
+   "a": "N'ibyapa nyongera",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo aho hantu hari kuri iyo nzira nyabagendwa, icyapa kiburira kikaba gishinze aho inzira nyabagendwa irasukira, bigenda bite? (Art 94.6)",
+   "a": "Icyapa k'inyongera gifite akarangakerekezo k'umukara gishobora kwerekana aho hantu habi",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Vuga umubare ntarengwa w'ibimenyetso bishobora gushyirwa ku ngasire imwe.",
+   "a": "Bitatu (3)",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibyapa bitegeka bishyirwa ahantu hameze hate? (Art 102)",
+   "a": "Ahantu birushijeho kubonwa neza n'abo bigenewe",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibyapa biyobora bigamije iki? (Art 103)",
+   "a": "Kuyobora no gusobanurira abagenzi b'inzira nyabagendwa",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo ikimenyetso kimurika cyagenewe kuyobora ibinyabiziga kidakora, bigenda bite? (Art 104.6)",
+   "a": "Abayobozi bemerewe gukomeza, bapfa gusa kwiringira ko batabangamiye imigendere y'abandi",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Amatara ashyirwa kubimenyetso bimurika akurikirana ate? Mu buryo bwo kwaka akurikirana ate? (Art 105)",
+   "a": "Umutuku uba hejuru y'icyatsi; Umuhondo ukaba hagati y'umutuku n'icyatsi; Mu kwaka: Umuhondo waka nyuma y'icyatsi; Umutuku ukaka nyuma y'umuhondo; Icyatsi kikaka nyuma y'umutuku",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibimenyetso bimurika byerekana iki? Bishyirwa he? (Art 106)",
+   "a": "Uburyo bwo kugenda mu muhanda; Bishyirwa iburyo bw'umuhanda ukurikije igice cy'umuhanda uganamo, ariko bishobora no gushyirwa ibumoso cyangwa ahandi hose kugirango birusheho kugaragara neza",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Kugirango berekane ahantu habi cyane, hakoreshwa ikihe kimenyetso? Bivuga iki? (Art 107)",
+   "a": "Itara ry'umuhondo rimyatsa; bivuga ko uburenganzira bwo kurenga icyo kimenyetso burushijeho kwitonda",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Amatara cyangwa ibikoresho ngarura-rumuri bikoreshwa kubera iki? (Art 108)",
+   "a": "Bikoreshwa kugirango bigaragaze inzira nyabagendwa, bigomba gushyirwaho kuburyo abagenzi babona; Ibara ritukura iburyo, n'ibara ryera ibumoso",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ibimenyetso byo mumuhanda bigenewe iki? (Art 109)",
+   "a": "Kugena uburyo bwo kugenda mu muhanda bigenewe gutunganya uburyo bwo kugenda mu muhanda, kuburira cyangwa kuyobora abagenzi",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umurongo mugari udacagaguye ugaragaza iki? (Art 110.9)",
+   "a": "Ugaragaza inkombe z'umuhanda",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Erekanisha igishushanyo aho abanyamaguru bambukira. (Art 111.3)",
+   "a": "Imirongo y'ibara ryera iteganye n'umurongo ugabanya umuhanda mo kabiri mu burebure bwawo",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Erekanisha igishushanyo ahanyura amagare na za velomoteri. (Art 111.4)",
+   "a": "Imirongo ibiri icagaguye igizwe na za kare (mpande enye ndinganire) cyangwa ingirwamwashi by'ibara ryera",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Iyo imirimo cyangwa inkomyi biri ahantu hatoya, bigomba gushyirwaho ibihe bimenyetso? (Art 114.1)",
+   "a": "Hagati ya nimugoroba na mu gitondo: amatara yaka ku buryo buhagije kuburyo abonerwa muri 150m iyo ijuru rikeye, agaragara atukura kuruhande rwambukiranya umuhanda, akagaragaza ibara ryera cyangwa umuhondo kuburebure bw'umuhanda; Hagati ya mugitondo na nimugoroba: utubendera dutukura dufite nibura 50cm kuri buri ruhande; Icyapa kerekana ko hari imirimo ikorwa kuri buri mpera",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Igihe ikorwa ry'imirimo ribangamiye cyane cyangwa bike uburyo bwo kugenda mu muhanda, ahakorerwa imirimo hagaragazwa ku buryo bumeze bute? (Art 114.2)",
+   "a": "Ahitaruye hashyirwa icyapa kerekana ko hari imirimo ikorwa; Uruzitiro ruri ahakorwa imirimo ku mpera zombi",
+   "cat": "signs",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi agomba gukora iki ngo yirinde kwangiza umuhanda? (Art 9)",
+   "a": "Kugenda buhoro; Kunyura indi nzira; Kugabanya ibyo ikinyabiziga kikoreye",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ikinyabiziga cyose cyangwa ibinyabiziga bikururana bigomba kugira iki? (Art 10.1)",
+   "a": "Bigomba kugira ubiyobora",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Inyamaswa zigendera ku yihe nkombe? (Art 12.1)",
+   "a": "Zigendera ku nkombe y'iburyo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese ugiye kugera mu nkomane agomba gukora iki? (Art 15.1)",
+   "a": "Kwitonda bihagije bijyanye n'uko aho agenda hameze; Kureba neza niba umuhanda agiye kwinjiramo nta nkomyi irimo; Kugenda agabanya umuvuduko akurikije ko atabona; Gutanga ikimenyetso y'uko ageze hafi",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umuyobozi wese ushaka kugira aho agana ntashobora kubigira atabanje kwiringira iki? (Art 17.a)",
+   "a": "Ntashobora kubigira atabanje kwiringira ko nabigira ataza guteza ibyago cyangwa ngo abere inkomyi abandi bagenzi bamukikije, bamuri imbere cyangwa bagiye kubisikana, akabigira akurikije uko abandi bagenzi bari mu muhanda, aho bagana n'umuvuduko bafite",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Mbere yo gukata cyangwa kujya kuruhande rw'umuhanda, umuyobozi wese agomba mbere y'igihe gukora iki? (Art 17.c)",
+   "a": "Kubyerekana ku buryo budashidikanywaho akoresheje indanga-cyerekezo z'ikinyabiziga cye, cyangwa byaba bidakora, byamushobokera akabyerekanisha ukuboko",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Kubisikana no kunyuranaho bireba nde? (Art 19.1)",
+   "a": "Ibinyabiziga bigenda",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Kubisikana bikorwa muruhe ruhande? (Art 20.1)",
+   "a": "Muruhande rw'iburyo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Kunyuranaho bikorerwa muruhe ruhande? (Art 21)",
+   "a": "Bikorerwa ibumoso",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Kunyuranaho bikorerwa iburyo ryari? (Art 21.1)",
+   "a": "Iyo ikinyabiziga ugiye kunyuraho kigiye gukatira ibumoso",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Mbere yo kugira uwo anyuraho, umuyobozi wese agomba kwiringira iki? (Art 21.2)",
+   "a": "Ko uwo agiye kunyuraho aterekanye ko ashaka kunyura ku wundi cyangwa kugana ibumoso; Ko nta nkomyi iri mu gisate agiye kunyuramo; Ko ashobora kugaruka muruhande rw'iburyo atabangamiye abandi bayobozi; Kwerekana icyo agiye gukora",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Agomba guhagarika ikinyabiziga cye akurikije iki? (Art 26.1)",
+   "a": "Aho ashobora kugeza amaso, n'imbere y'inkomyi yose idatunguranye",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Umugenzi uri mu nzira nyabagendwa, iyo asatiriwe n'ikinyabiziga ndakumirwa kirangwa n'intabaza ndangurura jwi yihariye, abigenza ate? (Art 37.1)",
+   "a": "Agomba kugihigamira, kandi byaba bishoboka agahagarara kugirango gihite",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Abagenda mu nzira nyabagendwa babujijwe kwata (couper) iki? (Art 38.2)",
+   "a": "Umurongo w'abasirikare; Umurongo w'udutsiko tw'abanyamaguru, bayobowe n'umwalimu; Uruhererekane",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni nde (bande) bemerewe kujya mu kinyabiziga igihe gishyirwa mu cyome (kiva mu cyome)? (Art 40.4)",
+   "a": "Abayobozi n'ababaherekeje",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari amatara magufi, amatara ndanga n'amaremare bicanirwa rimwe? (Art 43.1)",
+   "a": "Iyo ari hagati yo kurenga no kurasa kw'izuba, cyangwa bitewe n'ibihu cyangwa imvura nyinshi bidashoboka kubona muri 100m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Amatara magufi n'amaremare bigomba kuzima ryali? (Art 43.2)",
+   "a": "Iyo ikinyabiziga gihagaze",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Amatara maremare y'ikinyabiziga agomba kuzimwa ryali? (Art 43.3)",
+   "a": "Ikinyabiziga gihagaze; Iyo umuyobozi ahuye n'ikindi kinyabiziga; Iyo akurikiye ikindi kinyabiziga mu ntera ya 50m; Iyo hari urumuri ruhagije kumuhanda",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Amatara ashakisha acanwa ryali? (Art 43.8)",
+   "a": "Iyo ari ngombwa kandi bitabangamiye uburyo bwo kugenda mu muhanda",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ese biremewe kuvuza ihoni ahegereye amatungo cyangwa inyamaswa? (Art 47.5)",
+   "a": "Oya",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Abanyamaguru bagenda mu muhanda nijoro, hatabona cyangwa hari ibinyabiziga byinshi, bagenda bate? (Art 48.5)",
+   "a": "Bagenda ku murongo",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ubugari bw'ikinyabiziga cyangwa ibinyabiziga bikururana, nibirenze ku mubyimba wabyo (hatabariwemo amatara yerekana ikerekezo n'indorerwamo ziboneshwa), ntibishobora kurenza uruhe rugero? (Art 57.1)",
+   "a": "2,65m",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ubugari ntarengwa bwa romoroki ikuruwe n'ipikipiki, igare cyangwa velomoteri ni ubuhe? (Art 57.1.a et b)",
+   "a": "75 cm kuri velomoteri, 125 cm kuri ipikipiki",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Utugarura rumuri tuba duteye dute? (Art 75.5)",
+   "a": "Nta tara na rimwe cyangwa akagarura-rumuri bishobora kuba bifunze kuburyo igice cyabyo cyo hasi kigaragara kiri hasi ya 40 cm kuva ku butaka, ku kinyabiziga kidapakiye; Kubijyanye n'itara ry'ikamena-bihu n'itara ryo gusubira inyuma, ibyo ntibyubahirizwa (Art 75.5); utugarura-rumuri two hejuru ntibishobora kurenza 1,20m uhereye ku butaka (Art 77.5)",
+   "cat": "general",
+   "src": "Ibibazo 1.doc"
+  },
+  {
+   "q": "Ni ryari umuyobozi w'ikinyabiziga ashobora kuzimya moteri, akayivanamo vitesi, igihe agenda ahamanuka?",
+   "a": "Igihe ikinyabiziga gikururwa n'ikindi kinyabiziga (uretse igihe gikururwa n'ikindi kinyabiziga), nta kinyabiziga gifite moteri gishobora kugenda mu muhanda ahamanuka, keretse igihe moteri itaka cyangwa igihe vitesi idakora. (Art 88.9)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ibihe bintu buri kinyabiziga kigomba kugira?",
+   "a": "Icyapa kiburira cya mpande eshatu zingana na 40 cm; Agahago k'ubutabazi karimo nibura ibipfuko 4 bitanduza, ibikwasi bine bitifungura, agatabo kanditsemo ibyubutabazi, agacupa k'umuti wica mikorobi. (Art 88.5)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Umurongo ugizwe na mpandeshatu zerekeje imitwe, aho abayobozi b'ibinyabiziga baturuka, umenyesha iki mu muhanda?",
+   "a": "Werekana aho abayobozi bagomba guhagarara akanya gato iyo bishoboka, kugirango batange inzira hakurikijwe icyapa n° B.1. (Art 111.2)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Umurongo mugari wera udacagaguye, uciye ku buryo bugororotse ku nkengero y'umuhanda, werekana iki?",
+   "a": "Werekana aho abayobozi bagomba guhagarara akanya gato bategetswe babyeretse n'icyapa (STOP) cyangwa ikimenyetso kimurika cyerekana uburyo bwo kugendera mu muhanda. (Art 111.1)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ryari uva mu murongo wari urimo iyo mwagendaga mubangikanye?",
+   "a": "a) Ashobora gukatira ibumoso iyo yari ari mu murongo w'ibumoso; b) Ashobora gukatira iburyo ari uko yari ari mu murongo w'iburyo. (Art 25.2)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Umuvuduko wo mu nsisiro uteye ute?",
+   "a": "Imodoka zitwara abantu: 50 km/h; Ibindi binyabiziga byose: 40 km/h. (Art. 29.3)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Iyo ibinyabiziga bigeze mu masangano aho banyura bagomba kuzenguruka (rond point), ari ibyageze mo n'ibigiye kwinjira, ni ibihe bitambuka mbere?",
+   "a": "Ni ibyageze mu isangano (umuyobozi ugiye kwinjira mu isangano agomba kureka ibinyabiziga byagezemo bikabanza bigahita). (Art 16.2)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bigomba gukorerwa isuzuma nibura kabiri mu mwaka?",
+   "a": "Ni ibinyabiziga bigenewe: gutwara abantu; gutwara ibintu birengeje toni 3,5; ibigo byigisha gutwara (auto-école). Buri mwaka ku bindi binyabiziga bitavuzwe haruguru. (Art 142.a)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ryari ibinyabiziga bya gisirikare bidakurikiza amategeko agenga ibinyabiziga biherekeranyije mu butumwa?",
+   "a": "a) Iyo ari mu nsisiro; b) Kuva bwije kugeza bukeye; c) Igihe igihu cyabuditse, kigatuma badashobora kureba neza muri metero 30 byibura. (Art 49.1)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ryari ibigereranyo bigomba gushyirwa ku ngasire (disque) imwe?",
+   "a": "Iyo ibibuzwa byinshi byubahiriwa ahantu hamwe, nyamara umubare w'ibigereranyo biteranirije ku ngasire imwe ntibishobora kurenga bitatu. (Art 101)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Icyapa kibuza kurenza 80 km/h n'icyapa kigutegeka kutajya munsi ya 80 km/h bitandukaniye he?",
+   "a": "Icyapa kibuza kurenza km 80/h kirangwa n'uruziga (ingasire) izengurutswe n'ibara ritukura kandi ubuso bukera handitsemo 80 n'ibara ry'umukara; naho icyapa gitegeka kutajya munsi ya 80 km/h kerekanwa n'uruziga rusize ibara ry'ubururu handitsemo 80 n'ibara ry'umweru. (Cfr ibyapa)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ibyapa (ibimenyetso) byo mu muhanda biri mu byiciro/amoko angahe?",
+   "a": "Ibyapa bibuza; Ibyo gutambuka mbere; Ibimenyetso bibuza (ibitegeka); Ibyapa ndanga. (Art 92)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Umuyobozi ugenda mu muhanda ugabanijwe n'umurongo ucagaguye abwirwa n'iki ko ari hafi kugera ku murongo udacagaguye?",
+   "a": "Iyo uduce tw'umurongo ucagaguye ari tugufi kandi twegeranye cyane, tuvuga ko umurongo ukomeza wegereje. (Art 110:2-3)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ibimenyetso abayobozi b'ibinyabiziga ntibategetswe gukurikiza ni ibihe, mu gihe guhita kwabo kurangwa n'intabaza yihariye?",
+   "a": "Uretse ibyo bategekwa n'abakozi babifitiye ububasha, ntibategetswe kubahiriza amategeko yerekeye umuvuduko ntarengwa n'ayerekeye ibimenyetso by'umuriro byerekana uburyo bwo kugenda mu muhanda. (Art 37:2)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ibyapa biburira n'ibyo gutambuka mbere biranga bite (amabara)?",
+   "a": "Akenshi ibyapa biburira n'ibyo gutambuka mbere biba ari mpande eshatu zingana bifite umuzenguruko utukura n'ubuso bwera harimo igishushanyo kirabura. (Ibyapa A)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ibyapa bibuza n'ibindi?",
+   "a": "Tuzabireba nyuma. (uyu murongo ntabwo ugaragaza igisubizo cyuzuye mu nyandiko)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ikinyabiziga cya mbere n'icya nyuma bikurikiranye mu butumwa bishyirwaho ibihe bimenyetso?",
+   "a": "Ikinyabiziga cya mbere mu binyabiziga biherekeranije mu butumwa kigomba gushyirwaho icyapa cy'umuhondo cyanditsweho munyuguti zitukura 'ATTENTION CONVOI' (kigasomeka neza muri m 100 ku manywa). Ikinyabiziga cya nyuma gifite icyapa cy'umuhondo cyanditsweho 'FIN CONVOI' gisomeka neza ku manywa muri m 100. (Kubijyanye n'ibinyabiziga bikururwa n'inyamaswa bigiye mu butumwa, bigomba kugabanywamo amatsinda atarengeje m 500 kandi hagati yayo hakaba nibura m 30.) (Art 49)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Isonga y'impombo yohereza ibyotsi ryerekezwa mu ruhe ruhande rw'ikinyabiziga?",
+   "a": "Isonga y'impombo yohereza ibyotsi ntishobora kwerekezwa iburyo bw'ikinyabiziga (ryerekezwa ibumoso). (Art 86:2)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ryari abanyamaguru bagenda mu muhanda bategetswe kugendera ku ruhande rw'iburyo aho kugendera ku ruhande rw'ibumoso?",
+   "a": "Imirongo yose y'ingabo n'agatsiko kose k'abanyamaguru bari mu muhanda bategetswe kugendera ku ruhande rw'iburyo bw'umuhanda no gusiga ibumoso umwanya uhagije kugirango ibinyabiziga bihite. (Art 38.1)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ibikoresho ngarurarumuri bigaragaza inkombe zombi z'inzira nyabagendwa bigomba kugaragara mu yahe mabara?",
+   "a": "Iburyo ni ibara ritukura cyangwa risa n'icunga rihishije, n'aho ibumoso bwabo ni ibara ryera. (Imbibi ziri ku mpera z'ubwihugiko bw'abanyamaguru kandi ziri mu muhanda kimwe n'imbibi n'ibindi bikoresho bigenewe gutuma bagenda mu muhanda nta muvundo, zisigwa irangi ry'umuhondo ngarurarumuri - art 108.1.) (Art 108.2; Art 119)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ibihe binyabiziga bitari ngombwa kurangwa kure n'ibimenyetso byabugenewe kugirango biburire hakiri kare abandi baza babigana, mu gihe cyose byaba bihagaritswe ahantu habujijwe?",
+   "a": "Velomoteri cyangwa ipikipiki idafite akanyabiziga kari iruhande. (Art 32:6)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Vuga nibura ibintu bine umuyobozi w'ikinyabiziga agomba kuringanirizaho umuvuduko kugirango utamubera intandaro y'impanuka.",
+   "a": "Umuyobozi w'ikinyabiziga agomba kuringaniza umuvuduko wacyo n'uko ahantu: hameze; habona; imimerere y'umuhanda; imimerere y'ikinyabiziga n'ibyo kikoreye; imiterere y'ikirere; ubwinshi bw'ibigenda. (Art 26:1)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Vuga nibura abantu batatu bafite ububasha.",
+   "a": "Ba ofisiye na sous-ofisiye bo muri Polisi y'Igihugu igihe bari ku kazi; Abapolisi bo mu mutwe ushinzwe umutekano mu muhanda; Abakozi ba Gasutamo; ... (Art 3)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Uruhushya rw'agateganyo rwo gutwara ibinyabiziga rufite agaciro ku buhe bwoko bw'ibinyabiziga?",
+   "a": "Uruhushya rw'agateganyo rwo gutwara ibinyabiziga rufite agaciro ku nzego zose z'ibinyabiziga (rumara amezi atatu, cyongerwa incuro imwe gusa). (Art 6.5.b)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Igice cy'inzira nyabagendwa kiri hagati y'imirongo yera icagaguye ibangikanye (kandi gifite ubugari budahagije kugirango imodoka zitambuke neza) kimenyesha iki?",
+   "a": "Kiba ari agahanda k'amagare. (Art 110.6)",
+   "cat": "signs",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ayahe mabara y'inyuguti ku byapa by'ibinyabiziga bikurikira: iz'abikorera ku giti cyabo, ibinyabiziga bya Leta, ibigo bishamikiye kuri Leta?",
+   "a": "Ibyapa byose biranga imodoka bifite ibara ry'umweru ku ruhande rw'imbere n'umuhondo ku ruhande rw'inyuma (ibyapa by'amapikipiki n'ibindi byuma by'imipira myinshi bifite ibara ry'umuhondo). Amabara y'inyuguti: Abikorera: umukara; Ibyavuye mu mahanga n'abacuruzi: umukara; Iza Leta n'ibigo bishamikiyeho: ubururu; ONG, Ambassaderi: icyatsi; Ibyinjiye by'agateganyo: umukara; Imishinga ikorera mu Rwanda: ubururu; UN: ubururu; Amazina bwite y'abanyenzabiziga: umutuku. (Art 126)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ni ryari imodoka ipakiye ishobora kurenza metero 2,75 z'ubugari (urugero: kawa, ibyatsi)?",
+   "a": "Igihe iyo mizigo ijyanwa mu karere katarenza kilometero 25 uvuye aho yapakiriwe (ubugari bushobora kugera kuri metero 3). (Art 61.1.c)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Ugutangwa kw'ibyapa ndanga biri kumwe n'ikarita iranga ikinyabiziga bibanza gutangirwaho amafaranga agenwa n'iteka rya nde?",
+   "a": "Minisitiri w'imari. (Art 135.1)",
+   "cat": "general",
+   "src": "Ibibazo=Ibisubizo.pdf"
+  },
+  {
+   "q": "Vuga uko ahantu abayobozi b'amagare n'aba velomoteri zifite imitende ibiri bambukiranya umuhanda haba hameze.",
+   "a": "Haba hari imirongo ibiri icagaguye iteganye, igizwe na za mpandenye ndinganire cyangwa ingirwamwashi.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Iyo habaye impanuka umuyobozi w'ikinyabiziga akora iki?",
+   "a": "Guhita ahagarara iyo bimushobokera kandi ntabangamire bundi bushya uburyo bwo kugenda mu muhanda; guhita yakiriza rimwe amatara ndangacyerekezo; kwerekana umwirondoro we iyo abandi babimusabye; guhamagara abashinzwe amahoro; iyo umuntu yapfiriye mu mpanuka cyangwa yakomeretse cyane, kudahindura ibimenyetso by'uko byari bimeze.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ni ryari imodoka ipakiye, kawa, ibyatsi ishobora kurenza 2,75 m?",
+   "a": "Iyo ijya mu karere hatarengeje kilometero 25 uvuye aho yapakiriwe.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ibyapa byo ku muhanda bigomba gushingwa ku ruhe ruhande rw'umuhanda? Ku buhe buryo? (Art 92.2)",
+   "a": "Ku ruhande rw'iburyo ukurikije ikerekezo uganamo, bidashobora kujya munsi ya 1,50 m cyangwa hejuru ya 2,10 m.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ubusobanuro bw'icyapa gishobora kuzuzwa, gusobanurwa cyangwa kugenwa n'iki?",
+   "a": "N'ibyapa nyongera.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Iyo ahantu icyago cyaranzwe ari harehare, uburebure bw'igice cy'inzira nyabagendwa icyo cyago kirimo bushobora kwerekanwa n'ikihe cyapa? (Art 94.4)",
+   "a": "N'icyapa nyongera kerekana F1.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Amatara ashyirwa ku bimenyetso bimurika akurikirana ate? Mu buryo bwo kwaka akurikirana ate? (Art 105)",
+   "a": "Umutuku uba hejuru y'icyatsi, umuhondo ukaba hagati y'umutuku n'icyatsi. Mu buryo bwo kwaka: umuhondo waka nyuma y'icyatsi, umutuku ukaka nyuma y'umuhondo, icyatsi kikaka nyuma y'umutuku.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ibimenyetso byo mu muhanda bigenewe iki? (Art 109)",
+   "a": "Kugena uburyo bwo kugenda mu muhanda, bigenewe gutunganya uburyo bwo kugenda mu muhanda, kuburira cyangwa kuyobora abagenzi.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Igice cy'inzira nyabagendwa kigarukira ku mirongo ibiri yera icagaguye ibangikanye kandi gifite ubugari budahagije kiba kigenewe iki? (Art 110.6)",
+   "a": "Agahanda k'amagare.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ibimenyetso by'inkomyi bishyirwaho na nde? (Art 113.2) Iyo imirimo cyangwa inkomyi biri ahantu hatoya bigomba gushyirwaho ibihe bimenyetso? (Art 114.1)",
+   "a": "Bishyirwaho n'ubutegetsi bushinzwe inzira nyabagendwa, iyo ari inkomyi itatewe n'umuntu, cyangwa n'uwayiteye. Hagati ya nimugoroba na mu gitondo: amatara yaka ku buryo buhagije kugirango abonerwe muri metero 150 iyo ijuru rikeye, akagaragaza ibara ryera cyangwa umuhondo ku burebure bw'umuhanda. Hagati ya mu gitondo na nimugoroba: utubendera dutukura dufite nibura 50 cm kuri buri ruhande, n'icyapa kerekana ko hari imirimo ikorwa kuri buri mpera.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Igihe ikorwa ry'imirimo ribangamiye cyane cyangwa buke uburyo bwo kugenda mu muhanda, ahakorerwa imirimo hagaragazwa ku buryo bumeze bute? (Art 114.2)",
+   "a": "Ahitaruye hashyirwa icyapa kerekana ko hari imirimo ikorwa; uruzitiro ruri ahakorwa imirimo ku mpera zombi.",
+   "cat": "signs",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Kugenda ku mirongo ibangikanye byemewe he? (Art 12)",
+   "a": "Mu mihanda y'icyerekezo kimwe igihe umuhanda ufite nibura ibice bibiri; ku gice cya kabiri cy'iburyo iyo kubisikana ku muhanda byemewe ku muhanda ufite ibisate byinshi; abakozi babifitiye ububasha bashobora no kubitegeka.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Kubisikana bikorwa mu ruhe ruhande? (Art 20.1)",
+   "a": "Mu ruhande rw'iburyo.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Kunyuranaho bikorerwa mu ruhe ruhande? (Art 21)",
+   "a": "Bikorerwa ibumoso.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Kunyuranaho bikorewe iburyo ryari? (Art 21.1)",
+   "a": "Iyo ikinyabiziga ugiye kunyuraho kigiye gukatira ibumoso.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Iyo nta mategeko awugabanya, umuvuduko ntarengwa w'ibinyabiziga uteye ute? (Art 29.2)",
+   "a": "80 km/h; 70 km/h: ibitwara abantu by'umwihariko bitarengeje 3500 kg; 60 km/h: entre 3,5-12,5 tones; 50 km/h: velomoteri na camion; 25 km/h: tracteurs.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Umugenzi uri mu nzira nyabagendwa asatiriwe n'ikinyabiziga ndakumirwa kirangwa n'intabaza ndangurura jwi yihariye, abigenza ate? (Art 37.1)",
+   "a": "Agomba kugihigamira, kandi byaba bishoboka agahagarara kugirango gihite.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Amatara magufi n'amaremare bigomba kuzima ryari? (Art 43.2)",
+   "a": "Iyo ikinyabiziga gihagaze.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Amatara maremare y'ikinyabiziga agomba kuzimwa ryari? (Art 43.3)",
+   "a": "Ikinyabiziga gihagaze; iyo umuyobozi ahuye n'ikindi kinyabiziga; iyo akurikiye ikindi kinyabiziga muri metero 50; iyo hari urumuri ruhagije ku muhanda.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Umubare w'inyamaswa zikurura ikinyabiziga ni zingahe? (Art 51.1)",
+   "a": "4 zikurikiranye, 3 zibangikanye.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ubugari bw'ikinyabiziga cyangwa ibinyabiziga bikururana, ntibirenze ku mubyimba wabyo hatabariwemo amatara yerekana ikerekezo n'indorerwamo ziboneshwa, ntibishobora kurenza uruhe rugero? (Art 57.1)",
+   "a": "2,65 m.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Ibimenyetso bikoreshwa kugirango berekane impera y'inyuma y'imizigo ntibishobora gushyirwa ku buhagarike burenze uruhe rugero? (Art 63)",
+   "a": "1,55 m uhereye ku butaka.",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  },
+  {
+   "q": "Utugarura-rumuri tuba duteye dute? (Art 75.5)",
+   "a": "Nta tara na rimwe cyangwa akagarura-rumuri bishobora kuba bifunze ku buryo igice cyabyo cyo hasi kimurika cyaba kiri munsi ya 40 cm uhereye ku butaka, igihe ikinyabiziga kidapakiye. Icyakora, ibi ntibikurikizwa ku itara kamenabihu no ku itara ryo gusubira inyuma. (Utugarura-rumuri ahari hejuru ntihashobora kurenza metero 1,20 - Art 77.5.)",
+   "cat": "general",
+   "src": "Ikizami Cy_Amategeko.pdf"
+  }
+ ]
+}

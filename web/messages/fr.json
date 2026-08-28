@@ -3,6 +3,7 @@
     "appName": "Tsinda Provisoire",
     "practice": "Exercices",
     "exam": "Examen",
+    "coach": "Coach",
     "profile": "Profil",
     "admin": "Admin",
     "signIn": "Se connecter",
@@ -146,6 +147,22 @@
     "pending": "En attente",
     "approved": "Approuvées",
     "search": "Rechercher"
+  },
+  "coach": {
+    "title": "Umutoza (Coach)",
+    "intro": "Demandez au coach de revenir sur vos erreurs et les règles qui les expliquent.",
+    "introPerfect": "Beau travail ! Demandez au coach des conseils pour continuer.",
+    "ask": "Demander au coach",
+    "thinking": "Le coach réfléchit...",
+    "chatIntro": "Posez n'importe quelle question sur le code de la route.",
+    "placeholder": "Écrivez votre question ici...",
+    "send": "Envoyer",
+    "unavailable": "Le coach n'est pas encore disponible (clé API non configurée).",
+    "rateLimited": "Trop de requêtes. Patientez un instant.",
+    "error": "Une erreur est survenue. Réessayez.",
+    "s1": "Quand dois-je céder le passage ?",
+    "s2": "Que signifient les panneaux d'interdiction ?",
+    "s3": "Quelle est la limite de vitesse en ville ?"
   },
   "common": {
     "loading": "Chargement...",

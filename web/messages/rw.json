@@ -3,6 +3,7 @@
     "appName": "Tsinda Provisoire",
     "practice": "Imyitozo",
     "exam": "Ikizamini",
+    "coach": "Umutoza",
     "profile": "Umwirondoro",
     "admin": "Ubuyobozi",
     "signIn": "Injira",
@@ -146,6 +147,22 @@
     "pending": "Bitegereje",
     "approved": "Byemejwe",
     "search": "Shakisha"
+  },
+  "coach": {
+    "title": "Umutoza",
+    "intro": "Saba Umutoza akwongorere ku byo wibeshyeho, akwereke amategeko ari inyuma yabyo.",
+    "introPerfect": "Wakoze neza! Saba Umutoza inama zo gukomeza.",
+    "ask": "Saba inama za Umutoza",
+    "thinking": "Umutoza aratekereza...",
+    "chatIntro": "Baza ikibazo cyose ku mategeko y'umuhanda.",
+    "placeholder": "Andika ikibazo cyawe hano...",
+    "send": "Ohereza",
+    "unavailable": "Umutoza ntaboneka ubu (nta API key yashyizweho).",
+    "rateLimited": "Wasabye kenshi cyane. Tegereza gato.",
+    "error": "Hari ikibazo cyabaye. Ongera ugerageze.",
+    "s1": "Ni ryari ngomba guha inzira undi?",
+    "s2": "Ibyapa bibuza bisobanura iki?",
+    "s3": "Umuvuduko ntarengwa mu mujyi ni uwuhe?"
   },
   "common": {
     "loading": "Birimo gutunganywa...",

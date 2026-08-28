@@ -29,6 +29,9 @@ export async function Navbar() {
             <Button variant="ghost" size="sm" render={<Link href="/exam" />}>
               {t("exam")}
             </Button>
+            <Button variant="ghost" size="sm" render={<Link href="/coach" />}>
+              {t("coach")}
+            </Button>
             <Button variant="ghost" size="sm" render={<Link href="/profile" />}>
               {t("profile")}
             </Button>

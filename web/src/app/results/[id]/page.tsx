@@ -9,6 +9,7 @@ import { passMark } from "@/lib/config";
 import { startAttempt } from "@/actions/attempts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { CoachReview } from "@/components/coach-review";
 import { cn } from "@/lib/utils";
 
 type SnapshotItem = {
@@ -100,6 +101,9 @@ export default async function ResultsPage({ params }: PageProps<"/results/[id]">
           </div>
         </CardContent>
       </Card>
+
+      {/* AI coach */}
+      <CoachReview attemptId={id} allCorrect={missed.length === 0} />
 
       {/* Category breakdown + recent exams */}
       <div className="grid gap-4 sm:grid-cols-2">

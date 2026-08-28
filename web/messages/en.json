@@ -3,6 +3,7 @@
     "appName": "Tsinda Provisoire",
     "practice": "Practice",
     "exam": "Exam",
+    "coach": "Coach",
     "profile": "Profile",
     "admin": "Admin",
     "signIn": "Sign in",
@@ -146,6 +147,22 @@
     "pending": "Pending",
     "approved": "Approved",
     "search": "Search"
+  },
+  "coach": {
+    "title": "Umutoza (Coach)",
+    "intro": "Ask the coach to walk you through what you missed and the rules behind them.",
+    "introPerfect": "Great work! Ask the coach for tips to keep it up.",
+    "ask": "Ask the coach",
+    "thinking": "The coach is thinking...",
+    "chatIntro": "Ask any question about the rules of the road.",
+    "placeholder": "Type your question here...",
+    "send": "Send",
+    "unavailable": "The coach isn't available yet (no API key configured).",
+    "rateLimited": "Too many requests. Please wait a moment.",
+    "error": "Something went wrong. Try again.",
+    "s1": "When must I give way to another driver?",
+    "s2": "What do prohibition signs mean?",
+    "s3": "What is the speed limit in town?"
   },
   "common": {
     "loading": "Loading...",
