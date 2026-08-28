@@ -104,9 +104,10 @@ const QuizResolver: any = {
     }),
     getCounts: async () => {
       return {
-        users: await User.countDocuments(),
-        quizzes: await Quiz.countDocuments(),
-        questions: await Question.countDocuments(),
+        users: await User.countDocuments({ active: { $ne: false } }),
+        quizzes: await Quiz.countDocuments({ active: { $ne: false } }),
+        // Public stat: only questions learners can actually see.
+        questions: await Question.countDocuments({ approved: true, active: true }),
       };
     },
   },
