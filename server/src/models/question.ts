@@ -79,7 +79,10 @@ ScoreSchema.virtual("questions").get(function () {
   const score: any = this;
   return JSON.parse(score?.questionsData);
 });
-ScoreSchema.index({ createdAt: 1 }, { expireAfterSeconds: 2592000 });
+// TTL index removed (2026-08-28): score history is the learner's progress record
+// and must not self-delete. Drop the existing index in Atlas separately:
+//   db.scores.dropIndex("createdAt_1")
+ScoreSchema.index({ createdAt: 1 });
 
 export const Score = model("Score", ScoreSchema);
 
