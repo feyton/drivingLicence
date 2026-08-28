@@ -18,6 +18,15 @@ jobs:
           script_stop: true
           timeout: 300s
 
-  # The Next.js app (web/) is not yet cut over to production. Its deploy is
-  # enabled in a later phase once server env secrets and nginx are configured;
-  # deploy/deploy-driving-web.sh is the script that step will run.
+      # Staging deploy of the Next.js app (web/). continue-on-error so a staging
+      # build issue never blocks the legacy deploy's status.
+      - name: Deploy Next.js app (staging)
+        continue-on-error: true
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: /opt/deploy-scripts/deploy-driving-web.sh
+          script_stop: true
+          timeout: 600s
