@@ -1,0 +1,109 @@
+{
+ "note": "Decisions on the 13 AI-flagged 'wrong' questions. Where the answer changes, the explanation and per-option notes are rewritten to match the new answer — leaving the old ones would contradict the corrected key.",
+ "corrections": [
+  {
+   "id": "6a91f76c50eec2e053fabb85",
+   "from": "D",
+   "to": "B",
+   "why": "Category B is capped at 3500kg, not 5000kg — consistent with category C starting above 3500kg.",
+   "explanation": "Urwego **B** ni urw'imodoka zagenewe gutwara ibintu zifite uburemere ntarengwa bwemewe **butarenga ibiro 3500**. Iyo birenze ibiro 3500 biba biri mu rwego C — igisubizo ni **B**.",
+   "optionNotes": {
+    "A": "Burenga ibiro 3500 ni urwego C, atari urwego B.",
+    "C": "Burenga ibiro 5000 na byo ni ibinyabiziga biremereye bitari urwego B.",
+    "D": "Ibiro 5000 si cyo gipimo cy'urwego B; igipimo ni ibiro 3500."
+   }
+  },
+  {
+   "id": "6a91f76c50eec2e053fabb8f",
+   "from": "B",
+   "to": "D",
+   "why": "Category C begins above 3500kg (the ceiling of category B), not above 5000kg.",
+   "explanation": "Urwego **C** ni urw'imodoka zitwara ibintu zifite uburemere ntarengwa **burenga ibiro 3500**. Uru ni rwo rwego rukurikira urwego B rurangirira ku biro 3500 — igisubizo ni **D**.",
+   "optionNotes": {
+    "A": "Butarenga ibiro 5000 ntabwo ari cyo gisobanuro cy'urwego C.",
+    "B": "Ibiro 5000 si cyo gipimo gitangira urwego C; ni ibiro 3500.",
+    "C": "Butarenga ibiro 3500 ni urwego B, atari urwego C."
+   }
+  },
+  {
+   "id": "6a91f76c50eec2e053fabbdc",
+   "from": "B",
+   "to": "A",
+   "why": "A person pushing a motorcycle on foot is legally a pedestrian, not a vehicle driver.",
+   "explanation": "Umuntu usunika ipikipiki (cyangwa igare) agenda n'amaguru **afatwa nk'umunyamaguru**, atari umuyobozi w'ikinyabiziga. Ni yo mpamvu akurikiza amategeko agenga abanyamaguru — igisubizo ni **A**.",
+   "optionNotes": {
+    "B": "Aba ari umuyobozi gusa iyo ayitwaye ayigendesha, atari iyo ayisunika n'amaguru.",
+    "C": "\"Umugenzi\" ni ijambo rusange; itegeko rimufata nk'umunyamaguru.",
+    "D": "Si A na B; ni umunyamaguru (A) gusa."
+   }
+  },
+  {
+   "id": "6a91f76c50eec2e053fabbe4",
+   "from": "A",
+   "to": "D",
+   "why": "Front position lights accompany dipped beams AND main beams (plus front fog lamps), so both A and B hold.",
+   "explanation": "Amatara ndangambere yakira rimwe n'**amatara magufi ndetse n'amatara maremare**, hamwe n'aya kamena-bihu y'imbere. Kubera ko A na B byombi ari ukuri, igisubizo ni **D**.",
+   "optionNotes": {
+    "A": "Ni ukuri ku matara magufi, ariko biruzuzwa n'amaremare (B).",
+    "B": "Ni ukuri ku matara maremare, ariko biruzuzwa n'amagufi (A).",
+    "C": "Aya kamena-bihu y'inyuma ni ay'ubundi bwoko; ntabwo ari yo yakirana n'andangambere."
+   }
+  },
+  {
+   "id": "6a91f76c50eec2e053fabbba",
+   "from": "D",
+   "to": "B",
+   "why": "Prohibition and mandatory signs are circular; the octagon is used only for STOP.",
+   "explanation": "Ibyapa byereka abagenzi ibyo babujijwe cyangwa bategetswe bifite ishusho y'**uruziga**. Ingasire (mpande umunani) ikoreshwa gusa ku cyapa cya \"Hagarara\" (STOP) — igisubizo ni **B**.",
+   "optionNotes": {
+    "A": "Urukiramende ni ishusho y'ibyapa by'amakuru cyangwa iby'inyongera.",
+    "C": "Kare ni ishusho y'ibyapa by'amakuru, atari ibibuza cyangwa bitegeka.",
+    "D": "Ingasire ikoreshwa gusa ku cyapa cya STOP, atari ku bibuza n'ibitegeka muri rusange."
+   }
+  },
+  {
+   "id": "6a91f76c50eec2e053fabbd4",
+   "from": "C",
+   "to": "D",
+   "why": "Ordinary white road lines are 10-15cm wide; 40-60cm applies only to the wide lines (imirongo migari).",
+   "explanation": "Imirongo yera isanzwe yo mu muhanda ifite ubugari buri hagati ya **10cm na 15cm**. Ubugari bwa 40cm-60cm ni ubw'imirongo migari gusa (nk'iyerekana inkombe) — igisubizo ni **D**.",
+   "optionNotes": {
+    "A": "15cm na 21cm ntabwo ari yo pimo ry'imirongo yera isanzwe.",
+    "B": "20cm na 40cm na yo ntabwo ari yo teganyijwe.",
+    "C": "40cm na 60cm ni ubugari bw'imirongo migari, atari iy'isanzwe."
+   }
+  }
+ ],
+ "keepAnswerApprove": [
+  {
+   "id": "6a91f76c50eec2e053fabbef",
+   "why": "The verifier swapped the terms. In this corpus 'kubisikana' is meeting oncoming traffic (kept right) and 'kunyuranaho' is overtaking (done on the left) — the marked answer is right."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabbf1",
+   "why": "Same terminology mix-up as the previous item; marked answer stands."
+  }
+ ],
+ "leavePending": [
+  {
+   "id": "6a91f76c50eec2e053fabb04",
+   "why": "Two source documents disagree on the horn-audibility distance (50m vs 100m) for the same stem. Needs a human ruling against the gazette."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabb6a",
+   "why": "The 50m figure in the code applies between convoy GROUPS; spacing between individual vehicles may well be 30m. Genuinely ambiguous."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabba6",
+   "why": "Both A and B are valid reasons to dim main beams, so neither the marked answer nor 'all of the above' is clean — option C is doubtful."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabb45",
+   "why": "Cyclist-crossing markings may be squares or lozenges depending on the edition of the code; cannot confirm."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabc08",
+   "why": "For direction signs, placement arguably does follow what they indicate; the verifier's visibility argument is not decisive."
+  }
+ ]
+}
