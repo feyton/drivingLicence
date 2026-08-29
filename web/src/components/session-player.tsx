@@ -15,7 +15,7 @@ type PlayerQuestion = {
   index: number;
   text: string;
   image: string | null;
-  options: { id: string; text: string }[];
+  options: { id: string; text: string; image?: string | null }[];
   answer: string | null;
 };
 
@@ -91,10 +91,64 @@ export function SessionPlayer(props: {
     });
   }
 
+  const goTo = useCallback(
+    (i: number) => {
+      if (i < 0 || i > questions.length - 1) return;
+      setFeedback(null);
+      setCurrent(i);
+    },
+    [questions.length]
+  );
+
   function next() {
-    setFeedback(null);
-    if (current < questions.length - 1) setCurrent(current + 1);
+    goTo(current + 1);
   }
+
+  // ---- swipe left/right to move between questions ----
+  const touch = useRef<{ x: number; y: number } | null>(null);
+  function onTouchStart(e: React.TouchEvent) {
+    const t = e.changedTouches[0];
+    touch.current = { x: t.clientX, y: t.clientY };
+  }
+  function onTouchEnd(e: React.TouchEvent) {
+    const start = touch.current;
+    touch.current = null;
+    if (!start) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - start.x;
+    const dy = t.clientY - start.y;
+    // horizontal, deliberate, and not a vertical scroll
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+    if (dx < 0) {
+      // forward — in reveal-immediate mode you must answer first
+      if (revealImmediate && !feedback) return;
+      next();
+    } else {
+      if (revealImmediate) return; // no going back once each answer is graded
+      goTo(current - 1);
+    }
+  }
+
+  // Keyboard: arrows to move, 1-5 / A-E to pick an option.
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+      if (e.key === "ArrowRight") {
+        if (revealImmediate && !feedback) return;
+        next();
+      } else if (e.key === "ArrowLeft" && !revealImmediate) {
+        goTo(current - 1);
+      } else {
+        const k = e.key.toUpperCase();
+        const byLetter = q.options.find((o) => o.id === k);
+        const byNumber = /^[1-9]$/.test(e.key) ? q.options[Number(e.key) - 1] : undefined;
+        const pick = byLetter ?? byNumber;
+        if (pick) choose(pick.id);
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
 
   const isLast = current === questions.length - 1;
   const chosen = answers[q.index];
@@ -106,7 +160,12 @@ export function SessionPlayer(props: {
   }, [remaining]);
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-6">
+    <div
+      className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-6"
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+      style={{ touchAction: "pan-y" }}
+    >
       <div className="flex items-center justify-between gap-3">
         <span className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
           <span
@@ -182,7 +241,17 @@ export function SessionPlayer(props: {
                   >
                     {o.id}
                   </span>
-                  <span className="flex-1">{o.text}</span>
+                  <span className="flex flex-1 items-center gap-3">
+                    {o.image && (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={o.image}
+                        alt=""
+                        className="h-16 w-auto max-w-[7rem] shrink-0 rounded bg-white object-contain p-1"
+                      />
+                    )}
+                    <span>{o.text}</span>
+                  </span>
                   {showCorrect && (
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--success)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
                       <path d="M20 6 9 17l-5-5" />
@@ -219,14 +288,21 @@ export function SessionPlayer(props: {
       <div className="flex items-center justify-between gap-3">
         {!revealImmediate ? (
           <>
-            <Button variant="ghost" disabled={current === 0} onClick={() => setCurrent(current - 1)}>
+            <Button
+              variant="ghost"
+              className="press"
+              disabled={current === 0}
+              onClick={() => goTo(current - 1)}
+            >
               {t("exam.back")}
             </Button>
-            <span className="text-xs text-muted-foreground tabular-nums">
-              {questions.length - answeredCount > 0 && `${questions.length - answeredCount} ${t("exam.unanswered")}`}
+            <span className="numeral text-xs text-muted-foreground">
+              {questions.length - answeredCount > 0 &&
+                `${questions.length - answeredCount} ${t("exam.unanswered")}`}
             </span>
             {isLast ? (
               <Button
+                className="press"
                 disabled={pending}
                 onClick={() => {
                   if (answeredCount < questions.length && !window.confirm(t("exam.confirmSubmit"))) return;
@@ -236,25 +312,30 @@ export function SessionPlayer(props: {
                 {t("exam.submit")}
               </Button>
             ) : (
-              <Button variant="secondary" disabled={!chosen} onClick={next}>
-                {t("exam.next")}
+              // Always available: skipping ahead is allowed in exam mode.
+              <Button variant={chosen ? "default" : "secondary"} className="press" onClick={next}>
+                {t("exam.next")} ›
               </Button>
             )}
           </>
         ) : (
           <>
-            <span />
+            <span className="text-xs text-muted-foreground">{!feedback && t("session.pickAnswer")}</span>
             {feedback &&
               (isLast ? (
-                <Button disabled={pending} onClick={doSubmit}>
+                <Button className="press" disabled={pending} onClick={doSubmit}>
                   {t("session.finish")}
                 </Button>
               ) : (
-                <Button onClick={next}>{t("session.continue")}</Button>
+                <Button className="press" onClick={next} autoFocus>
+                  {t("session.continue")} ›
+                </Button>
               ))}
           </>
         )}
       </div>
+
+      <p className="pt-1 text-center text-[0.7rem] text-muted-foreground">{t("session.swipeHint")}</p>
     </div>
   );
 }

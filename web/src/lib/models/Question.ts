@@ -4,6 +4,8 @@ const OptionSchema = new Schema(
   {
     id: { type: String, required: true }, // "A".."E" — stable; display order is shuffled per attempt
     text: { type: String, required: true },
+    // Some questions answer with a picture (e.g. "which of these signs …").
+    image: { type: String, default: null },
   },
   { _id: false }
 );

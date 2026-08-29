@@ -100,7 +100,9 @@
     "wrong": "Si byo",
     "explanation": "Ubusobanuro",
     "continue": "Ikibazo gikurikira",
-    "finish": "Soza"
+    "finish": "Soza",
+    "pickAnswer": "Hitamo igisubizo",
+    "swipeHint": "Sunika ibumoso ujye ku kibazo gikurikira"
   },
   "results": {
     "passedTitle": "Watsinze!",

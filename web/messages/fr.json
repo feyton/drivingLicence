@@ -100,7 +100,9 @@
     "wrong": "Pas tout à fait",
     "explanation": "Explication",
     "continue": "Question suivante",
-    "finish": "Terminer"
+    "finish": "Terminer",
+    "pickAnswer": "Choisissez une réponse",
+    "swipeHint": "Balayez vers la gauche pour la question suivante"
   },
   "results": {
     "passedTitle": "Réussi !",

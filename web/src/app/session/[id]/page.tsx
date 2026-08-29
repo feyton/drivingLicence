@@ -36,17 +36,17 @@ export default async function SessionPage({ params }: PageProps<"/session/[id]">
   const payload = attempt.questions.map(
     (aq: { questionId: Types.ObjectId; optionOrder: string[]; answer: string | null }, index: number) => {
       const q = byId.get(aq.questionId.toString());
-      const optionsById = new Map<string, { id: string; text: string }>(
-        (q?.options ?? []).map((o: { id: string; text: string }) => [o.id, o])
+      const optionsById = new Map<string, { id: string; text: string; image?: string | null }>(
+        (q?.options ?? []).map((o: { id: string; text: string; image?: string | null }) => [o.id, o])
       );
       return {
         index,
         text: htmlToText(q?.text),
-        image: extractImage(q?.text),
+        image: q?.image ?? extractImage(q?.text),
         options: aq.optionOrder
           .map((oid: string) => optionsById.get(oid))
-          .filter((o): o is { id: string; text: string } => Boolean(o))
-          .map((o) => ({ id: o.id, text: htmlToText(o.text) })),
+          .filter((o): o is { id: string; text: string; image?: string | null } => Boolean(o))
+          .map((o) => ({ id: o.id, text: htmlToText(o.text), image: o.image ?? null })),
         answer: aq.answer ?? null,
       };
     }

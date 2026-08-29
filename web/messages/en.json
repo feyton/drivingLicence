@@ -100,7 +100,9 @@
     "wrong": "Not quite",
     "explanation": "Explanation",
     "continue": "Next question",
-    "finish": "Finish"
+    "finish": "Finish",
+    "pickAnswer": "Pick an answer",
+    "swipeHint": "Swipe left for the next question"
   },
   "results": {
     "passedTitle": "You passed!",
