@@ -128,35 +128,104 @@
     @apply font-sans;
   }
 }
-/* ---- Brand overrides (Tsinda blue #0077AF on the shadcn token set) ---- */
+/* ============================================================
+   Tsinda Provisoire — road-sign palette, mobile-first
+   Cool testing-room neutrals, a confident sign-blue, and
+   go/stop/caution semantics borrowed from real road signs.
+   ============================================================ */
 :root {
-  --primary: oklch(0.55 0.12 236);
-  --primary-foreground: oklch(0.985 0 0);
-  --ring: oklch(0.55 0.12 236 / 50%);
-  --radius: 0.75rem;
-  --success: oklch(0.55 0.13 155);
-  --success-foreground: oklch(0.985 0 0);
+  --background: oklch(0.984 0.004 240);   /* cool off-white */
+  --foreground: oklch(0.205 0.022 250);   /* near-black, blue bias */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.205 0.022 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.205 0.022 250);
+  --muted: oklch(0.962 0.006 240);
+  --muted-foreground: oklch(0.505 0.02 248);
+  --secondary: oklch(0.955 0.008 240);
+  --secondary-foreground: oklch(0.28 0.03 250);
+  --accent: oklch(0.945 0.014 236);
+  --accent-foreground: oklch(0.30 0.06 245);
+  --border: oklch(0.906 0.008 240);
+  --input: oklch(0.906 0.008 240);
+
+  --primary: oklch(0.535 0.128 236);      /* confident sign-blue */
+  --primary-foreground: oklch(0.99 0.005 240);
+  --ring: oklch(0.535 0.128 236 / 55%);
+
+  --success: oklch(0.585 0.135 150);      /* go green */
+  --success-foreground: oklch(0.99 0.01 150);
+  --destructive: oklch(0.565 0.2 26);     /* stop red */
+  --destructive-foreground: oklch(0.99 0.01 26);
+  --warning: oklch(0.74 0.145 74);        /* caution amber */
+  --warning-foreground: oklch(0.24 0.04 74);
+
+  --radius: 0.9rem;
+  --shadow-card: 0 1px 2px oklch(0.4 0.05 250 / 0.06), 0 4px 16px oklch(0.4 0.05 250 / 0.05);
+  --shadow-pop: 0 8px 30px oklch(0.35 0.06 250 / 0.14);
 }
 
 .dark {
-  --primary: oklch(0.72 0.11 230);
-  --primary-foreground: oklch(0.16 0.03 255);
-  --ring: oklch(0.72 0.11 230 / 50%);
-  --success: oklch(0.68 0.13 155);
-  --success-foreground: oklch(0.16 0.03 255);
+  --background: oklch(0.178 0.022 252);   /* road-at-night navy */
+  --foreground: oklch(0.955 0.006 240);
+  --card: oklch(0.222 0.024 252);
+  --card-foreground: oklch(0.955 0.006 240);
+  --popover: oklch(0.222 0.024 252);
+  --popover-foreground: oklch(0.955 0.006 240);
+  --muted: oklch(0.262 0.022 252);
+  --muted-foreground: oklch(0.72 0.02 245);
+  --secondary: oklch(0.27 0.024 252);
+  --secondary-foreground: oklch(0.95 0.006 240);
+  --accent: oklch(0.30 0.04 245);
+  --accent-foreground: oklch(0.95 0.006 240);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+
+  --primary: oklch(0.70 0.115 233);
+  --primary-foreground: oklch(0.16 0.03 252);
+  --ring: oklch(0.70 0.115 233 / 55%);
+
+  --success: oklch(0.70 0.135 152);
+  --success-foreground: oklch(0.16 0.03 252);
+  --destructive: oklch(0.68 0.185 26);
+  --destructive-foreground: oklch(0.99 0.01 26);
+  --warning: oklch(0.80 0.14 76);
+  --warning-foreground: oklch(0.18 0.03 76);
+
+  --shadow-card: 0 1px 2px oklch(0 0 0 / 0.3), 0 6px 20px oklch(0 0 0 / 0.35);
+  --shadow-pop: 0 10px 34px oklch(0 0 0 / 0.5);
 }
 
 @theme inline {
   --color-success: var(--success);
   --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
   --font-heading: var(--font-lexend);
   --font-sans: var(--font-lato);
 }
 
 body {
   font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.012em;
+}
+
+/* App-like shadows + smooth interactions */
+.shadow-card { box-shadow: var(--shadow-card); }
+[data-slot="card"] { box-shadow: var(--shadow-card); }
+button, a, [role="radio"], [role="button"] { -webkit-tap-highlight-color: transparent; }
+
+/* Safe-area padding so content clears the mobile bottom tab bar */
+.pb-safe { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0.5rem); }
+@media (max-width: 767px) {
+  .has-bottom-nav { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 4.75rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }

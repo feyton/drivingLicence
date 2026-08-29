@@ -151,16 +151,18 @@ export function SessionPlayer(props: {
                   disabled={pending && !isChosen}
                   onClick={() => choose(o.id)}
                   className={cn(
-                    "flex items-start gap-3 rounded-lg border px-4 py-3 text-left text-sm transition-colors",
-                    "hover:bg-accent focus-visible:outline-2 focus-visible:outline-ring",
-                    isChosen && !feedback && "border-primary bg-primary/5",
+                    "flex items-center gap-3 rounded-xl border px-4 py-3.5 text-left text-[0.95rem] leading-snug transition-all",
+                    "hover:border-primary/50 hover:bg-accent active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+                    isChosen && !feedback && "border-primary bg-primary/8 ring-1 ring-primary/30",
                     showCorrect && "border-[var(--success)] bg-[var(--success)]/10",
-                    showWrong && "border-destructive bg-destructive/10"
+                    showWrong && "border-destructive bg-destructive/10",
+                    !isChosen && !showCorrect && !showWrong && "border-border"
                   )}
                 >
                   <span
                     className={cn(
-                      "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-[11px] font-bold",
+                      "flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border text-[0.8rem] font-bold transition-colors",
+                      !isChosen && !feedback && "border-border bg-muted text-muted-foreground",
                       isChosen && !feedback && "border-primary bg-primary text-primary-foreground",
                       showCorrect && "border-[var(--success)] bg-[var(--success)] text-white",
                       showWrong && "border-destructive bg-destructive text-white"
@@ -168,7 +170,12 @@ export function SessionPlayer(props: {
                   >
                     {o.id}
                   </span>
-                  <span>{o.text}</span>
+                  <span className="flex-1">{o.text}</span>
+                  {showCorrect && (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--success)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  )}
                 </button>
               );
             })}

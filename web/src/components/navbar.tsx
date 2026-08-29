@@ -21,26 +21,29 @@ export async function Navbar() {
 
         {user ? (
           <nav className="flex items-center gap-1 text-sm">
-            <Button variant="ghost" size="sm" render={<Link href="/practice" />}>
-              {t("practice")}
-            </Button>
-            <Button variant="ghost" size="sm" render={<Link href="/exam" />}>
-              {t("exam")}
-            </Button>
-            <Button variant="ghost" size="sm" render={<Link href="/coach" />}>
-              {t("coach")}
-            </Button>
-            <Button variant="ghost" size="sm" render={<Link href="/igazeti" />}>
-              {t("igazeti")}
-            </Button>
-            <Button variant="ghost" size="sm" render={<Link href="/profile" />}>
-              {t("profile")}
-            </Button>
-            {ADMIN_ROLES.includes(user.role) && (
-              <Button variant="ghost" size="sm" render={<Link href="/admin/questions" />}>
-                {t("admin")}
+            {/* On phones these live in the bottom tab bar. */}
+            <div className="hidden items-center gap-1 md:flex">
+              <Button variant="ghost" size="sm" render={<Link href="/practice" />}>
+                {t("practice")}
               </Button>
-            )}
+              <Button variant="ghost" size="sm" render={<Link href="/exam" />}>
+                {t("exam")}
+              </Button>
+              <Button variant="ghost" size="sm" render={<Link href="/coach" />}>
+                {t("coach")}
+              </Button>
+              <Button variant="ghost" size="sm" render={<Link href="/igazeti" />}>
+                {t("igazeti")}
+              </Button>
+              <Button variant="ghost" size="sm" render={<Link href="/profile" />}>
+                {t("profile")}
+              </Button>
+              {ADMIN_ROLES.includes(user.role) && (
+                <Button variant="ghost" size="sm" render={<Link href="/admin/questions" />}>
+                  {t("admin")}
+                </Button>
+              )}
+            </div>
             <LocaleSwitcher />
             <form
               action={async () => {
