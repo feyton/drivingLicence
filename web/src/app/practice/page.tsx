@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { startAttempt } from "@/actions/attempts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Spinner } from "@/components/spinner";
 import { cn } from "@/lib/utils";
 
 const COUNTS = [10, 20, 40];
@@ -98,8 +99,9 @@ export default function PracticePage() {
             value={reveal}
             onChange={setReveal}
           />
-          <Button className="w-full" size="lg" disabled={pending} onClick={start}>
-            {t("start")}
+          <Button className="press w-full gap-2" size="lg" disabled={pending} onClick={start}>
+            {pending && <Spinner />}
+            {pending ? tc("preparing") : t("start")}
           </Button>
         </CardContent>
       </Card>

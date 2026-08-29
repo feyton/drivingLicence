@@ -6,6 +6,8 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Markdown } from "@/components/markdown";
+import { Spinner } from "@/components/spinner";
+import { SkeletonText } from "@/components/ui/skeleton";
 
 function CoachIcon() {
   return (
@@ -59,11 +61,21 @@ export function CoachReview({ attemptId, allCorrect }: { attemptId: string; allC
 
         {coaching ? (
           <Markdown className="text-sm leading-relaxed text-foreground">{coaching}</Markdown>
+        ) : loading ? (
+          // The coach writes a few paragraphs, so stand in with the shape of them.
+          <div className="space-y-3">
+            <p className="flex items-center gap-2 text-sm text-[var(--study)]">
+              <Spinner className="size-3.5" />
+              {t("thinking")}
+            </p>
+            <SkeletonText lines={3} />
+            <SkeletonText lines={2} />
+          </div>
         ) : (
           <>
             <p className="text-sm text-muted-foreground">{allCorrect ? t("introPerfect") : t("intro")}</p>
-            <Button onClick={getCoaching} disabled={loading} size="sm">
-              {loading ? t("thinking") : t("ask")}
+            <Button onClick={getCoaching} disabled={loading} size="sm" className="press">
+              {t("ask")}
             </Button>
           </>
         )}

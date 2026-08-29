@@ -102,7 +102,8 @@
     "continue": "Ikibazo gikurikira",
     "finish": "Soza",
     "pickAnswer": "Hitamo igisubizo",
-    "swipeHint": "Sunika ibumoso ujye ku kibazo gikurikira"
+    "swipeHint": "Sunika ibumoso ujye ku kibazo gikurikira",
+    "grading": "Turimo gutanga amanota..."
   },
   "results": {
     "passedTitle": "Watsinze!",
@@ -185,6 +186,7 @@
     "loading": "Birimo gutunganywa...",
     "error": "Hari ikibazo cyabaye. Ongera ugerageze.",
     "questions": "ibibazo",
-    "minutes": "iminota"
+    "minutes": "iminota",
+    "preparing": "Turimo gutegura..."
   }
 }

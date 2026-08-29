@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Markdown } from "@/components/markdown";
+import { Spinner } from "@/components/spinner";
 import { cn } from "@/lib/utils";
 
 type PlayerQuestion = {
@@ -41,6 +42,9 @@ export function SessionPlayer(props: {
   );
   const [feedback, setFeedback] = useState<Feedback | null>(null);
   const [pending, startTransition] = useTransition();
+  // Submitting is tracked separately: grading redirects, so the button should
+  // stay busy until the new page takes over.
+  const [submitting, setSubmitting] = useState(false);
   const submittingRef = useRef(false);
 
   const q = questions[current];
@@ -49,11 +53,13 @@ export function SessionPlayer(props: {
   const doSubmit = useCallback(() => {
     if (submittingRef.current) return;
     submittingRef.current = true;
+    setSubmitting(true);
     startTransition(async () => {
       const res = await submitAttempt(attemptId);
       // submitAttempt redirects on success; reaching here means an error
       if (res && !res.ok) {
         submittingRef.current = false;
+        setSubmitting(false);
         toast.error(t("common.error"));
       }
     });
@@ -323,14 +329,15 @@ export function SessionPlayer(props: {
             </span>
             {isLast ? (
               <Button
-                className="press"
-                disabled={pending}
+                className="press gap-2"
+                disabled={submitting}
                 onClick={() => {
                   if (answeredCount < questions.length && !window.confirm(t("exam.confirmSubmit"))) return;
                   doSubmit();
                 }}
               >
-                {t("exam.submit")}
+                {submitting && <Spinner />}
+                {submitting ? t("session.grading") : t("exam.submit")}
               </Button>
             ) : (
               // Always available: skipping ahead is allowed in exam mode.
@@ -344,8 +351,9 @@ export function SessionPlayer(props: {
             <span className="text-xs text-muted-foreground">{!feedback && t("session.pickAnswer")}</span>
             {feedback &&
               (isLast ? (
-                <Button className="press" disabled={pending} onClick={doSubmit}>
-                  {t("session.finish")}
+                <Button className="press gap-2" disabled={submitting} onClick={doSubmit}>
+                  {submitting && <Spinner />}
+                  {submitting ? t("session.grading") : t("session.finish")}
                 </Button>
               ) : (
                 <Button className="press" onClick={next} autoFocus>

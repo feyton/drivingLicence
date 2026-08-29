@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Spinner } from "@/components/spinner";
 import { cn } from "@/lib/utils";
 
 type Item = {
@@ -171,7 +172,13 @@ export function QuestionReviewCard({ item, labels }: { item: Item; labels: Label
         {!editing && (
           <div className="flex flex-wrap gap-2 pt-1">
             {!item.approved && item.active && (
-              <Button size="sm" disabled={pending} onClick={() => act(() => approveQuestion(item.id))}>
+              <Button
+                size="sm"
+                className="press gap-1.5"
+                disabled={pending}
+                onClick={() => act(() => approveQuestion(item.id))}
+              >
+                {pending && <Spinner className="size-3.5" />}
                 {labels.approve}
               </Button>
             )}

@@ -85,7 +85,24 @@ export default function CoachChatPage() {
                   : "border bg-card"
               )}
             >
-              {m.role === "assistant" ? <Markdown>{m.content || "…"}</Markdown> : m.content || "…"}
+              {m.role === "assistant" ? (
+                m.content ? (
+                  <Markdown>{m.content}</Markdown>
+                ) : (
+                  // Waiting on the first token — animated dots rather than a bare ellipsis.
+                  <span className="flex items-center gap-1 py-1" aria-label={t("thinking")}>
+                    {[0, 150, 300].map((delay) => (
+                      <span
+                        key={delay}
+                        className="size-1.5 animate-bounce rounded-full bg-muted-foreground/60 motion-reduce:animate-none"
+                        style={{ animationDelay: `${delay}ms` }}
+                      />
+                    ))}
+                  </span>
+                )
+              ) : (
+                m.content || "…"
+              )}
             </div>
           </div>
         ))}
