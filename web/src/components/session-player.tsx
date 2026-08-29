@@ -77,11 +77,24 @@ export function SessionPlayer(props: {
     return () => clearInterval(iv);
   }, [expiresAt, doSubmit, t]);
 
+  // Each pick gets a sequence number so a slow reply can never overwrite a
+  // newer one. Selection is applied locally first, so the tap always feels
+  // instant even while the server round-trip is still in flight.
+  const pickSeq = useRef(0);
+
   function choose(optionId: string) {
-    if (pending || (revealImmediate && feedback)) return;
+    // Once the answer has been graded (practice), the choice is locked.
+    if (revealImmediate && feedback) return;
+    if (answers[q.index] === optionId && !revealImmediate) return;
+
     setAnswers((a) => ({ ...a, [q.index]: optionId }));
+    const seq = ++pickSeq.current;
+    const forIndex = q.index;
+
     startTransition(async () => {
-      const res: AnswerResult = await recordAnswer({ attemptId, index: q.index, optionId });
+      const res: AnswerResult = await recordAnswer({ attemptId, index: forIndex, optionId });
+      // A newer pick landed while this was in flight — drop the stale reply.
+      if (seq !== pickSeq.current) return;
       if (!res.ok) {
         if (res.error === "expired") doSubmit();
         else toast.error(t("common.error"));
@@ -107,6 +120,12 @@ export function SessionPlayer(props: {
   // ---- swipe left/right to move between questions ----
   const touch = useRef<{ x: number; y: number } | null>(null);
   function onTouchStart(e: React.TouchEvent) {
+    // A gesture that begins on an answer is a tap, never a swipe — this keeps
+    // the swipe handler well clear of option selection.
+    if ((e.target as HTMLElement)?.closest?.('[role="radio"], button, a')) {
+      touch.current = null;
+      return;
+    }
     const t = e.changedTouches[0];
     touch.current = { x: t.clientX, y: t.clientY };
   }
@@ -219,7 +238,9 @@ export function SessionPlayer(props: {
                   key={o.id}
                   role="radio"
                   aria-checked={isChosen}
-                  disabled={pending && !isChosen}
+                  // Never disabled while a request is in flight — that was
+                  // swallowing taps on slow connections.
+                  disabled={revealImmediate && Boolean(feedback)}
                   onClick={() => choose(o.id)}
                   className={cn(
                     "press flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left text-[0.95rem] leading-snug",
