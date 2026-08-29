@@ -8,20 +8,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy legacy app
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: root
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: /opt/deploy-scripts/deploy-driving.sh
-          script_stop: true
-          timeout: 300s
-
-      # Staging deploy of the Next.js app (web/). continue-on-error so a staging
-      # build issue never blocks the legacy deploy's status.
-      - name: Deploy Next.js app (staging)
-        continue-on-error: true
+      # The Next.js app (web/) now serves production at driving.feyton.co.rw.
+      - name: Deploy Next.js app (production)
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -30,3 +18,16 @@ jobs:
           script: /opt/deploy-scripts/deploy-driving-web.sh
           script_stop: true
           timeout: 600s
+
+      # Legacy Apollo/React app, kept running on :6001 for rollback and still
+      # reachable at legacy-driving.feyton.co.rw. Non-blocking.
+      - name: Deploy legacy app (rollback target)
+        continue-on-error: true
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: /opt/deploy-scripts/deploy-driving.sh
+          script_stop: true
+          timeout: 300s
