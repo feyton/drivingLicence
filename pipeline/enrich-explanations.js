@@ -10,8 +10,10 @@ const fs = require("fs");
 const mongoose = require("mongoose");
 
 const WEB_ENV = "/opt/apps/drivingLicence/web/.env.production.local";
-const MODEL = "claude-haiku-4-5-20251001";
-const CONCURRENCY = 5;
+// Sonnet, not Haiku: Kinyarwanda explanation quality matters and this is a
+// one-time batch. Override with ENRICH_MODEL if needed.
+const MODEL = process.env.ENRICH_MODEL || "claude-sonnet-5";
+const CONCURRENCY = 4;
 
 function getKey() {
   if (process.env.ANTHROPIC_API_KEY) return process.env.ANTHROPIC_API_KEY;
@@ -42,10 +44,11 @@ Andika mu Kinyarwanda:
 Subiza JSON GUSA muri ubu buryo (nta yandi magambo):
 {"explanation": "...", "optionNotes": {"X": "...", "Y": "..."}}`;
 
+  const system = "Uri umwarimu w'amategeko y'umuhanda mu Rwanda ufite ubumenyi buhanitse. Wandika Ikinyarwanda gisobanutse, gito kandi cy'ukuri. Ntukoreshe amagambo adafite ireme cyangwa interuro zidasobanutse. Ushingira ku mategeko y'umuhanda y'u Rwanda gusa; niba utazi neza, wivuge mu buryo bworoshye budahimbye.";
   const res = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01" },
-    body: JSON.stringify({ model: MODEL, max_tokens: 700, messages: [{ role: "user", content: prompt }] }),
+    body: JSON.stringify({ model: MODEL, max_tokens: 800, system, messages: [{ role: "user", content: prompt }] }),
   });
   if (!res.ok) {
     const t = await res.text();

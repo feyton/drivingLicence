@@ -39,3 +39,8 @@ pipeline/duplicates-report.json
 pipeline/approve-plan.json
 pipeline/coaching-corpus.json
 pipeline/corpus/
+# Enrichment pipeline artifacts (derived)
+pipeline/enrich-chunks/
+pipeline/enrich-out/
+pipeline/enrich-in.json
+pipeline/coaching-corpus.json
