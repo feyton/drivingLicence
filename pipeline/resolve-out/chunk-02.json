@@ -1,0 +1,223 @@
+[
+ {
+  "ref": "r2-1",
+  "answer": "C",
+  "confidence": "high",
+  "explanation": "Intabaza zirabagirana z'ubururu ku binyabiziga ndakumirwa zikoreshwa gusa igihe **kiri mu butumwa bwihutirwa**. Icyo gihe ni bwo abandi bagenzi bategekwa kugiha inzira — igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Gutwara umurwayi cyangwa abaganga si byo byonyine bituma zikoreshwa; ni ubutumwa bwihutirwa.",
+   "B": "Mu butumwa busanzwe ntizemewe gukoreshwa.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo C."
+  }
+ },
+ {
+  "ref": "r2-3",
+  "answer": "A",
+  "confidence": "high",
+  "explanation": "Iyo amatara y'isangano adakora, unyuramo **witonze nk'aho nta kimenyetso kirimo**, ukurikiza amategeko asanzwe (gutambuka mbere kw'iburyo) kandi wubaha abandi. Igisubizo ni **A**.",
+  "optionNotes": {
+   "B": "Gutwara utitonze mu isangano ridafite amatara biteza impanuka.",
+   "C": "Ntugomba guhagarara mu isangano ubwaryo; wubaha itegeko rya priorité mbere yo kwinjira.",
+   "D": "Amatara ndangacyerekezo yose ntabwo ari yo yifashishwa mu kunyura mu isangano."
+  }
+ },
+ {
+  "ref": "r2-4",
+  "answer": "B",
+  "confidence": "high",
+  "explanation": "Mu gihe cy'igihu, imvura nyinshi cyangwa umukungugu, ugomba **kugabanya umuvuduko no gukoresha amatara magufi**. Amatara magufi amurika bidakugarukira mu maso — igisubizo ni **B**.",
+  "optionNotes": {
+   "A": "Kugendera mu tuyira two ku mpande biteza impanuka ku banyamaguru.",
+   "C": "Amatara maremare aragaruka mu gihu akaguhuma amaso.",
+   "D": "Kugendera ku murongo wo hagati bikweretsa mu cyerekezo cy'abaza imbere."
+  }
+ },
+ {
+  "ref": "r2-7",
+  "answer": "D",
+  "confidence": "high",
+  "explanation": "Ipikipiki idafite akanyabiziga ku ruhande igomba kugaragazwa inyuma n'**itara rimwe ritukura**. Kubera ko iryo tara ritari mu mahitamo yatanzwe, igisubizo ni **D**.",
+  "optionNotes": {
+   "A": "Amatara 2 yera ni ayo imbere, atari ayo inyuma.",
+   "B": "Itara ry'umuhondo si ryo ritegetswe inyuma kuri ipikipiki.",
+   "C": "Itara risa n'icunga si ryo risabwa inyuma kuri iyi pikipiki."
+  }
+ },
+ {
+  "ref": "r2-9",
+  "answer": "B",
+  "confidence": "high",
+  "explanation": "Ugendera inyuma y'ikinyabiziga gitwara abagenzi gihagaze gishyiramo cyangwa gikuramo abagenzi, ugomba **gutegereza wihanganye** kugeza abagenzi barangije, kuko bashobora kwambuka batunguranye. Igisubizo ni **B**.",
+  "optionNotes": {
+   "A": "Kunyuranaho ibumoso muri iki gihe bishobora kugonga abagenzi bambuka.",
+   "C": "Si a na b; kunyuranaho ntibyemewe muri iki gihe.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo B."
+  }
+ },
+ {
+  "ref": "r2-12",
+  "answer": "A",
+  "confidence": "high",
+  "explanation": "Uhuye n'ikinyabiziga giturutse imbere gicanye amatara y'umuhondo aburira, ugomba **kugabanya umuvuduko no gutambukana ubwitonzi** — ayo matara akuburira ko hari icyago imbere. Igisubizo ni **A**.",
+  "optionNotes": {
+   "B": "\"Ikinyabiziga cy'ubutabazi\" si igisubizo ku cyo ugomba gukora.",
+   "C": "\"Yagize ibyago\" ni ikimenyetso gishoboka ariko icyo ukora ni ukwitonda (A).",
+   "D": "\"Umuvuduko urenze\" ntabwo ari cyo cyo gukora."
+  }
+ },
+ {
+  "ref": "r2-13",
+  "answer": "C",
+  "confidence": "high",
+  "explanation": "Ku muhanda urombereje w'ibice byinshi, ugomba **kugendera mu gice cy'iburyo, keretse ushaka kunyuranaho**. Ibice by'ibumoso bikoreshwa mu kunyuranaho gusa — igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Guhitamo igice kirimo ibinyabiziga bike si cyo itegeko rivuga.",
+   "B": "Kugendera ibumoso buri gihe ni ukubeshya; iburyo ni ho hagenwe.",
+   "D": "Uruhande rw'iburyo ntabwo rwagenewe imodoka ziremereye gusa."
+  }
+ },
+ {
+  "ref": "r2-15",
+  "answer": "C",
+  "confidence": "high",
+  "explanation": "Amatara yo kubisikana (amagufi) agomba kumurika imbere y'ikinyabiziga mu ntera ya **40m**. Iyi ntera ntabwo ihumagiza uwo muhura na we — igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "100m ni intera y'amatara maremare, atari ayo kubisikana.",
+   "B": "200m ni ndende cyane ku matara magufi.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo C."
+  }
+ },
+ {
+  "ref": "r2-18",
+  "answer": "C",
+  "confidence": "high",
+  "explanation": "Umuyobozi ushaka kongera kugenda (avuye aho yari ahagaze) agomba kureka **ibinyabiziga bigiye guhura na we n'ibigiye kumunyuraho** bigatambuka mbere. Kubera ko byombi ari ukuri, igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Ni ukuri ariko biruzuzwa n'ibigiye kumunyuraho (B).",
+   "B": "Ni ukuri ariko biruzuzwa n'ibigiye guhura na we (A).",
+   "D": "Hari igisubizo cy'ukuri: byombi ni byo."
+  }
+ },
+ {
+  "ref": "r2-22",
+  "answer": "B",
+  "confidence": "high",
+  "explanation": "Gutinda gutanga ibimenyetso **bituma abandi batabona igihe gihagije cyo gushyira mu bikorwa ibyo bamenyeshejwe** — ntibabashe kwitegura, bigatera impanuka. Ni yo mpamvu ikimenyetso gitangwa hakiri kare — igisubizo ni **B**.",
+  "optionNotes": {
+   "A": "Ntibigira ingaruka ku baturuka mu kindi cyerekezo gusa; bireba bose.",
+   "C": "Ni ukubeshya: gutinda bibambura igihe, ntibabihe.",
+   "D": "Ni ukubeshya: birabangamira cyane abandi bagenzi."
+  }
+ },
+ {
+  "ref": "r2-23",
+  "answer": "C",
+  "confidence": "high",
+  "explanation": "Mu nzira y'icyerekezo kimwe, ushaka gukata ibumoso agomba **kwegera uruhande rw'ibumoso bw'umuhanda** mbere yo gukata, kuko nta baza mu cyerekezo gitandukanye. Igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Kwegera umurongo wo hagati ni ibyo ku muhanda w'ibyerekezo bibiri.",
+   "B": "Kwegera iburyo ni ibyo ushaka gukata iburyo.",
+   "D": "Mu nzira y'icyerekezo kimwe nta murongo ugabanya umuhanda mo kabiri ukoreshwa gutyo."
+  }
+ },
+ {
+  "ref": "r2-24",
+  "answer": "D",
+  "confidence": "high",
+  "explanation": "Umugenzi wibagiwe kwambara umukandara, ugomba **kumwibutsa kwambara umukandara wo kwirinda ibyago** mbere yo gutangira urugendo. Umutekano we ni inshingano yawe nk'umuyobozi — igisubizo ni **D**.",
+  "optionNotes": {
+   "A": "Gukuramo uwawe ngo mwambare mwembi ntacyo bikemura; buri wese agira uwe.",
+   "B": "Kwirengagiza ni ugushyira ubuzima bwe mu kaga.",
+   "C": "Gufunga uwawe gusa ntibirinda umugenzi uri iruhande."
+  }
+ },
+ {
+  "ref": "r2-26",
+  "answer": "A",
+  "confidence": "medium",
+  "explanation": "Umugenzi wese uguweho n'impanuka agomba **guhita ahagarara uko byagenda kose**. Guhagarara ni itegeko rya mbere mu mpanuka, mbere yo gutabara no kumenyesha — igisubizo ni **A**.",
+  "optionNotes": {
+   "B": "Ni ukubeshya: agomba gukora ku buryo umuhanda UDAHUNGABANA, atari ngo uhungabane.",
+   "C": "Gushyira ibimenyetso bikorwa nyuma yo guhagarara, si cyo cya mbere.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo A."
+  }
+ },
+ {
+  "ref": "r2-2",
+  "answer": "B",
+  "confidence": "medium",
+  "explanation": "Iyo abanyamaguru bakikira inkomyi banyuze mu muhanda, umuyobozi agomba gusiga umwanya wa **1m imbere yabo n'iyo nkomyi** kugira ngo banyure mu mutekano. Igisubizo ni **B**.",
+  "optionNotes": {
+   "A": "2m ni nyinshi kurenza igipimo cya ngombwa cy'itegeko.",
+   "C": "Umwanya usabwa ni uwo imbere yabo, atari inyuma yabo.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo B."
+  }
+ },
+ {
+  "ref": "r2-10",
+  "answer": "C",
+  "confidence": "medium",
+  "explanation": "Ibinyamitende bitatu cyangwa bine, velomoteri n'amapikipiki bigomba kugira ibyuma byo guhagarara bifunga **inziga z'inyuma n'iz'imbere** — feri zombi zigomba kubaho. Kubera ko A na B byombi ari ukuri, igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Ni ukuri ariko biruzuzwa n'iz'imbere (B).",
+   "B": "Ni ukuri ariko biruzuzwa n'iz'inyuma (A).",
+   "D": "Hari igisubizo cy'ukuri: A na B byombi ni ukuri."
+  }
+ },
+ {
+  "ref": "r2-11",
+  "answer": "C",
+  "confidence": "medium",
+  "explanation": "Ibiziga by'ibinyabiziga bifite moteri n'ibya romoruki zabyo bigomba kwambara inziga **zinjyamo umwuka ariko zihagwa** (pneumatiques). Izi nziga zitanga ubufatane n'umutekano — igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "Inziga z'ibyuma zangiza umuhanda kandi ntizifata neza.",
+   "B": "Kawucu ikomeye idafite umwuka ntabwo ari yo yemewe ku binyabiziga bisanzwe.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo C."
+  }
+ },
+ {
+  "ref": "r2-14",
+  "answer": "B",
+  "confidence": "medium",
+  "explanation": "Umukuru w'intara ashobora gutegeka ko mu mihanda avuze haba **icyerekezo kimwe** (sens unique), kugira ngo umutekano n'ukugenda byorohe. Igisubizo ni **B**.",
+  "optionNotes": {
+   "A": "Ibyerekezo bibiri ni uko bisanzwe; nta cyemezo gisabwa kuri byo.",
+   "C": "\"Ibyerekezo byombi\" na byo ni uko bisanzwe.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo B."
+  }
+ },
+ {
+  "ref": "r2-17",
+  "answer": "A",
+  "confidence": "medium",
+  "explanation": "Kunyuranaho (kubisiga undi) bikorerwa mu ruhande **rw'ibumoso gusa**. Uwo umbura umunyuraho ibumoso hanyuma ukagaruka iburyo — igisubizo ni **A**.",
+  "optionNotes": {
+   "B": "Iburyo ni ho kubisikana bikorerwa, atari kunyuranaho.",
+   "C": "Kunyuranaho iburyo ntibyemewe mu buryo busanzwe.",
+   "D": "Si byose; ni ibumoso (A) gusa.",
+   "E": "Si C na D; kunyuranaho ni ibumoso gusa."
+  }
+ },
+ {
+  "ref": "r2-20",
+  "answer": "D",
+  "confidence": "medium",
+  "explanation": "Imodoka zo mu rwego rwa C ni izitwara ibintu zifite uburemere burenga **3500kg**. Kubera ko 3500kg itari mu mahitamo yatanzwe, igisubizo ni **D**.",
+  "optionNotes": {
+   "A": "Kg750 ni igipimo cya romoruki ntoya, atari urwego C.",
+   "B": "Kg2500 si cyo gipimo gitangira urwego C.",
+   "C": "Kg5000 irenze igipimo nyacyo cya 3500kg."
+  }
+ },
+ {
+  "ref": "r2-25",
+  "answer": "C",
+  "confidence": "medium",
+  "explanation": "Iminyururu irwanya ubunyerere ishyirwa ku nziga kugira ngo ikinyabiziga **kive ahantu habi cyaheze** (mu byondo cyangwa ahanyerera). Ni igikoresho cy'agateganyo cyo kuva mu kaga — igisubizo ni **C**.",
+  "optionNotes": {
+   "A": "\"Kigende neza\" ni rusange; iminyururu ni iyo gukuraho ikinyabiziga cyaheze.",
+   "B": "Kuva mu byondo ni kimwe mu byo bikora, ariko igisubizo cyuzuye ni ukuva ahantu habi cyaheze.",
+   "D": "Hari igisubizo cy'ukuri, ari cyo C."
+  }
+ }
+]

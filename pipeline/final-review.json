@@ -1,0 +1,55 @@
+{
+ "note": "Resolution of the last 36 pending questions, settled against the actual law text (Igazeti / Code de la Route, extracted and searched). Every one of the 5 'ambiguous' items turned out to match its original source-marked answer — the AI verifier was wrong on all five. One of my own medium-confidence resolutions was wrong and is corrected here.",
+ "lawVerified": [
+  {
+   "id": "6a91f76c50eec2e053fabb04",
+   "keeps": "C",
+   "article": "Ingingo ya 83 / Art. 83",
+   "quote": "Ku ntera ya metero 100 ku binyabiziga bigendeshwa na moteri, iyo ntera igashobora kungana na Metero 50, iyo umuvuduko w'ibinyabiziga bidapakiye udashobora kurenga kirometero 50 mu isaha ahategamye.",
+   "why": "The stem is exactly the reduced case, so 50m is right."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabb6a",
+   "keeps": "C",
+   "article": "Art. 49.1",
+   "quote": "L'intervalle entre les vehicules automobiles formant un convoi en vue d'un trajet a faire de concert doit etre d'au moins 30 metres.",
+   "why": "30m between vehicles; the 50m figure applies between GROUPS, which is what the verifier confused it with."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabba6",
+   "keeps": "B",
+   "article": "Ingingo ya 43.3",
+   "quote": "Amatara maremare y'ikinyabiziga agomba kuzimwa: a) Iyo umuhanda umurikiwe hose bihagije ... muri metero zigeze ku 100; b) Iyo ikinyabiziga kigiye kubisikana n'ikindi ...",
+   "why": "Option A quotes 200m where the law says 100m, and 'in a built-up area' is not a listed case, so only B holds."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabb45",
+   "keeps": "C",
+   "article": "Igazeti 4 / Art. marquages",
+   "quote": "Ahanyura abayobozi b'amagare ... haciye imirongo ibiri icagaguye igizwe na kare cyangwa ingirwamwashi by'ibara ryera.",
+   "why": "The law says squares OR lozenges, so 'both' is correct."
+  },
+  {
+   "id": "6a91f76c50eec2e053fabc08",
+   "keeps": "A",
+   "article": "Art. 103.2",
+   "quote": "Les signaux sont places aux endroits les plus appropries eu egard a la nature de l'indication qu'ils fournissent.",
+   "why": "Placement follows the nature of what the sign indicates — the marked answer."
+  }
+ ],
+ "corrections": [
+  {
+   "id": "6a92c0749dfaa1c9fe7eeb52",
+   "from": "C",
+   "to": "B",
+   "why": "Ingingo ya 42: rear fog lamps may only be used when visibility drops below 100m, not 50m. My earlier resolution was wrong.",
+   "explanation": "Amatara kamena-bihu y'inyuma ntashobora gukoreshwa keretse iyo kubona neza bidashoboka hirya ya **metero 100** (igihu, imvura nyinshi n'ibindi). Ingingo ya 42 y'amategeko y'umuhanda ni yo ibiteganya — igisubizo ni **B**.",
+   "optionNotes": {
+    "A": "m150 irenze intera iteganywa n'itegeko (m100).",
+    "C": "m50 ni nke; itegeko rivuga metero 100.",
+    "D": "Hari igisubizo cy'ukuri, ari cyo B (m100)."
+   }
+  }
+ ],
+ "approveRest": true
+}

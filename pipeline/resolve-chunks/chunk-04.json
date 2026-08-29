@@ -1,0 +1,514 @@
+[
+ {
+  "ref": "r4-0",
+  "text": "Imyaka yifatizo ku bayobozi b'amagare ni:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Imyaka 18"
+   },
+   {
+    "id": "B",
+    "text": "Imyaka 20"
+   },
+   {
+    "id": "C",
+    "text": "Imyaka 15"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-1",
+  "text": "Umuyobozi wese uvuye mu nzira nyabagendwa ifite ibyerekezo 2 akaba yinjira mu nzira nyabagendwa ifite icyerekezo kimwe:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ibinyabiziga birimo bigomba kumureka agatambuka"
+   },
+   {
+    "id": "B",
+    "text": "Agomba kureka ibinyabiziga bigendamo bigatambuka"
+   },
+   {
+    "id": "C",
+    "text": "Nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-2",
+  "text": "Ijambo \"inzira y'ibinyabiziga\" rivuga",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inzira zikikije umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda"
+   },
+   {
+    "id": "C",
+    "text": "Inzira nyabagendwa"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-3",
+  "text": "Kubisikana no kubinyuranamo biba:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Iyo hari ibinyabiziga mu muhanda"
+   },
+   {
+    "id": "B",
+    "text": "Iyo rimwe na rimwe imodoka ifite umuvuduko mwinshi"
+   },
+   {
+    "id": "C",
+    "text": "Iyo ibinyabiziga bigenda"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo kiricyo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-4",
+  "text": "Inzira y'ibinyabiziga bivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inzira y'ibinyabiziga n'abanyamaguru"
+   },
+   {
+    "id": "B",
+    "text": "Bivuga umuhanda n'utuyira twa velomoteri"
+   },
+   {
+    "id": "C",
+    "text": "Bivuga umuhanda n'inzira ziwukikije"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-5",
+  "text": "Ahanyura amagare na za velomoteri bambukiranya mu muhanda haciyemo imirongo ibiri iciyemo uduce tugizwe na:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Mpandeshatu nyampanga"
+   },
+   {
+    "id": "B",
+    "text": "Na kare cyangwa ingirwamwashi"
+   },
+   {
+    "id": "C",
+    "text": "N'impande enye zingana"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-6",
+  "text": "Aho ibinyabiziga bigenda ku mirongo ibangikanye, ugutambukira iburyo abayobozi bagenda ku murongo w'ibumoso:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Bifatwa nk'inyuranaho risobanurwa n'iri teka"
+   },
+   {
+    "id": "B",
+    "text": "Ntibifatwa nk'inyuranaho risobanurwa n'iri teka"
+   },
+   {
+    "id": "C",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-7",
+  "text": "Ibimenyetso by'agateganyo:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Bigabanya agaciro n'ibimenyetso birombereje biri mu muhanda"
+   },
+   {
+    "id": "B",
+    "text": "Byubahirizwa iyo ntabindi bimenyetso biri mu muhanda"
+   },
+   {
+    "id": "C",
+    "text": "Birusha agaciro cyangwa bivanaho agaciro k'ibimenyetso byera biri ahantu hamwe"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-8",
+  "text": "Uturebanyuma dukoreshwa:",
+  "options": [
+   {
+    "id": "A",
+    "text": "kwireba"
+   },
+   {
+    "id": "B",
+    "text": "kugenzura ibigendera mu muhanda inyuma"
+   },
+   {
+    "id": "C",
+    "text": "kureba abicaye inyuma"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo cy'ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r4-9",
+  "text": "Ijambo akayira bivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inzira nyabagendwa yagutse"
+   },
+   {
+    "id": "B",
+    "text": "Inzira nyabagendwa ifunganye"
+   },
+   {
+    "id": "C",
+    "text": "Ahantu hose imihanda ihurira"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-10",
+  "text": "Ijambo akayira bivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inzira nyabagendwa ifunganye"
+   },
+   {
+    "id": "B",
+    "text": "Inzira nyabagendwa yagutse"
+   },
+   {
+    "id": "C",
+    "text": "Igice cy'inzira nyabagendwa cyinjirwamo n'ibinyabiziga"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-11",
+  "text": "Kunyuranaho mw'ikoni :",
+  "options": [
+   {
+    "id": "A",
+    "text": "biremewe"
+   },
+   {
+    "id": "B",
+    "text": "ntibyemewe"
+   },
+   {
+    "id": "C",
+    "text": "biremewe ukoranye ubwitonzi"
+   },
+   {
+    "id": "D",
+    "text": "ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r4-12",
+  "text": "Igare buvuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ikinyabiziga bibiri"
+   },
+   {
+    "id": "B",
+    "text": "Ikinyabiziga kitagira moteri"
+   },
+   {
+    "id": "C",
+    "text": "Inyamitende k'ibiziga bibiri kigendeshwa n'ingufu z'intoki cyangwa z'ibirenge"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-13",
+  "text": "Ikinyabiziga cyose cyangwa ibinyabiziga bikururana bigomba kugira ubuyobozi (direction) iyo:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Bigendera mu nzira nyabagendwa"
+   },
+   {
+    "id": "B",
+    "text": "Bigendera mu muhanda"
+   },
+   {
+    "id": "C",
+    "text": "Bigenda"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-14",
+  "text": "Birabujijwe kugenza cyangwa gukomeza kugenza ikinyabiziga gifite uburebure burengeje:",
+  "options": [
+   {
+    "id": "A",
+    "text": "M4 habariwemo ibyo kikoreye"
+   },
+   {
+    "id": "B",
+    "text": "M4 hatabariwemo ibyo kikoreye"
+   },
+   {
+    "id": "C",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-15",
+  "text": "Ahatari mu nsisiro, ibyapa biburira bishobora gushyirwa mu ntera:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kuva kuri m100 kugeza kuri m200"
+   },
+   {
+    "id": "B",
+    "text": "Kuva kuri m150 kugeza kuri m200"
+   },
+   {
+    "id": "C",
+    "text": "A na B byombi ni byo"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-16",
+  "text": "Abayobozi b'ibinyabiziga bitwarira abantu bagomba kugira:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Uburambe ku kazi"
+   },
+   {
+    "id": "B",
+    "text": "Uruhushya rubibemerera"
+   },
+   {
+    "id": "C",
+    "text": "Umuvuduko uringaniye"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-17",
+  "text": "Ikinyabiziga kibujijwe guhagarara akanya kanini:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Hejuru no munsi y'amateme, no ku mihanda inyura ikuzimu"
+   },
+   {
+    "id": "B",
+    "text": "Ahatageza muri m2 nibura hino y'ikimenyetso cy'umuriro cyerekana uburyo bwo kugenda mu muhanda"
+   },
+   {
+    "id": "C",
+    "text": "Iyo ubugari bw'umwanya usigaye ku muhanda butaba bufite m3"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r4-18",
+  "text": "Ibinyabiziga bikomatanye n'ibinyabiziga bikururana bivuga: ibinyabiziga bikururana bikagenda byitonze cyane.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-19",
+  "text": "Ufite uruhushya rw'agateganyo rwo gutwara ibinyabiziga yemerewe gutwara ibinyabiziga byose?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-20",
+  "text": "Ibitegetswe n'abakozi babifitiye ububasha binganya agaciro n'ibindi bimenyetso byose.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-21",
+  "text": "Imirongo yera yambukirana umuhanda igomba kuba ifite ubugari hagati ya 20cm na 60cm.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-22",
+  "text": "Ibinyabiziga bidasanzwe bigomba gutwarwa nibura n'umuyobozi ufite imyaka 18.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-23",
+  "text": "Ibyanditswe mw'ibara ryera mu muhanda bigomba kubuza ibyerekanwa n'ibyapa.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r4-24",
+  "text": "Utugarurarumuri tugaragara mu ntera ya metero 150?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yego"
+   },
+   {
+    "id": "B",
+    "text": "Oya"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ }
+]

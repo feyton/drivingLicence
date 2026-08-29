@@ -1,0 +1,2998 @@
+[
+ {
+  "slug": "sign-28c4fa3dbfe2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 44,
+  "text": "Icyapa gikurikira  kivuze iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe guhagarara umwanya munini"
+   },
+   {
+    "id": "C",
+    "text": "Umuvuduko utarengeje"
+   },
+   {
+    "id": "D",
+    "text": "Inzira yabanyeshuli"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Birabujijwe guhagarara umwanya munini».",
+  "image": "sign-28c4fa3dbfe2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-79e480512ad3",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 47,
+  "text": "Ibyapa  bitegeka bikozwe muyihe shusho?",
+  "options": [
+   {
+    "id": "A",
+    "text": "[Image] Elongated pointed arrow/pentagon outline shape"
+   },
+   {
+    "id": "B",
+    "text": "[Image] Triangle outline shape"
+   },
+   {
+    "id": "C",
+    "text": "[Image] Circle outline shape"
+   },
+   {
+    "id": "D",
+    "text": "[Image] Rounded rectangle outline shape"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Mu mategeko agenga ibimenyetso by'umuhanda, ibyapa bitegeka (mandatory) bigira ishusho y'uruziga (circle), bitandukanye n'ibyapa biburira (mpandeshatu) cyangwa iby'inyongera (urukiramende).",
+  "image": null,
+  "optionImages": {
+   "A": "sign-79e480512ad3-A.png",
+   "B": "sign-79e480512ad3-B.png",
+   "C": "sign-79e480512ad3-C.png",
+   "D": "sign-79e480512ad3-D.png"
+  },
+  "kind": "per-option",
+  "images": 4
+ },
+ {
+  "slug": "sign-8c98f390459b",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 47,
+  "text": "Nikihe cyapa cyerekena ko nta kinyabiziga gifite moteri cyemerewe kuhanyura?",
+  "options": [
+   {
+    "id": "A",
+    "text": "[Image] Blue disc, red border, red diagonal cross (no stopping)"
+   },
+   {
+    "id": "B",
+    "text": "[Image] Red circle with a car-and-motorcycle silhouette (no motor vehicles)"
+   },
+   {
+    "id": "C",
+    "text": "[Image] Plain circle with a black diagonal bar (end of restriction)"
+   },
+   {
+    "id": "D",
+    "text": "[Image] Red circle with two car silhouettes (no overtaking)"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Icyapa kigaragaza pikipiki na moto mu ruziga rutukura ni cyo kibuza ibinyabiziga bifite moteri kuhanyura.",
+  "image": null,
+  "optionImages": {
+   "A": "sign-8c98f390459b-A.png",
+   "B": "sign-8c98f390459b-B.png",
+   "C": "sign-8c98f390459b-C.png",
+   "D": "sign-8c98f390459b-D.png"
+  },
+  "kind": "per-option",
+  "images": 4
+ },
+ {
+  "slug": "sign-c1e017c31de2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 48,
+  "text": "Imbere yawe  iki cyapa kikubwiye iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuvuduko ntarengwa wemewe"
+   },
+   {
+    "id": "B",
+    "text": "Iherezo ry'ibyo wabuzwaga"
+   },
+   {
+    "id": "C",
+    "text": "Guhagarara umwanya munini n'umwanya moto ntibyemewe"
+   },
+   {
+    "id": "D",
+    "text": "Birabujijwe kuhinjira"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Guhagarara umwanya munini n'umwanya moto ntibyemewe».",
+  "image": "sign-c1e017c31de2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-4349734142ef",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 49,
+  "text": "Iki cyapa gisubanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Iteme ridahoraho"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda utaringaniye"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda w'injira mu kuzimu"
+   },
+   {
+    "id": "D",
+    "text": "Ubutaka bworoshye"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuhanda utaringaniye».",
+  "image": "sign-4349734142ef.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f797175b82ac",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 49,
+  "text": "Iki Cyapa Gisobanura Iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Iherezo Ry'inzira Y'abanyamaguru"
+   },
+   {
+    "id": "B",
+    "text": "Iherezo Ry'umuhanda Urombereje W'ibice Byinshi"
+   },
+   {
+    "id": "C",
+    "text": "A Na B Ni Ibisubizo By'ukuri"
+   },
+   {
+    "id": "D",
+    "text": "Nta nzira ihari"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Iherezo Ry'umuhanda Urombereje W'ibice Byinshi».",
+  "image": "sign-f797175b82ac.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 50,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inzira y'abanyeshuri"
+   },
+   {
+    "id": "B",
+    "text": "Abanyamaguru ntibemerewe"
+   },
+   {
+    "id": "C",
+    "text": "Agace k'abanyamaguru nta  kinyabiziga"
+   },
+   {
+    "id": "D",
+    "text": "Hegereye aho abanyamaguru bambukira"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Hegereye aho abanyamaguru bambukira».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-723e50eee6c4",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 51,
+  "text": "wakora iki ubonye icyi cyapa ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "guhagarara gusa igihe ibinyabiziga bikwegereye"
+   },
+   {
+    "id": "B",
+    "text": "guhagarara niyo  nta kinyabiziga ubona"
+   },
+   {
+    "id": "C",
+    "text": "Guhagarara gusa niba hari abana bategereje kwambuka"
+   },
+   {
+    "id": "D",
+    "text": "Guhagarara  gusa igihe  ikimenyetso cyaka  ari umutuku"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «guhagarara niyo  nta kinyabiziga ubona».",
+  "image": "sign-723e50eee6c4.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 51,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Uguhinguka ku mwaro cyangwa ku nkombe cyangwa ahegereye icyome"
+   },
+   {
+    "id": "B",
+    "text": "Inzira nyabagendwa iri kumusozi ucuramye"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda utaringaniye"
+   },
+   {
+    "id": "D",
+    "text": "Umuhanda wangijwe n'isuri"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Uguhinguka ku mwaro cyangwa ku nkombe cyangwa ahegereye icyome».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-aad0e70fdc35",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 52,
+  "text": "Icyapa gitanga uburenganzira bwo gutambuka mbere kigira iyihe shusho?",
+  "options": [
+   {
+    "id": "A",
+    "text": "[Image] Triangle outline (warning sign shape)"
+   },
+   {
+    "id": "B",
+    "text": "[Image] Circle outline (prohibition sign shape)"
+   },
+   {
+    "id": "C",
+    "text": "[Image] Solid octagon (stop sign shape)"
+   },
+   {
+    "id": "D",
+    "text": "[Image] Inverted (upside-down) triangle (give-way/yield sign shape)"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Mu mategeko mpuzamahanga agenga ibimenyetso by'umuhanda, icyapa gitanga uburenganzira bwo gutambuka mbere (yield) gifite ishusho ya mpandeshatu ivunitse (inverted triangle).",
+  "image": "sign-aad0e70fdc35.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 5
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 52,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda wubatswe nabi"
+   },
+   {
+    "id": "B",
+    "text": "Agacuri  kateza ibyago"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda utaringaniye"
+   },
+   {
+    "id": "D",
+    "text": "Akazamuko gahanamye"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Agacuri  kateza ibyago».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 53,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Guhindura icyerekezo ibumoso ugana aho bahagarara"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda udakomeza"
+   },
+   {
+    "id": "C",
+    "text": "Nti byemewe guhindura icyerekezo  ibumoso"
+   },
+   {
+    "id": "D",
+    "text": "Guhindura ikirekezo ibumoso  ugana ku cyome"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuhanda udakomeza».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-ae8f03b4ae58",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 54,
+  "text": "Umurongo ucagaguye wera mu muhanda usobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Birabujijwe kuwurenga"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe kuhahagarara"
+   },
+   {
+    "id": "C",
+    "text": "Wegereye ahaguteza ibyago"
+   },
+   {
+    "id": "D",
+    "text": "Kunyuranaho ntibyemewe"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Birabujijwe kuwurenga».",
+  "image": "sign-ae8f03b4ae58.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 55,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ahegereye umuhanda unyerera."
+   },
+   {
+    "id": "B",
+    "text": "Imbere ipine ryapfumutse."
+   },
+   {
+    "id": "C",
+    "text": "Ahegereye icyago kidasobanuye ukundi."
+   },
+   {
+    "id": "D",
+    "text": "Imbere hari hatangirwa serivisi."
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ahegereye icyago kidasobanuye ukundi».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 56,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Imbere hari umuyobozi w'amatungo."
+   },
+   {
+    "id": "B",
+    "text": "Imbere hari inzira ya gari ya moshi."
+   },
+   {
+    "id": "C",
+    "text": "Ahegereye amasangano y'inzira nyabagendwa n'inzira ya gari ya moshi hatabambiye"
+   },
+   {
+    "id": "D",
+    "text": "Inkomane ibambiye."
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ahegereye amasangano y'inzira nyabagendwa n'inzira ya gari ya moshi hatabambiye».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-02cd93da8828",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 56,
+  "text": "Muri iri sangano ry'umuhanda  hari icyapa gisobanura “guhagarara” n'umurongo wera urombereje munzira . Niyihe mpamvu hari iki cyapa cyo “guhagarara” hano?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Biragoye kubona neza mu muhanda munini"
+   },
+   {
+    "id": "B",
+    "text": "Umuvuduko mu muhanda munini wavanyweho"
+   },
+   {
+    "id": "C",
+    "text": "Ni mwisangano ry'umuhanda rikoreshwa cyane"
+   },
+   {
+    "id": "D",
+    "text": "Hari imirongo iburira ibyago bitunguranye"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Biragoye kubona neza mu muhanda munini».",
+  "image": "sign-02cd93da8828.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-c0c1132af5ac",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 58,
+  "text": "Uhuye n'ingorane utwaye ikinyabiziga , mu muhanda ufite ibyerekezo bibiri, ufite ikimenyetso kiburira cya mpandeshatu . wagishyira mu ntera ingana iki uvuye aho ikinyabiziga   cyahagaze",
+  "options": [
+   {
+    "id": "A",
+    "text": "Metero 5"
+   },
+   {
+    "id": "B",
+    "text": "Metero 25"
+   },
+   {
+    "id": "C",
+    "text": "Metero 45"
+   },
+   {
+    "id": "D",
+    "text": "Metero 100"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Itegeko rigena iyo ntera cyangwa igihe riteganya ko igisubizo cy'ukuri ari «Metero 25».",
+  "image": "sign-c0c1132af5ac.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-08d0c6b21b6b",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 59,
+  "text": "Icyapa gikoze mw'ishusho ya mpandeshatu kimenyesha:",
+  "options": [
+   {
+    "id": "A",
+    "text": "ibyago"
+   },
+   {
+    "id": "B",
+    "text": "ibibujijwe"
+   },
+   {
+    "id": "C",
+    "text": "ibitegetswe"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «ibyago».",
+  "image": "sign-08d0c6b21b6b.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-2a985c502215",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 60,
+  "text": "Iki cyapa gisobanura:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa n'abanyamaguru"
+   },
+   {
+    "id": "B",
+    "text": "Akayira kabanyamaguru"
+   },
+   {
+    "id": "C",
+    "text": "Aho abanayamaguru bambukira"
+   },
+   {
+    "id": "D",
+    "text": "B na c ni ibisubizo by'ukuri"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ntihanyurwa n'abanyamaguru».",
+  "image": "sign-2a985c502215.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-622d8bb61435",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 61,
+  "text": "Iki cyapa gisobanura iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Hoteli"
+   },
+   {
+    "id": "B",
+    "text": "Ibitaro"
+   },
+   {
+    "id": "C",
+    "text": "Ahagenewe kugwa kajugujugu"
+   },
+   {
+    "id": "D",
+    "text": "B na c ni ibisubizo by'ukuri"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ibitaro».",
+  "image": "sign-622d8bb61435.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-197d010450a7",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 61,
+  "text": "igice kinzira nyabagendwa gikikijwe n'imirongo ibiri y'umweru iciyemo uduce kandi iteganye :",
+  "options": [
+   {
+    "id": "A",
+    "text": "ahagenewe guhagarara umwanya munini n'umuto"
+   },
+   {
+    "id": "B",
+    "text": "ahagenewe abanayamaguru"
+   },
+   {
+    "id": "C",
+    "text": "ahagenewe inzira y'ibinyamitende"
+   },
+   {
+    "id": "D",
+    "text": "a na b ni ibisubizo by'ukuri"
+   }
+  ],
+  "answer": "C",
+  "category": "general",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «ahagenewe inzira y'ibinyamitende».",
+  "image": "sign-197d010450a7.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-59aee72ffab7",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 62,
+  "text": "iki cyapa kibuza abayobozi bibinyabiziga kunyuranaho :",
+  "options": [
+   {
+    "id": "A",
+    "text": "iburyo"
+   },
+   {
+    "id": "B",
+    "text": "ibumoso"
+   },
+   {
+    "id": "C",
+    "text": "iburyo n'ibumoso"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «ibumoso».",
+  "image": "sign-59aee72ffab7.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-6d0545108ac3",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 62,
+  "text": "Iki  cyapa kibuza kunyuranaho ibumoso  ku binyabiziga bikurikira :",
+  "options": [
+   {
+    "id": "A",
+    "text": "ku binyabiziga byose"
+   },
+   {
+    "id": "B",
+    "text": "ku binyabiziga byose bifite moteri"
+   },
+   {
+    "id": "C",
+    "text": "kubinyabiziga byose uretse ibinyamitende  ibiri n'amapikipiki adafite akanyabiziga ko k'uruhande"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «kubinyabiziga byose uretse ibinyamitende  ibiri n'amapikipiki adafite akanyabiziga ko k'uruhande».",
+  "image": "sign-6d0545108ac3.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-494ff3087f99",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 63,
+  "text": "Ni ikihe  cyapa muri ibi kintegeka gutanga inzira:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Icyapa A19"
+   },
+   {
+    "id": "B",
+    "text": "Icyapa B5"
+   },
+   {
+    "id": "C",
+    "text": "Icyapa B6"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Icyapa B5».",
+  "image": "sign-494ff3087f99.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-fd2a9c2b002f",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 64,
+  "text": "Iki cyapa gisobanura :",
+  "options": [
+   {
+    "id": "A",
+    "text": "utubuye dutaruka mu muhanda"
+   },
+   {
+    "id": "B",
+    "text": "umuhanda urimo amazi"
+   },
+   {
+    "id": "C",
+    "text": "umuhanda unyerera"
+   },
+   {
+    "id": "D",
+    "text": "a na b ni bisubizo by'ukuri"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «utubuye dutaruka mu muhanda».",
+  "image": "sign-fd2a9c2b002f.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-a28235cf0363",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 66,
+  "text": "Hejuru y'aka kanunga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Nshobora kunyura ku kinyabiziga  icyo aricyose  mu gihe nagabanyije umuvuduko"
+   },
+   {
+    "id": "B",
+    "text": "nshobora kunyura gusa kubinyabiziga by'imitende ibiri"
+   },
+   {
+    "id": "C",
+    "text": "kunyuranaho ibumoso birabujijwe"
+   },
+   {
+    "id": "D",
+    "text": "a na b ni ibisubizo by'ukuri"
+   }
+  ],
+  "answer": "C",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «kunyuranaho ibumoso birabujijwe».",
+  "image": "sign-a28235cf0363.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-bd741688094e",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 70,
+  "text": "N'iyihe myifatire myiza wagira ugeze aho abana bari hafi y'inzira nyabagendwa?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Itonde , witegereze ni biba ngongwa ubaburire unitegura kuba wahagarara."
+   },
+   {
+    "id": "B",
+    "text": "Ihute urenge aho abo bana bari"
+   },
+   {
+    "id": "C",
+    "text": "Komeza ugume ku muvuduko munini"
+   },
+   {
+    "id": "D",
+    "text": "Komeza ugendere kuruhande rw'iburyo"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Itonde , witegereze ni biba ngongwa ubaburire unitegura kuba wahagarara».",
+  "image": "sign-bd741688094e.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-d140226ec470",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 71,
+  "text": "Umuyobozi w'ikinyabiziga yegereye aho umwana w'umuhungu utwaye akagare k'abana asezera ku nshuti ye . N'iyihe myifatire myiza  wagira imbere yabo?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ikomereze nkaho ataragera munzira nyabagendwa"
+   },
+   {
+    "id": "B",
+    "text": "Itegure kureka uwo mwana w'umuhungu atambuke, kuko yajya mu muhanda atitaye ku kinyabiziga cyawe"
+   },
+   {
+    "id": "C",
+    "text": "Gabanya umuvuduko ubwire uwo mwana yambuke ukoresheje ibimenyetso"
+   },
+   {
+    "id": "D",
+    "text": "Komeza nkaho uwo mwana akiri munzira y'abanyamaguru"
+   }
+  ],
+  "answer": "B",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Itegure kureka uwo mwana w'umuhungu atambuke, kuko yajya mu muhanda atitaye ku kinyabiziga cyawe».",
+  "image": "sign-d140226ec470.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f838294627a2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 71,
+  "text": "Nk'umuyobozi w'ikinyabiziga, n'iyihe myitwarire wagira?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi w'ikinyabiziga agomba gukomeza"
+   },
+   {
+    "id": "B",
+    "text": "Umuyobozi w'ikinyabiziga agomba kuguma mu ruhande rw'iburyo kugira ngo ahe inzira umumotari"
+   },
+   {
+    "id": "C",
+    "text": "Umuyobozi w'ikinyabiziga agomba gutegereza"
+   },
+   {
+    "id": "D",
+    "text": "Umuyobozi w'ikinyabiziga agomba gutanga  inzira ayiha umu motari"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Umuyobozi w'ikinyabiziga agomba gukomeza».",
+  "image": "sign-f838294627a2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-32101c5b9edb",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 72,
+  "text": "Umuyobozi w'ikinyabiziga ageze hafi y'inzira y'abanyamaguru yakwitwara ate?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kugabanya umuvuduko mu gihe cyiza, ukitegura guhagarara"
+   },
+   {
+    "id": "B",
+    "text": "Gukomeza agendera ku muvuduko uri hejuru, mu gihe umunyamaguru ategereje"
+   },
+   {
+    "id": "C",
+    "text": "Kuguma ku muvuduko yari afite mu gihe umunyamaguru atarambuka"
+   },
+   {
+    "id": "D",
+    "text": "Kuvuza ihoni akaguma ku muvuduko yahozeho"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Kugabanya umuvuduko mu gihe cyiza, ukitegura guhagarara».",
+  "image": "sign-32101c5b9edb.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-1fa36445b54f",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 72,
+  "text": "Umuyobozi w'ikinyabiziga akurikiye ibinyabiziga bibiri, yifuza kubinyuraho. N'iki yashingiraho mbere yo kubanyuraho?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ugomba kuzinyuraho zombi"
+   },
+   {
+    "id": "B",
+    "text": "Sibyiza ko yazinyuraho atabasha kureba neza imbere ye"
+   },
+   {
+    "id": "C",
+    "text": "Ibyapa by'aho ageze ntibimwemerera kunyuranaho"
+   },
+   {
+    "id": "D",
+    "text": "Imbere har'inzira y'abanyamaguru"
+   }
+  ],
+  "answer": "B",
+  "category": "general",
+  "explanation": "Umuyobozi w'ikinyabiziga agomba kubahiriza amategeko y'umuhanda no kwirinda impanuka, ni yo mpamvu igisubizo cy'ukuri ari «Sibyiza ko yazinyuraho atabasha kureba neza imbere ye».",
+  "image": "sign-1fa36445b54f.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-ebac65e09a0e",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 74,
+  "text": "N'ayahe matara umuyobozi w'ikinyabiziga agomba gukoresha mugihe cy'ibihu?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amatara kamena bihu y'imbere n'ay'inyuma hamwe n'amatara magufi"
+   },
+   {
+    "id": "B",
+    "text": "Amatara kamenabihu y'imbere n'ay'inyuma"
+   },
+   {
+    "id": "C",
+    "text": "Amatara magufi"
+   },
+   {
+    "id": "D",
+    "text": "Urumuri rusanzwe"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Umuyobozi w'ikinyabiziga agomba kubahiriza amategeko y'umuhanda no kwirinda impanuka, ni yo mpamvu igisubizo cy'ukuri ari «Amatara kamena bihu y'imbere n'ay'inyuma hamwe n'amatara magufi».",
+  "image": "sign-ebac65e09a0e.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f70330223d31",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 74,
+  "text": "Muri ibi binyabiziga n'ikihe gihagaze nabi?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ibinyabiziga byombi"
+   },
+   {
+    "id": "B",
+    "text": "Ikinyabiziga cy'icyatsi"
+   },
+   {
+    "id": "C",
+    "text": "Ikinyabiziga cy'umutuku"
+   },
+   {
+    "id": "D",
+    "text": "Nta n'imwe"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Ibinyabiziga byombi».",
+  "image": "sign-f70330223d31.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-b1205d044b86",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 75,
+  "text": "N'iki umuyobozi w'ikinyabiziga yakora aramutse ahumishijwe n'urumuri rw'amatara yikinyabiziga giturutse mu kindi cyerekezo?",
+  "options": [
+   {
+    "id": "A",
+    "text": "humisha ikinyabiziga giturutse mu kindi cyerekezo ucana  amatara maremare."
+   },
+   {
+    "id": "B",
+    "text": "Egera kunkombe y'iburyo bw'umuhanda nibinashobioka ugabanye umuvuduko."
+   },
+   {
+    "id": "C",
+    "text": "Canira amatara ikinyabiziga kiva mukindi cyerekezo"
+   },
+   {
+    "id": "D",
+    "text": "Ongera umuvuduko kugira ngo usohoke mururwo rumuri vuba bishoboka"
+   }
+  ],
+  "answer": "B",
+  "category": "general",
+  "explanation": "Umuyobozi w'ikinyabiziga agomba kubahiriza amategeko y'umuhanda no kwirinda impanuka, ni yo mpamvu igisubizo cy'ukuri ari «Egera kunkombe y'iburyo bw'umuhanda nibinashobioka ugabanye umuvuduko».",
+  "image": "sign-b1205d044b86.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-a2f4af323a01",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 76,
+  "text": "Niki umuyobozi w' ikinyabiziga akwiriye kumenya mugihe akurikiye umuyobozi wikinyamitende ibiri kandi imodoka y' umweru iri gusubira inyuma ijya mumuhanda?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi wikinyabiziga gisubira inyuma azahagarara nabona umuyobozi w' ikinyabimitende ibiri"
+   },
+   {
+    "id": "B",
+    "text": "Umuyobozi w' ikinyamitende ibiri ashobora gusaba umuyobozi w' ikinyabiziga gisubira inyuma guhagarara"
+   },
+   {
+    "id": "C",
+    "text": "Amatara yoguhagarara ashobora kuzima ikinyabiziga gikomeza gusubira inyuma"
+   },
+   {
+    "id": "D",
+    "text": "Umuyobozi w' ikinyamitende ashobora guhagarara bitunguranye"
+   }
+  ],
+  "answer": "D",
+  "category": "general",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuyobozi w' ikinyamitende ashobora guhagarara bitunguranye».",
+  "image": "sign-a2f4af323a01.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-97ff28bf625f",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 77,
+  "text": "Aha niki umuyobozi w' ikinyabiziga yakora mugihe  ashaka kujya iburyo?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Gukomeza hagati y' abanyamaguru babiri"
+   },
+   {
+    "id": "B",
+    "text": "kuvuza ihoni akongera umuvuduko"
+   },
+   {
+    "id": "C",
+    "text": "Guhagarara akareka abanyamaguru bakambuka"
+   },
+   {
+    "id": "D",
+    "text": "Reka umunyamaguru umwe atambuke ubone umwanya wogutambuka"
+   }
+  ],
+  "answer": "C",
+  "category": "general",
+  "explanation": "Umuyobozi w'ikinyabiziga agomba kubahiriza amategeko y'umuhanda no kwirinda impanuka, ni yo mpamvu igisubizo cy'ukuri ari «Guhagarara akareka abanyamaguru bakambuka».",
+  "image": "sign-97ff28bf625f.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-6ed36da5c240",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 77,
+  "text": "Aha umuyobozi w' ikinyabiziga  ashobora kunyura kuri aba abanyamagare?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Oya, umuyobozi ntashobora kureba imbere neza"
+   },
+   {
+    "id": "B",
+    "text": "Yego, kuko umurongo wera ucagaguye udashobora kuba udacagaguye."
+   },
+   {
+    "id": "C",
+    "text": "Yego, abanyamagare bazumva imodoka bave munzira"
+   },
+   {
+    "id": "D",
+    "text": "Yego, kuko buri kinyabiziga kiva mukindi cyerekezo gishobora kuguha inzira"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Oya, umuyobozi ntashobora kureba imbere neza».",
+  "image": "sign-6ed36da5c240.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-db3b1ff2f644",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 78,
+  "text": "Aha niki umuyobozi w' ikinyabiziga yakora?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kwemerera abanyamaguru kwambuka umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "Kuvuza ihoni agakomeza"
+   },
+   {
+    "id": "C",
+    "text": "Tengereza munzira y' abanyamaguru kugeza imidoka izimye"
+   },
+   {
+    "id": "D",
+    "text": "Kongera umuvuduko mbere yuko abanyamaguru bambuka"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Umuyobozi w'ikinyabiziga agomba kubahiriza amategeko y'umuhanda no kwirinda impanuka, ni yo mpamvu igisubizo cy'ukuri ari «Kwemerera abanyamaguru kwambuka umuhanda».",
+  "image": "sign-db3b1ff2f644.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-1ff67f707af4",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 78,
+  "text": "Muri ibi binyabiziga bine ni ikihe kiri mu buryo bwiza bwo gukata ikoni ry'iburyo kiva mu muhanda munini kijya mu muto?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ikinyabiziga cya mbere kiri mu buryo bwiza bwo gukata ikoni ry'iburyo"
+   },
+   {
+    "id": "B",
+    "text": "Ikinyabiziga cya kabiri  kiri mu buryo bwiza bwo gukata ikoni ry'iburyo"
+   },
+   {
+    "id": "C",
+    "text": "Ikinyabiziga cya gatatu kiri mu buryo bwiza bwo gukata ikoni ry'iburyo"
+   },
+   {
+    "id": "D",
+    "text": "Ikinyabiziga cya kane kiri mu buryo bwiza bwo gukata ikoni ry'iburyo"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Ikinyabiziga cya mbere kiri mu buryo bwiza bwo gukata ikoni ry'iburyo».",
+  "image": "sign-1ff67f707af4.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-dd4d288c5f51",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 80,
+  "text": "Umurongo w'umweru urombereje uciye hagati mu muhanda uvuze iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi wese abujijwe kuwurenga"
+   },
+   {
+    "id": "B",
+    "text": "Abanyamitende wemerewe kunyuranaho"
+   },
+   {
+    "id": "C",
+    "text": "Kuhahagara biremewe"
+   },
+   {
+    "id": "D",
+    "text": "Guhindukira ku manywa"
+   }
+  ],
+  "answer": null,
+  "category": "general",
+  "explanation": null,
+  "image": "sign-dd4d288c5f51.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-9dc85da5ec51",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 86,
+  "text": "Mbere yuko umuyobozi w'ikinyabiziga akata ibumoso mu  nzira nyabagendwa,  nihe ikinyabiziga kigomba kuba kiri ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Mu ruhande rw'iburyo bw'inzira nyabagendwa"
+   },
+   {
+    "id": "B",
+    "text": "Gusa iburyo bwo hagati y'inzira nyabagendwa"
+   },
+   {
+    "id": "C",
+    "text": "Muruhande  urwarirwo rwo  hagati mu nzira nyabagendwa"
+   },
+   {
+    "id": "D",
+    "text": "Mu ruhande rw'ibumoso bw'inzira nyabagendwa"
+   }
+  ],
+  "answer": null,
+  "category": "general",
+  "explanation": null,
+  "image": "sign-9dc85da5ec51.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-c6964479cfad",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 93,
+  "text": "Ugeze mu masangano y'umuhanda  aho usanga ibimenyetso bimurika bidakora, wakora iki igihe  umukozi ubifiye ububasha aguhaye iki kimenyesto ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "gukata ibumoso gusa"
+   },
+   {
+    "id": "B",
+    "text": "gukata iburyo gusa ugakomeza imbere"
+   },
+   {
+    "id": "C",
+    "text": "Guhagarara kumurongo wo guhagarara umwanya moto"
+   },
+   {
+    "id": "D",
+    "text": "komeza imbere gusa"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Guhagarara kumurongo wo guhagarara umwanya moto».",
+  "image": "sign-c6964479cfad.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-6602b314bce2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 95,
+  "text": "Iki cyapa kivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Aho imihanda ihurira"
+   },
+   {
+    "id": "B",
+    "text": "inkomane y'aho umuhanda umwe urasukira iburyo"
+   },
+   {
+    "id": "C",
+    "text": "a na b ni ibisubizo by'ukuri"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «nta gisubizo cy'ukuri kirimo».",
+  "image": "sign-6602b314bce2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-b514eadb4abc",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 95,
+  "text": "Iki cyapa gisobanura ibi bikurikira:",
+  "options": [
+   {
+    "id": "A",
+    "text": "birabujijwe kunyura ku kindi kinyabiziga"
+   },
+   {
+    "id": "B",
+    "text": "gutambuka mbere kw'ibinyabiziga bituruka aho ujya"
+   },
+   {
+    "id": "C",
+    "text": "a na b ni ibisubizo by'ukuri"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cyukuri kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «gutambuka mbere kw'ibinyabiziga bituruka aho ujya».",
+  "image": "sign-b514eadb4abc.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-6602b314bce2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 96,
+  "text": "Iki cyapa kivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "iherezo ryo gutambuka mbere"
+   },
+   {
+    "id": "B",
+    "text": "gutambuka mbere kw'ibinyabiziga biturutse imbere aho ujya"
+   },
+   {
+    "id": "C",
+    "text": "gutambuka mbere y'ibinyabiziga biturutse imbere"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «gutambuka mbere y'ibinyabiziga biturutse imbere».",
+  "image": "sign-6602b314bce2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-6602b314bce2",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 97,
+  "text": "Iki cyapa kivuga:",
+  "options": [
+   {
+    "id": "A",
+    "text": "ifungana ry'umuhanda iburyo"
+   },
+   {
+    "id": "B",
+    "text": "ifungana ry'umuhanda w'akayira gasatira umuhanda ibumoso"
+   },
+   {
+    "id": "C",
+    "text": "akayira gato"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «ifungana ry'umuhanda w'akayira gasatira umuhanda ibumoso».",
+  "image": "sign-6602b314bce2.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-5ae321b25ac9",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 98,
+  "text": "Iki cyapa cyerekana :",
+  "options": [
+   {
+    "id": "A",
+    "text": "ifungana ry'umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "ifungana ry'umuhanda n'akayira gasatira umuhanda i bumoso"
+   },
+   {
+    "id": "C",
+    "text": "umuhanda utaringaniye"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «nta gisubizo cy'ukuri kirimo».",
+  "image": "sign-5ae321b25ac9.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-fbd1fd7bf87c",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 98,
+  "text": "Icyi cyapa gisobanura :",
+  "options": [
+   {
+    "id": "A",
+    "text": "ntihanyurwa mu byerekezo byombi"
+   },
+   {
+    "id": "B",
+    "text": "ntihanyurwa n'abandi uretse abahatuye"
+   },
+   {
+    "id": "C",
+    "text": "hanyurwa mu cyerekezo kimwe gusa"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «ntihanyurwa mu byerekezo byombi».",
+  "image": "sign-fbd1fd7bf87c.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-a6ca258fbbc6",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 99,
+  "text": "Icyi cyapa cyerekana :",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ifungana ry'umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "umuhanda unyerera"
+   },
+   {
+    "id": "C",
+    "text": "umuhanda utaringaniye"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «nta gisubizo cy'ukuri kirimo».",
+  "image": "sign-a6ca258fbbc6.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-9278a3b01c95",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 103,
+  "text": "Iki kimenyetso gitanzwe n'umukozi ubifitiye ububasha cyo guhagarara :",
+  "options": [
+   {
+    "id": "A",
+    "text": "ku bakoresha umuhanda ba muturutse imbere"
+   },
+   {
+    "id": "B",
+    "text": "ku bakoresha umuhanda bose bamuturutse imbere n'inyuma"
+   },
+   {
+    "id": "C",
+    "text": "kubakoresha umuhanda bose bamuturutse inyuma"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «ku bakoresha umuhanda bose bamuturutse imbere n'inyuma».",
+  "image": "sign-9278a3b01c95.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-de9c19dbde37",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 104,
+  "text": "Ibi byapa byo mu muhanda birambuza kunyuranaho ibumoso ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "yego"
+   },
+   {
+    "id": "B",
+    "text": "yego, iyo ufite umuvuduo wa 90km/h"
+   },
+   {
+    "id": "C",
+    "text": "oya"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo cy'ukuri"
+   }
+  ],
+  "answer": null,
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-de9c19dbde37.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f9184bef5766",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 107,
+  "text": "Umuhanda wambukiranya inzira ya gariyamoshi",
+  "options": [
+   {
+    "id": "A",
+    "text": "nshobora gukomeza nkambuka umuhanda kubera ko uruzitiro rufunguye"
+   },
+   {
+    "id": "B",
+    "text": "ngomba guhagarara munsi yitara ry'umutuku rimyatsa"
+   },
+   {
+    "id": "C",
+    "text": "ntabwo nakomeza urugendo rwanjye. Ngomba gihita mpagarara"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo cy'ukuri"
+   }
+  ],
+  "answer": "B",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «ngomba guhagarara munsi yitara ry'umutuku rimyatsa».",
+  "image": "sign-f9184bef5766.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-221c0f16d663",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 108,
+  "text": "Kuri iki cyapa  cyo mu muhanda cyambere kintegeka ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kugendera k'umuvuduko  uri hejuru ya 30km/h"
+   },
+   {
+    "id": "B",
+    "text": "kutarenza umuvuduko wa 30km/h"
+   },
+   {
+    "id": "C",
+    "text": "birabujijwe kugendera kumuvuduko uri hejuru ya 30km/h"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cyukuri"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «birabujijwe kugendera kumuvuduko uri hejuru ya 30km/h».",
+  "image": "sign-221c0f16d663.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f7168e09cd4c",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 108,
+  "text": "Mpagaze mu murongo  wo guhagarara umwanya muto",
+  "options": [
+   {
+    "id": "A",
+    "text": "Nshobora gukata iburyo"
+   },
+   {
+    "id": "B",
+    "text": "Nshobora gukata ibumoso"
+   },
+   {
+    "id": "C",
+    "text": "Nshobora gukata ibumoso  cyangwa iburyo"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Nshobora gukata iburyo».",
+  "image": "sign-f7168e09cd4c.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f11104f25c59",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 109,
+  "text": "Ndashaka kugata ibumoso. Imodoka y'icyatsi yaje irahagarara. Ninde ufite uburenganzira bwo gutambuka mbere?",
+  "options": [
+   {
+    "id": "A",
+    "text": "mfite uburenganzira bwo gutambuka mbere"
+   },
+   {
+    "id": "B",
+    "text": "imodoka y'icyatsi ifite uburenganzira bwo gutambuka mbere"
+   },
+   {
+    "id": "C",
+    "text": "twembi ntaburenganzira bwo gutambuka mbere gusa tugomba gutambukana ubwitonzi"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo nakimwe kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "general",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «imodoka y'icyatsi ifite uburenganzira bwo gutambuka mbere».",
+  "image": "sign-f11104f25c59.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-3d561df4fd23",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 110,
+  "text": "Ndi kumuvuduko wa 20km/h. nshobora gukomeza muri iri sangano ry'umuhanda?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oya"
+   },
+   {
+    "id": "B",
+    "text": "yago, nshobora gukata iburyo"
+   },
+   {
+    "id": "C",
+    "text": "yego, nshobora guta ibumoso cyangwa iburyo"
+   },
+   {
+    "id": "D",
+    "text": "yego, nshobora gukata ibumoso gusa"
+   }
+  ],
+  "answer": "A",
+  "category": "general",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «oya».",
+  "image": "sign-3d561df4fd23.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-b3c72ec9af46",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 111,
+  "text": "Uhereye kuri ibi byapa habujijwe :",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kunyuranaho kubinyabiziga bikururwa nibinyabiziga birengeje imitende ibiri ibumoso no kugendera kumuvuduko urengeje 70 km/h"
+   },
+   {
+    "id": "B",
+    "text": "Kunyuranaho kubinyabiziga bikururwa cyangwa ibinyabiziga birengeje imitende ibiri ibumoso"
+   },
+   {
+    "id": "C",
+    "text": "kugendera hejuru ya 70 km/h"
+   },
+   {
+    "id": "D",
+    "text": "ntagisubizo cy'ukuri"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Kunyuranaho kubinyabiziga bikururwa nibinyabiziga birengeje imitende ibiri ibumoso no kugendera kumuvuduko urengeje 70 km/h».",
+  "image": "sign-b3c72ec9af46.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 112,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Guhagarara, aho abanyeshuri bambukira"
+   },
+   {
+    "id": "B",
+    "text": "Hagarara akanya gato"
+   },
+   {
+    "id": "C",
+    "text": "Ibindi binyabiziga bigomba kuguha inzira"
+   },
+   {
+    "id": "D",
+    "text": "Gutanga umwanya ku bindi binyabiziga i buryo bwawe"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Hagarara akanya gato».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-15b9ed4a6069",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 112,
+  "text": "Iki cyapa gisobanura iki mu nkomane ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Tanga inzira ku binyabiziga binini"
+   },
+   {
+    "id": "B",
+    "text": "Gabanya umuvuduko uhe inzira abanyamaguru."
+   },
+   {
+    "id": "C",
+    "text": "Tanga inzira ku binyabiziga bigenda mu muhanda munini wegera"
+   },
+   {
+    "id": "D",
+    "text": "Tanga inzira ku ibinyabiziga biturutse iburyo bwawe"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Tanga inzira ku binyabiziga bigenda mu muhanda munini wegera».",
+  "image": "sign-15b9ed4a6069.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 113,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda urombereje  w'ibice byinshi ibumoso"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda uyoborejwe i bumoso"
+   },
+   {
+    "id": "C",
+    "text": "Ibinyabiziga biturutse iburyo bifite uburenganzira bwo gutambuka mbere"
+   },
+   {
+    "id": "D",
+    "text": "Kata i bumoso gusa"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Kata i bumoso gusa».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 114,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Birabujijwe gukata i buryo"
+   },
+   {
+    "id": "B",
+    "text": "Tanga inzira ku bindi binyabiziga bigenda mu gihe ugiye gukatira iburyo"
+   },
+   {
+    "id": "C",
+    "text": "Kata i buryo mu gihe nta bindi binyabiziga biturutse mu kindi cyerekezo"
+   },
+   {
+    "id": "D",
+    "text": "Nta nkengero y'umuhanda yegutse iri i buryo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Birabujijwe gukata i buryo».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 115,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda urombereje w'ibice byinshi ku birometero 50"
+   },
+   {
+    "id": "B",
+    "text": "Intera nto ntarengwa ya metero 50 hagati y'ibinyabiziga"
+   },
+   {
+    "id": "C",
+    "text": "Umuvuduko urenga ibirometero 50 mu isaha"
+   },
+   {
+    "id": "D",
+    "text": "Umuvuduko ntarengwa ugarukira ku birometero 50 mu isaha"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuvuduko ntarengwa ugarukira ku birometero 50 mu isaha».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 116,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Uburemere ntarengwa bwemewe bwa toni 3"
+   },
+   {
+    "id": "B",
+    "text": "Ntihanyurwa n'ibinyabiziga bigenewe gutwara ibicuruzwa"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa n'ibinyabiziga bifite imitambiko itatu"
+   },
+   {
+    "id": "D",
+    "text": "Hanyurwa n'ibinyabiziga  bifite imitambiko itatu gusa"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ntihanyurwa n'ibinyabiziga bigenewe gutwara ibicuruzwa».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 117,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda ugabanijwemo ibisate bibiri"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda ugabanijwemo ibisate bine"
+   },
+   {
+    "id": "C",
+    "text": "Inzira y'icyerekezo kimwe"
+   },
+   {
+    "id": "D",
+    "text": "Ukugendera mu muhanda ubisikanirwamo"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ukugendera mu muhanda ubisikanirwamo».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 118,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Akazamuko gashinze cyane"
+   },
+   {
+    "id": "B",
+    "text": "Umuyaga w'intambike"
+   },
+   {
+    "id": "C",
+    "text": "Uruhererekane rw'amakoni"
+   },
+   {
+    "id": "D",
+    "text": "Umuhanda unyerera"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuhanda unyerera».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 119,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Isoko ry'amatungo"
+   },
+   {
+    "id": "B",
+    "text": "Ivuriro ry'amatungo"
+   },
+   {
+    "id": "C",
+    "text": "Uruzitiro rw'amatungo"
+   },
+   {
+    "id": "D",
+    "text": "Akayira k'amatungo"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Akayira k'amatungo».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-4527fd1a4e3e",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 119,
+  "text": "Mu byapa bikurikira , ni ikihe cyerekana umuhanda  udakomeza:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Icyapa  C1"
+   },
+   {
+    "id": "B",
+    "text": "Icyapa E14"
+   },
+   {
+    "id": "C",
+    "text": "Icyapa C2a"
+   },
+   {
+    "id": "D",
+    "text": "Icyapa B2a"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Icyapa E14».",
+  "image": "sign-4527fd1a4e3e.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-70da12e6b73d",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 120,
+  "text": "Muri ibi byapa bikurikira ni ikihe cyerekana ko umuyobozi ukibonye yemerewe gutambuka mbere y'abaturutse aho agana mu nzira ifunganye:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Icyapa B6"
+   },
+   {
+    "id": "B",
+    "text": "Icyapa A19"
+   },
+   {
+    "id": "C",
+    "text": "Icyapa B3"
+   },
+   {
+    "id": "D",
+    "text": "Icyapa A22a"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Icyapa B6».",
+  "image": "sign-70da12e6b73d.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-4c8cd0216332",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 120,
+  "text": "Iki cyapa:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Aho banyura bazengurutse"
+   },
+   {
+    "id": "B",
+    "text": "Cyerekana umuhanda w'ibisate bitatu"
+   },
+   {
+    "id": "C",
+    "text": "Cyerekana ahegereye inkomane"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisuzo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Aho banyura bazengurutse».",
+  "image": "sign-4c8cd0216332.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 121,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Hanyurwa mu cyerekezo kimwe"
+   },
+   {
+    "id": "B",
+    "text": "Ntihanyurwa"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda udakomeza"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisuzo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Ntihanyurwa».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-37dec0f5d3e3",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 121,
+  "text": "Ni ikihe icyapa gisobanura umuhanda w'icyerekezo kimwe:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Icyapa D1a"
+   },
+   {
+    "id": "B",
+    "text": "Icyapa E13a"
+   },
+   {
+    "id": "C",
+    "text": "Icyapa C19"
+   },
+   {
+    "id": "D",
+    "text": "Icyapa C1"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Nk'uko biteganywa n'amategeko agenga umuhanda, igisubizo cy'ukuri ni «Icyapa E13a».",
+  "image": "sign-37dec0f5d3e3.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-97c358525c32",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 122,
+  "text": "Iki cyapa gisobanura iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Iherezo ry' umuhanda urombeje w'ibice byinshi"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe kunyura mu mu muhanda w' ikindi cyerekezo"
+   },
+   {
+    "id": "C",
+    "text": "Birabujijwe kunyuranaho"
+   },
+   {
+    "id": "D",
+    "text": "Birabujijwe guhagara ku iteme"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Iherezo ry' umuhanda urombeje w'ibice byinshi».",
+  "image": "sign-97c358525c32.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-ac87fdf39557",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 123,
+  "text": "Iki kimenyetso kiri mu muhanda kivuze iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi abujijwe kurenga umurongo wera ucagaguye  cyeretse mugihe bitateza icyago"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe kunyuranaho"
+   },
+   {
+    "id": "C",
+    "text": "Biremewe kunyuranaho ariko nturenge umurongo wera ucagaguye"
+   },
+   {
+    "id": "D",
+    "text": "Birabujijwe gusubira inyuma"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuyobozi abujijwe kurenga umurongo wera ucagaguye  cyeretse mugihe bitateza icyago».",
+  "image": "sign-ac87fdf39557.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-eca575392e68",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 123,
+  "text": "Mu gihe  utwaye ikinyabiziga uva kuri A ugana kuri B,  Iki kimenyetso kiri mu muhanda kivuze iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi ashobora kurenga umurongo wera udacagaguye mugihe  cyo guhindukira gusa"
+   },
+   {
+    "id": "B",
+    "text": "Umuyobozi w'ikinyabiziga abujijwe kunyuranaho, uretse gusa abayobozi b'ibinyamitende nibo bashobora kurenga umurongo wera udacagaguye"
+   },
+   {
+    "id": "C",
+    "text": "Umuyobozi w'ikinyabiziga abujijwe kunyuranaho arenze umurongo wera udacagaguye"
+   },
+   {
+    "id": "D",
+    "text": "Umuyobozi w'ikinyabiziga ashobora kunyuranaho mu gihe bitateza icyago"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuyobozi w'ikinyabiziga ashobora kunyuranaho mu gihe bitateza icyago».",
+  "image": "sign-eca575392e68.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-eca575392e68",
+  "sourceFile": "DL Questions.pdf",
+  "sourcePage": 124,
+  "text": "Mu gihe  utwaye ikinyabiziga uva kuri A ugana kuri B,  Iki kimenyetso kiri mu muhanda kivuze iki ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi w'ikinyabiziga ashobora kunyuranaho arenze umurongo wera udacagaguye"
+   },
+   {
+    "id": "B",
+    "text": "Umuyobozi w'ikinyabiziga abujijwe kunyuranaho arenze imirongo yera"
+   },
+   {
+    "id": "C",
+    "text": "Umuyobozi w'ikinyabiziga yemerewe kunyuranaho"
+   },
+   {
+    "id": "D",
+    "text": "Abayobozi b'ibinyamitende gusa bemerewe kunyuranaho barenze umurongo wera udacagaguye"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Amategeko agenga ibimenyetso n'ibyapa byo mu muhanda agaragaza ko igisubizo cy'ukuri ari «Umuyobozi w'ikinyabiziga abujijwe kunyuranaho arenze imirongo yera».",
+  "image": "sign-eca575392e68.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-7614bf169bf7",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 54,
+  "text": "Icyi cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Hagarara akanya gato"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda batambukamo mbere"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa"
+   },
+   {
+    "id": "D",
+    "text": "Tanga inzira"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Iki ni ikimenyetso cya 'Tanga inzira' (Give way) - mpandeshatu ivunitse hasi ifite umupaka utukura.",
+  "image": "sign-7614bf169bf7.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-0ca66d660455",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 54,
+  "text": "Iki cyapa gisobanurako ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda unyerera"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda utaringaniye"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda unyerera"
+   },
+   {
+    "id": "D",
+    "text": "Utubuye dutaruka mu muhanda"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Nk'uko byerekanwa n'icyapa, gisobanura ko hari utubuye dutaruka mu muhanda.",
+  "image": "sign-0ca66d660455.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 55,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ifungana ry'umuhanda n'akayira gasatira umuhanda ibumoso"
+   },
+   {
+    "id": "B",
+    "text": "Ifungana ry'umuhanda n'akayira gasatira umuhanda iburyo"
+   },
+   {
+    "id": "C",
+    "text": "Akayira k'inyamanswa"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Igishushanyo kigaragaza ifungana ry'umuhanda hamwe n'akayira gasatira ibumoso.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 56,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amasangano ameze nka T"
+   },
+   {
+    "id": "B",
+    "text": "Amakoni abiri cyangwa uruhererekane rw'amakoni arenga abiri"
+   },
+   {
+    "id": "C",
+    "text": "Ahegereye inkomane aho guhagarara akanya gato ari itegeko"
+   },
+   {
+    "id": "D",
+    "text": "Uruhererekane rw'inkomane"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Igishushanyo kigaragaza uruhererekane rw'inkomane ziri imbere.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 57,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inkomane igizwe n'umuhanda usatuyemo imihanda ibiri itandukanye"
+   },
+   {
+    "id": "B",
+    "text": "Tanga inzira"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda udakomeza"
+   },
+   {
+    "id": "D",
+    "text": "Umuhanda batambukamo mbere"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Iyi ngasire y'umuhondo izengurutswe n'umweru ni ikimenyetso cy'umuhanda batambukamo mbere (priority road).",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 58,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa mu byerekezo byombi"
+   },
+   {
+    "id": "B",
+    "text": "Ntihanyurwa n'abandi uretse abahatuye"
+   },
+   {
+    "id": "C",
+    "text": "Hanyurwa mu kerekezo kimwe gusa"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Uruziga rutukura rusa n'urwera imbere rugaragaza ko ntihanyurwa mu byerekezo byombi.",
+  "image": null,
+  "optionImages": {
+   "A": "sign-19e3e8f24604-A.png",
+   "B": "sign-19e3e8f24604-B.png",
+   "C": "sign-19e3e8f24604-C.png"
+  },
+  "kind": "per-option",
+  "images": 3
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 59,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Makuzungu"
+   },
+   {
+    "id": "B",
+    "text": "Ikinyabiziga gikurura remoroki"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa n'ibinyabiziga bigenewe gutwara ibicuruzwa"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Igishushanyo cy'ikamyo mu ruziga rutukura kigaragaza ko ibinyabiziga bitwara ibicuruzwa bibujijwe.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 60,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa mu byerekezo byombi"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe guhagarara umwanya munini n'umuto"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa n'ikinyabiziga icyo aricyo cyose"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Uruziga rw'ubururu rufite umuherekano wa X utukura ugaragaza ko guhagarara umwanya munini n'umuto byombi bibujijwe.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 61,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Aho abanyamaguru bahingukira"
+   },
+   {
+    "id": "B",
+    "text": "Ntihanyurwa n'abanyamaguru"
+   },
+   {
+    "id": "C",
+    "text": "Inzira y'abanyamaguru itegetswe"
+   },
+   {
+    "id": "D",
+    "text": "Aho abanyamaguru bahagarara akanya gato"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Uruziga rw'ubururu rufite igishushanyo cy'abanyamaguru rugaragaza inzira y'abanyamaguru itegetswe.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-19e3e8f24604",
+  "sourceFile": "Excorectionnw1.pdf",
+  "sourcePage": 62,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Aho za otobisi zihagarara"
+   },
+   {
+    "id": "B",
+    "text": "Ibitaro"
+   },
+   {
+    "id": "C",
+    "text": "Hoteli cyangwa icumbi ry'abagenzi"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Icyapa cy'umuhondo gishushanyijemo inyuguti H mu ibara ry'icyatsi ni ikimenyetso cy'aho za otobisi zihagarara.",
+  "image": "sign-19e3e8f24604.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 5
+ },
+ {
+  "slug": "sign-a97e1cd29fcb",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 50,
+  "text": "Icyi cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Hagarara akanya gato"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda batambukamo mbere"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa"
+   },
+   {
+    "id": "D",
+    "text": "Tanga inzira"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Iki gishushanyo (mpandeshatu ihindutse hasi, ubuso bwera burimbishijwe umutuku) gisobanura 'tanga inzira'.",
+  "image": "sign-a97e1cd29fcb.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 50,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda unyerera"
+   },
+   {
+    "id": "B",
+    "text": "Umuhanda utaringaniye"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda unyerera"
+   },
+   {
+    "id": "D",
+    "text": "Utubuye dutaruka mu muhanda"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Icyo cyapa kigaragaza ko hari utubuye dutaruka mu muhanda.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 51,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuhanda ukomeza"
+   },
+   {
+    "id": "B",
+    "text": "Iherezo ry'umuhanda ugenewe imodoka"
+   },
+   {
+    "id": "C",
+    "text": "Ifungana ry'umuhanda"
+   },
+   {
+    "id": "D",
+    "text": "Umuhanda utaringaniye"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Icyo cyapa kigaragaza ko umuhanda ugiye kubaka (ifungana ry'umuhanda).",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 52,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ifungana ry'umuhanda n'akayira gasatira umuhanda ibumoso"
+   },
+   {
+    "id": "B",
+    "text": "Ifungana ry'umuhanda n'akayira gasatira umuhanda iburyo"
+   },
+   {
+    "id": "C",
+    "text": "Akayira k'inyamanswa"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Icyo cyapa kigaragaza ifungana ry'umuhanda hamwe n'akayira gasatira umuhanda ku ruhande rw'ibumoso.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 53,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amasangano ameze nka T"
+   },
+   {
+    "id": "B",
+    "text": "Amakoni abiri cyangwa uruhererekane rw'amakoni arenga abiri"
+   },
+   {
+    "id": "C",
+    "text": "Ahegereye inkomane aho guhagarara akanya gato ari itegeko"
+   },
+   {
+    "id": "D",
+    "text": "Uruhererekane rw'inkomane"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Icyo cyapa kiburira uruhererekane rw'amasangano/inkomane.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 3
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 54,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Inkomane igizwe n'umuhanda usatuyemo imihanda ibiri itandukanye"
+   },
+   {
+    "id": "B",
+    "text": "Tanga inzira"
+   },
+   {
+    "id": "C",
+    "text": "Umuhanda udakomeza"
+   },
+   {
+    "id": "D",
+    "text": "Umuhanda batambukamo mbere"
+   }
+  ],
+  "answer": "D",
+  "category": "signs",
+  "explanation": "Icyo cyapa (ingasire y'umuhondo n'umweru) kigaragaza umuhanda batambukamo mbere (priority road).",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 55,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa mu byerekezo byombi"
+   },
+   {
+    "id": "B",
+    "text": "Ntihanyurwa n'abandi uretse abahatuye"
+   },
+   {
+    "id": "C",
+    "text": "Hanyurwa mu kerekezo kimwe gusa"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "answer": null,
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 56,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Makuzungu"
+   },
+   {
+    "id": "B",
+    "text": "Ikinyabiziga gikurura remoroki"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa n'ibinyabiziga bigenewe gutwara ibicuruzwa"
+   }
+  ],
+  "answer": "C",
+  "category": "signs",
+  "explanation": "Icyo cyapa kibuza ibinyabiziga bigenewe gutwara ibicuruzwa.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 57,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntihanyurwa mu byerekezo byombi"
+   },
+   {
+    "id": "B",
+    "text": "Birabujijwe guhagarara umwanya munini n'umuto"
+   },
+   {
+    "id": "C",
+    "text": "Ntihanyurwa n'ikinyabiziga icyo aricyo cyose"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": "Icyo cyapa (ubururu n'ikimenyetso cy'umutuku gisa n'ikimenyetso cy'agakiristu) kibuza guhagarara umwanya munini n'umuto.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-7e110b09c385",
+  "sourceFile": "Exercise.pdf",
+  "sourcePage": 58,
+  "text": "Iki cyapa gisobanura ko:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Aho za otobisi zihagarara"
+   },
+   {
+    "id": "B",
+    "text": "Ibitaro"
+   },
+   {
+    "id": "C",
+    "text": "Hoteli cyangwa icumbi ry'abagenzi"
+   }
+  ],
+  "answer": "A",
+  "category": "signs",
+  "explanation": "Icyo cyapa (icyatsi n'umuhondo, gisa n'urufunguzo rufite ibara ry'icyatsi) kigaragaza aho za otobisi zihagarara.",
+  "image": "sign-7e110b09c385.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 5
+ },
+ {
+  "slug": "sign-dd9eb74146d5",
+  "sourceFile": "Ikizami Cy_Amategeko.pdf",
+  "sourcePage": 10,
+  "text": "Erekanisha igishushanyo aho abanyamaguru bambukira. (Art 111.3)",
+  "options": [],
+  "answer": null,
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-dd9eb74146d5.png",
+  "optionImages": {},
+  "kind": "crop",
+  "images": 2
+ },
+ {
+  "slug": "sign-81559a186db4",
+  "sourceFile": "Ikizami Cy_Amategeko.pdf",
+  "sourcePage": 10,
+  "text": "Erekanisha igishushanyo ahanyura amagare na za velomoteri. (Art 111.4)",
+  "options": [],
+  "answer": null,
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-81559a186db4.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-f9f8f1303c41",
+  "sourceFile": "Ikizami Cy_Amategeko.pdf",
+  "sourcePage": 13,
+  "text": "Shushanya icyapa kibuza kunyura ku binyabiziga byose uretse ibinyamitende bibiri n'amapikipiki adafite akanyabiziga ko kuruhande. (Art 22.3)",
+  "options": [],
+  "answer": null,
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-f9f8f1303c41.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ },
+ {
+  "slug": "sign-706839879db1",
+  "sourceFile": "Questions-Réponses.pdf",
+  "sourcePage": 5,
+  "text": "A l'approche de ce panneau, la voie de tramway se trouve à 200 mètres.",
+  "options": [
+   {
+    "id": "A",
+    "text": "Vrai"
+   },
+   {
+    "id": "B",
+    "text": "Faux"
+   }
+  ],
+  "answer": "B",
+  "category": "signs",
+  "explanation": null,
+  "image": "sign-706839879db1.png",
+  "optionImages": {},
+  "kind": "single",
+  "images": 1
+ }
+]

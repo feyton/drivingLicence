@@ -1,0 +1,650 @@
+[
+ {
+  "ref": "r3-0",
+  "text": "Igihe za otobisi zigenewe gutwara  banyeshuli zihagaze kugirango zibafate cyangwa bavemo ugomba :",
+  "options": [
+   {
+    "id": "A",
+    "text": "kuvuza ihoni ugakomeza"
+   },
+   {
+    "id": "B",
+    "text": "gukomeza ugabanyije umuvuduko n'ubwitonzi  kuko bishoboka ko abanyeshuli bakwambuka bitunguranye"
+   },
+   {
+    "id": "C",
+    "text": "nta bwitonzi budasnzwe bukenewe"
+   },
+   {
+    "id": "D",
+    "text": "ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-1",
+  "text": "Mugihe ukurikiranye na romoruki,n'ukubera iki ugomba gusiga umwanya uhagije hagati yawe nayo?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Bituma ubasha gukata ikorosi vuba."
+   },
+   {
+    "id": "B",
+    "text": "Bifasha umuyobozi wa romoruki kukurebera mundorerwamo."
+   },
+   {
+    "id": "C",
+    "text": "Bifasha romoruki guhagarara byoroshye."
+   },
+   {
+    "id": "D",
+    "text": "Bikurinda umuyaga."
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-2",
+  "text": "Iyo icyerekezo 1 kireba amashami y'inzira nyabagendwa mu ntara nyinshi, icyerekezo gifatwa na:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Minisitiri wo gutwara abantu n'ibintu"
+   },
+   {
+    "id": "B",
+    "text": "Komite y'igihugu ishinzwe umutekano mu muhanda"
+   },
+   {
+    "id": "C",
+    "text": "Minisitiri w'imirimo ya Leta"
+   },
+   {
+    "id": "D",
+    "text": "Polisi y'igihugu"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-3",
+  "text": "Ibice by'umuhanda byera bigari biteganye n'umurongo ugabanya umuhanda mo ,kabiri bisobanura:",
+  "options": [
+   {
+    "id": "A",
+    "text": "guhagara kw'ikinyabiziga"
+   },
+   {
+    "id": "B",
+    "text": "aho abanyamaguru bambukira"
+   },
+   {
+    "id": "C",
+    "text": "guha  ubushobozi  binyabiziga"
+   },
+   {
+    "id": "D",
+    "text": "ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-4",
+  "text": "Ni ubuhe buryo bwiza bwakurikizwa igihe hari umuntu wakomerekeye mu mpanuka yo mu muhanda ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ku mushyira kunkengero y'umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "Kutamukuramo keretse mugihe hari ibyago byaterwa n'inkogi y'umuriro   cyangwa akaba ashobora kugongwa n'ikindi kinyabiziga no guhamagara ababishinzwe"
+   },
+   {
+    "id": "C",
+    "text": "Gusaba uwakomeretse kunyeganyeza ibice by'umubiri  kugirano umenye aho ibikomere bye bigarukira"
+   },
+   {
+    "id": "D",
+    "text": "Guhumuriza  uwakometse ukamuha ikinyobwo  gikonje"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-5",
+  "text": "Iyo ubugari bw'umuhanda budahagije kugira ngo babisikane nta nkomyi, abayobozi bategetswe:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kwihuta bagatanga inzira"
+   },
+   {
+    "id": "B",
+    "text": "Kwihuta ngo hataba impanuka"
+   },
+   {
+    "id": "C",
+    "text": "Bategetswe koroherana"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r3-6",
+  "text": "Ugeze ahari inzira yabanyamaguru barindiriye kwambuka. Ntibatangiye kwambuka , wakora iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "kuvuza ihoni"
+   },
+   {
+    "id": "B",
+    "text": "kwihangana ugatagereza"
+   },
+   {
+    "id": "C",
+    "text": "gukomeza"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-7",
+  "text": "Kuki abanyamaguru batemerewe kwambuka umuhanda mw'ikoni cyangwa hafi y'imodoka ihagaze?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ingaruka kubindi binyabiziga"
+   },
+   {
+    "id": "B",
+    "text": "ingaruka kubandi bakoresha umuhanda"
+   },
+   {
+    "id": "C",
+    "text": "Abandi bayobozi bi binyabiziga baza bashobora kutabona abambuka umuhanda"
+   },
+   {
+    "id": "D",
+    "text": "Ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-8",
+  "text": "Birabujijwe kugenza cyangwa gukomeza kugenza ikinyabiziga gifite ubuhagarike burengeje:",
+  "options": [
+   {
+    "id": "A",
+    "text": "M4 hatabariwemo ibyo cyikoreye"
+   },
+   {
+    "id": "B",
+    "text": "M4,20 hatabariwemo ibyo cyikoreye"
+   },
+   {
+    "id": "C",
+    "text": "Byombi nibyo"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-9",
+  "text": "Amategeko ntayegayezwa ashyirwaho n'iteka rya Perefe, ntashobora kumara igihe kirenze:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amezi 6"
+   },
+   {
+    "id": "B",
+    "text": "Amezi 3"
+   },
+   {
+    "id": "C",
+    "text": "Amezi 2"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-10",
+  "text": "Abagenzi bicaye ku ntebe zifite imikandara kimwe n'umuyobozi w'ikinyabiziga bagomba:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Gufunga cyane imikandara yabo"
+   },
+   {
+    "id": "B",
+    "text": "Kwizirikaho imikandara yabo"
+   },
+   {
+    "id": "C",
+    "text": "Kurumya neza imikandara yabo"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-11",
+  "text": "Niryari amatara ndanga cyerekezo agomba kugaragazwa  kubandi bakoresha  umuhanda ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "igihe gusa ari ngombwa  amenyesha ibindi binyabiziga bimukurikiye"
+   },
+   {
+    "id": "B",
+    "text": "igihe gusa aringombwa kuburira abandi bayobozi bava mukindi cyerekezo"
+   },
+   {
+    "id": "C",
+    "text": "mugihe gikwiye ushaka kumenyesha abandi bakoresha umuhanda icyo ugiye gukora"
+   },
+   {
+    "id": "D",
+    "text": "keretse ahari  ibimenyetso byo mu muhanda byerekana icyerekezo cyawe"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-12",
+  "text": "Igihe ibyangombwa by'ingenzi bicitse, ikizirikisho cyo gutabara gikoreshwa gusa:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kugira ngo ikinyabiziga gikururwa kigende neza"
+   },
+   {
+    "id": "B",
+    "text": "Kugira ngo ikinyabiziga kigere aho kigomba gukorerwa"
+   },
+   {
+    "id": "C",
+    "text": "Kugira ngo hataba impanuka"
+   },
+   {
+    "id": "D",
+    "text": "A,B,C byose ni ibisubizo by'ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-13",
+  "text": "Mu gihe hari undi muyobozi  w'ikinyabiziga ugukurikiye watangiye kukunyuraho :",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ntugomba kugira undi muyobozi w'ikinyabiziga  unyuraho"
+   },
+   {
+    "id": "B",
+    "text": "Ugomba kunyura ku kindi kinyabiziga"
+   },
+   {
+    "id": "C",
+    "text": "Ugomba kunyura kukindi kinyabiziga uvugije ihoni"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-14",
+  "text": "Umuyobozi w'ikinyabiziga yakora iki igihe ageze ku  kazamuko gashinze cyane ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Umuyobozi w'ikinyabiziga agomba kugabanya umuvuduko akaguma kuruhande rw'iburyo yirinda  ibyago"
+   },
+   {
+    "id": "B",
+    "text": "Gukandagira ikirenge cya amburiyage no kuvuza ihoni ryo kumunyesha"
+   },
+   {
+    "id": "C",
+    "text": "Kugumana umuvuduko n'ikirekezo wari ufite mu muhanda"
+   },
+   {
+    "id": "D",
+    "text": "Guhagarara ku mpera zuwo musozi"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-15",
+  "text": "Umuyobozi agomba gukora uko ashoboye kugira ngo yirinde kwangiza umuhanda:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Anyura indi nzira"
+   },
+   {
+    "id": "B",
+    "text": "Agabanya ibyo yikoreye"
+   },
+   {
+    "id": "C",
+    "text": "Agenda gahoro"
+   },
+   {
+    "id": "D",
+    "text": "Byose ni byo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-16",
+  "text": "Gukoresha ingenzura ry'itegeko, igenzura rigomba gutangira nyuma y'imyaka:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Imyaka 2 nyuma yo gushyirwa mu muhanda"
+   },
+   {
+    "id": "B",
+    "text": "Imyaka 3 nyuma yo gushyirwa mu muhanda"
+   },
+   {
+    "id": "C",
+    "text": "Umwaka 1 nyuma yo gushyirwa mu muhanda"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-17",
+  "text": "Umuyobozi w'ikinyabiziga yakora iki igihe ageze aho banyura bazenguruka?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Tanga inzira ku binyabiziga byamaze kwinjira aho banyura bazunguruka"
+   },
+   {
+    "id": "B",
+    "text": "Tanga  inzira  kubinyabiziga biremereye gusa"
+   },
+   {
+    "id": "C",
+    "text": "Tanga inzira gusa  niba uri munzira ya kabiri niya gatatu isohoka"
+   },
+   {
+    "id": "D",
+    "text": "Komeza kuko abandi bayobozi b'ibinyabiziga  bagomba kuguha inzira  yo gukomeza"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-18",
+  "text": "Ishyirwaho ry'ibimenyetso ku mihanda y'igihugu n'iy'imijyi rigenwa na:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Minisitiri wo gutwara abantu n'ibintu"
+   },
+   {
+    "id": "B",
+    "text": "Minisitiri w'imirimo ya Leta"
+   },
+   {
+    "id": "C",
+    "text": "Icyigo gishinzwe kugenzura ibigendera mu muhanda"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-19",
+  "text": "Igihe imodoka iparitse ku nkengero z'umuhanda  mugihe cy' ijoro :",
+  "options": [
+   {
+    "id": "A",
+    "text": "Imodoka igomba kuba ifunze"
+   },
+   {
+    "id": "B",
+    "text": "Umuntu ufite uruhushya rwo gutwara ikinyabiziga agomba kuba yicaye mu mwanya w'umuyobozi"
+   },
+   {
+    "id": "C",
+    "text": "Amatara yo guhagarara  umwanya munini aguma yaka"
+   },
+   {
+    "id": "D",
+    "text": "Ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-20",
+  "text": "Uburemere ntarengwa bwemewe bujya mu cyome bwerekanwa n'ibyapa:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Biri ku mpera zose"
+   },
+   {
+    "id": "B",
+    "text": "Biri ku mpera y'icyome"
+   },
+   {
+    "id": "C",
+    "text": "Biri ku ntangiriro y'icyome"
+   },
+   {
+    "id": "D",
+    "text": "Nta gisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-21",
+  "text": "Iyo begereye ibyome, abayobozi bagomba gutondekanya imirongo:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Iburyo bw'umuhanda"
+   },
+   {
+    "id": "B",
+    "text": "Ibumoso"
+   },
+   {
+    "id": "C",
+    "text": "Iburyo n'ibumoso"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo cy'ukuri kirimo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu 8.pdf"
+ },
+ {
+  "ref": "r3-22",
+  "text": "Ni ayahe matara agomba kwakira rimwe ku binyabiziga?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amatara magufi na maremare"
+   },
+   {
+    "id": "B",
+    "text": "Amatara ndangambere, kamenabihu y'imbere n'amatara ndangacyerekezo"
+   },
+   {
+    "id": "C",
+    "text": "Amatara y'urugendo"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ },
+ {
+  "ref": "r3-23",
+  "text": "Igihe ubonye icyapa  kigaragaza ishuli wakora iki?",
+  "options": [
+   {
+    "id": "A",
+    "text": "kugabanya umuvuduko no gukomeza witonze"
+   },
+   {
+    "id": "B",
+    "text": "gukomeza n'umuvuduko uri hejuru  kuko umunyeshuli  agomba gutegereza"
+   },
+   {
+    "id": "C",
+    "text": "kuvuza ihoni"
+   },
+   {
+    "id": "D",
+    "text": "ibisubizo byose ni ukuri"
+   }
+  ],
+  "category": "signs",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-24",
+  "text": "Niki wakora igihe utabona neza usubira inyuma ?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kumanura ikirahure cy'imodoka urebe inyuma"
+   },
+   {
+    "id": "B",
+    "text": "Gufungura umuryango  w'imodoka ureba inyuma"
+   },
+   {
+    "id": "C",
+    "text": "Gushaka umuntu uri hanze y'ikinyabiziga  ukuyobora"
+   },
+   {
+    "id": "D",
+    "text": "Gukoresha akarebanyuma kakwegereye"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-25",
+  "text": "Umuyobozi w'ikinyabizaga ashobora kunyuranaho:",
+  "options": [
+   {
+    "id": "A",
+    "text": "ahamanuka"
+   },
+   {
+    "id": "B",
+    "text": "igihe umuhanda ari mugari"
+   },
+   {
+    "id": "C",
+    "text": "igihe umuyobozi w'ikinyabiziga kiri imbere ye amweretse ikimenyetso kimwemerera kunyuranaho"
+   },
+   {
+    "id": "D",
+    "text": "nta gisubizo cy'ukuri"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "DL Questions.pdf"
+ },
+ {
+  "ref": "r3-26",
+  "text": "Bavuga ko ikinyabiziga kiri mu igerageza iyo:",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kiri mu igaraje"
+   },
+   {
+    "id": "B",
+    "text": "Kiri muri kaburimbo bakumva uko bigenda"
+   },
+   {
+    "id": "C",
+    "text": "Kigendeshwa n'abagikoze, abakiguze, abacyongeyeho karisoro, abakigurisha n'abongera kukigurisha"
+   },
+   {
+    "id": "D",
+    "text": "Ntagisubizo"
+   }
+  ],
+  "category": "general",
+  "sourceFile": "Gugu6 Worked on.docx"
+ }
+]
