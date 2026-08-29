@@ -50,9 +50,9 @@ export function CoachReview({ attemptId, allCorrect }: { attemptId: string; allC
   }
 
   return (
-    <Card className="border-primary/30 bg-primary/[0.03]">
+    <Card className="border-[var(--study)]/35 bg-[var(--study)]/[0.05]">
       <CardContent className="space-y-3 py-5">
-        <div className="flex items-center gap-2 text-primary">
+        <div className="flex items-center gap-2 text-[var(--study)]">
           <CoachIcon />
           <h2 className="font-heading text-base font-semibold">{t("title")}</h2>
         </div>

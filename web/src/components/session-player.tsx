@@ -108,17 +108,29 @@ export function SessionPlayer(props: {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-4 px-4 py-6">
       <div className="flex items-center justify-between gap-3">
-        <span className="text-sm font-medium text-muted-foreground">
-          {mode === "exam" ? t("session.examLabel") : t("session.practiceLabel")} · {t("exam.question")}{" "}
-          <span className="tabular-nums">
-            {current + 1} {t("exam.of")} {questions.length}
+        <span className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+          <span
+            className={cn(
+              "chip",
+              mode === "exam"
+                ? "bg-primary/12 text-primary"
+                : "bg-[var(--study)]/12 text-[var(--study)]"
+            )}
+          >
+            {mode === "exam" ? t("session.examLabel") : t("session.practiceLabel")}
+          </span>
+          <span className="numeral text-foreground">
+            {current + 1}
+            <span className="text-muted-foreground">/{questions.length}</span>
           </span>
         </span>
         {timeStr && (
           <span
             className={cn(
-              "rounded-md border px-2.5 py-1 font-heading text-sm font-semibold tabular-nums",
-              remaining !== null && remaining <= 120 ? "border-destructive text-destructive" : "text-foreground"
+              "numeral rounded-lg border px-3 py-1.5 text-base font-semibold",
+              remaining !== null && remaining <= 120
+                ? "border-destructive bg-destructive/10 text-destructive"
+                : "border-border bg-card text-foreground"
             )}
             aria-label={t("exam.timeLeft")}
           >
@@ -151,17 +163,17 @@ export function SessionPlayer(props: {
                   disabled={pending && !isChosen}
                   onClick={() => choose(o.id)}
                   className={cn(
-                    "flex items-center gap-3 rounded-xl border px-4 py-3.5 text-left text-[0.95rem] leading-snug transition-all",
-                    "hover:border-primary/50 hover:bg-accent active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
-                    isChosen && !feedback && "border-primary bg-primary/8 ring-1 ring-primary/30",
-                    showCorrect && "border-[var(--success)] bg-[var(--success)]/10",
-                    showWrong && "border-destructive bg-destructive/10",
+                    "press flex items-center gap-3 rounded-xl border-2 px-4 py-3.5 text-left text-[0.95rem] leading-snug",
+                    "hover:border-primary/50 hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+                    isChosen && !feedback && "border-primary bg-primary/10",
+                    showCorrect && "border-[var(--success)] bg-[var(--success)]/12",
+                    showWrong && "border-destructive bg-destructive/12",
                     !isChosen && !showCorrect && !showWrong && "border-border"
                   )}
                 >
                   <span
                     className={cn(
-                      "flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border text-[0.8rem] font-bold transition-colors",
+                      "numeral flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border text-[0.82rem] font-semibold transition-colors",
                       !isChosen && !feedback && "border-border bg-muted text-muted-foreground",
                       isChosen && !feedback && "border-primary bg-primary text-primary-foreground",
                       showCorrect && "border-[var(--success)] bg-[var(--success)] text-white",

@@ -5,7 +5,6 @@ import { Question } from "@/lib/models/Question";
 import { User } from "@/lib/models/User";
 import { Attempt } from "@/lib/models/Attempt";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
 export const revalidate = 300;
 
@@ -26,52 +25,85 @@ async function getCounts() {
 export default async function LandingPage() {
   const [t, counts] = await Promise.all([getTranslations("landing"), getCounts()]);
 
+  const stats = [
+    { n: counts.questions, label: t("statsQuestions"), tone: "primary" },
+    { n: counts.learners, label: t("statsLearners"), tone: "signal" },
+    { n: counts.exams, label: t("statsExams"), tone: "success" },
+  ] as const;
+
   const features = [
-    { title: t("featureExamTitle"), body: t("featureExamBody") },
-    { title: t("featurePracticeTitle"), body: t("featurePracticeBody") },
-    { title: t("featureTrackTitle"), body: t("featureTrackBody") },
-  ];
+    { title: t("featureExamTitle"), body: t("featureExamBody"), tone: "primary" },
+    { title: t("featurePracticeTitle"), body: t("featurePracticeBody"), tone: "study" },
+    { title: t("featureTrackTitle"), body: t("featureTrackBody"), tone: "success" },
+  ] as const;
+
+  const toneBg: Record<string, string> = {
+    primary: "bg-primary",
+    signal: "bg-[var(--signal)]",
+    success: "bg-[var(--success)]",
+    study: "bg-[var(--study)]",
+  };
+  const toneText: Record<string, string> = {
+    primary: "text-primary",
+    signal: "text-[var(--warning)]",
+    success: "text-[var(--success)]",
+    study: "text-[var(--study)]",
+  };
 
   return (
     <div className="mx-auto max-w-5xl px-4">
-      <section className="flex flex-col items-center gap-6 py-16 text-center md:py-24">
-        <h1 className="max-w-2xl text-balance font-heading text-4xl font-bold tracking-tight md:text-5xl">
+      {/* Hero: the type is the design. */}
+      <section className="py-14 md:py-20">
+        <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-[var(--signal)]/15 px-3 py-1 text-xs font-semibold text-[var(--warning)]">
+          <span className="h-1.5 w-1.5 rounded-full bg-[var(--signal)]" />
+          Provisoire · Amategeko y'Umuhanda
+        </p>
+        <h1 className="max-w-3xl font-heading text-[clamp(2.4rem,7vw,4.25rem)] font-extrabold leading-[0.98]">
           {t("title")}
         </h1>
-        <p className="max-w-xl text-pretty text-lg text-muted-foreground">{t("subtitle")}</p>
-        <div className="flex flex-wrap justify-center gap-3">
-          <Button size="lg" render={<Link href="/exam" />}>
+        <p className="mt-5 max-w-xl text-pretty text-lg text-muted-foreground">{t("subtitle")}</p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Button size="lg" className="press h-11 px-6 text-base" render={<Link href="/exam" />}>
             {t("ctaExam")}
           </Button>
-          <Button size="lg" variant="outline" render={<Link href="/practice" />}>
+          <Button
+            size="lg"
+            variant="outline"
+            className="press h-11 px-6 text-base"
+            render={<Link href="/practice" />}
+          >
             {t("ctaPractice")}
           </Button>
         </div>
       </section>
 
-      <section className="grid grid-cols-3 gap-3 pb-12">
-        {[
-          [counts.questions, t("statsQuestions")],
-          [counts.learners, t("statsLearners")],
-          [counts.exams, t("statsExams")],
-        ].map(([n, label]) => (
-          <Card key={String(label)}>
-            <CardContent className="flex flex-col items-center gap-1 py-5">
-              <span className="font-heading text-3xl font-bold tabular-nums text-primary">{String(n)}</span>
-              <span className="text-center text-sm text-muted-foreground">{String(label)}</span>
-            </CardContent>
-          </Card>
+      {/* Stats — big numerals, each with its own hue. */}
+      <section className="grid grid-cols-3 gap-3 pb-14">
+        {stats.map((s) => (
+          <div
+            key={s.label}
+            className="relative overflow-hidden rounded-2xl border bg-card p-4 md:p-5"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <span className={`absolute inset-x-0 top-0 h-1 ${toneBg[s.tone]}`} />
+            <div className={`numeral text-3xl font-semibold md:text-4xl ${toneText[s.tone]}`}>{s.n}</div>
+            <div className="mt-1 text-xs text-muted-foreground md:text-sm">{s.label}</div>
+          </div>
         ))}
       </section>
 
-      <section className="grid gap-4 pb-20 md:grid-cols-3">
+      {/* Features */}
+      <section className="grid gap-4 pb-24 md:grid-cols-3">
         {features.map((f) => (
-          <Card key={f.title}>
-            <CardContent className="space-y-2 py-5">
-              <h2 className="font-heading font-semibold">{f.title}</h2>
-              <p className="text-sm text-muted-foreground">{f.body}</p>
-            </CardContent>
-          </Card>
+          <div
+            key={f.title}
+            className="rounded-2xl border bg-card p-5"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <span className={`mb-3 block h-1.5 w-10 rounded-full ${toneBg[f.tone]}`} />
+            <h2 className="font-heading text-lg font-bold">{f.title}</h2>
+            <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{f.body}</p>
+          </div>
         ))}
       </section>
     </div>

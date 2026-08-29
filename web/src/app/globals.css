@@ -4,117 +4,135 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* ═══════════════════════════════════════════════════════════════════════
+   Tsinda Provisoire — road-sign colour language, font-driven.
+
+   The palette is lifted from the signs themselves: the blue of an
+   obligation sign carries navigation, signal amber (the priority-road
+   diamond) is the signature accent, and go-green / stop-red do the
+   grading. Amber doubles as the culturally familiar MoMo yellow.
+
+   Type: Bricolage Grotesque display (big, characterful), Poppins body,
+   IBM Plex Mono for every number that must line up — timer, score, stats.
+   ═══════════════════════════════════════════════════════════════════════ */
+
 @theme inline {
+  /* core shadcn surface + text tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* product tokens */
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-signal: var(--signal);
+  --color-signal-foreground: var(--signal-foreground);
+  --color-study: var(--study);
+  --color-study-foreground: var(--study-foreground);
+
+  /* radii + type */
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
   --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono-data);
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* surfaces — crisp and cool, never cream */
+  --background: #f5f8fd;
+  --foreground: #0c1421;
+  --card: #ffffff;
+  --card-foreground: #0c1421;
+  --popover: #ffffff;
+  --popover-foreground: #0c1421;
+
+  --muted: #eef2f9;
+  --muted-foreground: #5b6a82;
+  --secondary: #e9eff9;
+  --secondary-foreground: #16273f;
+  --accent: #e3ecfd;
+  --accent-foreground: #0b3f9e;
+  --border: #dde5f1;
+  --input: #dde5f1;
+
+  /* obligation-sign blue — electric, not municipal */
+  --primary: #0b63f6;
+  --primary-foreground: #ffffff;
+  --ring: rgb(11 99 246 / 0.45);
+
+  /* grading + signature */
+  --success: #0fa968;
+  --success-foreground: #ffffff;
+  --destructive: #ef3b52;
+  --destructive-foreground: #ffffff;
+  --warning: #e08700;
+  --warning-foreground: #2a1a00;
+  --signal: #ffb302;          /* priority-diamond amber — the signature */
+  --signal-foreground: #2a1c00;
+  --study: #7c4dff;           /* the coach / AI surfaces */
+  --study-foreground: #ffffff;
+
+  --radius: 0.95rem;
+  --shadow-card: 0 1px 2px rgb(12 20 33 / 0.05), 0 8px 24px rgb(12 20 33 / 0.06);
+  --shadow-lift: 0 14px 40px rgb(11 99 246 / 0.16);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #080e1a;
+  --foreground: #eaf0fa;
+  --card: #101a2b;
+  --card-foreground: #eaf0fa;
+  --popover: #101a2b;
+  --popover-foreground: #eaf0fa;
+
+  --muted: #16233a;
+  --muted-foreground: #93a3bd;
+  --secondary: #182741;
+  --secondary-foreground: #eaf0fa;
+  --accent: #1b2c4c;
+  --accent-foreground: #cfe0ff;
+  --border: rgb(255 255 255 / 0.10);
+  --input: rgb(255 255 255 / 0.14);
+
+  --primary: #4d8dff;
+  --primary-foreground: #05132c;
+  --ring: rgb(77 141 255 / 0.5);
+
+  --success: #2ecb86;
+  --success-foreground: #04231a;
+  --destructive: #ff5f72;
+  --destructive-foreground: #2a0508;
+  --warning: #ffab2e;
+  --warning-foreground: #2a1a00;
+  --signal: #ffc233;
+  --signal-foreground: #2a1c00;
+  --study: #a07dff;
+  --study-foreground: #150a33;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 10px 30px rgb(0 0 0 / 0.45);
+  --shadow-lift: 0 16px 44px rgb(0 0 0 / 0.55);
 }
 
 @layer base {
@@ -122,110 +140,62 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   }
-  html {
-    @apply font-sans;
+  /* Display face carries the personality — used big and with tight tracking. */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+  /* Every figure that can be compared lines up. */
+  .tabnum, th, td, time {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  ::selection {
+    background: rgb(11 99 246 / 0.22);
   }
 }
-/* ============================================================
-   Tsinda Provisoire — road-sign palette, mobile-first
-   Cool testing-room neutrals, a confident sign-blue, and
-   go/stop/caution semantics borrowed from real road signs.
-   ============================================================ */
-:root {
-  --background: oklch(0.984 0.004 240);   /* cool off-white */
-  --foreground: oklch(0.205 0.022 250);   /* near-black, blue bias */
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.205 0.022 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.205 0.022 250);
-  --muted: oklch(0.962 0.006 240);
-  --muted-foreground: oklch(0.505 0.02 248);
-  --secondary: oklch(0.955 0.008 240);
-  --secondary-foreground: oklch(0.28 0.03 250);
-  --accent: oklch(0.945 0.014 236);
-  --accent-foreground: oklch(0.30 0.06 245);
-  --border: oklch(0.906 0.008 240);
-  --input: oklch(0.906 0.008 240);
 
-  --primary: oklch(0.535 0.128 236);      /* confident sign-blue */
-  --primary-foreground: oklch(0.99 0.005 240);
-  --ring: oklch(0.535 0.128 236 / 55%);
-
-  --success: oklch(0.585 0.135 150);      /* go green */
-  --success-foreground: oklch(0.99 0.01 150);
-  --destructive: oklch(0.565 0.2 26);     /* stop red */
-  --destructive-foreground: oklch(0.99 0.01 26);
-  --warning: oklch(0.74 0.145 74);        /* caution amber */
-  --warning-foreground: oklch(0.24 0.04 74);
-
-  --radius: 0.9rem;
-  --shadow-card: 0 1px 2px oklch(0.4 0.05 250 / 0.06), 0 4px 16px oklch(0.4 0.05 250 / 0.05);
-  --shadow-pop: 0 8px 30px oklch(0.35 0.06 250 / 0.14);
+@layer components {
+  /* Data numerals: score, timer, counts. */
+  .numeral {
+    font-family: var(--font-mono-data), ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    letter-spacing: -0.03em;
+  }
+  /* Tactile press, borrowed from the finxai interaction language. */
+  .press {
+    transition: transform 0.1s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+  .press:active {
+    transform: scale(0.985);
+  }
+  [data-slot="card"] {
+    box-shadow: var(--shadow-card);
+  }
+  /* Colour-coded category chip. */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-semibold;
+  }
 }
 
-.dark {
-  --background: oklch(0.178 0.022 252);   /* road-at-night navy */
-  --foreground: oklch(0.955 0.006 240);
-  --card: oklch(0.222 0.024 252);
-  --card-foreground: oklch(0.955 0.006 240);
-  --popover: oklch(0.222 0.024 252);
-  --popover-foreground: oklch(0.955 0.006 240);
-  --muted: oklch(0.262 0.022 252);
-  --muted-foreground: oklch(0.72 0.02 245);
-  --secondary: oklch(0.27 0.024 252);
-  --secondary-foreground: oklch(0.95 0.006 240);
-  --accent: oklch(0.30 0.04 245);
-  --accent-foreground: oklch(0.95 0.006 240);
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
-
-  --primary: oklch(0.70 0.115 233);
-  --primary-foreground: oklch(0.16 0.03 252);
-  --ring: oklch(0.70 0.115 233 / 55%);
-
-  --success: oklch(0.70 0.135 152);
-  --success-foreground: oklch(0.16 0.03 252);
-  --destructive: oklch(0.68 0.185 26);
-  --destructive-foreground: oklch(0.99 0.01 26);
-  --warning: oklch(0.80 0.14 76);
-  --warning-foreground: oklch(0.18 0.03 76);
-
-  --shadow-card: 0 1px 2px oklch(0 0 0 / 0.3), 0 6px 20px oklch(0 0 0 / 0.35);
-  --shadow-pop: 0 10px 34px oklch(0 0 0 / 0.5);
+button, a, [role="radio"], [role="button"] {
+  -webkit-tap-highlight-color: transparent;
 }
 
-@theme inline {
-  --color-success: var(--success);
-  --color-success-foreground: var(--success-foreground);
-  --color-warning: var(--warning);
-  --color-warning-foreground: var(--warning-foreground);
-  --font-heading: var(--font-lexend);
-  --font-sans: var(--font-lato);
-}
-
-body {
-  font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
-  letter-spacing: -0.012em;
-}
-
-/* App-like shadows + smooth interactions */
-.shadow-card { box-shadow: var(--shadow-card); }
-[data-slot="card"] { box-shadow: var(--shadow-card); }
-button, a, [role="radio"], [role="button"] { -webkit-tap-highlight-color: transparent; }
-
-/* Safe-area padding so content clears the mobile bottom tab bar */
+/* Safe-area padding so content clears the mobile tab bar. */
 .pb-safe { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 0.5rem); }
 @media (max-width: 767px) {
-  .has-bottom-nav { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 4.75rem); }
+  .has-bottom-nav { padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 4.9rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

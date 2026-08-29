@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lexend, Lato } from "next/font/google";
+import { Bricolage_Grotesque, Poppins, IBM_Plex_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { auth } from "@/auth";
@@ -10,8 +10,24 @@ import "./globals.css";
 
 const ADMIN_ROLES = ["editor", "admin", "super"];
 
-const lexend = Lexend({ variable: "--font-lexend", subsets: ["latin"] });
-const lato = Lato({ variable: "--font-lato", weight: ["400", "700"], subsets: ["latin"] });
+const display = Bricolage_Grotesque({
+  variable: "--font-display",
+  weight: ["600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const body = Poppins({
+  variable: "--font-body",
+  weight: ["400", "500", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const monoData = IBM_Plex_Mono({
+  variable: "--font-mono-data",
+  weight: ["500", "600"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: { default: "Tsinda Provisoire", template: "%s · Tsinda Provisoire" },
@@ -25,7 +41,10 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   const isAdmin = !!user && ADMIN_ROLES.includes(user.role);
 
   return (
-    <html lang={locale} className={`${lexend.variable} ${lato.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${display.variable} ${body.variable} ${monoData.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

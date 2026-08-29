@@ -57,7 +57,7 @@ export default function CoachChatPage() {
   return (
     <div className="mx-auto flex h-[calc(100vh-3.5rem)] max-w-2xl flex-col px-4 py-4">
       <div className="mb-2">
-        <h1 className="font-heading text-xl font-bold text-primary">{t("title")}</h1>
+        <h1 className="font-heading text-2xl font-extrabold text-[var(--study)]">{t("title")}</h1>
         <p className="text-sm text-muted-foreground">{t("chatIntro")}</p>
       </div>
 
@@ -68,7 +68,7 @@ export default function CoachChatPage() {
               <button
                 key={s}
                 onClick={() => send(s)}
-                className="rounded-lg border px-4 py-2.5 text-left text-sm hover:bg-accent"
+                className="press rounded-xl border-2 px-4 py-3 text-left text-sm hover:border-[var(--study)]/40 hover:bg-accent"
               >
                 {s}
               </button>
@@ -80,7 +80,9 @@ export default function CoachChatPage() {
             <div
               className={cn(
                 "max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed",
-                m.role === "user" ? "whitespace-pre-line bg-primary text-primary-foreground" : "border bg-card"
+                m.role === "user"
+                  ? "whitespace-pre-line bg-[var(--study)] text-[var(--study-foreground)]"
+                  : "border bg-card"
               )}
             >
               {m.role === "assistant" ? <Markdown>{m.content || "…"}</Markdown> : m.content || "…"}

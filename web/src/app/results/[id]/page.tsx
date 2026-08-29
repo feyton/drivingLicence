@@ -70,11 +70,14 @@ export default async function ResultsPage({ params }: PageProps<"/results/[id]">
         <CardContent className="flex flex-col items-center gap-3 py-8 text-center">
           <div
             className={cn(
-              "flex h-24 w-24 items-center justify-center rounded-full border-4 font-heading text-2xl font-bold tabular-nums",
-              passed ? "border-[var(--success)] text-[var(--success)]" : "border-destructive text-destructive"
+              "flex h-28 w-28 flex-col items-center justify-center rounded-full border-[5px]",
+              passed
+                ? "border-[var(--success)] bg-[var(--success)]/8 text-[var(--success)]"
+                : "border-destructive bg-destructive/8 text-destructive"
             )}
           >
-            {attempt.score}/{attempt.total}
+            <span className="numeral text-4xl font-semibold leading-none">{attempt.score}</span>
+            <span className="numeral mt-0.5 text-sm text-muted-foreground">/ {attempt.total}</span>
           </div>
           <h1 className="font-heading text-2xl font-bold">{passed ? t("passedTitle") : t("failedTitle")}</h1>
           <p className="max-w-md text-sm text-muted-foreground">
@@ -82,7 +85,10 @@ export default async function ResultsPage({ params }: PageProps<"/results/[id]">
               ? t("passedBody", { score: attempt.score ?? 0, total: attempt.total })
               : t("failedBody", { score: attempt.score ?? 0, total: attempt.total, passMark: mark })}
           </p>
-          <p className="text-xs text-muted-foreground tabular-nums">{pct}% · {format.dateTime(attempt.submittedAt, { dateStyle: "medium", timeStyle: "short" })}</p>
+          <p className="text-xs text-muted-foreground">
+            <span className="numeral">{pct}%</span> ·{" "}
+            {format.dateTime(attempt.submittedAt, { dateStyle: "medium", timeStyle: "short" })}
+          </p>
 
           <div className="mt-2 flex flex-wrap justify-center gap-2">
             {missed.length > 0 && (

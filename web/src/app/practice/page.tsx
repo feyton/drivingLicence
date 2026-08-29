@@ -30,8 +30,10 @@ function OptionRow<T extends string | number>(props: {
             type="button"
             onClick={() => props.onChange(v)}
             className={cn(
-              "rounded-full border px-4 py-1.5 text-sm transition-colors hover:bg-accent",
-              props.value === v && "border-primary bg-primary text-primary-foreground hover:bg-primary"
+              "press rounded-full border-2 px-4 py-1.5 text-sm font-medium hover:bg-accent",
+              props.value === v
+                ? "border-primary bg-primary text-primary-foreground hover:bg-primary"
+                : "border-border"
             )}
           >
             {props.labels?.[String(v)] ?? String(v)}
